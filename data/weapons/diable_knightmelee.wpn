@@ -1,0 +1,53 @@
+{
+  "id": "diable_knightmelee",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_melee_shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "displayArcRadius": 200,
+  "turretSprite": "graphics/jg/ships/knight/diableavionics_knight_melee.png",
+  "turretGunSprite": "graphics/jg/ships/knight/diableavionics_knight_melee_barrel.png",
+  "hardpointSprite": "",
+  "renderBelowAllWeapons": true,
+  "visualRecoil": -50,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    31,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "interruptibleBurst": true,
+  "smokeSpec": {
+    "particleSizeMin": 5,
+    "particleSizeRange": 15,
+    "cloudParticleCount": 6,
+    "cloudDuration": 1,
+    "cloudRadius": 20,
+    "blowbackParticleCount": 5,
+    "blowbackDuration": 0.5,
+    "blowbackLength": 15,
+    "blowbackSpread": 30,
+    "particleColor": [
+      150,
+      100,
+      100,
+      100
+    ]
+  },
+  "fireSoundOne": "diableavionics_warlust_fire",
+  "fireSoundTwo": "diableavionics_knight_fire",
+  "unaffectedByProjectileSpeedBonuses": true
+}

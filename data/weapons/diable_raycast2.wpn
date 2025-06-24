@@ -1,0 +1,33 @@
+{
+	"specClass":"projectile",
+	"id":"diable_raycast2",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"displayArcRadius":700,
+	"turretSprite":"graphics/jg/weapons/diableavionics_raycast_turret_base.png",
+	"turretGlowSprite":"graphics/jg/weapons/diableavionics_diurne_turret_glow.png",
+	"hardpointSprite":"graphics/jg/weapons/diableavionics_raycast_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/jg/weapons/diableavionics_diurne_hardpoint_glow.png",
+	"turretOffsets":[4, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[10, 0],
+	"hardpointAngleOffsets":[0],
+	"fringeColor":[200,25,25,50],
+	"coreColor":[255,125,125,200],
+	"glowColor":[200,100,100,200],
+	"width":18.0,
+	"hitGlowRadius":1,
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{
+            "length":40.0,
+            "spread":5.0,
+            "particleSizeMin":12.0,
+            "particleSizeRange":16.0,
+            "particleDuration":0.15,
+            "particleCount":33,
+            "particleColor":[201,109,234,220]
+        },
+	"projectileSpecId":"diableavionics_Raycast_shot",  # projectile that will be fired
+	"fireSoundTwo":"diableavionics_harvest_firing",
+}

@@ -1,0 +1,51 @@
+{
+  "id": "diable_urn",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_urn_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "everyFrameEffect": "data.scripts.weapons.Diableavionics_uhlanFire",
+  "displayArcRadius": 400,
+  "turretSprite": "graphics/jg/weapons/diableavionics_UrnTurret_base.png",
+  "turretGunSprite": "graphics/jg/weapons/diableavionics_UrnTurret_Barrel.png",
+  "hardpointSprite": "graphics/jg/weapons/diableavionics_UrnHardpoint_base.png",
+  "hardpointGunSprite": "graphics/jg/weapons/diableavionics_UrnHardpoint_Barrel.png",
+  "visualRecoil": 10,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    9,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    14,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "interruptibleBurst": true,
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 20,
+    "spread": 5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+      255,
+      100,
+      50,
+      255
+    ]
+  },
+  "fireSoundOne": "diableavionics_uhlan_chargeup",
+  "fireSoundTwo": "diableavionics_uhlan_firing"
+}

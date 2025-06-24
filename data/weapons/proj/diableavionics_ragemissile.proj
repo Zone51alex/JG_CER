@@ -1,0 +1,38 @@
+{
+	"id":"diableavionics_ragemissile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/jg/missile/diableavionics_ragemissile.png",
+	"size":[6,15],	
+	"center":[3,6],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,50,50,0],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+	"engineSpec":{"turnAcc":800,
+				  "turnRate":200,
+				  "acc":700,
+				  "dec":650
+				  },
+				  "engineSlots":[
+                {"id":"ES1",
+                "loc":[-3, 0],
+					"style":"CUSTOM",
+                    "styleSpec":{
+                        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+                        "engineColor":[255,145,75,255],
+                        "contrailDuration":.5,
+                        "contrailWidthMult":2,
+                        "contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+                        "contrailMinSeg":15, # min segment length, in pixels
+                        "contrailMaxSpeedMult":.0f,
+                        "contrailAngularVelocityMult":0.5f,
+                        "contrailSpawnDistMult":.5, # how far away from engine it starts
+                        "contrailColor":[100,100,100,150],
+                        "type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+                    },
+					"width":4.0,
+                    "length":20.0,
+                    "angle":180.0
+					}]								  
+}

@@ -1,0 +1,20 @@
+{
+	
+	"ranks":{
+		##Governs the Planet,Task Forces and Handles Corvid Outer Ops.
+		"cer_grandadmiral":{"name":"Grand Admiral"},
+		#handles Corvid Production, special projects and D-mod Services.
+		"cer_chiefengineering":{"name":"Grand Chief Engineer"},
+		#Handles Corvid Inner Ops and Early Game Missions.
+		"cer_assistengineering":{"name":"Assistant Chief Engineer"},
+	},
+	
+	"posts":{
+		#Governs the Planet,Task Forces and Handles Corvid Outer Ops.
+		"cer_grandadmiral":{"name":"Grand Admiral"},
+		#handles Corvid Production, special projects and D-mod Services.
+		"cer_chiefengineering":{"name":"Grand Chief Engineer"},
+		#Handles Corvid Inner Ops and Early Game Missions.
+		"cer_assistengineering":{"name":"Assistant Chief Engineer"},
+	},
+}

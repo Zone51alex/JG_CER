@@ -1,0 +1,15 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+diableavionics_arbitrator_wing,diableavionics_arbitrator_standard,"arbitrator,interceptor2, interceptor, high, diable_ship_bp",0,,5,6,CLAW,6000,250,-200,3,INTERCEPTOR,Rapid Interception,10,6000,,,,,,,,,,,,,7
+diableavionics_arbitratorZ_wing,diableavionics_arbitratorZ_rocketeer,"arbitrator, bomber4, bomber, high, diable_ship_bp",1,,6,12,BOX,4000,2000,300,3,BOMBER,Rocketeer,15,11000,,,,,,,,,,,,,7
+diable_arbitratorZ_banish_wing,diable_arbitratorZ_torpedo,"arbitrator, bomber5, bomber, high, diable_ship_bp, diable_cer_bp, dev_cer_bp",1,,6,16,BOX,4000,2000,300,2,BOMBER,Rocketeer,15,11000,,,,,,,,,,,,,7
+diable_arbitratorX_wing,diable_arbitratorX_standard,"restricted, arbitrator, no_drop, no_sell, fighter, high, dev_cer_bp",0,0,5,6,CLAW,6000,250,-200,3,INTERCEPTOR,Supression,10,6000,,,,,,,,,,,,,7
+diable_crow_wing,diable_crow_Standard,"restricted, wanzer, dev_cer_bp, rd_no_extra_craft",3,,12,28,BOX,4000,500,-200,1,FIGHTER,Heavy Trooper Energy,20,13000,,,,,,,,,,,,,1
+diable_knight_wing,diable_knight_Standard,"wanzer, fighter3, fighter, high, diable_cer_bp, dev_cer_bp, rd_no_extra_craft",2,,6,18,BOX,4000,500,-200,1,FIGHTER,Sniper Bodyguard,20,12000,,,,,,,,,,,,,5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+diable_crow_wing_independent,diable_crow_Standard,"restricted, independent_of_carrier,wanzer , auto_fighter, no_drop, no_sell, fighter4, fighter, high, rd_no_extra_craft",4,2,12,1,BOX,4000,500,,1,FIGHTER,Heavy Trooper Energy,20,13000,,,,,,,,,,,,,1
+diable_knight_wing_independent,diable_knight_Standard,"restricted, independent_of_carrier, wanzer, auto_fighter, no_drop, no_sell, fighter3, fighter, high, rd_no_extra_craft",4,2,6,1,BOX,1000,500,,1,SUPPORT,Sniper Warrior,17,12000,,,,,,,,,,,,,5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Drones,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+diable_mite_drone_wing,diable_mite_drone_standard,"no_drop, no_sell, high",2,,0,1,V,500,500,,3,SUPPORT,Multitool Drone,5,1500,,,,,,,,,,,,,5
+diable_warlust_wing,diableavionics_warlust_drone_variant,"no_drop, no_sell, high",2,,4,0,V,2000,500,300,3,SUPPORT,PD Drone,5,1500,,,,,,,,,,,,,18

@@ -1,0 +1,33 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME,,,,,,
+,,,,,,
+# Corvid Fleets,,,,,,
+greetingCorvidEngineeringFriendly,OpenCommLink,"$faction.id == da_cer
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Stalking the same prey, buddy? Try not to get hit in a crossfire.""
+OR
+""Well if it isn't a green blip for once. Almost a shame that.""",,
+greetingCorvidEngineeringHostileWeaker,OpenCommLink,"$faction.id == da_cer
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""How about you find yourself a proper fight, eh buddy?""
+OR
+""How about a little race? Think you can beat Legio tuning?""",cutCommLink:Cut the comm link,
+greetingCorvidEngineeringHostileWeakerDefiant,OpenCommLink,"$faction.id == da_cer
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"""Bet you think you're so though. Let's see how you feel once your frozen corpse is floating out in the void.""
+OR
+""You thought I'd run? I don't need much of a fleet to clean up with punks like you.""",cutCommLink:Cut the comm link,
+greetingCorvidEngineeringHostileStronger,OpenCommLink,"$faction.id == da_cer
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""Oh look, the food is talking!""
+OR
+""Hoping to beg for your life? Don't make me laugh, shithead!""",cutCommLink:Cut the comm link,
+greetingCorvidEngineeringNeutral,OpenCommLink,"$faction.id == da_cer
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""How'd someone like you make it onto the don't kill on sight list? Whatever.""
+OR
+""Can't stand it when the bosses tell me not to shoot someone. Go fuck off.""",,
+,,,,,,
+#Onuo Contacts,,,,,,
+,,,,,,

@@ -1,0 +1,39 @@
+{
+  "displayName": "7th gen+ Wanzer",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "diable_knight",
+  "hullMods": [
+    "diableavionics_wanzer",
+    "autorepair"
+  ],
+  "variantId": "diable_knight_Standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+            "RIGHT": "diable_knightgun",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+            "LEFT": "diable_knightarm",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+            "WS_HEAD": "diable_knighthead"
+}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ]
+}

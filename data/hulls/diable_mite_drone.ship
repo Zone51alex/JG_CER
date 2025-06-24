@@ -1,0 +1,57 @@
+{
+    "hullName": "Mite",
+    "hullId": "diable_mite_drone",
+    "hullSize": "FIGHTER",
+    "style": "DA_WANZER",
+    "spriteName": "graphics/jg/ships/Minning/diableavionics_mite_drone.png",
+    "height": 30,
+    "width": 18,
+    "center": [
+        9, 12
+    ],
+    "collisionRadius": 20.5,
+    "coversColor": "",
+    "shieldCenter": [
+        3, 0
+    ],
+    "shieldRadius": 17,
+    "viewOffset": 0,
+    "builtInWeapons": {
+        "WS0000": "diable_mitelaser"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS0000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "renderOrderMod": 1000,
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                     8.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -10, 0
+            ],
+            "length": 21.5,
+            "width": 9,
+            "angle": 180,
+            "contrailSize": 9,
+            "style": "DiableAvionicsMissileNoTrail"
+        }
+    ],
+    "bounds": [
+              16,        1,
+              -1,        8,
+             -11,        0,
+              -1,       -8,
+              16,       -1
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "diable_crowleft",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "data.scripts.weapons.Diableavionics_fastBurstsEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "displayArcRadius": 600,
+  "turretSprite": "graphics/jg/ships/raven/diableavionics_crowleftarm.png",
+  "turretGlowSprite": "graphics/jg/ships/raven/diableavionics_crowleftbarrel.png",
+  "hardpointSprite": "",
+  "turretOffsets": [
+    23.5,
+    4.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    20,
+    3.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+    "fringeColor":[25,55,200,50],
+	"coreColor":[255,125,225,200],
+	"glowColor":[200,100,160,200],
+	"hitGlowRadius": 0,
+  "darkCore": true,
+  "width": 22,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 128,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ]
+}

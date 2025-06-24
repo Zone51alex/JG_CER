@@ -1,0 +1,36 @@
+{
+    "displayName": "Hunter",
+    "fluxCapacitors": 1,
+    "fluxVents": 17,
+    "goalVariant": true,
+    "hullId": "diableavionics_derecho",
+    "hullMods": ["efficiency_overhaul"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "diableavionics_derecho_hunter",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "diableavionics_srab"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "diableavionics_recson2"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_ibis",
+                "WS0004": "diableavionics_ibis"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "diableavionics_burchel"}
+        }
+    ]
+}

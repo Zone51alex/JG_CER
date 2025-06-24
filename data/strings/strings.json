@@ -1,0 +1,60 @@
+{
+	"diableavionics":{
+                "%":"%",
+                "OP":"OP",
+				"+":"+",
+				"-":"-",
+                "su":"su",
+				"sups":"su/s",
+				"s":"seconds",
+				"fps":"f/s",
+				"f":"flux",
+				"supplies":"supplies",
+				"pts":"points",
+				"percent":"percent",
+				"ON" : "ON",
+				"OFF" : "OFF",
+				
+				"cer_DiableCorp":"Diable Umbrella Group",
+				"cer_capital":"Crow's Nest",
+				
+				"slash":"SLASH!",
+				"gunKata":"Dispaching hostiles",
+				"assumeControl":"Improved fighter performances",
+				"berserker":"Berserker level",
+				"booster":" top speed",
+				"damper0":"Inertia Dampened",
+				"damper1":"Incoming damage reduced by ",
+				"transit1":"Top speed increased by ",
+				"transit2":"Top speed increased by ",
+				"transit3":"Damage taken reduced by ",
+				
+				"EX_impthrusters":"Auxiliary Thrusters",
+				"EX_nitro_1":"Stabilized Shields",
+				"EX_nitro_2":"Unstable Injector",
+				"jg_persudophase":"Phase Hullmods",
+				
+                "hm_warning":"WARNING",
+                "hm_noBays":"This ship does not have standard fighter bays.",
+				"hm_builtin":"This ship is already equipped with this hullmod.",
+				
+				"grandFN":"Admiral",
+				"grandLN":"Y11",
+				"grandFleet":"Pina Colada Task Force",
+				"grandShip":"CESN Starbound",
+
+                "hm_gantry_101":"one additional strikecraft",
+                "hm_gantry_102":"Effect:",
+                "hm_gantry_103":"No fighter complement.",
+                "hm_gantry_104":"No compatible wing installed.",
+                "hm_gantry_105":"The following wings get one extra strikecraft:",
+                "hm_gantry_105hl":"one extra strikecraft",
+				"hm_gantry_s02": "B-DECK",
+				"hm_gantry_s02_standby":"ON STANDBY",
+				"hm_gantry_s02_active":"OPERATIONAL",
+				
+				"jg_salwingcon1":"",
+				"jg_salwingcon2":"Hullmod's Fighter Engagement Range Supressed",
+				
+        },
+}

@@ -1,0 +1,37 @@
+{
+  "id": "diable_knightarm",
+  "specClass":"projectile",
+  "type":"MISSILE",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/jg/ships/knight/diableavionics_knight_reioi.png",
+  "hardpointSprite": "",
+  "turretOffsets": [
+    21,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    10,
+    0
+  ],
+  "hardpointAngleOffsets": [   
+    0
+  ],
+ "barrelMode":"LINKED",
+	"animationType":"SMOKE",
+	"smokeSpec":{"particleSizeMin":10.0,
+				 "particleSizeRange":14.0,
+				 "cloudParticleCount":2,
+				 "cloudDuration":1.4,
+				 "cloudRadius":11.0;
+				 "blowbackParticleCount":3,
+				 "blowbackDuration":0.33,
+				 "blowbackLength":33.0,
+				 "blowbackSpread":33.0,
+				 "particleColor":[190,180,160,95]},
+	"autocharge":true,
+	"projectileSpecId":"diableavionics_ragemissile",
+	"fireSoundTwo":"diableavionics_magic_firing",
+}

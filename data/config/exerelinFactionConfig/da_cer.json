@@ -1,0 +1,84 @@
+{
+    "playableFaction": true,
+    "startingFaction": true,
+    "corvusCompatible": true,
+    "freeStart": true,
+    "spawnAsFactionId": "player",
+    "ngcTooltip": "Start as a Merc Aligned to Corvid Engineering & Recovery",
+
+    "startRelationships": {
+        "independent": 0.5,
+        "remnant": 0.1,
+        "uaf": 0.9,
+        "hegemony": -0.1,
+		"ironshell": -0.1,
+        "tritachyon": -1.0,
+        "ORA": 0.6,
+        "mayasura": 0.6,
+        "scalartech": 0.75,
+        "persean": 0.6,
+        "pirates": -1.0,
+        "sindrian_diktat": -0.2,
+        "batavia": 0.7,
+        "diableavionics": -1.0,
+        "SCY": 0.5,
+		"sotf_dustkeepers": 0.5,
+        "default": 0.2
+    },
+
+    "startShipsSolo": [
+        ["diableavionics_sleet_standard"],
+        ["diableavionics_draft_standard"]
+    ],
+
+    "startShipsCombatSmall": [
+        ["diableavionics_calm_mixed", "diableavionics_draft_support", "diableavionics_draft_support"],
+        ["diableavionics_hayle_combat", "diableavionics_vapor_standard", "diableavionics_sleet_standard"],
+        ["diableavionics_coanda_support", "diableavionics_hayle_combat"]
+    ],
+
+    "startShipsCombatLarge": [
+        ["diableavionics_haze_standard", "diableavionics_coanda_standard", "diableavionics_draft_assault"],
+        ["diableavionics_daze_standard", "diableavionics_hayle_combat", "diableavionics_vapor_attack"],
+        ["diableavionics_gust_missile", "diableavionics_miniGust_support", "diableavionics_sleet_standard"]
+    ],
+
+    "startShipsTradeSmall": [
+        ["diableavionics_stratus_standard", "diableavionics_draft_support", "diableavionics_laminar_miner"]
+    ],
+
+    "startShipsTradeLarge": [
+        ["diableavionics_rime_breach", "diableavionics_calm_mixed", "diableavionics_versant_assault"]
+    ],
+
+    "startShipsCarrierSmall": [
+        ["diableavionics_fractus_standard", "diableavionics_vapor_standard", "diableavionics_vapor_standard"]
+    ],
+
+    "startShipsCarrierLarge": [
+        ["diableavionics_storm_standard", "diableavionics_derecho_kite", "diableavionics_draft_standard"]
+    ],
+
+    "startShipsSuper": [
+        ["diableavionics_versant_standard", "diableavionics_stratus_standard"],
+        ["diableavionics_virtuous_carbine", "diableavionics_stratus_standard"],
+        ["diable_versant_EX_Flagship", "diable_vapor_cer_Close_Quarter", "diable_vapor_cer_Close_Quarter", "diableavionics_rime_standard"],
+        ["diable_calm_EX_Flagship", "diableavionics_stratus_standard"],
+        ["diable_daze_EX_Flagship", "diableavionics_rime_standard"],
+        ["diable_vapor_EX_Flagship", "diable_vapor_cer_Close_Quarter", "diable_vapor_cer_Close_Quarter", "diableavionics_rime_standard"],
+        ["diable_gust_EX_Flagship", "diableavionics_rime_standard"],
+		["diable_pandemonium_EX_Flagship", "diableavionics_rime_standard"],
+		["diable_goblin_EX_Flagship", "diable_vapor_cer_Close_Quarter", "diable_vapor_cer_Close_Quarter", "diableavionics_rime_standard"],
+	],
+			
+    "startSpecialItems": [
+        [["diableavionics_ship_package", ""]],
+        [["diableavionics_weapon_package", ""]],
+        [["diableavionics_wanzer_package", ""]],
+		[["diable_cer_package", ""]],
+    ],
+	
+	"defenceStations":[
+        {"ids":["diableavionics_orbitalstation", "diableavionics_battlestation", "diableavionics_starfortress"]},
+    ],
+}

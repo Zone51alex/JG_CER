@@ -1,0 +1,54 @@
+{
+  "id": "diable_plow",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_plover",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/jg/weapons/diableavionics_plow_turret.png",
+  "hardpointSprite": "graphics/jg/weapons/diableavionics_plow_hardpoint.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES_UNLESS_HIDDEN
+  ],
+  "turretOffsets": [
+    8,
+    2.5,
+    8,
+    -2.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    12,
+    2.5,
+    12,
+    -2.5
+  ],
+  "hardpointAngleOffsets": [
+    -0.75,
+    -0.25
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "interruptibleBurst":false,
+  "smokeSpec": {
+    "particleSizeMin": 20,
+    "particleSizeRange": 14,
+    "cloudParticleCount": 1,
+    "cloudDuration": 1.3,
+    "cloudRadius": 14,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 0.45,
+    "blowbackLength": 20,
+    "blowbackSpread": 6,
+    "particleColor": [
+      190,
+      180,
+      160,
+      95
+    ]
+  },
+  "fireSoundTwo": "diableavionics_plover_fire"
+}

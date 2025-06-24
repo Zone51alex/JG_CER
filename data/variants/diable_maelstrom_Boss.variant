@@ -1,0 +1,94 @@
+{
+    "displayName": "Super Vanguard",
+    "fluxCapacitors": 32,
+    "fluxVents": 50,
+    "hullId": "diableavionics_maelstrom",
+    "hullMods": [
+        "fluxdistributor",
+    ],
+    "permaMods": [
+        "armoredweapons",
+        "hardenedshieldemitter",
+        "targetingunit",
+		"diableavionics_universaldecksExtra",
+		"diableavionics_mountBI",
+		
+    ],
+    "sMods": [
+        "armoredweapons",
+        "hardenedshieldemitter",
+        "targetingunit",
+		"diableavionics_mountBI",
+		"diableavionics_universaldecksExtra",
+    ],
+    "suppressedMods": [],
+    "variantId": "diable_maelstrom_Boss",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0014": "diableavionics_banishsmall",
+                "WS0016": "diableavionics_banishsmall",
+                "WS0015": "diableavionics_banishsmall",
+                "WS0017": "diableavionics_banishsmall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_microarray",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diable_recson3",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diable_mostro2",
+                "WS0005": "diable_mostro2",
+                "WS0004": "diable_mostro2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "diableavionics_ibis",
+                "WS0013": "diableavionics_ibis",
+                "WS0010": "diableavionics_ibis",
+                "WS0009": "diableavionics_ibis",
+                "WS0008": "diableavionics_ibis",
+                "WS0007": "diableavionics_ibis",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0023": "diableavionics_burchel",
+                "WS0022": "diableavionics_burchel",
+                "WS0024": "diableavionics_burchel",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "diableavionics_lazyhorn",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_raven_wing",
+        "diableavionics_raven_wing",
+    ],
+    "modules": [],
+}

@@ -1,0 +1,42 @@
+{
+  "id": "diable_crowright",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "data.scripts.weapons.Diableavionics_state2Effect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "displayArcRadius": 600,
+  "turretSprite": "graphics/jg/ships/raven/diableavionics_crowrightarm.png",
+  "turretGlowSprite": "graphics/jg/ships/raven/diableavionics_crowrightbarrel.png",
+  "hardpointSprite": "",
+  "glowColor": [200,100,160,200],
+  "hitGlowRadius": 1,
+  "turretOffsets": [
+    27.5,
+    -5.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    30,
+    5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [25,55,200,50],
+  "coreColor": [255,125,225,200],
+  "width": 10,
+  "textureType": WEAVE,
+  "textureScrollSpeed": 16,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "diableavionics_state_firing",
+  "fireSoundTwo": "diableavionics_state_loop"
+}

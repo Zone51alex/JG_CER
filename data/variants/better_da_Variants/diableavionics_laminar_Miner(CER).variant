@@ -1,0 +1,27 @@
+{
+    "displayName": "Miner(CER)",
+    "fluxCapacitors": 3,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "diableavionics_laminar",
+    "hullMods": [
+        "unstable_injector",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_laminar_Miner(CER)",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_burchel",
+                "WS0003": "mininglaser",
+                "WS0002": "mininglaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

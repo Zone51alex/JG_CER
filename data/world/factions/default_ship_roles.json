@@ -1,0 +1,152 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+           
+	},
+	"combatSmall":{
+            "diable_vapor_cer_Attack":1,
+            "diable_vapor_cer_Standard":1,
+            "diable_vapor_cer_Close_Quarter":1,
+            "diable_vapor_cer_Brawler":1,
+
+            "diable_versant_cer_Assault":1,
+            "diable_versant_cer_Escort":1,
+            "diable_versant_cer_Standard":1,
+	},
+	"combatMedium":{
+
+            "diable_miniGust_cer_Assault":1,	
+            "diable_miniGust_cer_Energy":1,	
+            "diable_miniGust_cer_Support":1,	
+            "diable_miniGust_cer_Standard":1,	
+			
+            "diable_fractalus_Assault":1,
+            "diable_fractalus_Support":1,
+            "diable_fractalus_E.Support":1,
+			"diable_fractalus_Energy":1,
+
+	},
+	"combatLarge":{
+
+            "diable_gust_cer_Assault":1,	
+            "diable_gust_cer_Sentinel":1,
+            "diable_gust_cer_Standard":1,	
+            "diable_gust_cer_Missile":1,
+
+            "diable_rime_m_cer_Support":1,
+            "diable_rime_m_cer_Standard":1,
+            "diable_rime_m_cer_Assault":1,
+            "diable_rime_m_cer_Advanced":1,
+
+	},
+	"combatCapital":{
+
+            "diable_chieftain_Standard":1,			
+            "diable_chieftain_Support":1,			
+            "diable_chieftain_DAKKA":1,		
+            "diable_chieftain_Junk":1,	
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+		
+	},
+	"combatFreighterMedium":{
+		
+	},
+	"combatFreighterLarge":{
+           
+	},
+	
+	"civilianRandom":{
+            
+	},
+
+	# carriers
+	"carrierSmall":{
+            "diable_fractus_cer_Bomber":1,
+            "diable_fractus_cer_Attack":1,
+            "diable_fractus_cer_Escort":1,
+            "diable_fractus_cer_Standard":1,
+            "diable_fractus_cer_antiFighter":1,
+	},
+	"carrierMedium":{	
+           
+	},
+	"carrierLarge":{
+            
+	
+	},
+
+	# phase ships
+	"phaseSmall":{
+		"diable_brisk_cer_Standard":1,
+		"diable_brisk_cer_Energy":1,
+	},
+	"phaseMedium":{
+		"diable_coanda_cer_Standard":1,
+		"diable_coanda_cer_Energy":1,
+	},
+	"phaseLarge":{
+	},
+	"phaseCapital":{
+	},
+
+	# freighters and such
+	"freighterSmall":{
+	},
+	"freighterMedium":{
+            
+	},
+	"freighterLarge":{
+            
+	},
+	
+	"tankerSmall":{
+	},
+	"tankerMedium":{
+            
+	},
+	"tankerLarge":{
+	},
+	
+	"personnelSmall":{
+	},
+	"personnelMedium":{
+            
+	},
+	"personnelLarge":{
+	},
+	
+	"linerSmall":{
+	},
+	"linerMedium":{
+            
+	},
+	"linerLarge":{
+	},
+	
+	# utility ships
+	"tug":{
+            
+	},
+	"crig":{
+            
+		
+	},
+	"utility":{
+            
+			"diable_chieftain_Standard":1,			
+            "diable_chieftain_Support":1,			
+            "diable_chieftain_DAKKA":1,		
+            "diable_chieftain_Junk":1,
+	},
+	
+	"orbitalStationLowTech":{
+	},
+	
+	"battlestationLowTech":{
+	},
+}

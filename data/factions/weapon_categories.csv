@@ -1,0 +1,5 @@
+name,id,builtin,size,type,tier,OPs,limitedAmmo,lowFlux,separateFire,frontOnly,turretOnly,damageType,attack,standoff,alpha,defense,closeRange,longRange,disable,techType,leetness,pirates,hegemony,sindrian_diktat,lions_guard,independent,scavengers,tritachyon,luddic_path,luddic_church,knights_of_ludd,persean,derelict,remnant,cabal,interstellarimperium,citadeldefenders,blackrock_driveyards,exipirated,exigency,shadow_industry,mayorate,templars,junk_pirates,pack,syndicate_asp,SCY,tiandong,diableavionics,ORA,Coalition,domain,sector,everything
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mostro Twin Cannon,diableavionics_mostro_medium,FALSE,medium,ballistic,,,,,,,,HIGH_EXPLOSIVE,TRUE,,TRUE,,,,,DIABLE,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,,,,10
+Glowtusk 'Nail' Compact Rifle,diableavionics_glownail,FALSE,small,ballistic,,,,,,,,HIGH_EXPLOSIVE,TRUE,,TRUE,,,,,DIABLE,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,,,,10
+Buckshot Blunderbuss,diableavionics_buckshot,FALSE,small,ballistic,,,,,,,,HIGH_EXPLOSIVE,TRUE,,TRUE,,,,,DIABLE,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

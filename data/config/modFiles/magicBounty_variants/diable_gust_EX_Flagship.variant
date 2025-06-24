@@ -1,0 +1,64 @@
+{
+    "displayName": "Flagship",
+    "fluxCapacitors": 13,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "diable_gust_EX",
+    "hullMods": [
+        "fluxbreakers",
+        "hardenedshieldemitter",
+        "jg_salvagewingcon",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_gust_EX_Flagship",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diableavionics_banishsmall",
+                "WS0004": "diableavionics_banishsmall",
+                "WS0005": "diableavionics_banishsmall",
+                "WS0006": "diableavionics_banishsmall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diable_recson3",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diable_mostro2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "diableavionics_ibis",
+                "WS0014": "diableavionics_ibis",
+                "WS0015": "diableavionics_ibis",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "diableavionics_burchel",
+                "WS0009": "diableavionics_burchel",
+                "WS0008": "diableavionics_burchel",
+                "WS0007": "diableavionics_burchel",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

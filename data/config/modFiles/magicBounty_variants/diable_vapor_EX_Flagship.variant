@@ -1,0 +1,35 @@
+{
+    "displayName": "Flagship",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "diable_vapor_EX",
+    "hullMods": [
+        "fluxbreakers",
+        "hardenedshieldemitter",
+    ],
+    "permaMods": [
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_vapor_EX_Flagship",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diableavionics_banishsmall",
+                "WS0004": "diableavionics_banishsmall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diable_raycast",
+                "WS0002": "diable_raycast",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,37 @@
+{
+    "displayName": "9th gen+ Wanzer",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "diable_crow",
+    "hullMods": [
+        "diableavionics_wanzer",
+        "autorepair",
+        "turretgyros"
+    ],
+    "quality": 0.0,
+    "variantId": "diable_crow_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diable_crowleft"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diable_crowright"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_ravenhead"
+            }
+        }
+    ]
+}

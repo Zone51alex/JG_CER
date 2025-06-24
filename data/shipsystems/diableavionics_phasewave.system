@@ -1,0 +1,51 @@
+{
+	"id":"diableavionics_phasewave",
+	"type":"PHASE_CLOAK",
+	"aiType":"PHASE_CLOAK",
+	
+	"statsScript":"data.scripts.shipsystems.diableavionics_DamperPhaseStats",
+	"runScriptWhilePaused":true, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	"blockActionsWhileChargingDown":false,
+	
+	"canNotCauseOverload":true,
+	
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
+	
+	"jitterUnderColor": [ 90,255,165,155 ],
+    "jitterUnderCopies": 5,
+    "jitterUnderMinRange": 2,
+    "jitterUnderRange": 7,
+    "jitterUnderRangeRadiusFraction": 0,
+	
+	"effectColor1":[90,255,165,155],
+	"effectColor2":[90,0,165,155],
+	
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	
+	"engineGlowColor":[100,165,255,125],
+	"engineGlowContrailColor":[100,165,255,50],
+	"engineGlowLengthMult":2,
+	"engineGlowWidthMult":1.5,
+	"engineGlowGlowMult":2,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.8,
+	"soundFilterGainHF":0.25,
+	
+	"shipAlpha":1, # handled in stats script
+	#"shipAlpha":0.25,
+	
+	"useSound":"diableavionics_damperwave",
+	#"deactivateSound":"system_phase_cloak_deactivate",
+	"deactivateSound":"system_phase_cloak_deactivate",
+	"outOfUsesSound":"system_phase_cloak_collision",
+	
+	"aiHints": {
+    "averageSpeedIncrease": 300,
+    "activeSpeedIncrease": 200,
+    "burstMovementPotential": 300,
+  },
+}

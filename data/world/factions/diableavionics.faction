@@ -1,0 +1,99 @@
+{
+    id:"diableavionics",
+
+# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{"diable_ship_bp":1,"diable_cer_bp":1
+		},
+		"hulls":{
+			
+            "diable_miniGust_cer":0.25,
+            "diable_gust_cer":0.25,
+			
+            "diable_vapor_cer":0.50,
+            "diable_rime_m_cer":0.12,
+			"diable_fractus_cer":0.50,
+			"diable_fractalus":0.25,
+			"diable_chieftain":0.10,
+			
+		},
+	},
+
+"shipsWhenImporting":{
+        "tags":["base_bp","diable_ship_bp","diable_cer_bp"],
+        "hulls":[
+            "diable_miniGust_cer",
+            "diable_gust_cer",
+			
+			"diable_vapor_cer",
+			"diable_rime_m_cer",
+			"diable_fractus_cer",
+			"diable_fractalus",
+			"diable_chieftain",
+        ],
+    },
+
+    "knownShips":{
+        "tags":["diable_ship_bp","diable_cer_bp"],
+        "hulls":[
+            "diable_miniGust_cer",
+            "diable_gust_cer",
+			
+			"diable_vapor_cer",
+			"diable_rime_m_cer",
+			"diable_fractus_cer",
+			"diable_fractalus",
+			"diable_chieftain_EX",
+        ],
+    },
+
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "tags":["diable_ship_bp","diable_cer_bp"],
+        "hulls":[
+            "diable_miniGust_cer",
+            "diable_gust_cer",
+			
+			"diable_vapor_cer",
+			"diable_rime_m_cer",
+			"diable_fractus_cer",
+			"diable_fractalus",
+			"diable_chieftain",
+        ],
+    },
+
+    "knownFighters":{
+        "tags":[
+            
+			"diable_jg_bp","diable_cer_bp"
+            ],
+        "fighters":[
+            "diable_knight_wing",
+            
+        ],
+    },
+
+    "knownWeapons":{
+        "tags":[
+			"diable_jg_bp","diable_cer_bp"
+            ],
+        "weapons":[
+			"diable_mostro2",
+			"diable_buckshot",
+			"diable_glownail",
+			"diable_diurne",
+			"diable_plow",
+			"diable_gravemac",
+			"diable_urn2",
+			"diable_urn",
+			"diable_reioibox"
+        ],
+    },
+	
+	"knownHullMods":{
+		"tags":["base_bp", "tritachyon"],
+		"hullMods":[
+			"jg_salvagewingcon",
+		],
+	},
+}

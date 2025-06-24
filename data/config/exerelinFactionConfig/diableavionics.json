@@ -1,0 +1,11 @@
+{
+    "startShipsSuper":[
+        ["diable_versant_EX_Flagship", "diable_vapor_cer_Close_Quarter", "diable_vapor_cer_Close_Quarter", "diableavionics_rime_standard"],
+        ["diable_calm_EX_Flagship", "diableavionics_stratus_standard"],
+        ["diable_daze_EX_Flagship", "diableavionics_rime_standard"],
+        ["diable_vapor_EX_Flagship", "diable_vapor_cer_Close_Quarter", "diable_vapor_cer_Close_Quarter", "diableavionics_rime_standard"],
+        ["diable_gust_EX_Flagship", "diableavionics_rime_standard"],
+		["diable_pandemonium_EX_Flagship", "diableavionics_rime_standard"],
+		["diable_goblin_EX_Flagship", "diable_vapor_cer_Close_Quarter", "diable_vapor_cer_Close_Quarter", "diableavionics_rime_standard"],
+    ],
+}

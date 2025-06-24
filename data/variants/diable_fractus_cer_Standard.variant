@@ -1,0 +1,51 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 2,
+    "fluxVents": 17,
+    "goalVariant": true,
+    "hullId": "diable_fractus_cer",
+    "hullMods": [
+        "expanded_deck_crew",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_fractus_cer_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_banish",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0006": "diableavionics_micromissile",
+                "WS0001": "diableavionics_micromissile",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "diable_gravemac",
+                "WS0003": "diable_gravemac",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_arbitrator_wing",
+        "diableavionics_arbitrator_wing",
+    ],
+    "modules": [],
+}

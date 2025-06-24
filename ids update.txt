@@ -1,0 +1,71 @@
+-Ships-
+
+diableavionics_chieftain_EX > diable_chieftain
+diableavionics_miniGust_j > diable_miniGust_cer
+diableavionics_gust_j > diable_gust_cer
+diableavionics_versant_j > diable_versant_cer
+diableavionics_vapor_j > diable_vapor_cer
+diableavionics_rime_m_j > diable_rime_m_cer
+diableavionics_fractus_j > diable_fractus_cer
+diableavionics_fractalus > diable_fractalus
+diableavionics_brisk_j > diable_brisk_cer
+diableavionics_coanda_j > diable_coanda_cer
+diableavionics_storm_cer > diable_storm_cer
+
+-EX Ships-
+
+diableavionics_versant_EX > diable_versant_EX
+diableavionics_gust_EX > diable_gust_EX
+diableavionics_calm_EX > diable_calm_EX
+diableavionics_vapor_EX > diable_vapor_EX
+diableavionics_daze_EX > diable_daze_EX
+diableavionics_storm_EX > diable_storm_EX
+diableavionics_superrime_EX > diable_superrime_EX
+diableavionics_chieftain_EX2 > diable_chieftain_EX
+
+-Fighters-
+
+diableavionics_arbitratorX > diable_arbitratorX
+diableavionics_crow > diable_crow
+diableavionics_knight > diable_knight
+diableavionics_mite_drone > diable_mite_drone
+
+-weapons-
+diableavionics_recson3 > diable_recson3
+diableavionics_mostro_medium > diable_mostro2
+diableavionics_buckshot > diable_buckshot
+diableavionics_glownail > diable_glownail
+diableavionics_diurne > diable_diurne
+diableavionics_plow > diable_plow
+diableavionics_gravemac > diable_gravemac
+diableavionics_urn2 > diable_urn2
+diableavionics_urn > diable_urn
+diableavionics_reioibox > diable_reioibox
+
+-built-in weapons-
+
+diableavionics_heemeyer > diable_heemeyer
+diableavionics_raycast2 > diable_raycast2
+diableavionics_raycast > diable_raycast
+
+-fighter weapons-
+
+diableavionics_arbitratorgravedual > diable_arbitgravedual
+diableavionics_arbitratorartpistol > diable_arbitartpistol
+diableavionics_crowright > diable_crowright
+diableavionics_crowleft > diable_crowleft
+diableavionics_crowtorso > diable_crowtorso
+diableavionics_knighthead > diable_knighthead
+diableavionics_knightarm > diable_knightarm
+diableavionics_knightgun > diable_knightgun
+diableavionics_knightpauldron > diable_knightpauldron
+diableavionics_knightmelee > diable_knightmelee
+diableavionics_mitelaser > diable_mitelaser
+
+-special items-
+diableavionics_jg_package > diable_cer_package, diable_cer_bp
+dev_jg_package > dev_cer_package, dev_cer_bp
+
+-wings-
+
+diableavionics_knight_wing > diable_knight_wing

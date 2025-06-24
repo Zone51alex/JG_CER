@@ -1,0 +1,13 @@
+{
+	"staticNames":{
+		"da_cer":{
+			"diableavionics":["Diable Umbrella Corporation"],
+			"player":["Diable Navy"],
+			
+		},
+		"diableavionics":{
+			"da_cer":["Diable Umbrella Corporation"],
+			
+		},
+	},
+}

@@ -1,0 +1,19 @@
+{
+    "displayName": "Drone",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "diable_mite_drone",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "diable_mite_drone_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0000": "diable_mitelaser"
+            }
+        }
+    ]
+}

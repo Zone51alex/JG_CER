@@ -1,0 +1,114 @@
+{
+    "hullName": "Knight",
+    "hullId": "diable_knight",
+    "hullSize": "FIGHTER",
+    "style": "DA_WANZER",
+    "spriteName": "graphics/jg/ships/knight/diableavionics_knight_body.png",
+    "height": 35,
+    "width": 42,
+    "center": [
+        21, 17
+    ],
+    "collisionRadius": 33.5,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 33.5,
+    "viewOffset": 0,
+    "builtInWeapons": {
+        "LEFT": "diable_knightarm",
+        "RIGHT": "diable_knightmelee",
+        "WS_HEAD": "diable_knighthead",
+        "PAULDRON": "diable_knightpauldron"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "PAULDRON",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 30,
+            "arc": 90,
+            "angle": 15,
+            "locations": [
+                       4,       17
+            ]
+        },
+        {
+            "id": "WS_HEAD",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 135,
+            "angle": 0,
+            "locations": [
+                       4,        0
+            ]
+        },
+        {
+            "id": "LEFT",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 15,
+            "locations": [
+                       4,       17
+            ]
+        },
+        {
+            "id": "RIGHT",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": -15,
+            "locations": [
+                       4,      -17
+            ]
+        },
+        {
+            "id": "DRONE",
+            "size": "SMALL",
+            "type": "SYSTEM",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 15,
+            "locations": [
+                       1,     17.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -16, 0
+            ],
+            "length": 7.5,
+            "width": 13,
+            "angle": -180,
+            "contrailSize": 13,
+            "style": "DiableAvionicsTrail"
+        }
+    ],
+    "bounds": [
+              15,        7,
+              10,       12,
+              12,     25.5,
+              -3,     25.5,
+              -1,       12,
+        
+           -11.5,        6,
+           -11.5,       -6,
+              -1,      -12,
+              -3,    -25.5,
+              12,    -25.5,
+        
+              10,      -12,
+              15,       -7
+    # 12 points total.
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"DiableCorp": true, #im not Really a good Java Coder at all, i need Guidence first.
+	
+	"graphics": {
+		
+	"characters":{
+	"falseadmiral5":"graphics/portraits/portrait_diktat16.png",
+	"cer_daxter":"graphics/portraits/portrait48.png",
+	"cer_faun":"graphics/portraits/portrait_pirate17.png",
+	"cer_grandadmiral":"graphics/portraits/portrait31.png",
+	"cer_grandfleet":"graphics/portraits/portrait_diktat16.png",
+	},
+	 "blueprint_packages":{
+		"diable_station_package":"graphics/jg/cargo/icon/diableavionics_Station_package.png",
+		"diable_cer_package":"graphics/da/icons/cargo/diableavionics_ship_package.png", 
+		"dev_cer_package":"graphics/da/icons/cargo/diableavionics_ship_package.png",
+		},
+	},
+}

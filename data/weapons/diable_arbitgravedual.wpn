@@ -1,0 +1,54 @@
+{
+  "id": "diable_arbitgravedual",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_grave_shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "displayArcRadius": 450,
+  "turretSprite": "graphics/jg/ships/arbitratorX/diableavionics_arbitratorx_Gravebac_base.png",
+  "turretGunSprite": "graphics/jg/ships/arbitratorX/diableavionics_arbitratorx_Gravebac_barrel.png",
+  "hardpointSprite": "graphics/jg/ships/arbitratorX/diableavionics_arbitratorx_Gravebac_base.png",
+  "hardpointGunSprite": "graphics/jg/ships/arbitratorX/diableavionics_arbitratorx_Gravebac_barrel.png",
+  "visualRecoil":6.0,  # the gun sprites are only used if this is non-0
+  "specialWeaponGlowHeight": 10,
+  "specialWeaponGlowWidth": 5,
+  "renderHints": [RENDER_BARREL_BELOW, "SUSPEND_RECOIL"],
+  "turretOffsets": [
+    16.5,
+    0,
+    15.5,
+    -3
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    27.5,
+    0,
+    26.5,
+    -3
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "separateRecoilForLinkedBarrels":"TRUE",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 34,
+    "spread": 10,
+    "particleSizeMin": 18,
+    "particleSizeRange": 24,
+    "particleDuration": 0.02,
+    "particleCount": 12,
+    "particleColor": [
+      199,
+      93,
+      76,
+      215
+    ]
+  },
+  "fireSoundTwo": "diableavionics_graveac_fire"
+}

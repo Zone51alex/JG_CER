@@ -1,0 +1,42 @@
+{
+	"specClass":"projectile",
+	"id":"diable_heemeyer",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/jg/weapons/diableavionics_bulldozer_turret_base.png",
+	"turretGlowSprite":"graphics/jg/weapons/diableavionics_bulldozer_turret_glow.png",
+	"hardpointSprite":"graphics/jg/weapons/diableavionics_bulldozer_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/jg/weapons/diableavionics_bulldozer_hardpoint_glow.png",	
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0		
+	"turretOffsets":[
+13, 6.5,
+13, -6.5,
+],
+	"turretAngleOffsets":[
+0,
+0
+],
+	"hardpointOffsets":[ 
+20, 4.5,
+20, -4.5,
+],
+	"hardpointAngleOffsets":[
+0,
+0
+],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":33.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":7.0,
+					   "particleSizeMin":15.0,
+					   "particleSizeRange":5.0,
+					   "particleDuration":0.1,
+					   "particleCount":7,
+					   "particleColor":[200,125,225,60]},
+	"autocharge":true,
+	"projectileSpecId":"diableavionics_bulldozer_shot",  # projectile that will be fired	
+	"fireSoundTwo":"diableavionics_harvest_firing"
+	
+}

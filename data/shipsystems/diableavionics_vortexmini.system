@@ -1,0 +1,32 @@
+{
+	"id":"diableavionics_vortexmini",
+	"type":"DRONE_LAUNCHER",
+	"aiType":"DRONE_LAUNCHER_PD",
+	
+	"droneVariant":"diableavionics_vortex_PD",
+	
+	"allowFreeRoam":true,
+	
+	"launchSpeed":25,
+	"launchDelay":0.5,
+	"maxDrones":1,
+	"droneBehavior":[
+		{"droneIndex":[0],
+		 "defaultFacing":"MATCH_SHIP_FACING",
+		 "faceEnemy":true,
+		 "holdRoamRange":0,
+		 "freeRoamRange":0,
+		 "targetPriority":[MISSILE, FIGHTER, SHIP],
+		 "initialOrbitAngle":5,
+		 "orbitRadius":12,
+		 "orbitDir":1,
+		 "orbitSpeed":0,
+		},
+        
+	],
+	"aiHints":{
+	},
+	
+	"useSound":"drone_launch",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

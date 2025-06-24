@@ -1,0 +1,13 @@
+{
+	"VersantCoreTrail":{
+		"engineColor":[195,107,210,120],
+		"contrailParticleSizeMult":10.90,
+		"contrailParticleDuration":0.12,
+		"contrailParticleFinalSizeMult":3.12,		
+		"contrailMaxSpeedMult":0.33,
+		"contrailAngularVelocityMult":0.33,
+		"contrailColor":[103,33,120,52],
+		"engineGlowGlowMult":1.45,
+		"type":"GLOW" # GLOW or SMOKE
+	},
+}	

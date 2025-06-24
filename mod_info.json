@@ -1,0 +1,37 @@
+{
+    "id":"da_CER",
+    "name":"Corvid Engineering & Recovery InDev",
+    "author":"Zone51,Damexius,Yukisuna,Rico - FlashFrozen,Tartiflette,caymon joestar",	
+    "version":
+    {
+        "major":0,
+        "minor":0,
+        "patch":1-InDev,
+    },
+    "description":"A Subsidary of Diable Avionics that was Absorbed before arrival to the persean Sector, it got Rebuilt after by Disgruntled Engineers Fed up with Diable's Incompetence to restore their might.",
+    "gameVersion": "0.98",
+    "dependencies": [
+        {
+            "id": "lw_lazylib",
+            "name": "LazyLib",
+            #"version": "2.6"
+        },
+        {
+            "id": "MagicLib",
+            "name": "MagicLib",
+            #"version": "2.6"
+        },
+		{
+            "id": "diableavionics",
+            "name": "Diable Avionics",
+            #"version": "2.7.6"
+        },
+		{
+            "id": "IndEvo",
+            "name": "Industrial.Evolution",
+            #"version": "2.7.6"
+        },
+    ],
+	"modPlugin": "data.scripts.da_cerModPlugin",
+	"jars":["jars/dummy.jar"],
+}

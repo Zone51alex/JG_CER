@@ -1,0 +1,28 @@
+{
+    "displayName": "Logistics(CER)",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "diableavionics_laminar",
+    "hullMods": [
+        "efficiency_overhaul",
+        "unstable_injector",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_laminar_Logistics(CER)",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_burchel",
+                "WS0003": "mininglaser",
+                "WS0002": "mininglaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

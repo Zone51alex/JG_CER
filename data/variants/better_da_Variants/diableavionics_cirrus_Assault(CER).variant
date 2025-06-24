@@ -1,0 +1,33 @@
+{
+    "displayName": "Assault(CER)",
+    "fluxCapacitors": 1,
+    "fluxVents": 11,
+    "goalVariant": false,
+    "hullId": "diableavionics_cirrus",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_cirrus_Assault(CER)",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_recson",
+                "WS0004": "diableavionics_recson",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_frost_wing",
+    ],
+    "modules": [],
+}
