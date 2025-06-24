@@ -38,6 +38,11 @@
                 "hm_noBays":"This ship does not have standard fighter bays.",
 				"hm_builtin":"This ship is already equipped with this hullmod.",
 				
+				"rm_selector_0":"Artdeux Gun mode",
+                "rm_selector_1":"Snowball Gun mode",
+                "rm_selector_2":"Anaconda Gun mode",
+                "rm_selector":"Remove this hullmod to switch between Gun Modes.",
+				
 				"grandFN":"Admiral",
 				"grandLN":"Y11",
 				"grandFleet":"Pina Colada Task Force",

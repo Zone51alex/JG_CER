@@ -51,3 +51,25 @@ Fire selector: SEMI-AUTO,diableavionics_selector_semi_EX,,,,no_build_in,,,,TRUE,
 %s has much better damage per shot and range, but worse sustained firepower and flux efficiency.
 
 %s",,,graphics/da/hullmods/diableavionics_selector_semi.png
+,,,,,,,,,,,,,,,,,,,
+#Roaring EX Hullmod,,,,,,,,,,,,,,,,,,,
+Roaring Frame,diableavionics_tuning_EX2,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.roaring.DATuningEX2,"The Roaring frame offers limited customization options in the form of Different Guns for its built-in SP66-6 Harvest guns using LPC Nanotech to change guns.
+
+%s: This ship is a masterfully fine-tuned machine of war that already operates with reduced margins and does not like getting tinkered with.
+
+Therefore it is impossible to install Hull-mods that increase components stress, such as %s.",,,graphics/da/hullmods/diableavionics_tuning.png
+Fire selector: Artdeux,diableavionics_selector_artdeux_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.roaring.DARoaringArtdeux,"The Roaring Guns can be changed from 3 HE weapons included in the System to better suit the captain's preferences.
+
+%s has better sustained firepower, but worse accuracy and range.
+
+%s",,,graphics/jg/hullmods/diableavionics_selector_artdeux.png
+Fire selector: Snowball,diableavionics_selector_snowball_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.roaring.DARoaringSnowball,"The Roaring Guns can be changed from 3 HE weapons included in the System to better suit the captain's preferences.
+
+%s has better accuracy and flux efficiency, but worse sustained firepower.
+
+%s",,,graphics/jg/hullmods/diableavionics_selector_snowball.png
+Fire selector: Anaconda,diableavionics_selector_cicada_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.roaring.DARoaringCicada,"The Roaring Guns can be changed from 3 HE weapons included in the System to better suit the captain's preferences.
+
+%s has much better damage per shot and range, but worse sustained firepower and flux efficiency.
+
+%s",,,graphics/jg/hullmods/diableavionics_selector_cicada.png

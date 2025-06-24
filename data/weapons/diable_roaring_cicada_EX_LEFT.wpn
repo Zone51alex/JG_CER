@@ -1,0 +1,51 @@
+{
+  "id": "diable_roaring_cicada_EX_LEFT",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_virtuousGrenade_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/jg/ships/roaring/diableavionics_Goblin_gunLeft3.png",
+  "hardpointSprite": "",
+  "specialWeaponGlowHeight": 15,
+  "specialWeaponGlowWidth": 10,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    36.5,
+    4.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    34,
+    4
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "SMOKE",
+  "interruptibleBurst": true,
+  "autocharge": true,
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 25,
+    "cloudParticleCount": 5,
+    "cloudDuration": 0.5,
+    "cloudRadius": 20,
+    "blowbackParticleCount": 8,
+    "blowbackDuration": 1.5,
+    "blowbackLength": -40,
+    "blowbackSpread": 6,
+    "particleColor": [
+      190,
+      180,
+      160,
+      30
+    ]
+  },
+  "fireSoundTwo": "diableavionics_virtuousGrenade_fire"
+}

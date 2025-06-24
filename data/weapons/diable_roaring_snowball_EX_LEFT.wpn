@@ -1,0 +1,87 @@
+{
+  "id": "diable_roaring_snowball_EX_LEFT",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_artdeux_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  #"everyFrameEffect": "data.scripts.weapons.Diableavionics_artassaultFire",
+  "displayArcRadius": 400,
+  "turretSprite": "graphics/jg/ships/roaring/diableavionics_Goblin_gunLeft2.png",
+  "hardpointSprite": "",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    36.5,
+    4.5,
+    36.5,
+    4.5,
+    36.5,
+    4.5,
+    36.5,
+    4.5,
+    36.5,
+    4.5,
+    36.5,
+    4.5,
+    36.5,
+    4.5,
+    36.5,
+    4.5
+  ],
+  "turretAngleOffsets": [
+    4,
+    3,
+    2,
+    1,
+    -1,
+    -2,
+    -3,
+    -4
+  ],
+  "hardpointOffsets": [
+    29,
+    0,
+    29,
+    0,
+    29,
+    0,
+    29,
+    0,
+    29,
+    0,
+    29,
+    0,
+    29,
+    0,
+    29,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    4,
+    3,
+    2,
+    1,
+    -1,
+    -2,
+    -3,
+    -4
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 34,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 50,
+    "particleDuration": 0.15,
+    "particleCount": 15,
+    "particleColor": [
+      250,
+      175,
+      76,
+      255
+    ]
+  },
+  "fireSoundTwo": "diableavionics_snowblast_fire"
+}

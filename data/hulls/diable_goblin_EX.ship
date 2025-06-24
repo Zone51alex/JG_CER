@@ -17,12 +17,13 @@
     "shieldRadius": 70,
     "viewOffset": 0,
     "builtInMods": [
-        "diableavionics_cramped"
+        "diableavionics_cramped",
+		"diableavionics_tuning_EX2",
     ],
     "builtInWeapons": {
-        "GUN_LEFT": "diable_Artassault_EX_LEFT",
-        "GUN_RIGHT": "diable_Artassault_EX_RIGHT",
-        "WS0000": "diable_roaring_EX",
+        #"GUN_LEFT": "diable_roaring_Artassault_EX_LEFT",
+        #"GUN_RIGHT": "diable_roaring_Artassault_EX_RIGHT",
+        "WS0000": "diable_gatling_roaring_EX",
         "WS 000": "diableavionics_itanolauncher_EX",
         "ENGINE_PANEL_LEFT": "diable_roaring_EX_shield_LEFT",
         "BARREL_LEFT": "diable_roaring_EX_barrel_LEFT",
