@@ -1,7 +1,7 @@
 {
     "displayName": "Assault",
     "fluxCapacitors": 20,
-    "fluxVents": 13,
+    "fluxVents": 9,
     "goalVariant": true,
     "hullId": "diable_fractalus",
     "hullMods": [
@@ -25,8 +25,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0001": "diableavionics_banishsmall",
-                "WS0006": "diableavionics_banishsmall",
+                "WS0001": "diable_reioibox",
+                "WS0006": "diable_reioibox",
             }
         },
         {

@@ -1,12 +1,10 @@
 {
     "displayName": "Bomber",
     "fluxCapacitors": 0,
-    "fluxVents": 10,
+    "fluxVents": 14,
     "goalVariant": true,
     "hullId": "diable_fractus_cer",
-    "hullMods": [
-        "expanded_deck_crew",
-    ],
+    "hullMods": [],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
@@ -23,8 +21,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0001": "diableavionics_micromissile",
-                "WS0006": "diableavionics_micromissile",
+                "WS0001": "diable_reioibox",
+                "WS0006": "diable_reioibox",
             }
         },
         {

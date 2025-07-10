@@ -1,9 +1,9 @@
 {
     "hullName": "Gust(EX)",
-    "hullId": "diable_gust_EX",
+    "hullId": "diable_gust_EX2",
     "hullSize": "CRUISER",
     "style": "HIGH_TECH",
-    "spriteName": "graphics/jg/ships/diableavionics_gust_EX.png",
+    "spriteName": "graphics/jg/ships/diableavionics_gust.png",
     "height": 327,
     "width": 102,
     "center": [
@@ -21,14 +21,13 @@
         "diableavionics_universaldecksExtra"
     ],
     "builtInWeapons": {
-        "WS0005": "diableavionics_microbuiltin",
-        "WS0006": "diableavionics_microbuiltin",
-        "WS0004": "diableavionics_microbuiltin",
-        "WS0003": "diableavionics_microbuiltin"
+        "WS0004": "diable_reioiboxEX",
+        "WS0003": "diable_reioiboxEX",
+        "WS0006": "diable_reioiboxEX",
+        "WS0005": "diable_reioiboxEX"
     },
     "builtInWings": [
-        "diable_crow_wing",
-		"diable_crow_wing"
+        "diableavionics_raven_wing"
     ],
     "builtInModules": null,
     "weaponSlots": [

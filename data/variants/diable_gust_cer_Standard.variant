@@ -1,12 +1,11 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 12,
+    "fluxCapacitors": 19,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_gust_cer",
     "hullMods": [
         "auxiliarythrusters",
-        "stabilizedshieldemitter",
         "targetingunit",
     ],
     "permaMods": [],
@@ -18,24 +17,24 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diable_recson3",
+                "WS0001": "diableavionics_opfergv",
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0003": "diable_reioibox",
-                "WS0005": "diable_reioibox",
-                "WS0004": "diable_reioibox",
-                "WS0006": "diable_reioibox",
+                "WS0003": "diableavionics_banishsmall",
+                "WS0005": "diableavionics_banishsmall",
+                "WS0004": "diableavionics_banishsmall",
+                "WS0006": "diableavionics_banishsmall",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "diable_mostro2",
+                "WS0002": "diableavionics_artdeux",
             }
         },
         {
@@ -44,16 +43,22 @@
             "weapons": {
                 "WS0011": "diableavionics_ibis",
                 "WS0014": "diableavionics_ibis",
-                "WS0010": "diableavionics_ibis",
-                "WS0009": "diableavionics_ibis",
-                "WS0008": "diableavionics_ibis",
                 "WS0015": "diableavionics_ibis",
-                "WS0007": "diableavionics_ibis",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "diableavionics_burchel",
+                "WS0009": "diableavionics_burchel",
+                "WS0008": "diableavionics_burchel",
+                "WS0007": "diableavionics_burchel",
             }
         },
     ],
     "wings": [
-        "diableavionics_arbitratorZ_wing",
+        "diableavionics_arbitrator_wing",
     ],
     "modules": [],
 }

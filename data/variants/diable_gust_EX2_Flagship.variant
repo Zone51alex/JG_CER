@@ -1,40 +1,42 @@
 {
-    "displayName": "Missile",
-    "fluxCapacitors": 28,
-    "fluxVents": 25,
+    "displayName": "Flagship",
+    "fluxCapacitors": 22,
+    "fluxVents": 30,
     "goalVariant": true,
-    "hullId": "diable_gust_cer",
+    "hullId": "diable_gust_EX2",
     "hullMods": [
-        "diableavionics_sniperkit",
+        "autorepair",
+        "hardenedshieldemitter",
+        "heavyarmor",
         "targetingunit",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "diable_gust_cer_Missile",
+    "variantId": "diable_gust_EX2_Flagship",
     "weaponGroups": [
         {
-            "autofire": false,
-            "mode": "ALTERNATING",
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
-                "WS0003": "diable_reioibox",
-                "WS0005": "diable_reioibox",
-                "WS0004": "diable_reioibox",
-                "WS0006": "diable_reioibox",
+                "WS0001": "diable_recson3",
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "diableavionics_banish",
+                "WS0003": "diable_reioiboxEX",
+                "WS0005": "diable_reioiboxEX",
+                "WS0004": "diable_reioiboxEX",
+                "WS0006": "diable_reioiboxEX",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diable_recson3",
+                "WS0002": "diable_mostro2",
             }
         },
         {
@@ -51,8 +53,6 @@
             }
         },
     ],
-    "wings": [
-        "diableavionics_warlust_wing",
-    ],
+    "wings": [],
     "modules": [],
 }

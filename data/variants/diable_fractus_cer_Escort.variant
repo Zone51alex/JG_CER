@@ -1,7 +1,7 @@
 {
     "displayName": "Escort",
-    "fluxCapacitors": 3,
-    "fluxVents": 16,
+    "fluxCapacitors": 6,
+    "fluxVents": 15,
     "goalVariant": true,
     "hullId": "diable_fractus_cer",
     "hullMods": [
@@ -23,8 +23,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0001": "diableavionics_magicbox",
-                "WS0006": "diableavionics_magicbox",
+                "WS0001": "diable_reioibox",
+                "WS0006": "diable_reioibox",
             }
         },
         {

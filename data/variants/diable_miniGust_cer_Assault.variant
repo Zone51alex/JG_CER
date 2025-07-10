@@ -1,7 +1,7 @@
 {
     "displayName": "Assault",
     "fluxCapacitors": 20,
-    "fluxVents": 8,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "diable_miniGust_cer",
     "hullMods": [
@@ -24,15 +24,15 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0008": "diableavionics_magicbox",
-                "WS0007": "diableavionics_magicbox",
+                "WS0008": "diable_reioibox",
+                "WS0007": "diable_reioibox",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diable_buckshot",
+                "WS0001": "diable_mostro2",
             }
         },
         {

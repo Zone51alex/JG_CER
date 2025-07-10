@@ -1,7 +1,7 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 11,
-    "fluxVents": 20,
+    "fluxCapacitors": 20,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "diable_miniGust_cer",
     "hullMods": [
@@ -20,7 +20,7 @@
             }
         },
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "ALTERNATING",
             "weapons": {
                 "WS0008": "diableavionics_micromissile",
@@ -31,28 +31,28 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_recson2",
+                "WS0001": "diableavionics_artdeux",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "diableavionics_graveac",
-                "WS0002": "diableavionics_graveac",
-                "WS0004": "diableavionics_graveac",
+                "WS0003": "diableavionics_recson",
+                "WS0002": "diableavionics_recson",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "diableavionics_burchel",
+                "WS0005": "diableavionics_ibis",
+                "WS0004": "diableavionics_ibis",
             }
         },
     ],
     "wings": [
-        "diableavionics_arbitratorZ_wing",
+        "diable_arbitratorZ_banish_wing",
     ],
     "modules": [],
 }

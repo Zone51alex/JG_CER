@@ -1,7 +1,7 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 15,
-    "fluxVents": 1,
+    "fluxCapacitors": 30,
+    "fluxVents": 9,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [
@@ -31,13 +31,6 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diable_mostro2",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
                 "WS0003": "diableavionics_recson2",
                 "WS0004": "diableavionics_recson2",
             }
@@ -46,7 +39,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "diableavionics_raptor",
+                "WS0001": "diableavionics_raptor",
             }
         },
         {
@@ -60,8 +53,8 @@
         },
     ],
     "wings": [
-        "diableavionics_arbitratorZ_wing",
-        "diableavionics_arbitratorZ_wing",
+        "diableavionics_arbitrator_wing",
+        "diableavionics_arbitrator_wing",
     ],
     "modules": [],
 }
