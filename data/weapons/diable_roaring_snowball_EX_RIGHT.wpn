@@ -1,87 +1,56 @@
 {
   "id": "diable_roaring_snowball_EX_RIGHT",
   "specClass": "projectile",
-  "projectileSpecId": "diableavionics_artdeux_shot",
+  #"projectileSpecId": "diableavionics_artdeux_shot",
   "type": "BALLISTIC",
   "size": "MEDIUM",
   #"everyFrameEffect": "data.scripts.weapons.Diableavionics_artassaultFire",
-  "displayArcRadius": 400,
-  "turretSprite": "graphics/jg/ships/roaring/diableavionics_Goblin_gunRight2.png",
+  "displayArcRadius": 700,
+  "turretSprite": "graphics/jg/ships/roaring/diableavionics_Goblin_gunR01.png",
   "hardpointSprite": "",
   "renderHints": [
     RENDER_BARREL_BELOW
   ],
   "turretOffsets": [
     36.5,
-    -4.5,
-    36.5,
-    -4.5,
-    36.5,
-    -4.5,
-    36.5,
-    -4.5,
-    36.5,
-    -4.5,
-    36.5,
-    -4.5,
-    36.5,
-    -4.5,
-    36.5,
     -4.5
   ],
   "turretAngleOffsets": [
-    4,
-    3,
-    2,
-    1,
-    -1,
-    -2,
-    -3,
-    -4
+    -1
   ],
   "hardpointOffsets": [
-    29,
-    0,
-    29,
-    0,
-    29,
-    0,
-    29,
-    0,
-    29,
-    0,
-    29,
-    0,
-    29,
-    0,
     29,
     0
   ],
   "hardpointAngleOffsets": [
-    4,
-    3,
-    2,
-    1,
-    -1,
-    -2,
-    -3,
-    -4
+    -1
   ],
-  "barrelMode": "LINKED",
-  "animationType": "MUZZLE_FLASH",
-  "muzzleFlashSpec": {
-    "length": 34,
-    "spread": 20,
-    "particleSizeMin": 10,
-    "particleSizeRange": 50,
-    "particleDuration": 0.15,
-    "particleCount": 15,
-    "particleColor": [
-      250,
-      175,
-      76,
-      255
-    ]
-  },
-  "fireSoundTwo": "diableavionics_snowblast_fire"
+ 	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"separateRecoilForLinkedBarrels":"TRUE",
+	#"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	#"muzzleFlashSpec":{
+        #        "length":34.0,   # only used if animationType = MUZZLE_FLASH
+        #        "spread":10.0,
+        #        "particleSizeMin":18.0,
+        #        "particleSizeRange":24.0,
+        #        "particleDuration":0.1,
+        #        "particleCount":12,
+        #        "particleColor":[145,140,180,125]
+        #},
+	"animationType":"SMOKE",
+        "smokeSpec":{
+                "particleSizeMin":5.0,
+                "particleSizeRange":20.0,
+                "cloudParticleCount":20,
+                "cloudDuration":1.0,
+                "cloudRadius":10.0,
+                "blowbackParticleCount":30,
+                "blowbackDuration":2,
+                "blowbackLength":-30.0,
+                "blowbackSpread":5.0,
+                "particleColor":[80,60,50,64]
+        },
+	"projectileSpecId":"diableavionics_mostro_shot",  # projectile that will be fired
+	"fireSoundTwo":"diableavionics_mostro_firing",
+        "everyFrameEffect":"data.scripts.weapons.Diableavionics_mostroFire",
 }

@@ -5,7 +5,7 @@
   "type": "BALLISTIC",
   "size": "MEDIUM",
   "displayArcRadius": 500,
-  "turretSprite": "graphics/jg/ships/roaring/diableavionics_Goblin_gunRight3.png",
+  "turretSprite": "graphics/jg/ships/roaring/diableavionics_Goblin_gunR02.png",
   "hardpointSprite": "",
   "specialWeaponGlowHeight": 15,
   "specialWeaponGlowWidth": 10,

@@ -1,14 +1,12 @@
 {
   "id": "diable_roaring_Artassault_EX_RIGHT",
   "specClass": "projectile",
-  "projectileSpecId": "diableavionics_artdeux_shot",
+  "projectileSpecId": "diableavionics_artassault_shot",
   "type": "BALLISTIC",
   "size": "MEDIUM",
   "displayArcRadius": 450,
-  "turretSprite": "graphics/jg/ships/roaring/diableavionics_Goblin_gunRight.png",
-  "turretGunSprite": "",
+  "turretSprite": "graphics/jg/ships/roaring/diableavionics_Goblin_gunR00.png",
   "hardpointSprite": "",
-  "hardpointGunSprite": "",
   "renderHints":[RENDER_BARREL_BELOW],
   "turretOffsets": [
     35.5,
@@ -40,5 +38,6 @@
       215
     ]
   },
+  #"everyFrameEffect":"data.scripts.weapons.Diableavionics_artassaultFire",
   "fireSoundTwo": "diableavionics_artassault_fire"
 }

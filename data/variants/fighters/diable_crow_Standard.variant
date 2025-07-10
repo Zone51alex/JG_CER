@@ -6,8 +6,7 @@
     "hullId": "diable_crow",
     "hullMods": [
         "diableavionics_wanzer",
-        "autorepair",
-        "turretgyros"
+        "autorepair"
     ],
     "quality": 0.0,
     "variantId": "diable_crow_Standard",

@@ -5,7 +5,6 @@
     "goalVariant": true,
     "hullId": "diable_goblin_EX",
     "hullMods": [
-        "diableavionics_selector_artdeux_EX",
         "fluxbreakers",
         "fluxcoil",
         "hardenedshieldemitter",

@@ -127,3 +127,5 @@ diableavionics_driftflagship,SHIP_SYSTEM,"A failed capital class flicker core th
 #FACTION,,,,,
 ,,,,,
 da_cer,FACTION,An Engineering & Recovery Subsidary of Diable Avionics Rebuilt to Help Diable Restore their Battered Forces and Produce New Tech from their Ashes.,,,
+,,,,,
+OT_a,CUSTOM,"A Heavily Production Planet used to Manifacture everything from weapons to ships, also houses an Orphanage.",,,

@@ -18,5 +18,5 @@
 	"textureType":ROUGH,
 	"textureScrollSpeed":1.0,
 	"pixelsPerTexel":1.0,
-        #"everyFrameEffect":"data.scripts.weapons.Diableavionics_transformEffect",	
+        "everyFrameEffect":"data.scripts.weapons.diableavionics_roaringEffect",	
 }

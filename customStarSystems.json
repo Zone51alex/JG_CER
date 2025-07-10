@@ -1,0 +1,70 @@
+#-------------------------------------------------------------------------------------#
+# Open referenceStarSystem.json for a reference guide on making a custom star system  #
+# (It also includes some tips and warnings about making your own custom star systems) #
+# Open presetStarSystems.json for some preset custom systems to copy, paste, and edit #
+#-------------------------------------------------------------------------------------#
+
+# This JSON file is reloaded during new game creation.
+# Thus, it can be edited without needing to restart your Starsector application,
+# as any changes here will apply on the next new game creation.
+# Any customStarSystems.json in the data/config folder of other mods will merge together with this one
+
+{
+	# An uninhabited star system with desirable planets
+	"diableavionics_outerTerminus":{
+		"teleportUponGeneration":true,
+		"entities":[
+			{ # A empty location signifying a non-star center
+				"entity":"empty_location",
+
+				# How many stars should be considered as part of system center?
+				# *REQUIRED* option if "empty_location" is 1st in "entities" list
+				"numOfCenterStars":1,
+			},
+			{
+				"entity":"planet",
+				"name":"Crow's Nest",
+				"customDescriptionId":"OT_a",
+				#"type":["barren","barren2","barren3"],
+				
+				"conditions":["barren_marginal", "ore_abundant", "rare_ore_abundant", "no_atmosphere", "hot", "low_gravity"],
+				"specChanges":{
+					# Overrides a planet's type to another type
+					# Takes on the appearance of the chosen type, while also changing planet description
+					# Format is ["typeId","newTypeName"]
+					# Overriding planet type must also have a corresponding entry in descriptions.csv
+					# Should only be used to get modded planets that either do not spawn as proc-gen entities or spawn outside proc-gen parameters
+					"typeOverride":["OT_a","Barren"],
+				},
+				"marketSize":6,
+				
+				"faction":"da_cer",
+				# A list of industries, along with any applicable special items
+				# Defaults to just adding "population" and "spaceport" if this entry is omitted
+				#
+				# Each item can either be an industry ID or an array containing the industry ID and specials IDs
+				# (E.g. "industryId" or ["industryId", "aiCoreId", "specItemId", "improveIndustryToggle"])
+				# Industry IDs are found in starsector-core/data/campaign/industries.csv
+				# Special items IDs are found in starsector-core/data/campaign/special_items.csv
+				# WARNING: Make sure to correctly spell the IDs! Else, your game may crash upon visiting this market!
+				"industries":[
+                ["population"],
+                ["megaport"],
+				["refining"],
+                ["mining",,"mantle_bore"],
+                ["orbitalworks",,"cer_nanoforge"],
+                ["heavybatteries"],
+                ["highcommand"],
+                ["diableavionics_starfortress_lock"],
+				["IndEvo_dryDock","gamma_core"],
+				],
+			},
+		]
+	},
+	#--------------------------------------#
+	# Can add more star systems below here #
+	#--------------------------------------#
+
+
+
+} # Keep this closing bracket at the end of this JSON file!

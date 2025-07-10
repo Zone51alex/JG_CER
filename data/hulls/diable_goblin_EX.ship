@@ -18,19 +18,17 @@
     "viewOffset": 0,
     "builtInMods": [
         "diableavionics_cramped",
-		"diableavionics_tuning_EX2",
+        "diableavionics_tuning_EX2"
     ],
     "builtInWeapons": {
-        #"GUN_LEFT": "diable_roaring_Artassault_EX_LEFT",
-        #"GUN_RIGHT": "diable_roaring_Artassault_EX_RIGHT",
         "WS0000": "diable_gatling_roaring_EX",
         "WS 000": "diableavionics_itanolauncher_EX",
         "ENGINE_PANEL_LEFT": "diable_roaring_EX_shield_LEFT",
-        "BARREL_LEFT": "diable_roaring_EX_barrel_LEFT",
+        #"BARREL_LEFT": "diable_roaring_EX_barrel_LEFT",
         "SHIELD_LEFT": "diable_roaring_EX_door_LEFT",
         "COVER_LEFT": "diable_roaring_EX_bit_LEFT",
         "ENGINE_PANEL_RIGHT": "diable_roaring_EX_shield_RIGHT",
-        "BARREL_RIGHT": "diable_roaring_EX_barrel_RIGHT",
+        #"BARREL_RIGHT": "diable_roaring_EX_barrel_RIGHT",
         "SHIELD_RIGHT": "diable_roaring_EX_door_RIGHT",
         "COVER_RIGHT": "diable_roaring_EX_bit_RIGHT",
         "TOP_LEFT": "diable_roaring_EX_panel_LEFT",
@@ -115,7 +113,8 @@
             "id": "GUN_LEFT",
             "size": "MEDIUM",
             "type": "BUILT_IN",
-            "mount": "HARDPOINT",
+            "mount": "TURRET",
+            "renderOrderMod": -99,
             "arc": 45,
             "angle": 15,
             "locations": [
@@ -126,31 +125,8 @@
             "id": "GUN_RIGHT",
             "size": "MEDIUM",
             "type": "BUILT_IN",
-            "mount": "HARDPOINT",
-            "arc": 45,
-            "angle": -15,
-            "locations": [
-                     3.5,    -19.5
-            ]
-        },
-        {
-            "id": "BARREL_LEFT",
-            "size": "MEDIUM",
-            "type": "DECORATIVE",
             "mount": "TURRET",
-            "renderOrderMod": -50,
-            "arc": 45,
-            "angle": 15,
-            "locations": [
-                     3.5,     19.5
-            ]
-        },
-        {
-            "id": "BARREL_RIGHT",
-            "size": "MEDIUM",
-            "type": "DECORATIVE",
-            "mount": "TURRET",
-            "renderOrderMod": -50,
+            "renderOrderMod": -99,
             "arc": 45,
             "angle": -15,
             "locations": [

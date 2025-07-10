@@ -6,7 +6,7 @@
     {
         "major":0,
         "minor":0,
-        "patch":2-InDev,
+        "patch":3-InDev,
     },
     "description":"A Subsidary of Diable Avionics that was Absorbed before arrival to the persean Sector, it got Rebuilt after by Disgruntled Engineers Fed up with Diable's Incompetence to restore their might.",
     "gameVersion": "0.98",
@@ -24,11 +24,6 @@
 		{
             "id": "diableavionics",
             "name": "Diable Avionics",
-            #"version": "2.7.6"
-        },
-		{
-            "id": "IndEvo",
-            "name": "Industrial.Evolution",
             #"version": "2.7.6"
         },
     ],
