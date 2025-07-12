@@ -19,10 +19,17 @@
     "builtInMods": [
         "diableavionics_mountBI",
         "dedicated_targeting_core",
-		"diableavionics_universaldecksExtra",
-        "autorepair"
+        "autorepair",
+        "diableavionics_universaldecksExtra"
     ],
+    "builtInWeapons": {
+        "WS0014": "diable_reioiboxEX",
+        "WS0015": "diable_reioiboxEX",
+        "WS0016": "diable_reioiboxEX"
+    },
     "builtInWings": [
+        "diableavionics_valiant_wing",
+        "diableavionics_valiant_wing"
     ],
     "builtInModules": null,
     "weaponSlots": [
@@ -117,7 +124,7 @@
         {
             "id": "WS0014",
             "size": "SMALL",
-            "type": "MISSILE",
+            "type": "BUILT_IN",
             "mount": "HARDPOINT",
             "arc": 5,
             "angle": 90,
@@ -128,7 +135,7 @@
         {
             "id": "WS0015",
             "size": "SMALL",
-            "type": "MISSILE",
+            "type": "BUILT_IN",
             "mount": "HARDPOINT",
             "arc": 5,
             "angle": 90,
@@ -139,7 +146,7 @@
         {
             "id": "WS0016",
             "size": "SMALL",
-            "type": "MISSILE",
+            "type": "BUILT_IN",
             "mount": "HARDPOINT",
             "arc": 5,
             "angle": 90,

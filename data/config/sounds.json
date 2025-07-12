@@ -1,5 +1,5 @@
 {        
-	#CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK 
+	
 
         "diableavionics_knight_fire":[
 		{"file":"sounds/fx/Piledriver_wep.ogg","pitch":1.07, "volume":1.50},
@@ -9,4 +9,17 @@
 		{"file":"sounds/fx/Piledriver_wep.ogg","pitch":0.90, "volume":1.50},
 		{"file":"sounds/fx/Piledriver_wep.ogg","pitch":0.80, "volume":1.50},
         ],
+		
+		"music":{
+				
+                "cer_market_interaction_neutral":[
+                        {"file":"DA_neutral_interaction.ogg","source":"sounds/diablemusic/","volume":0.35,"randomStart":true},
+                ],
+                "cer_market_interaction_hostile":[
+                        {"file":"DA_hostile_interaction.ogg","source":"sounds/diablemusic/","volume":0.35,"randomStart":true},
+                ],
+                "cer_market_interaction_friendly":[
+                        {"file":"DA_friendly_interaction.ogg","source":"sounds/diablemusic/","volume":0.35,"randomStart":true},
+                ],
+        }
 }

@@ -450,11 +450,23 @@
 			"fighter_uplink",
 			"carrier_group",
 			"flux_regulation",
+			"officer_training",
         ],
 	},
 	"illegalCommodities":[
 		
 	],
+	
+	  "music": {
+    "theme": "cer_market_interaction_neutral",
+    "market_neutral": "cer_market_interaction_neutral",
+    "market_hostile": "cer_market_interaction_hostile",
+    "market_friendly": "cer_market_interaction_friendly",
+    "encounter_neutral": "cer_market_interaction_neutral",
+    "encounter_hostile": "cer_market_interaction_hostile",
+    "encounter_friendly": "cer_market_interaction_friendly",
+  },
+  
 	"portraits":{
 		"standard_male":[
             "graphics/portraits/portrait_hegemony05.png",
@@ -480,10 +492,42 @@
             "graphics/portraits/portrait34.png",
         ],
 	},
+	
+	"custom": {
+    "offersCommissions": true,
+    "engagesInHostilities": false,
+    "buysAICores": true,
+    "AICoreValueMult": 2.0,
+    "AICoreRepMult": 0.75,
+    "buysSurveyData": true,
+    "hostilityImpactOnGrowth": true,
+    "punitiveExpeditionData": {
+      "vsCompetitors": false,
+      "vsFreePort": false,
+      "canBombard": false,
+      "territorial": false,
+    },
+	
+    "simulatorData":{
+      "showInSimulator":true,
+    },
+  },
+  
 	"fleetTypeNames":{
 		"patrolSmall":"Rapid Response Fleet",
         "patrolMedium":"Security Fleet",
         "patrolLarge":"Defense Armada",
+		
+		"trade": "Trade Fleet",
+
+		"tradeLiner": "Drumline Spaceline",
+		"tradeSmuggler": "Smuggler",
+		"smallTrader": "Licenced Delivery",
+
+		"inspectionFleet": "Customs",
+		"taskForce": "Strategic Force",
+
+		"foodReliefFleet": "Relief Convoy",
 	},
 
 },

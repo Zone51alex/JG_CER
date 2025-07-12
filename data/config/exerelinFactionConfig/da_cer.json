@@ -4,7 +4,23 @@
     "corvusCompatible": true,
     "freeStart": true,
     "spawnAsFactionId": "player",
+	"rebelFleetSuffix":"Fugitives",
+	
+	"directoryUseShortName":true,
+	
     "ngcTooltip": "Start as a Merc Aligned to Corvid Engineering & Recovery",
+	
+	"asteroidMiningFleetName":"Mining Flotilla",
+    "gasMiningFleetName":"Gas Mining Flotilla",
+    "invasionFleetName":"Invasion Fleet",
+    "responseFleetName":"Planetary Defense Fleet ",
+    "invasionSupportFleetName":"Support Fleet",
+    "defenceFleetName":"Defense Fleet",
+	"noSyncRelations":false,
+	"noStartingContact":false,
+	
+	"specialForcesPointMult":1.75,
+	"specialForcesSizeMult":1.75,
 
     "startRelationships": {
         "independent": 0.5,
@@ -20,11 +36,35 @@
         "pirates": -1.0,
         "sindrian_diktat": -0.2,
         "batavia": 0.7,
-        "diableavionics": -1.0,
+        "diableavionics": 1.0,
         "SCY": 0.5,
 		"sotf_dustkeepers": 0.5,
         "default": 0.2
     },
+	
+	 "morality":"neutral",
+
+    "diplomacyTraits":["stalwart", "lowprofile", "pacifist", "neutralist", "helps_allies", "likes_ai"],
+
+    "alignments":{
+            "corporate":0.1,
+            "technocratic":0.3,
+            "militarist":0.5,
+            "diplomatic":0.5,
+            "ideological":-1
+    },
+	
+	"colonyExpeditionChance":0.00,	# we can't colonize anything Diable avionics Forbids it.
+	
+	"isPirateNeutral":false,
+	
+	"vengeanceFleetSizeMult":3.55,
+	
+	"vengeanceLevelNames":["Retaliation", "Purge", "Obliteration"],
+    "vengeanceFleetNames":["Retaliation", "Purge", "Obliteration"],
+    "vengeanceFleetNamesSingle":["a Retaliation Fleet", "a Purge Force", "an Obliteration Force"],
+
+    "miningVariantsOrWings":["diableavionics_laminar_miner"],
 
     "startShipsSolo": [
         ["diableavionics_sleet_standard"],
@@ -80,5 +120,11 @@
 	
 	"defenceStations":[
         {"ids":["diableavionics_orbitalstation", "diableavionics_battlestation", "diableavionics_starfortress"]},
+    ],
+	
+	    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"militarybase", "mult":0.2},
+        {"id":"fuelprod", "mult":0.05},
     ],
 }

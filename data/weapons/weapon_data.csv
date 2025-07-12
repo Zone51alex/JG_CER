@@ -5,7 +5,7 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 "Heemeyer ""Phoenix"" Cannons",diable_heemeyer,4,,,700,,200,50,,180,0,16,2,2,ENERGY,175,,0,0.5,4,0.1,0,15,0.5,1.5,,2000,,,100,,,SYSTEM,"no_drop, no_sell, no_drop_salvage, codex_unlockable",,Corvid Engineering,,Assault,,,,,,,,,,0
 "Heemeyer ""Phoenix"" Cannon",diable_raycast2,4,,,800,,300,50,,180,0,,,,ENERGY,100,,0,0.5,2,0.2,1,5,1,4,,2000,,,20,,,SYSTEM,"no_drop, no_sell, no_drop_salvage, codex_unlockable",,Corvid Engineering,,Assault,,,,,,,,,,
 "Heemeyer ""Phoenix"" Cannon",diable_raycast,4,,,600,,300,50,,180,0,,,,ENERGY,100,,0,0.5,2,0.2,1.5,6,1,4,,2000,,,20,,,SYSTEM,"no_drop, no_sell, no_drop_salvage, codex_unlockable",,Corvid Engineering,,Assault,,,,,,,,,,
-'Reioi' Missile Pod(Built-in),diable_reioiboxEX,1,0.75,800,1000,,200,,10,15,0,40,0.5,10,HIGH_EXPLOSIVE,0,,0.1,1,2,0.15,7,14,14,12,,800,50,10,100,,,"DO_NOT_AIM, USE_LESS_VS_SHIELDS, ANTI_FTR, DO_NOT_CONSERVE","missile0, diable_weapon_bp, rare_bp, diable_cer_bp, dev_cer_bp",,Corvid Engineering,,Anti Armor,Excellent,Medium,,,,,,,,11.23
+'Reioi' Missile Pod(Built-in),diable_reioiboxEX,1,0.75,800,1000,,200,,10,15,0,40,0.5,10,HIGH_EXPLOSIVE,0,,0.1,1,2,0.15,7,14,14,12,,800,50,10,100,,,"DO_NOT_AIM, USE_LESS_VS_SHIELDS, ANTI_FTR, DO_NOT_CONSERVE","no_drop, no_sell, no_drop_salvage, codex_unlockable",,Corvid Engineering,,Anti Armor,Excellent,Medium,,,,,,,,11.23
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #VERSANT FRIGATE CER,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -26,10 +26,10 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 #Roaring EX,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Roaring Gatling Gun,diable_gatling_roaring_EX,4,,,900,,80,,,180,0,100,10,100,KINETIC,30,,0.5,0.3,9999,0.0666,2,10,0.05,4,,3000,,,25,,,"SYSTEM, NO_TURN_RATE_BOOST_WHEN_IDLE, DO_NOT_CONSERVE, FIRE_WHEN_INEFFICIENT, ANTI_FTR","kinetic18, no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,Shield Suppression,,,,,,,,,,
-Artdeux Gatling Cannon,diable_roaring_Artassault_EX_LEFT,2,,,900,,75,,,180,0,15,3,5,HIGH_EXPLOSIVE,40,,0,0.05,5,0.05,1,6,0.1,2,,800,,,25,,,"SYSTEM, USE_LESS_VS_SHIELDS","he12, diable_weapon_bp",,Corvid Engineering,,Anti Hull,,,,,,,,Semi-auto weapon,,
-Artdeux Gatling Cannon,diable_roaring_Artassault_EX_RIGHT,2,,,900,,75,,,180,0,15,3,5,HIGH_EXPLOSIVE,40,,0,0.05,5,0.05,1,6,0.1,2,,800,,,25,,,"SYSTEM, USE_LESS_VS_SHIELDS","he12, diable_weapon_bp",,Corvid Engineering,,Anti Hull,,,,,,,,Semi-auto weapon,,0
-Mostro Micro Cannons,diable_roaring_snowball_EX_LEFT,3,,3000,800,,200,,25,20,0,,,,HIGH_EXPLOSIVE,200,,0,1.5,,,2,6,1,4,,750,,,60,,,USE_LESS_VS_SHIELDS,"he17, diable_weapon_bp, rare_bp, hist1t, diable_cer_bp, dev_cer_bp",,Corvid Engineering,,Anti Armor,,,,,,,,,,
-Mostro Micro Cannons,diable_roaring_snowball_EX_RIGHT,3,,3000,800,,200,,25,20,0,,,,HIGH_EXPLOSIVE,200,,0,1.5,,,2,6,1,4,,750,,,60,,,USE_LESS_VS_SHIELDS,"he17, diable_weapon_bp, rare_bp, hist1t, diable_cer_bp, dev_cer_bp",,Corvid Engineering,,Anti Armor,,,,,,,,,,
+Artdeux Gatling Cannon,diable_roaring_Artassault_EX_LEFT,2,,,900,,75,,,180,0,15,3,5,HIGH_EXPLOSIVE,40,,0,0.05,5,0.05,1,6,0.1,2,,800,,,25,,,"SYSTEM, USE_LESS_VS_SHIELDS","he20, no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,Anti Hull,,,,,,,,Semi-auto weapon,,
+Artdeux Gatling Cannon,diable_roaring_Artassault_EX_RIGHT,2,,,900,,75,,,180,0,15,3,5,HIGH_EXPLOSIVE,40,,0,0.05,5,0.05,1,6,0.1,2,,800,,,25,,,"SYSTEM, USE_LESS_VS_SHIELDS","he20, no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,Anti Hull,,,,,,,,Semi-auto weapon,,0
+Mostro Micro Cannons,diable_roaring_snowball_EX_LEFT,3,,3000,800,,200,,25,20,0,,,,HIGH_EXPLOSIVE,200,,0,1.5,,,2,6,1,4,,750,,,60,,,USE_LESS_VS_SHIELDS,"he20, no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,Anti Armor,,,,,,,,,,
+Mostro Micro Cannons,diable_roaring_snowball_EX_RIGHT,3,,3000,800,,200,,25,20,0,,,,HIGH_EXPLOSIVE,200,,0,1.5,,,2,6,1,4,,750,,,60,,,USE_LESS_VS_SHIELDS,"he20, no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,Anti Armor,,,,,,,,,,
 Anaconda Grenade Launcher,diable_roaring_cicada_EX_LEFT,4,,,800,,250,,,180,0,10,1,5,HIGH_EXPLOSIVE,200,,0,1,9999,0.2,5,10,3,6,,500,650,5.5,300,-0.5,0,"SYSTEM, DO_NOT_CONSERVE, FIRE_WHEN_INEFFICIENT","he20, no_drop, no_sell, no_drop_salvage",,,,,,,,,,,,,,
 Anaconda Grenade Launcher,diable_roaring_cicada_EX_RIGHT,4,,,800,,250,,,180,0,10,1,5,HIGH_EXPLOSIVE,200,,0,1,9999,0.2,5,10,3,6,,500,650,5.5,300,-0.5,0,"SYSTEM, DO_NOT_CONSERVE, FIRE_WHEN_INEFFICIENT","he20, no_drop, no_sell, no_drop_salvage",,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

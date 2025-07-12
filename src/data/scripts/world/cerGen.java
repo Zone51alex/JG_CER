@@ -6,8 +6,12 @@ import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
+import com.fs.starfarer.api.impl.campaign.ids.Commodities;
+import com.fs.starfarer.api.impl.campaign.ids.Industries;
+import com.fs.starfarer.api.impl.campaign.ids.Items;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
+import data.scripts.world.systems.CER_AddMarketplace;
 import exerelin.campaign.AllianceManager;
 import exerelin.campaign.DiplomacyManager;
 import exerelin.campaign.PlayerFactionStore;
@@ -17,15 +21,18 @@ import exerelin.utilities.NexFactionConfig;
 import org.magiclib.util.MagicCampaign;
 import data.scripts.util.Diableavionics_stringsManager;
 
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Map;
 
-import data.scripts.world.systems.cer_OuterTerminus;
 
 public class cerGen implements SectorGeneratorPlugin {
 
     public void generate(SectorAPI sector) {
-        //(new cer_OuterTerminus()).generate(sector);
-        cer_main(sector);
+
+        //relations
         FactionAPI da_cer = sector.getFaction("da_cer");
         FactionAPI player = sector.getFaction("player");
         FactionAPI hegemony = sector.getFaction("hegemony");
@@ -40,17 +47,17 @@ public class cerGen implements SectorGeneratorPlugin {
         FactionAPI guard = sector.getFaction("lions_guard");
         FactionAPI remnant = sector.getFaction("remnant");
         FactionAPI derelict = sector.getFaction("derelict");
-        da_cer.setRelationship(guard.getId(), RepLevel.FRIENDLY);
-        da_cer.setRelationship(diktat.getId(), RepLevel.NEUTRAL);
+        da_cer.setRelationship(guard.getId(), RepLevel.SUSPICIOUS);
+        da_cer.setRelationship(diktat.getId(), RepLevel.SUSPICIOUS);
         da_cer.setRelationship(player.getId(), RepLevel.FAVORABLE);
-        da_cer.setRelationship(independent.getId(), RepLevel.INHOSPITABLE);
+        da_cer.setRelationship(independent.getId(), RepLevel.FRIENDLY);
         da_cer.setRelationship(tritachyon.getId(), RepLevel.INHOSPITABLE);
         da_cer.setRelationship(pirates.getId(), RepLevel.VENGEFUL);
         da_cer.setRelationship(persean.getId(), RepLevel.FRIENDLY);
         da_cer.setRelationship(kol.getId(), RepLevel.INHOSPITABLE);
         da_cer.setRelationship(hegemony.getId(), RepLevel.SUSPICIOUS);
-        da_cer.setRelationship(path.getId(), RepLevel.HOSTILE);
-        da_cer.setRelationship(church.getId(), RepLevel.VENGEFUL);
+        da_cer.setRelationship(path.getId(), RepLevel.VENGEFUL);
+        da_cer.setRelationship(church.getId(), RepLevel.SUSPICIOUS);
         da_cer.setRelationship(remnant.getId(), RepLevel.HOSTILE);
         da_cer.setRelationship(derelict.getId(), RepLevel.FRIENDLY);
         da_cer.setRelationship("diableavionics", RepLevel.COOPERATIVE);

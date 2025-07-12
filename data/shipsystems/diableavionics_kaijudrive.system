@@ -3,7 +3,7 @@
 	"type":"ENGINE_MOD",
 	"aiType":"BURN_DRIVE_TOGGLE",
 	
-	"statsScript":"data.shipsystems.scripts.BurnDriveStats",
+	"statsScript":"data.scripts.shipsystems.diableavionics_KaijuDriveStats",
 	
 	"engineGlowColor":[125,0,155,255],
 	"engineGlowContrailColor":[165,100,255,25],
@@ -11,7 +11,16 @@
 	"engineGlowWidthMult":5,
 	"engineGlowGlowMult":5,
 	
-	"flameoutOnImpactChance":0.5,
+	"shieldRingColor":[255,255,255,255],
+	"shieldInnerColor":[255,100,200,75],
+	"shieldThicknessMult":2,
+	"shieldFluctuationMult":1,
+	
+	"soundFilterType":"HIGHPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.0,
+	
+	"flameoutOnImpactChance":0.0,
 
 	"clampTurnRateAfter":true,
 	"clampMaxSpeedAfter":true,

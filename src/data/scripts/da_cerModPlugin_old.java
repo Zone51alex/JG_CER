@@ -99,8 +99,5 @@ public class da_cerModPlugin_old extends BaseModPlugin {
       } 
     } 
     if (market != null);
-    if (market != null);
-    if (market != null);
-    if (market != null);
   }
 }

@@ -1,11 +1,10 @@
 {
     "displayName": "Support",
     "fluxCapacitors": 20,
-    "fluxVents": 6,
+    "fluxVents": 8,
     "goalVariant": true,
     "hullId": "diable_miniGust_cer",
     "hullMods": [
-        "fluxbreakers",
         "targetingunit",
     ],
     "permaMods": [],
@@ -24,8 +23,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0008": "diableavionics_banishsmall",
-                "WS0007": "diableavionics_banishsmall",
+                "WS0008": "diable_reioibox",
+                "WS0007": "diable_reioibox",
             }
         },
         {
