@@ -1,11 +1,12 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 30,
-    "fluxVents": 9,
+    "fluxCapacitors": 15,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [
         "fluxbreakers",
+        "turretgyros",
     ],
     "permaMods": [],
     "sMods": [],
@@ -31,30 +32,35 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "diableavionics_recson2",
-                "WS0004": "diableavionics_recson2",
+                "WS0001": "diable_diurne",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_raptor",
+                "WS0003": "diableavionics_glaux",
+                "WS0004": "diableavionics_glaux",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0009": "diableavionics_ibis",
-                "WS0008": "diableavionics_ibis",
-                "WS0007": "diableavionics_ibis",
+                "WS0002": "diableavionics_raptor",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "diableavionics_burchel",
             }
         },
     ],
     "wings": [
-        "diableavionics_arbitrator_wing",
-        "diableavionics_arbitrator_wing",
+        "diableavionics_frost_wing",
+        "diableavionics_frost_wing",
     ],
     "modules": [],
 }

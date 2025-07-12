@@ -108,6 +108,7 @@ Snub Recson,diable_knighthead,,,,600,,250,,,45,,,,,KINETIC,,,0,3.5,2,0.5,2,6,5,6
 DMR,diable_knightgun,,,,800,,400,200,50,25,,,,,KINETIC,,,0,2,,,5,5,0,0,,2000,,,100,,,SYSTEM,"no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,General,,,,,,,,,,
 ,diable_knightpauldron,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,"no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,General,,,,,,,,,,
 'Lance' Piledriver,diable_knightmelee,2,,,90,,400,,300,200,42,,,,FRAGMENTATION,100,,0,1,,,0,0,0,0,,1000,,,30,,,"SYSTEM, ANTI_FTR","no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,General,,,,,,,,4.5,,
+Grave 'Junk' LAC Arm,diable_gravejunkarm,0,,300,600,,60,,10,30,0,,,,KINETIC,52,,0,0.5,,,0,5,0.1,1,,1000,,,100,,,SYSTEM,"no_drop, no_sell, no_drop_salvage",,Corvid Engineering,,Anti Shield,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Mite,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

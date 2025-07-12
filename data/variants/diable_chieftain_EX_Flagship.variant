@@ -1,11 +1,10 @@
 {
     "displayName": "Flagship",
-    "fluxCapacitors": 3,
+    "fluxCapacitors": 28,
     "fluxVents": 50,
     "goalVariant": true,
     "hullId": "diable_chieftain_EX",
     "hullMods": [
-        "hardenedshieldemitter",
         "magazines",
     ],
     "permaMods": [],
@@ -18,6 +17,12 @@
             "mode": "LINKED",
             "weapons": {
                 "WS0001": "diableavionics_opfergv",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
                 "WS0014": "diable_reioiboxEX",
                 "WS0016": "diable_reioiboxEX",
                 "WS0015": "diable_reioiboxEX",

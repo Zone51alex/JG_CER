@@ -5,6 +5,7 @@
     "goalVariant": true,
     "hullId": "diable_goblin_EX",
     "hullMods": [
+        "diableavionics_selector_artdeux_EX",
         "fluxbreakers",
         "fluxcoil",
         "hardenedshieldemitter",
@@ -27,14 +28,6 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "GUN_LEFT": "diable_roaring_Artassault_EX_LEFT",
-                "GUN_RIGHT": "diable_roaring_Artassault_EX_RIGHT",
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
                 "WS0001": "diable_reioibox",
                 "WS0002": "diable_reioibox",
             }
@@ -44,6 +37,14 @@
             "mode": "LINKED",
             "weapons": {
                 "WS 000": "diableavionics_itanolauncher_EX",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN_LEFT": "diable_roaring_Artassault_EX_LEFT",
+                "GUN_RIGHT": "diable_roaring_Artassault_EX_RIGHT",
             }
         },
     ],

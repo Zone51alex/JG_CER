@@ -1,10 +1,12 @@
 {
     "displayName": "Assault",
-    "fluxCapacitors": 6,
-    "fluxVents": 30,
+    "fluxCapacitors": 15,
+    "fluxVents": 17,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
-    "hullMods": [],
+    "hullMods": [
+        "frontemitter",
+    ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
@@ -51,9 +53,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0009": "diableavionics_ibis",
-                "WS0008": "diableavionics_ibis",
-                "WS0007": "diableavionics_ibis",
+                "WS0007": "diableavionics_burchel",
             }
         },
     ],

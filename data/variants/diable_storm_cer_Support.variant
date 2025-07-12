@@ -1,16 +1,14 @@
 {
-    "displayName": "Flagship",
+    "displayName": "Support",
     "fluxCapacitors": 5,
-    "fluxVents": 24,
+    "fluxVents": 11,
     "goalVariant": true,
-    "hullId": "diable_storm_EX",
-    "hullMods": [
-        "targetingunit",
-    ],
+    "hullId": "diable_storm_cer",
+    "hullMods": [],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "diable_storm_EX_Flagship",
+    "variantId": "diable_storm_cer_Support",
     "weaponGroups": [
         {
             "autofire": false,

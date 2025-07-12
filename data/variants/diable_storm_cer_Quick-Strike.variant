@@ -1,10 +1,12 @@
 {
     "displayName": "Quick-Strike",
-    "fluxCapacitors": 0,
-    "fluxVents": 18,
+    "fluxCapacitors": 8,
+    "fluxVents": 0,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
-    "hullMods": [],
+    "hullMods": [
+        "fluxbreakers",
+    ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
@@ -21,23 +23,29 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "diableavionics_plover",
-                "WS0006": "diableavionics_plover",
+                "WS0005": "diableavionics_thunderboltpod",
+                "WS0006": "diableavionics_thunderboltpod",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "diableavionics_nocturne",
-                "WS0004": "diableavionics_nocturne",
+                "WS0001": "diableavionics_glaux",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_lazyhorn",
+                "WS0003": "diableavionics_hexafire",
+                "WS0004": "diableavionics_hexafire",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
                 "WS0002": "diableavionics_raptor",
             }
         },
@@ -45,9 +53,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0009": "diableavionics_ibis",
-                "WS0008": "diableavionics_ibis",
-                "WS0007": "diableavionics_ibis",
+                "WS0007": "diableavionics_burchel",
             }
         },
     ],
