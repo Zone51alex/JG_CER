@@ -1,0 +1,39 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 10,
+    "fluxVents": 6,
+    "goalVariant": false,
+    "hullId": "diableavionics_sleet",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_sleet_SupportB",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_recson",
+                "WS0002": "diableavionics_recson",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diableavionics_magicbox",
+                "WS0004": "diableavionics_magicbox",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_burchel",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

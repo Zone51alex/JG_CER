@@ -1,6 +1,6 @@
 {
     "displayName": "Energy",
-    "fluxCapacitors": 16,
+    "fluxCapacitors": 10,
     "fluxVents": 20,
     "goalVariant": true,
     "hullId": "diable_coanda_cer",

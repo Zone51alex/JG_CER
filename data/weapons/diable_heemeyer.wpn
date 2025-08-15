@@ -34,7 +34,7 @@
 					   "particleSizeRange":5.0,
 					   "particleDuration":0.1,
 					   "particleCount":7,
-					   "particleColor":[200,125,225,60]},
+					   "particleColor":[109,234,109,220]},
 	"autocharge":true,
 	"projectileSpecId":"diableavionics_bulldozer_shot",  # projectile that will be fired	
 	"fireSoundTwo":"diableavionics_harvest_firing"

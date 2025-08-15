@@ -1,6 +1,6 @@
 {
     "displayName": "Flagship",
-    "fluxCapacitors": 21,
+    "fluxCapacitors": 11,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_riptide_EX",
@@ -50,6 +50,8 @@
             }
         },
     ],
-    "wings": [],
+    "wings": [
+        "diableavionics_hoar_wing",
+    ],
     "modules": [],
 }

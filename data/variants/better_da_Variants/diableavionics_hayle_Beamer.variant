@@ -1,0 +1,47 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 19,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "diableavionics_hayle",
+    "hullMods": [
+        "fluxdistributor",
+        "hardenedshieldemitter",
+        "turretgyros",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_hayle_Beamer",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "diableavionics_hexafire",
+                "WS0008": "diableavionics_hexafire",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "diableavionics_banishsmall",
+                "WS0003": "diableavionics_banishsmall",
+                "WS0002": "diableavionics_banishsmall",
+                "WS0005": "diableavionics_banishsmall",
+                "WS0004": "diableavionics_banishsmall",
+                "WS0006": "diableavionics_banishsmall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "diable_diurne",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,51 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "diable_valiant_C",
+    "hullMods": [
+        "auxiliarythrusters",
+        "fluxbreakers",
+        "fluxcoil",
+        "fluxdistributor",
+        "hardened_subsystems",
+        "hardenedshieldemitter",
+        "targetingunit",
+        "turretgyros",
+    ],
+    "permaMods": [
+        "armaa_wingCommander",
+        "sc_skill_controller",
+        "strikeCraft",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_valiant_C_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "LEFTGUN": "diableavionics_valiantleft",
+                "RIGHTGUN": "diableavionics_valiantright",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "ITANOCIRCUS": "diableavionics_itanolauncher",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD": "diableavionics_valianthead",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

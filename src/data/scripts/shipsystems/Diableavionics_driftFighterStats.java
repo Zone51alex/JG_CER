@@ -26,9 +26,9 @@ public class Diableavionics_driftFighterStats extends BaseShipSystemScript {
         float effect = Math.min(1.0F, Math.max(0.0F, MagicAnim.smoothReturnNormalizeRange(effectLevel, 0.0F, 1.0F) / 2.0F + MagicAnim.smoothReturnNormalizeRange(effectLevel * 1.5F, 0.0F, 1.0F) / 2.0F + MagicAnim.smoothReturnNormalizeRange(effectLevel * 2.0F, 0.0F, 1.0F) / 2.0F));
         ShipAPI ship = (ShipAPI)stats.getEntity();
         if (ship != null) {
-            ship.setJitterUnder(ship, Color.CYAN, 0.5F * effect, 5, 5.0F + 5.0F * effect, 5.0F + 10.0F * effect);
+            ship.setJitterUnder(ship,new Color(100, 200, 100, 64), 0.5F * effect, 5, 5.0F + 5.0F * effect, 5.0F + 10.0F * effect);
             if (Math.random() > 0.8999999761581421D)
-                ship.addAfterimage(new Color(0, 200, 255, 64), 0.0F, 0.0F, -(ship.getVelocity()).x, -(ship.getVelocity()).y, 5.0F + 50.0F * effect, 0.0F, 0.0F, 2.0F * effect, false, false, false);
+                ship.addAfterimage(new Color(100, 200, 100, 64), 0.0F, 0.0F, -(ship.getVelocity()).x, -(ship.getVelocity()).y, 5.0F + 50.0F * effect, 0.0F, 0.0F, 2.0F * effect, false, false, false);
             if (!stats.getTimeMult().getPercentMods().containsKey(id)) {
                 Global.getSoundPlayer().playSound("diableavionics_drift", 1.0F, 1.66F, ship.getLocation(), ship.getVelocity());
                 ship.setPhased(true);

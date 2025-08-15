@@ -1,0 +1,43 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 9,
+    "goalVariant": false,
+    "hullId": "diableavionics_versant",
+    "hullMods": [
+        "diableavionics_selector_auto",
+        "fluxbreakers",
+        "unstable_injector",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_versant_StandardB",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0000": "diableavionics_gravemg",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "diable_plow",
+                "WS0002": "diable_plow",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN_LEFT": "diableavionics_versant_harvest_LEFT",
+                "GUN_RIGHT": "diableavionics_versant_harvest_RIGHT",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

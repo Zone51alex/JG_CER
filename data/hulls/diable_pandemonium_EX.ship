@@ -191,7 +191,7 @@
         -189,
         96.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -202,7 +202,7 @@
         -189,
         -96.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -213,7 +213,7 @@
         -190,
         88.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -224,7 +224,7 @@
         -190,
         -88.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -235,7 +235,7 @@
         -191,
         80.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -246,7 +246,7 @@
         -191,
         -80.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -257,7 +257,7 @@
         -209,
         56.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -268,7 +268,7 @@
         -209,
         -56.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -279,7 +279,7 @@
         -210,
         48.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -290,7 +290,7 @@
         -210,
         -48.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -301,7 +301,7 @@
         -208,
         64.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -312,7 +312,7 @@
         -208,
         -64.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -323,7 +323,7 @@
         -251,
         39.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -334,7 +334,7 @@
         -251,
         -39.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -345,7 +345,7 @@
         -253,
         31.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     },
     {
@@ -356,7 +356,7 @@
         -253,
         -31.5
       ],
-      "style": "DiableAvionicsTrail",
+      "style": "GetterRayTrail",
       "width": 6
     }
   ],

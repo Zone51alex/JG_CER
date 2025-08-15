@@ -1,23 +1,24 @@
 {
     "displayName": "Standard",
     "fluxCapacitors": 10,
-    "fluxVents": 7,
+    "fluxVents": 5,
     "goalVariant": true,
     "hullId": "diable_vapor_cer",
     "hullMods": [
         "fluxbreakers",
-        "fluxcoil",
-        "hardenedshieldemitter"
+        "hardenedshieldemitter",
     ],
-    "quality": 0.0,
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
     "variantId": "diable_vapor_cer_Standard",
     "weaponGroups": [
         {
             "autofire": false,
-            "mode": "LINKED",
+            "mode": "ALTERNATING",
             "weapons": {
-                "WS0001": "diableavionics_gravemg",
-                "WS0002": "diableavionics_gravemg"
+                "WS0001": "diable_urn2",
+                "WS0002": "diable_urn2",
             }
         },
         {
@@ -25,15 +26,17 @@
             "mode": "ALTERNATING",
             "weapons": {
                 "WS0003": "diableavionics_banishsmall",
-                "WS0004": "diableavionics_banishsmall"
+                "WS0004": "diableavionics_banishsmall",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005  000": "diableavionics_ibis"
+                "WS0005  000": "diableavionics_ibis",
             }
-        }
-    ]
+        },
+    ],
+    "wings": [],
+    "modules": [],
 }

@@ -1,0 +1,51 @@
+{
+    "displayName": "Close Quarters",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "diableavionics_draft",
+    "hullMods": [
+        "fluxbreakers",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_draft_Close_QuartersB",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_gravemg",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diableavionics_micromissile",
+                "WS0002": "diableavionics_micromissile",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "diableavionics_magicbox",
+                "WS0004": "diableavionics_magicbox",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "diableavionics_artassault",
+                "WS0007": "diableavionics_artassault",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"WS0000": "diableavionics_draftarmormodule_Close_Quarters"},
+    ],
+}

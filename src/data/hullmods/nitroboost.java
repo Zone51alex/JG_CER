@@ -28,7 +28,7 @@ public class nitroboost extends BaseHullMod {
         }
     }
 
-    //
+    //Add Hullmods to the Blacklist
     public nitroboost() {
         this.BLOCKED_HULLMODS = new HashSet<>();
         this.BLOCKED_HULLMODS.add("auxiliarythrusters");

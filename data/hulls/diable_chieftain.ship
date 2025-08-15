@@ -23,6 +23,9 @@
         "repair_gantry",
         "surveying_equipment"
     ],
+    "builtInWeapons": {
+        "WS0008": "diableavionics_magicbox"
+    },
     "builtInWings": [
         "diable_mite_drone_wing",
         "diable_mite_drone_wing"
@@ -65,10 +68,10 @@
         {
             "id": "WS0008",
             "size": "SMALL",
-            "type": "HYBRID",
+            "type": "BUILT_IN",
             "mount": "TURRET",
-            "arc": 165,
-            "angle": 80,
+            "arc": 0,
+            "angle": 90,
             "locations": [
                       12,      6.5
             ]

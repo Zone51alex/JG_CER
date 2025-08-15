@@ -1,0 +1,41 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 8,
+    "goalVariant": false,
+    "hullId": "diableavionics_sleet",
+    "hullMods": [
+        "magazines",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_sleet_StandardB",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_graveac",
+                "WS0002": "diableavionics_graveac",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diableavionics_thunderboltsmall",
+                "WS0004": "diableavionics_thunderboltsmall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_artassault",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

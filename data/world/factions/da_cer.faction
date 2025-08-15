@@ -47,6 +47,9 @@
 		},
 		"hulls":{
 			"gremlin":0,
+			"diable_raven_C":1,
+            "diable_valiant_C":1,
+            "diable_zephyr_C":1,
             "diableavionics_draft":1,
             "diableavionics_vapor":1,
             "diableavionics_sleet":1,
@@ -88,7 +91,13 @@
             "diable_rime_m_cer":0.25,
 			"diable_fractus_cer":1,
 			"diable_fractalus":0.5,
-			"diable_chieftain_EX":1,
+			"diable_storm_cer":1,
+			"diable_chieftain":1,
+			"diable_burst":2,
+			
+			"diable_raven_C":1,
+            "diable_valiant_C":1,
+            "diable_zephyr_C":1,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -142,7 +151,13 @@
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
 			"diable_fractalus",
+			"diable_storm_cer",
 			"diable_chieftain",
+			"diable_burst",
+			
+			"diable_raven_C":1,
+            "diable_valiant_C":1,
+            "diable_zephyr_C":1,
 		],
 	},
 	"knownShips":{
@@ -194,7 +209,13 @@
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
 			"diable_fractalus",
+			"diable_storm_cer",
 			"diable_chieftain",
+			"diable_burst",
+			
+			"diable_raven_C":1,
+            "diable_valiant_C":1,
+            "diable_zephyr_C":1,
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -238,7 +259,13 @@
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
 			"diable_fractalus",
+			"diable_storm_cer",
 			"diable_chieftain",
+			"diable_burst",
+			
+			"diable_raven_C":1,
+            "diable_valiant_C":1,
+            "diable_zephyr_C":1,
 		],
 	},
 	"knownFighters":{

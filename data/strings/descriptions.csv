@@ -26,7 +26,7 @@ This Carrier now has Specialized Gantries for The Arbitrator series thanks to Co
 diable_rime_m_cer,SHIP,"A light cruiser getting progressively phased out due to midling combat performance. While still adequate as a back-lines support ship, the fragility of the hull as well as its lack of dedicated Wanzer facilities has lead the Admiralty to decide to convert existing Rime-class into armed merchants instead.
 
 Junker's Guild Restored those Ships and Modified them with their Favorite System, Plasma Jets.",,,
-diable_chieftain,SHIP,The Junk Cruiser Built during The Hedgemony Counter-invasion and is immortolized as Corvid Engineering's Main Flagship to field for Fleet commanders who wants to go on the fringes of Space.,,,
+diable_chieftain,SHIP,The Junk Cruiser Built during The Hegemony Counter-invasion and is immortolized as Corvid Engineering's Main Flagship to field for Fleet commanders who wants to go on the fringes of Space.,,,
 diable_fractalus,SHIP,,,,
 ,,,,,
 # VERSANT,,,,,
@@ -122,9 +122,12 @@ diable_superrime_EX,SHIP,"a Persudo EXperimental Flagship with one Extra Small M
 ,,,,,
 diableavionics_driftcompact,SHIP_SYSTEM,"A failed capital class flicker core that only allows quick re-orient rather than full ship displacement, its been Minaturized and Enhanced and Tinted with Gold, still a Prototype.",Movement,"Rapidly reorients the ship in the desired bearing with a nudge in the velocity direction. Drains a small amount of flux, especially when the shields are down.",
 diableavionics_driftflagship,SHIP_SYSTEM,"A failed capital class flicker core that only allows quick re-orient rather than full ship displacement, its been Minaturized and Enhanced, still a Prototype.",Movement,"Rapidly reorients the ship in the desired bearing with a nudge in the velocity direction. Drains a small amount of flux, especially when the shields are down.",
+diableavionics_kaijudrive,SHIP_SYSTEM,Temporarily engages a primary burn on the system travel drive of the ship. Provides a massive speed boost for a fixed time. The System's Lock for Turning is removed and provides Shields with Invulnerability.,Movement,,The ship's top speed is increased by {{200}}.
 ,,,,,
+#Items,,,,,
+cer_ichip_cyan,RESOURCE,a Custom AI core Imprinted with a Personality designed for Combat Only.,,,
 ,,,,,
-#FACTION,,,,,
+#FACTION,,,,Provides a massive speed boost Includes invulnerable shields. Collisions won't cause a flameout.,
 ,,,,,
 da_cer,FACTION,An Engineering & Recovery Subsidary of Diable Avionics Rebuilt to Help Diable Restore their Battered Forces and Produce New Tech from their Ashes.,,,
 ,,,,,

@@ -65,7 +65,7 @@
       "angle": 180,
       "contrailSize": 6,
       "style": "CUSTOM",
-      "styleId": "DiableAvionicsTrail"
+      "styleId": "GetterRayTrail"
     },
     {
       "location": [-19, -20.5],
@@ -74,7 +74,7 @@
       "angle": -180,
       "contrailSize": 6,
       "style": "CUSTOM",
-      "styleId": "DiableAvionicsTrail"
+      "styleId": "GetterRayTrail"
     },
     {
       "location": [-23, 10.5],
@@ -83,7 +83,7 @@
       "angle": 180,
       "contrailSize": 6,
       "style": "CUSTOM",
-      "styleId": "DiableAvionicsTrail"
+      "styleId": "GetterRayTrail"
     },
     {
       "location": [-23, -10.5],
@@ -92,7 +92,7 @@
       "angle": -180,
       "contrailSize": 6,
       "style": "CUSTOM",
-      "styleId": "DiableAvionicsTrail"
+      "styleId": "GetterRayTrail"
     },
     {
       "location": [-29, 0],
@@ -101,7 +101,7 @@
       "angle": -180,
       "contrailSize": 10,
       "style": "CUSTOM",
-      "styleId": "DiableAvionicsTrail"
+      "styleId": "GetterRayTrail"
     }
   ],
   "bounds": [

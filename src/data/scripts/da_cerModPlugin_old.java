@@ -46,11 +46,11 @@ public class da_cerModPlugin_old extends BaseModPlugin {
   }
   
   protected void addFleetsToOngoingGame() {
-    cerGen.spawngrandfleet();
+    //cerGen.spawngrandfleet();
   }
   
   public void onNewGameAfterEconomyLoad() {
-    cerGen.spawngrandfleet();
+    //cerGen.spawngrandfleet();
     MarketAPI market = Global.getSector().getEconomy().getMarket("OT_a");
     if (market != null) {
       if (!market.getAdmin().getName().getLast().equals("Dankshire")) {

@@ -1,0 +1,51 @@
+{
+    "displayName": "Close Quarter_B",
+    "fluxCapacitors": 20,
+    "fluxVents": 9,
+    "goalVariant": false,
+    "hullId": "diableavionics_hayle",
+    "hullMods": [
+        "hardenedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_hayle_Close_Quarter_B",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "diableavionics_thunderboltsmall",
+                "WS0003": "diableavionics_thunderboltsmall",
+                "WS0002": "diableavionics_thunderboltsmall",
+                "WS0004": "diableavionics_thunderboltsmall",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "diableavionics_magicbox",
+                "WS0006": "diableavionics_magicbox",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "diableavionics_gravemg",
+                "WS0008": "diableavionics_gravemg",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "diableavionics_glowtusk",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

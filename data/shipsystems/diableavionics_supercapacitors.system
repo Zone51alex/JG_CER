@@ -5,8 +5,8 @@
 
 	"statsScript":"data.shipsystems.scripts.Diableavionics_shieldStats",
 	
-	"shieldRingColor":[255,255,255,255],
-	"shieldInnerColor":[255,100,200,75],
+	"shieldRingColor":[50,155,50,255],
+	"shieldInnerColor":[100,255,100,200],
 	"shieldThicknessMult":2,
 	"shieldFluctuationMult":1,
 	

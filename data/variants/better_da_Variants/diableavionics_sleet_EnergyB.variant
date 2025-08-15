@@ -1,0 +1,41 @@
+{
+    "displayName": "Energy",
+    "fluxCapacitors": 10,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "diableavionics_sleet",
+    "hullMods": [
+        "hardenedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_sleet_EnergyB",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diable_urn",
+                "WS0002": "diable_urn",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diable_plow",
+                "WS0004": "diable_plow",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diable_gravemac",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

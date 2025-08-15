@@ -2,17 +2,94 @@
 	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
 	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
 	"combatSmallForSmallFleet":{
+			#better DA Variant Patrols Frigates OVERRIDE
+			"diableavionics_draft_standard":0,
+            "diableavionics_draft_support":0,
+            "diableavionics_draft_assault":0,
+
+            "diableavionics_sleet_assault":0,
+            "diableavionics_sleet_beam":0,
+            "diableavionics_sleet_standard":0,
+            "diableavionics_sleet_support":0,
+			#Better DA Variant Patrols Frigates
+			"diableavionics_draft_StandardB":4,
+            "diableavionics_draft_Close_QuarterB":3,
+			"diableavionics_draft_Energy":3,
+
+            "diableavionics_sleet_Assaultb":2,
+            "diableavionics_sleet_EnergyB":2,
+            "diableavionics_sleet_StandardB":3,
+            "diableavionics_sleet_SupportB":3,
+
+            "diableavionics_vapor_AttackB":2,
+            "diableavionics_vapor_Standard":2,
+            "diableavionics_vapor_Close_QuarterB":2,
+            "diableavionics_vapor_BrawlerB":2,
+
+            "diableavionics_versant_AssaultB":1,
+            "diableavionics_versant_EscortB":1,
+            "diableavionics_versant_StandardB":1,
+
+			"diable_raven_C_Standard":1,
+            "diable_valiant_C_Standard":1,
+            "diable_zephyr_C_Standard":1,
+			"diable_vapor_cer_Attack":1,
+            "diable_vapor_cer_Standard":1,
+            "diable_vapor_cer_Close_Quarter":1,
+            "diable_vapor_cer_Brawler":1,
            
 	},
 	"combatSmall":{
+		#better DA Variant Patrols Frigates OVERRIDE
+		    "diableavionics_draft_standard":0,
+            "diableavionics_draft_support":0,
+            "diableavionics_draft_assault":0,
+
+            "diableavionics_sleet_assault":0,
+            "diableavionics_sleet_beam":0,
+            "diableavionics_sleet_standard":0,
+            "diableavionics_sleet_support":0,
+
+            "diable_brisk_standard":0,
+            "diable_brisk_escort":0,
+            "diable_brisk_support":0,
+			
+			"diableavionics_vapor_attack":0,
+            "diableavionics_vapor_standard":0,
+            "diableavionics_vapor_closeRange":0,
+            "diableavionics_vapor_closequarter":0,
+            "diableavionics_vapor_brawler":0,
+			#better DA Variant Patrols Frigates
+			"diableavionics_draft_StandardB":4,
+            "diableavionics_draft_Close_QuarterB":3,
+			"diableavionics_draft_Energy":3,
+
+            "diableavionics_sleet_Assaultb":2,
+            "diableavionics_sleet_EnergyB":2,
+            "diableavionics_sleet_StandardB":3,
+            "diableavionics_sleet_SupportB":3,
+
+            "diable_brisk_StandardB":2,
+            "diable_brisk_EscortB":2,
+            "diable_brisk_SupportB":2,
+			"diable_brisk_Energy":2,
+
+            "diableavionics_vapor_AttackB":2,
+            "diableavionics_vapor_Standard":2,
+            "diableavionics_vapor_Close_QuarterB":2,
+            "diableavionics_vapor_BrawlerB":2,
+
+            "diableavionics_versant_AssaultB":3,
+            "diableavionics_versant_EscortB":3,
+            "diableavionics_versant_StandardB":4,
+			
+			"diable_raven_C_Standard":1,
+            "diable_valiant_C_Standard":1,
+            "diable_zephyr_C_Standard":1,
             "diable_vapor_cer_Attack":1,
             "diable_vapor_cer_Standard":1,
             "diable_vapor_cer_Close_Quarter":1,
             "diable_vapor_cer_Brawler":1,
-
-            "diable_versant_cer_Assault":1,
-            "diable_versant_cer_Escort":1,
-            "diable_versant_cer_Standard":1,
 	},
 	"combatMedium":{
 
@@ -25,7 +102,11 @@
             "diable_fractalus_Support":1,
             "diable_fractalus_E.Support":1,
 			"diable_fractalus_Energy":1,
-
+			
+			"diable_burst_Assault":1,
+            "diable_burst_Energy":1,
+            "diable_burst_Standard":1,
+			"diable_burst_Support":1,
 	},
 	"combatLarge":{
 
@@ -38,10 +119,11 @@
             "diable_rime_m_cer_Standard":1,
             "diable_rime_m_cer_Assault":1,
             "diable_rime_m_cer_Advanced":1,
+			
+			"diableavionics_daze_AntiFighter":2,
 
 	},
 	"combatCapital":{
-
             "diable_chieftain_Standard":1,			
             "diable_chieftain_Support":1,			
             "diable_chieftain_DAKKA":1,		
@@ -57,7 +139,10 @@
 		
 	},
 	"combatFreighterLarge":{
-           
+           "diable_chieftain_Standard":1,			
+            "diable_chieftain_Support":1,			
+            "diable_chieftain_DAKKA":1,		
+            "diable_chieftain_Junk":1,
 	},
 	
 	"civilianRandom":{
@@ -73,7 +158,10 @@
             "diable_fractus_cer_antiFighter":1,
 	},
 	"carrierMedium":{	
-           
+            "diable_storm_cer_Standard":2,	
+            "diable_storm_cer_Quick-Strike":2,	
+            "diable_storm_cer_Assault":2,	
+            "diable_storm_cer_Support":2,	
 	},
 	"carrierLarge":{
             
@@ -82,12 +170,16 @@
 
 	# phase ships
 	"phaseSmall":{
-		"diable_brisk_cer_Standard":1,
-		"diable_brisk_cer_Energy":1,
+			#better DA Variant Patrols persudo Phase
+		    "diable_brisk_StandardB":2,
+            "diable_brisk_EscortB":2,
+            "diable_brisk_SupportB":2,
+			"diable_brisk_Energy":2,
 	},
 	"phaseMedium":{
-		"diable_coanda_cer_Standard":1,
-		"diable_coanda_cer_Energy":1,
+		#better DA Variant Patrols persudo Phase
+		"diable_coanda_cer_Standard":2,
+		"diable_coanda_cer_Energy":2,
 	},
 	"phaseLarge":{
 	},

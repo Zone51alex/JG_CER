@@ -24,7 +24,7 @@
 					   "particleSizeRange":25.0,
 					   "particleDuration":0.1,
 					   "particleCount":7,
-					   "particleColor":[201,109,234,220]},
+					   "particleColor":[109,234,109,220]},
 	"autocharge":true,					   
 	"projectileSpecId":"diableavionics_Raycast_shot",
 	"fireSoundTwo":"diableavionics_harvest_firing",

@@ -6,7 +6,7 @@
   "size": "SMALL",
   "everyFrameEffect": "data.scripts.weapons.Diableavionics_uhlanFire",
   "displayArcRadius": 400,
-  "turretSprite": "graphics/jg/weapons/diableavionics_UrnTurret_base.png",
+  "turretSprite": "graphics/jg/weapons/diableavionics_UrnTurret_Base.png",
   "turretGunSprite": "graphics/jg/weapons/diableavionics_UrnTurret_Barrel.png",
   "hardpointSprite": "graphics/jg/weapons/diableavionics_UrnHardpoint_base.png",
   "hardpointGunSprite": "graphics/jg/weapons/diableavionics_UrnHardpoint_Barrel.png",

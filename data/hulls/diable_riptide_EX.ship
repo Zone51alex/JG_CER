@@ -17,16 +17,14 @@
     "shieldRadius": 137.5,
     "viewOffset": 0,
     "builtInMods": [
-        "diableavionics_mountBI"
+        "diableavionics_mountBI",
+        "diableavionics_universaldecksExtra"
     ],
     "builtInWeapons": {
         "WS0011": "diable_reioiboxEX",
         "WS0010": "diable_reioiboxEX"
     },
-    "builtInWings": [
-        "diable_mite_drone_wing",
-        "diable_mite_drone_wing"
-    ],
+    "builtInWings": [],
     "builtInModules": null,
     "weaponSlots": [
         {

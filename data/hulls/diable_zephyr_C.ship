@@ -1,0 +1,267 @@
+{
+    "hullName": "Zephyr C Type",
+    "hullId": "diable_zephyr_C",
+    "hullSize": "FRIGATE",
+    "style": "DA_WANZER",
+    "spriteName": "graphics/da/ships/zephyr/diableavionics_zephyr_body.png",
+    "height": 35,
+    "width": 26,
+    "center": [
+        13, 19
+    ],
+    "collisionRadius": 42,
+    "coversColor": "",
+    "shieldCenter": [
+        -1.5, 0
+    ],
+    "shieldRadius": 40,
+    "viewOffset": 0,
+    "builtInMods": [
+        "pointdefenseai",
+        "diable_Wanzercraft",
+        "diable_armareplacer",
+        "reduced_explosion",
+        "diableavionics_wanzer",
+        "autorepair"
+    ],
+    "builtInWeapons": {
+        "HEAD": "diableavionics_zephyr_head",
+        "LEFT_BEAM": "diableavionics_zephyr_leftBeam",
+        "RIGHT_BEAM": "diableavionics_zephyr_rightBeam",
+        "WS 000": "diableavionics_itanolauncher",
+        "LEFT_ARM": "diableavionics_zephyr_leftArm",
+        "LEFT_CHEST": "diableavionics_zephyr_leftChest",
+        "LEFT_PAULDRON": "diableavionics_zephyr_leftPauldron",
+        "LEFT_ROD_A": "diableavionics_zephyr_leftRod",
+        "LEFT_ROD_B": "diableavionics_zephyr_leftRod",
+        "RAIL": "diableavionics_zephyr_rail",
+        "RIGHT_ARM": "diableavionics_zephyr_rightArm",
+        "RIGHT_CHEST": "diableavionics_zephyr_rightChest",
+        "RIGHT_PAULDRON": "diableavionics_zephyr_rightPauldron",
+        "RIGHT_ROD_A": "diableavionics_zephyr_rightRod",
+        "RIGHT_ROD_B": "diableavionics_zephyr_rightRod"
+    },
+    "builtInWings": [
+        "diableavionics_zephyr_wing"
+    ],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "RIGHT_BEAM",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": -15,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "LEFT_BEAM",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 15,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "RIGHT_ROD_A",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": -164,
+            "locations": [
+                    -6.5,      -13
+            ]
+        },
+        {
+            "id": "LEFT_ROD_A",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 164,
+            "locations": [
+                    -6.5,       13
+            ]
+        },
+        {
+            "id": "LEFT_ROD_B",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 135,
+            "locations": [
+                     5.5,       15
+            ]
+        },
+        {
+            "id": "RIGHT_ROD_B",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": -135,
+            "locations": [
+                     5.5,      -15
+            ]
+        },
+        {
+            "id": "LEFT_ARM",
+            "size": "MEDIUM",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 20,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "RIGHT_ARM",
+            "size": "MEDIUM",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": -20,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "LEFT_PAULDRON",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 20,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "RIGHT_PAULDRON",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": -20,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "LEFT_CHEST",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "RIGHT_CHEST",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "HEAD",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 135,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "CHEST_BEAM",
+            "size": "MEDIUM",
+            "type": "SYSTEM",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    19.5,        0
+            ]
+        },
+        {
+            "id": "RAIL",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      20,        0
+            ]
+        },
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -18, 5.5
+            ],
+            "length": 8.5,
+            "width": 8,
+            "angle": 173,
+            "contrailSize": 8,
+            "style": "DiableAvionicsTrail"
+        },
+        {
+            "location": [
+                -18, -5.5
+            ],
+            "length": 8.5,
+            "width": 8,
+            "angle": -173,
+            "contrailSize": 8,
+            "style": "DiableAvionicsTrail"
+        },
+        {
+            "location": [
+                -14.5, 0
+            ],
+            "length": 13.5,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 8,
+            "style": "DiableAvionicsTrail"
+        }
+    ],
+    "bounds": [
+              13,        8,
+              -4,       17,
+             -16,        8,
+             -16,       -8,
+              -4,      -17,
+        
+              13,       -8
+    ]
+}

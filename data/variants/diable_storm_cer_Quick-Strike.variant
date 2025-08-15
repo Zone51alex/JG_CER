@@ -1,7 +1,7 @@
 {
     "displayName": "Quick-Strike",
-    "fluxCapacitors": 8,
-    "fluxVents": 0,
+    "fluxCapacitors": 5,
+    "fluxVents": 2,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [
@@ -23,23 +23,23 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "diableavionics_thunderboltpod",
-                "WS0006": "diableavionics_thunderboltpod",
+                "WS0005": "diableavionics_thrush",
+                "WS0006": "diableavionics_thrush",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_glaux",
+                "WS0001": "diable_urn2",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "diableavionics_hexafire",
-                "WS0004": "diableavionics_hexafire",
+                "WS0003": "diableavionics_glaux",
+                "WS0004": "diableavionics_glaux",
             }
         },
         {

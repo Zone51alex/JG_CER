@@ -1,0 +1,3 @@
+name,id,demand class,base price,export value,price variability,utility,origin,tags,stack size,cargo space,icon,sound id,sound id drop,order,economyTier,econUnit,iconWidthMult,plugin,desc
+#ai Cores,,,,,,,,,,,,,,,,,,,
+Cyan Core,cer_ichip_cyan,survey_data,,,,50,,"nonecon, ai_core, no_loss_from_combat, codex_unlockable",1000,1,graphics/jg/icons/cargo/cer_cyancore.png,ai_core_pickup,ui_fighter_drop,42,,,1,,

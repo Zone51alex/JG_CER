@@ -5,21 +5,23 @@
 	
 	"statsScript":"data.scripts.shipsystems.diableavionics_KaijuDriveStats",
 	
-	"engineGlowColor":[125,0,155,255],
-	"engineGlowContrailColor":[165,100,255,25],
-	"engineGlowLengthMult":30,
-	"engineGlowWidthMult":5,
-	"engineGlowGlowMult":5,
+	"engineGlowColor":[50,175,50,255],
+	"engineGlowContrailColor":[100,255,100,25],
+	"engineGlowLengthMult":45,
+	"engineGlowWidthMult":3,
+	"engineGlowGlowMult":3,
 	
-	"shieldRingColor":[255,255,255,255],
-	"shieldInnerColor":[255,100,200,75],
+	"shieldRingColor":[50,155,50,255],
+	"shieldInnerColor":[100,255,100,100],
 	"shieldThicknessMult":2,
 	"shieldFluctuationMult":1,
-	
-	"soundFilterType":"HIGHPASS",
-	"soundFilterGain":0.75,
-	"soundFilterGainHF":0.0,
-	
+		
+	"jitterColor":[100,255,100,200],
+	"jitterCopies":1,
+	"jitterMinRange":0,
+	"jitterRange":0,
+	"jitterRangeRadiusFraction":0,
+		
 	"flameoutOnImpactChance":0.0,
 
 	"clampTurnRateAfter":true,

@@ -17,18 +17,22 @@ Streamlined Capacitors,EX_streamcaps,0,0,Corvid Engineering,"no_drop,no_drop_sal
 Proto Gyro Phase Core,EX_Humming_core,0,0,Corvid Engineering,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.hullmods.humming_core,"the Gyro Core has been Replaced with a self containing Stable Phase core,during shut down, care must be take to not Implode the ship.
 Boost the Ship Speed by %s.",Anomalus Gyro Phase Core,,graphics/jg/hullmods/EX_PhaseGyrocore.png
 Regulated Shields,EX_regulateshieldemitter,0,0,Corvid Engineering,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.hullmods.regulatedshieldemitter,Reduces the amount of soft flux raised shields generate per second by %s and Converts %s of the hard flux damage taken by shields to soft flux. - incompatible with %s.,Reduces the Flux gen on Shields and Converts hard flux to soft flux.,,graphics/jg/hullmods/ex_nitroInjection.png
+Kaiju Engines,EX_kaijuengines,0,0,Corvid Engineering,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.hullmods.kaijuengines,"by Using an Unknown Energy Source, Empower the Custom Burn Drive into a Fearsome Ship System, The Energy Source Forces Weapons and Engines To Get back Online Faster by %s.
+Incompatilbe with %s.",its a SuperCharged Burn Drive.,,graphics/jg/hullmods/ex_kaijuengines.png
 ,,,,,,,,,,,,,,,,,,,
 #Fluff Hullmods,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 Super Grazer Core,EX_dummy2,0,0,Corvid Engineering,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.scripts.hullmods.dummy2,"A Prototype Super Phase Grazer Core is Installed on this Ship, Behaves like a Phase Grazer Core.",Allows the Ship to use a Phase Grazer Core.,,graphics/jg/hullmods/ex_impthrusters.png
 Micro Grazer Core,EX_dummy,0,0,Corvid Engineering,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.scripts.hullmods.dummy,"A Prototype Micro Phase Grazer Core is Installed on this Ship, Behaves like a Phase Grazer Core.",Allows the Ship to use a Phase Grazer Core.,,graphics/jg/hullmods/ex_MicroFlickerMod.png
-Brown Note Modification,jg_brownnote,2,0,Corvid Engineering,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.hullmods.jg_brownnote,"The Ship System is not Designed as a Phase Cloak thus does not use Coils, their speed never goes lower than %s during use.
+Brown Note Modification,jg_brownnote,0,0,Corvid Engineering,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.hullmods.jg_brownnote,"The Ship System is not Designed as a Phase Cloak thus does not use Coils, their speed never goes lower than %s during use.
 
 This Ship system is not a phase cloak thus can’t use %s.",Reduces impact of hard flux level on top speed while using the Phase Wave.,,graphics/da/hullmods/diableavionics_cramped.png
+Semi-Automated Ship,cer_automated,0,0,Corvid Engineering,"no_drop,no_drop_salvage",Special,,FALSE,TRUE,FALSE,0,0,0,0,data.hullmods.cer_semiautomated,"This ship is fully automated, but can Take Crew.",Does not require crew But can support crew.,,graphics/hullmods/automated.png
 ,,,,,,,,,,,,,,,,,,,
 #Debuff Hullmods,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 Overloaded Subsystems,jg_overloadedsubsystems,0,0,,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.hullmods.overloadedsubsystems,Increases the rate of in-combat CR decay after peak performance time runs out by %s and Decreases peak performance time by %s.,Halves both CR Decay rate and Peak Performance time by 50%.,,graphics/hullmods/illadvised.png
+Cramped Hull(Missile),diable_crampedmissile,0,0,,"no_drop,no_drop_salvage",Special,0,FALSE,TRUE,FALSE,0,0,0,0,data.hullmods.diable_crampedhullmissile,"This hull is abnormally small and can't accommodate any modification requiring much space such as %s, %s.",Prevents the installation of large hullmods.,,graphics/da/hullmods/diableavionics_cramped.png
 ,,,,,,,,,,,,,,,,,,,
 #Versant EX Hullmod,,,,,,,,,,,,,,,,,,,
 Versant Frame,diableavionics_tuning_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.versant.DATuningEX,"The Versant frame offers limited customization options in the form of various firing profile for its built-in MP66-6 Harvest guns.
@@ -63,7 +67,7 @@ Fire selector: Artdeux,diableavionics_selector_artdeux_EX,,,,no_build_in,,,,TRUE
 %s has better sustained firepower, but worse accuracy and range.
 
 %s",,,graphics/jg/hullmods/diableavionics_selector_artdeux.png
-Fire selector: Snowball,diableavionics_selector_snowball_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.roaring.DARoaringSnowball,"The Roaring Guns can be changed from 3 HE weapons included in the System to better suit the captain's preferences.
+Fire selector: Heatblast,diableavionics_selector_snowball_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.roaring.DARoaringSnowball,"The Roaring Guns can be changed from 3 HE weapons included in the System to better suit the captain's preferences.
 
 %s has better accuracy and flux efficiency, but worse sustained firepower.
 
@@ -73,3 +77,8 @@ Fire selector: Anaconda,diableavionics_selector_cicada_EX,,,,no_build_in,,,,TRUE
 %s has much better damage per shot and range, but worse sustained firepower and flux efficiency.
 
 %s",,,graphics/jg/hullmods/diableavionics_selector_cicada.png
+,,,,,,,,,,,,,,,,,,,
+#Replacers,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+StrikeCraft Caller,diable_Wanzercraft,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.diable_Wanzercraft,,,,graphics/da/hullmods/diableavionics_mount.png
+WingCommander Caller,diable_armareplacer,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.diable_armareplacer,Thank God For Arma.,,,graphics/da/hullmods/diableavionics_mount.png

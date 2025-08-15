@@ -172,7 +172,7 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 10,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-76, -15.5],
@@ -180,7 +180,7 @@
       "width": 10,
       "angle": -180,
       "contrailSize": 10,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-75, 23.5],
@@ -188,7 +188,7 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 10,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-75, -23.5],
@@ -196,7 +196,7 @@
       "width": 10,
       "angle": -180,
       "contrailSize": 10,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-55, 42.5],
@@ -204,7 +204,7 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 10,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-55, -42.5],
@@ -212,7 +212,7 @@
       "width": 10,
       "angle": -180,
       "contrailSize": 10,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-42, 53.5],
@@ -220,7 +220,7 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 10,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-42, -53.5],
@@ -228,7 +228,7 @@
       "width": 10,
       "angle": -180,
       "contrailSize": 10,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-97, 7.5],
@@ -236,7 +236,7 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 128,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     },
     {
       "location": [-97, -7.5],
@@ -244,7 +244,7 @@
       "width": 10,
       "angle": -180,
       "contrailSize": 128,
-      "style": "DiableAvionicsTrail"
+      "style": "GetterRayTrail"
     }
   ],
   "bounds": [

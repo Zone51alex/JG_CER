@@ -6,15 +6,15 @@ import com.fs.starfarer.api.plugins.ShipSystemStatsScript;
 import data.scripts.util.Diableavionics_stringsManager;
 
 public class Diableavionics_transit3Stats extends BaseShipSystemScript {
-    private final Integer SPEED_BONUS = Integer.valueOf(130);
+    private final Integer SPEED_BONUS = Integer.valueOf(140);
 
-    private final Integer ACCEL_BONUS = Integer.valueOf(100);
+    private final Integer ACCEL_BONUS = Integer.valueOf(200);
 
-    private final float DECEL_MALUS = 0.9F;
+    private final float DECEL_MALUS = 0.8F;
 
-    private final float TURN_MALUS = 0.5F;
+    private final float TURN_MALUS = 0.4F;
 
-    private final float DAMAGE_REDUCTION = 0.5F;
+    private final float DAMAGE_REDUCTION = 0.75F;
 
     public void apply(MutableShipStatsAPI stats, String id, ShipSystemStatsScript.State state, float effectLevel) {
         if (state == ShipSystemStatsScript.State.OUT) {
@@ -44,7 +44,7 @@ public class Diableavionics_transit3Stats extends BaseShipSystemScript {
 
     private final String TXT2 = Diableavionics_stringsManager.txt("transit3");
 
-    private final String TXT3 = Diableavionics_stringsManager.txt("%");
+   /*private final String TXT3 = Diableavionics_stringsManager.txt("%");*/
 
     public ShipSystemStatsScript.StatusData getStatusData(int index, ShipSystemStatsScript.State state, float effectLevel) {
         int speed = Math.round(this.SPEED_BONUS.intValue() * effectLevel);

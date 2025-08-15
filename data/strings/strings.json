@@ -35,21 +35,42 @@
 				"EX_impthrusters":"Auxiliary Thrusters",
 				"EX_nitro_1":"Stabilized Shields",
 				"EX_nitro_2":"Unstable Injector",
+				"EX_kaijuengines_1":"Automated Repair Unit",
 				"jg_persudophase":"Phase Hullmods",
 				
                 "hm_warning":"WARNING",
                 "hm_noBays":"This ship does not have standard fighter bays.",
 				"hm_builtin":"This ship is already equipped with this hullmod.",
 				
-				"rm_selector_0":"Artdeux Gun mode",
-                "rm_selector_1":"Snowball Gun mode",
-                "rm_selector_2":"Anaconda Gun mode",
+				"rm_selector_0":"ArtAssault Cannons",
+                "rm_selector_1":"HeatBlast Shotguns",
+                "rm_selector_2":"Anaconda Grenade Launcher",
                 "rm_selector":"Remove this hullmod to switch between Gun Modes.",
 				
 				"grandFN":"Admiral",
 				"grandLN":"Y11",
 				"grandFleet":"Pina Colada Task Force",
 				"grandShip":"CESN Starbound",
+				
+				"1stFleet":"Pina Colada Task Force",
+				"1stFlagship":"CESN Black Pearl",
+				"1stFleetFN":"Admiral",
+				"1stFleetLN":"Leiph",
+				
+				"2ndFleet":"Shotgun Warriors Task Force",
+				"2ndFlagship":"CESN Starbound",
+				"2ndFleetFN":"Admiral",
+				"2ndFleetLN":"Y11",
+				
+				"3rdFleet":"Corvid Fast Patrol Fleet",
+				"3rdFlagship":"CESN Khrizantema",
+				"3rdFleetFN":"Josh",
+				"3rdFleetLN":"",
+				
+				"4thFleet":"Corvid Spec Ops Fleet",
+				"4thFlagship":"CESN Railjack",
+				"4thFleetFN":"",
+				"4thFleetLN":"",
 
                 "hm_gantry_101":"one additional strikecraft",
                 "hm_gantry_102":"Effect:",

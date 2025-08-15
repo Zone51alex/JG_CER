@@ -15,7 +15,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		// Set up the fleets so we can add ships and fighter wings to them.
 		// In this scenario, the fleets are attacking each other, but
 		// in other scenarios, a fleet may be defending or trying to escape
-		api.initFleet(FleetSide.PLAYER, "CESN", FleetGoal.ATTACK, false);
+		api.initFleet(FleetSide.PLAYER, "CESN", FleetGoal.ATTACK, true);
 		api.initFleet(FleetSide.ENEMY, "DSF", FleetGoal.ATTACK, true);
 
 		// Set a small blurb for each fleet that shows up on the mission detail and
@@ -33,24 +33,24 @@ public class MissionDefinition implements MissionDefinitionPlugin {
                 api.addToFleet(FleetSide.PLAYER, "diable_gust_EX_Flagship", FleetMemberType.SHIP,"CESN Marauder", true);
                 api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX_Flagship", FleetMemberType.SHIP,"CESN Black Pearl", false);	
                 api.addToFleet(FleetSide.PLAYER, "diable_chieftain_EX_Flagship", FleetMemberType.SHIP,"CESN Starbound", false);		   
-                api.addToFleet(FleetSide.PLAYER, "diable_storm_EX_Flagship", FleetMemberType.SHIP,"CESN Oldstorm", false);	               
-                api.addToFleet(FleetSide.PLAYER, "diable_gust_EX2_Flagship", FleetMemberType.SHIP,"CESN Kushala", false);	
-                api.addToFleet(FleetSide.PLAYER, "diable_superrime_EX_Flagship", FleetMemberType.SHIP,"CESN Arrow", false);	            
-                api.addToFleet(FleetSide.PLAYER, "diable_riptide_EX_Flagship", FleetMemberType.SHIP,"DSF Riptide", false);	           
-                api.addToFleet(FleetSide.PLAYER, "diable_calm_EX_Flagship", FleetMemberType.SHIP,"CESN Railjack", false);	             
-                api.addToFleet(FleetSide.PLAYER, "diable_daze_EX_Flagship", FleetMemberType.SHIP,"CESN Merkava", false);
+                api.addToFleet(FleetSide.PLAYER, "diable_storm_EX_Flagship", FleetMemberType.SHIP,"CESN Gold Ship", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_daze_EX_Flagship", FleetMemberType.SHIP,"CESN Merkava", false);				
+                api.addToFleet(FleetSide.PLAYER, "diable_gust_EX2_Flagship", FleetMemberType.SHIP,"CESN Khrizantema", false);	
+                api.addToFleet(FleetSide.PLAYER, "diable_superrime_EX_Flagship", FleetMemberType.SHIP,"CESN Heaven's Drill", false);	            
+                api.addToFleet(FleetSide.PLAYER, "diable_riptide_EX_Flagship", FleetMemberType.SHIP,"DSF Star Platinum", false);	           
+                api.addToFleet(FleetSide.PLAYER, "diable_calm_EX_Flagship", FleetMemberType.SHIP,"CESN Railjack", false);				
 				api.addToFleet(FleetSide.PLAYER, "diable_vapor_EX_Flagship", FleetMemberType.SHIP,"CESN Arise", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_versant_EX_Flagship", FleetMemberType.SHIP,"CESN Starlight", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_goblin_EX_Flagship", FleetMemberType.SHIP,"CESN Goblin", false);
 				//Upcoming Ships
 				api.addToFleet(FleetSide.PLAYER, "diable_brisk_cer_Energy", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_coanda_cer_Energy", FleetMemberType.SHIP, false);
-				
 				//Standard Ships
 				api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_fractalus_Assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_burst_Standard", FleetMemberType.SHIP,"CESN Burst", false);
                 api.addToFleet(FleetSide.PLAYER, "diable_miniGust_cer_Support", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_fractus_cer_Bomber", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_rime_m_cer_Advanced", FleetMemberType.SHIP, false);
@@ -61,7 +61,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		// Mark both ships as essential - losing either one results
 		// in mission failure. Could also be set on an enemy ship,
 		// in which case destroying it would result in a win.
-		api.defeatOnShipLoss("DSF Black Pearl");
+		//api.defeatOnShipLoss("DSF Black Pearl");
 		
 		// Set up the enemy fleet.
 		//api.addToFleet(FleetSide.ENEMY, "eagle_Assault", FleetMemberType.SHIP, false);		
@@ -102,36 +102,37 @@ public class MissionDefinition implements MissionDefinitionPlugin {
                 }
 		
 		// Set up the map.
-		float width = 15000f;
-		float height = 11000f;
+		float width = 24000f;
+		float height = 18000f;
 		api.initMap((float)-width/2f, (float)width/2f, (float)-height/2f, (float)height/2f);
 		
 		float minX = -width/2;
 		float minY = -height/2;
 		
-		// All the addXXX methods take a pair of coordinates followed by data for
-		// whatever object is being added.
-		
-		// And a few random ones to spice up the playing field.
-		// A similar approach can be used to randomize everything
-		// else, including fleet composition.
-		for (int i = 0; i < 7; i++) {
+		for (int i = 0; i < 15; i++) {
 			float x = (float) Math.random() * width - width/2;
 			float y = (float) Math.random() * height - height/2;
-			float radius = 100f + (float) Math.random() * 800f; 
+			float radius = 100f + (float) Math.random() * 900f; 
 			api.addNebula(x, y, radius);
 		}
 		
-		// Add objectives. These can be captured by each side
-		// and provide stat bonuses and extra command points to
-		// bring in reinforcements.
-		// Reinforcements only matter for large fleets - in this
-		// case, assuming a 100 command point battle size,
-		// both fleets will be able to deploy fully right away.
-
-		api.addObjective(minX + width * 0.7f, minY + height * 0.25f, "sensor_array");
-		api.addObjective(minX + width * 0.8f, minY + height * 0.75f, "nav_buoy");
-		api.addObjective(minX + width * 0.2f, minY + height * 0.25f, "nav_buoy");
+		api.addNebula(minX + width * 0.8f - 1000, minY + height * 0.4f, 2000);
+		api.addNebula(minX + width * 0.8f - 1000, minY + height * 0.5f, 2000);
+		api.addNebula(minX + width * 0.8f - 1000, minY + height * 0.6f, 2000);
+		
+		api.addObjective(minX + width * 0.8f - 1000, minY + height * 0.4f, "nav_buoy");
+		api.addObjective(minX + width * 0.8f - 1000, minY + height * 0.6f, "nav_buoy");
+		api.addObjective(minX + width * 0.3f + 1000, minY + height * 0.3f, "comm_relay");
+		api.addObjective(minX + width * 0.3f + 1000, minY + height * 0.7f, "comm_relay");
+		api.addObjective(minX + width * 0.5f, minY + height * 0.5f, "sensor_array");
+		api.addObjective(minX + width * 0.2f + 1000, minY + height * 0.5f, "sensor_array");
+		
+		// Add an asteroid field
+		api.addAsteroidField(minX + width * 0.3f, minY, 90, 3000f,
+								20f, 70f, 50);
+		
+		// Add some planets.  These are defined in data/config/planets.json.
+		api.addPlanet(0, 0, 200f, "barren", 350f, true);
 		
 		
 	}

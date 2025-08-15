@@ -1,0 +1,44 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 10,
+    "fluxVents": 4,
+    "goalVariant": false,
+    "hullId": "diableavionics_versant",
+    "hullMods": [
+        "diableavionics_selector_semi",
+        "fluxbreakers",
+        "hardenedshieldemitter",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_versant_EscortB",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0000": "diableavionics_srab",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "diableavionics_micromissile",
+                "WS0002": "diableavionics_micromissile",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN_LEFT": "diableavionics_versant_harvestC_LEFT",
+                "GUN_RIGHT": "diableavionics_versant_harvestC_RIGHT",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

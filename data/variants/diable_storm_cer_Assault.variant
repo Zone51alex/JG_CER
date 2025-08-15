@@ -1,11 +1,12 @@
 {
     "displayName": "Assault",
     "fluxCapacitors": 15,
-    "fluxVents": 17,
+    "fluxVents": 15,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [
         "frontemitter",
+        "jg_salvagewingcon",
     ],
     "permaMods": [],
     "sMods": [],
@@ -31,15 +32,15 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_glowtusk",
+                "WS0001": "diable_diurne",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "diableavionics_gravemg",
-                "WS0004": "diableavionics_gravemg",
+                "WS0003": "diableavionics_nocturne",
+                "WS0004": "diableavionics_nocturne",
             }
         },
         {

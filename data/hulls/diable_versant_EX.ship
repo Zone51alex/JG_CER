@@ -269,7 +269,7 @@
             "width": 10,
             "angle": 180,
             "contrailSize": 30,
-            "style": "VersantCoreTrail"
+            "style": "DiableAvionicsTrail"
         },
         {
             "location": [
@@ -279,7 +279,7 @@
             "width": 10,
             "angle": -180,
             "contrailSize": 30,
-            "style": "VersantCoreTrail"
+            "style": "DiableAvionicsTrail"
         },
         {
             "location": [
@@ -289,7 +289,7 @@
             "width": 10,
             "angle": -180,
             "contrailSize": 30,
-            "style": "VersantCoreTrail"
+            "style": "DiableAvionicsTrail"
         }
     ],
     "bounds": [

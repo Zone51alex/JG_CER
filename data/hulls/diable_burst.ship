@@ -1,0 +1,193 @@
+{
+    "hullName": "Burst",
+    "hullId": "diable_burst",
+    "hullSize": "DESTROYER",
+    "style": "HIGH_TECH",
+    "spriteName": "graphics/jg/ships/diableavionics_burst.png",
+    "height": 291,
+    "width": 99,
+    "center": [
+        36, 131
+    ],
+    "collisionRadius": 167.5,
+    "coversColor": "",
+    "shieldCenter": [
+        15, 0
+    ],
+    "shieldRadius": 151,
+    "viewOffset": 0,
+    "builtInMods": [
+        "diable_crampedmissile",
+        "missleracks"
+    ],
+    "builtInWeapons": {
+        "WS0006": "diable_microreioi",
+        "WS0005": "diable_srabbuiltin"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "SYSTEM",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0.5,
+            "locations": [
+                     -13,    -16.5
+            ]
+        },
+        {
+            "id": "WS0001",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 300,
+            "angle": -60,
+            "locations": [
+                     -40,    -33.5
+            ]
+        },
+        {
+            "id": "WS0002",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 330,
+            "locations": [
+                    70.5,    -32.5
+            ]
+        },
+        {
+            "id": "WS0003",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "renderOrderMod": -10,
+            "arc": 270,
+            "angle": 340,
+            "locations": [
+                    87.5,    -31.5
+            ]
+        },
+        {
+            "id": "WS0004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 88.5,
+            "locations": [
+                   -19.5,     20.5
+            ]
+        },
+        {
+            "id": "WS0005",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    10.5,      2.5
+            ]
+        },
+        {
+            "id": "WS0006",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 270,
+            "locations": [
+                    26.5,    -39.5
+            ]
+        },
+        {
+            "id": "LB 1",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                   -71.5,        5,
+                   -93.5,        5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -96.5, -5
+            ],
+            "length": 21,
+            "width": 7,
+            "angle": 180,
+            "contrailSize": 10,
+            "style": "DiableAvionicsTrail"
+        },
+        {
+            "location": [
+                -96.5, -30
+            ],
+            "length": 21,
+            "width": 7,
+            "angle": -180,
+            "contrailSize": 10,
+            "style": "DiableAvionicsTrail"
+        },
+        {
+            "location": [
+                -97.5, -22
+            ],
+            "length": 21,
+            "width": 7,
+            "angle": 180,
+            "contrailSize": 10,
+            "style": "DiableAvionicsTrail"
+        },
+        {
+            "location": [
+                -97.5, -13
+            ],
+            "length": 21,
+            "width": 9,
+            "angle": -180,
+            "contrailSize": 10,
+            "style": "DiableAvionicsTrail"
+        }
+    ],
+    "bounds": [
+           -91.5,     -1.5,
+           -97.5,     -9.5,
+          -128.5,    -13.5,
+          -128.5,    -21.5,
+           -97.5,    -27.5,
+        
+           -85.5,    -48.5,
+           -70.5,    -42.5,
+           -58.5,    -48.5,
+           -23.5,    -48.5,
+            -8.5,    -40.5,
+        
+            88.5,    -29.5,
+           130.5,    -26.5,
+           122.5,    -17.5,
+           103.5,    -17.5,
+           103.5,      -13,
+        
+              72,      -10,
+            27.5,     -9.5,
+            27.5,     17.5,
+              47,     25.5,
+            -2.5,       32,
+        
+             -46,     32.5,
+           -74.5,     12.5,
+          -101.5,     10.5
+    # 23 points total.
+    ]
+}

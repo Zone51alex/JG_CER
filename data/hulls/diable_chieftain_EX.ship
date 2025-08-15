@@ -17,15 +17,16 @@
     "shieldRadius": 204.5,
     "viewOffset": 0,
     "builtInMods": [
+		"EX_kaijuengines",
         "diableavionics_mountBI",
         "dedicated_targeting_core",
-        "autorepair",
         "diableavionics_universaldecksExtra"
     ],
     "builtInWeapons": {
         "WS0014": "diable_reioiboxEX",
         "WS0015": "diable_reioiboxEX",
-        "WS0016": "diable_reioiboxEX"
+        "WS0016": "diable_reioiboxEX",
+        "WS0008": "diableavionics_magicbox"
     },
     "builtInWings": [
         "diableavionics_valiant_wing",
@@ -69,10 +70,10 @@
         {
             "id": "WS0008",
             "size": "SMALL",
-            "type": "HYBRID",
+            "type": "BUILT_IN",
             "mount": "TURRET",
-            "arc": 165,
-            "angle": 80,
+            "arc": 2,
+            "angle": 90,
             "locations": [
                       12,      6.5
             ]

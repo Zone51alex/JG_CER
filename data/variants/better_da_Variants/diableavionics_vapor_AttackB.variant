@@ -1,0 +1,35 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 10,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "diableavionics_vapor",
+    "hullMods": [
+        "fluxdistributor",
+        "unstable_injector",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_vapor_AttackB",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "diableavionics_nocturne",
+                "WS0002": "diableavionics_nocturne",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diableavionics_micromissile",
+                "WS0004": "diableavionics_micromissile",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

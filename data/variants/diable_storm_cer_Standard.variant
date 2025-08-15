@@ -1,12 +1,11 @@
 {
     "displayName": "Standard",
     "fluxCapacitors": 15,
-    "fluxVents": 10,
+    "fluxVents": 20,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [
-        "fluxbreakers",
-        "turretgyros",
+        "expanded_deck_crew",
     ],
     "permaMods": [],
     "sMods": [],
@@ -14,7 +13,7 @@
     "variantId": "diable_storm_cer_Standard",
     "weaponGroups": [
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
             "weapons": {
                 "WS0010": "diableavionics_microcluster_left",
@@ -24,8 +23,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "diableavionics_thrush",
-                "WS0006": "diableavionics_thrush",
+                "WS0005": "diableavionics_banish",
+                "WS0006": "diableavionics_banish",
             }
         },
         {

@@ -26,7 +26,7 @@
             "particleSizeRange":16.0,
             "particleDuration":0.15,
             "particleCount":33,
-            "particleColor":[201,109,234,220]
+            "particleColor":[109,234,109,220]
         },
 	"projectileSpecId":"diableavionics_Raycast_shot",  # projectile that will be fired
 	"fireSoundTwo":"diableavionics_harvest_firing",

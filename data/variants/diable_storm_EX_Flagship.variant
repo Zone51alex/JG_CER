@@ -1,7 +1,7 @@
 {
     "displayName": "Flagship",
-    "fluxCapacitors": 5,
-    "fluxVents": 24,
+    "fluxCapacitors": 7,
+    "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_storm_EX",
     "hullMods": [
@@ -23,15 +23,15 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "diableavionics_thrush",
-                "WS0006": "diableavionics_thrush",
+                "WS0005": "diableavionics_banish",
+                "WS0006": "diableavionics_banish",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diable_urn2",
+                "WS0001": "diable_diurne",
             }
         },
         {
