@@ -15,9 +15,8 @@
         "turretgyros",
     ],
     "permaMods": [
-        "armaa_wingCommander",
-		"sc_skill_controller",
-        "strikeCraft",
+        "diable_armareplacer",
+        "diable_Wanzercraft",
     ],
     "sMods": [],
     "suppressedMods": [],
