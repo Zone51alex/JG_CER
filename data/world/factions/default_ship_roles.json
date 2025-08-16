@@ -13,16 +13,16 @@
             "diableavionics_sleet_support":0,
 			#Better DA Variant Patrols Frigates
 			"diableavionics_draft_StandardB":4,
-            "diableavionics_draft_Close_QuarterB":3,
+            "diableavionics_draft_Close_QuartersB":3,
 			"diableavionics_draft_Energy":3,
 
-            "diableavionics_sleet_Assaultb":2,
+            "diableavionics_sleet_AssaultB":2,
             "diableavionics_sleet_EnergyB":2,
             "diableavionics_sleet_StandardB":3,
             "diableavionics_sleet_SupportB":3,
 
             "diableavionics_vapor_AttackB":2,
-            "diableavionics_vapor_Standard":2,
+            "diableavionics_vapor_StandardB":2,
             "diableavionics_vapor_Close_QuarterB":2,
             "diableavionics_vapor_BrawlerB":2,
 
@@ -61,21 +61,21 @@
             "diableavionics_vapor_brawler":0,
 			#better DA Variant Patrols Frigates
 			"diableavionics_draft_StandardB":4,
-            "diableavionics_draft_Close_QuarterB":3,
+            "diableavionics_draft_Close_QuartersB":3,
 			"diableavionics_draft_Energy":3,
 
-            "diableavionics_sleet_Assaultb":2,
+            "diableavionics_sleet_AssaultB":2,
             "diableavionics_sleet_EnergyB":2,
             "diableavionics_sleet_StandardB":3,
             "diableavionics_sleet_SupportB":3,
-
-            "diable_brisk_StandardB":2,
+			
+			"diable_brisk_StandardB":2,
             "diable_brisk_EscortB":2,
             "diable_brisk_SupportB":2,
 			"diable_brisk_Energy":2,
 
             "diableavionics_vapor_AttackB":2,
-            "diableavionics_vapor_Standard":2,
+            "diableavionics_vapor_StandardB":2,
             "diableavionics_vapor_Close_QuarterB":2,
             "diableavionics_vapor_BrawlerB":2,
 
@@ -171,15 +171,10 @@
 	# phase ships
 	"phaseSmall":{
 			#better DA Variant Patrols persudo Phase
-		    "diable_brisk_StandardB":2,
-            "diable_brisk_EscortB":2,
-            "diable_brisk_SupportB":2,
-			"diable_brisk_Energy":2,
+		
 	},
 	"phaseMedium":{
 		#better DA Variant Patrols persudo Phase
-		"diable_coanda_cer_Standard":2,
-		"diable_coanda_cer_Energy":2,
 	},
 	"phaseLarge":{
 	},

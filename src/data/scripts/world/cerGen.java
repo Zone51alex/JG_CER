@@ -265,7 +265,7 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setPostId(Ranks.POST_FLEET_COMMANDER)
                     .setPersonality(Personalities.STEADY)
                     .setLevel(8)
-                    .setEliteSkillsOverride(3)
+                    .setEliteSkillsOverride(0)
                     .setSkillPreference(OfficerManagerEvent.SkillPickPreference.NO_ENERGY_YES_BALLISTIC_YES_MISSILE_YES_DEFENSE)
                     .create();
 

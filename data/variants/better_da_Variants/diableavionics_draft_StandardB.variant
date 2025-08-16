@@ -40,6 +40,6 @@
     ],
     "wings": [],
     "modules": [
-        {"WS0000": "diableavionics_draftarmormodule_Standard"},
+        {"WS0000": "diableavionics_draftarmormodule_StandardB"},
     ],
 }

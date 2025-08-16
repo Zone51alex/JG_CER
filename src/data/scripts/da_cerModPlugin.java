@@ -23,6 +23,7 @@ import data.campaign.CyanCoreOfficerGen;
 import data.campaign.ids.cer_ids;
 import data.scripts.campaign.plugins.CerCampaignPluginImpl;
 import data.scripts.plugins.CERPerson;
+import data.scripts.world.MarketHelpers;
 import data.scripts.world.cerGen;
 import exerelin.campaign.SectorManager;
 
@@ -31,6 +32,7 @@ public class da_cerModPlugin extends BaseModPlugin {
     public static final String MEMKEY_VERSION_CER = "$dacer_version";
     public static final String MEMKEY_INTIALIZED_CER = "$dacer_initialized";
     public static final String MEMKEY_MAIN_FLEETS_INITIALIZED_CER = "$dacer_Special";
+    public static final boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
 
 
     // sync scripts
@@ -56,6 +58,13 @@ public class da_cerModPlugin extends BaseModPlugin {
         //if (!MagicVariables.getIBB()) cerGen.spawngrandfleet();
         syncCERScripts();
         //cerGen
+        if (!haveNexerelin || SectorManager.getManager().isCorvusMode()) {
+            if (!Global.getSector().getMemoryWithoutUpdate().contains(MEMKEY_INTIALIZED_CER)) {
+                addToOngoingGame();
+                Global.getSector().getMemoryWithoutUpdate().set(MEMKEY_INTIALIZED_CER, true);
+            }
+        }
+
         if(newGame) {
             boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
             if (!haveNexerelin || SectorManager.getCorvusMode()) {
@@ -119,13 +128,22 @@ public class da_cerModPlugin extends BaseModPlugin {
         cerGen.spawn4thfleet();
     }
 
+    protected void addToOngoingGame() {
+        if (!haveNexerelin || SectorManager.getManager().isCorvusMode()) {
+            new cerGen().generate(Global.getSector());
+
+            //MarketHelpers.generateMarketsFromEconJson("diable_OnuoCapital");
+
+        }
+    }
+
     public void onNewGameAfterEconomyLoad() {
+        //cerGen.spawn1stfleet();
+        //cerGen.spawn2ndfleet();
+        //cerGen.spawn3rdfleet();
+        //cerGen.spawn4thfleet();
         Global.getSector().getMemoryWithoutUpdate().set(MEMKEY_MAIN_FLEETS_INITIALIZED_CER, true);
-        Global.getSector().getMemoryWithoutUpdate().set(MEMKEY_VERSION_CER, 0.62 );
-        cerGen.spawn1stfleet();
-        cerGen.spawn2ndfleet();
-        cerGen.spawn3rdfleet();
-        cerGen.spawn4thfleet();
+        Global.getSector().getMemoryWithoutUpdate().set(MEMKEY_VERSION_CER, 0.0 );
     }
 
     @Override

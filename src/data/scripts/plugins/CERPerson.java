@@ -96,6 +96,7 @@ public class CERPerson {
         if (market2 != null) {
         /*2-3 custom Npcs**/
         /**Faction Leader*/
+
         if ((getPerson(cer_ids.dalead) == null)) {
             PersonAPI Person = Global.getFactory().createPerson();
             Person.setId(cer_ids.dalead);

@@ -47,9 +47,6 @@
 		},
 		"hulls":{
 			"gremlin":0,
-			"diable_raven_C":1,
-            "diable_valiant_C":1,
-            "diable_zephyr_C":1,
             "diableavionics_draft":1,
             "diableavionics_vapor":1,
             "diableavionics_sleet":1,
@@ -104,7 +101,6 @@
 	"shipsWhenImporting":{
 		"tags":["base_bp","diable_ship_bp","diable_cer_bp"],
 		"hulls":[
-		"diableavionics_draft",
             "diableavionics_draft",
             "diableavionics_sleet",
             "diableavionics_vapor",
@@ -155,9 +151,9 @@
 			"diable_chieftain",
 			"diable_burst",
 			
-			"diable_raven_C":1,
-            "diable_valiant_C":1,
-            "diable_zephyr_C":1,
+			"diable_raven_C",
+            "diable_valiant_C",
+            "diable_zephyr_C",
 		],
 	},
 	"knownShips":{
@@ -213,9 +209,9 @@
 			"diable_chieftain",
 			"diable_burst",
 			
-			"diable_raven_C":1,
-            "diable_valiant_C":1,
-            "diable_zephyr_C":1,
+			"diable_raven_C",
+            "diable_valiant_C",
+            "diable_zephyr_C",
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -263,9 +259,9 @@
 			"diable_chieftain",
 			"diable_burst",
 			
-			"diable_raven_C":1,
-            "diable_valiant_C":1,
-            "diable_zephyr_C":1,
+			"diable_raven_C",
+            "diable_valiant_C",
+            "diable_zephyr_C",
 		],
 	},
 	"knownFighters":{

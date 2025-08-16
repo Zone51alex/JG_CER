@@ -13,11 +13,6 @@ import java.awt.*;
 public class diable_Wanzercraft extends BaseHullMod {
     //Basic Striekcraft huillmod systems
             public static float REGEN_RATE = 3.0F;
-            public static String MR_DATA_KEY = "core_reload_data_key";
-
-    public static class PeriodicMissileReloadData {
-        IntervalUtil interval = new IntervalUtil(10.0F, 15.0F);
-    }
 
     public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
         ship.addListener(new diable_WanzercraftListener$(ship));
@@ -32,29 +27,6 @@ public class diable_Wanzercraft extends BaseHullMod {
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
         if (index == 0) return "" + ((Float) REGEN_RATE).intValue();
         return null;
-    }
-    public void advanceInCombat(ShipAPI ship, float amount) {
-        super.advanceInCombat(ship, amount);
-
-        if (!ship.isAlive())
-            return;
-        CombatEngineAPI engine = Global.getCombatEngine();
-
-        String key = String.valueOf(MR_DATA_KEY) + "_" + ship.getId();
-        PeriodicMissileReloadData data = (PeriodicMissileReloadData)engine.getCustomData().get(key);
-        if (data == null) {
-            data = new PeriodicMissileReloadData();
-            engine.getCustomData().put(key, data);
-        }
-
-        data.interval.advance(amount);
-        if (data.interval.intervalElapsed())
-            for (WeaponAPI w : ship.getAllWeapons()) {
-                if (w.getType() != WeaponAPI.WeaponType.MISSILE)
-                    continue;
-                if (w.usesAmmo() && w.getAmmo() < w.getMaxAmmo())
-                    w.setAmmo(w.getMaxAmmo());
-            }
     }
     public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
         Color warning = new Color(199, 78, 78, 155);
@@ -71,7 +43,7 @@ public class diable_Wanzercraft extends BaseHullMod {
         tooltip.addSectionHeading("Warning", Misc.getHighlightColor(), warning, Alignment.MID, 0.0F);
         tooltip.addSpacer(10.0F);
 
-        tooltip.addPara("The Revcovery systems can only be active during Zero Flux Boost.", 0.2F, Misc.getNegativeHighlightColor(), new String[] { "zero-flux boost" });
+        tooltip.addPara("The Recovery systems can only be active during Zero Flux Boost.", 0.2F, Misc.getNegativeHighlightColor(), new String[] { "zero-flux boost" });
         tooltip.addImageWithText(0.0F);
     }
 
