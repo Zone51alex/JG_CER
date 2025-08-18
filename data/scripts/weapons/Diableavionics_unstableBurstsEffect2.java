@@ -3,7 +3,6 @@ package data.scripts.weapons;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.util.IntervalUtil;
-//import data.scripts.util.Diableavionics_graphicLibEffects;
 import org.magiclib.util.MagicRender;
 import java.awt.Color;
 import org.lazywizard.lazylib.FastTrig;
@@ -103,11 +102,11 @@ public class Diableavionics_unstableBurstsEffect2 implements BeamEffectPlugin {
             if (this.fireInterval.intervalElapsed()) {
                 ShipAPI ship = (ShipAPI)target;
                 boolean hitShield = (target.getShield() != null && target.getShield().isWithinArc(beam.getRayEndPrevFrame()));
-                float pierceChance = ((ShipAPI)target).getHardFluxLevel() - 0.1F;
-                pierceChance *= ship.getMutableStats().getDynamic().getValue("shield_pierced_mult");
+                float pierceChance = ((ShipAPI)target).getFluxLevel() - 0.1F;
+                float shield_pierced_mult = 1.00f;
+                pierceChance *= ship.getMutableStats().getDynamic().getValue(String.valueOf(shield_pierced_mult));
 
                 boolean piercedShield = (hitShield && (float)Math.random() < pierceChance);
-
 
                 if (!hitShield || piercedShield) {
                     Vector2f point = beam.getRayEndPrevFrame();

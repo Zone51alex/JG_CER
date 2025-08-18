@@ -57,7 +57,7 @@ public class da_cerModPlugin extends BaseModPlugin {
         //CyanCoreOfficerGen.create();
         //if (!MagicVariables.getIBB()) cerGen.spawngrandfleet();
         syncCERScripts();
-        //cerGen
+        //addNPCs
         if (!haveNexerelin || SectorManager.getManager().isCorvusMode()) {
             if (!Global.getSector().getMemoryWithoutUpdate().contains(MEMKEY_INTIALIZED_CER)) {
                 addToOngoingGame();
@@ -74,8 +74,7 @@ public class da_cerModPlugin extends BaseModPlugin {
                 (new cerGen()).generate(Global.getSector());
             }
         }
-        //
-
+        //addfleets
         if (!Global.getSector().getMemoryWithoutUpdate().contains(MEMKEY_MAIN_FLEETS_INITIALIZED_CER)) {
             addFleetsToOngoingGame();
             Global.getSector().getMemoryWithoutUpdate().set(MEMKEY_MAIN_FLEETS_INITIALIZED_CER, true);
@@ -105,7 +104,7 @@ public class da_cerModPlugin extends BaseModPlugin {
                         Math.round(CER_NANOFORGE_ITEM_QUALITY_BONUS * 100f) + "%");
             }
         });
-        if (CyanCoreOfficerGen.getPerson(cer_ids.cercyancore) != null) {
+       if (CyanCoreOfficerGen.getPerson(cer_ids.cercyancore) != null) {
             CyanCoreOfficerGen.setInstanceChipDescription(cer_ids.CYANCORE_CHIP, CyanCoreOfficerGen.getPerson(cer_ids.cercyancore));
         }
     }
@@ -122,30 +121,27 @@ public class da_cerModPlugin extends BaseModPlugin {
     }
 
    protected void addFleetsToOngoingGame() {
-        cerGen.spawn1stfleet();
-        cerGen.spawn2ndfleet();
-        cerGen.spawn3rdfleet();
-        cerGen.spawn4thfleet();
+
+
     }
 
     protected void addToOngoingGame() {
         if (!haveNexerelin || SectorManager.getManager().isCorvusMode()) {
             new cerGen().generate(Global.getSector());
-
             //MarketHelpers.generateMarketsFromEconJson("diable_OnuoCapital");
 
         }
     }
 
     public void onNewGameAfterEconomyLoad() {
-        //cerGen.spawn1stfleet();
-        //cerGen.spawn2ndfleet();
-        //cerGen.spawn3rdfleet();
-        //cerGen.spawn4thfleet();
+        cerGen.spawn1stfleet();
+        cerGen.spawn2ndfleet();
+        cerGen.spawn3rdfleet();
+        cerGen.spawn4thfleet();
         Global.getSector().getMemoryWithoutUpdate().set(MEMKEY_MAIN_FLEETS_INITIALIZED_CER, true);
-        Global.getSector().getMemoryWithoutUpdate().set(MEMKEY_VERSION_CER, 0.0 );
+        Global.getSector().getMemoryWithoutUpdate().set(MEMKEY_VERSION_CER, 0.1 );
     }
-
+/*
     @Override
     public PluginPick<ShipAIPlugin> pickShipAI(FleetMemberAPI member, ShipAPI ship) {
         if (ship.isFighter()) return null;
@@ -159,5 +155,6 @@ public class da_cerModPlugin extends BaseModPlugin {
         }
         return null;
     }
+ */
 
 }
