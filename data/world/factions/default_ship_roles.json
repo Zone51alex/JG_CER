@@ -102,6 +102,8 @@
             "diable_burst_Energy":1,
             "diable_burst_Standard":1,
 			"diable_burst_Support":1,
+			
+			
 	},
 	"combatLarge":{
 
@@ -109,6 +111,11 @@
             "diable_gust_cer_Sentinel":1,
             "diable_gust_cer_Standard":1,	
             "diable_gust_cer_Missile":1,
+			
+			"diable_daze_cer_Standard":1,
+			"diable_daze_cer_Beamer":1,
+			"diable_daze_cer_Assault":1,
+			"diable_daze_cer_Anti-Fighter":1,
 
             "diable_rime_m_cer_Support":1,
             "diable_rime_m_cer_Standard":1,

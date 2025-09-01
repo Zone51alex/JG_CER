@@ -1,0 +1,58 @@
+{
+  "id": "diable_LowState",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.scripts.weapons.Diableavionics_state2Effect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "displayArcRadius": 1000,
+  "turretSprite": "graphics/jg/weapons/diable_lowStateBeamBase.png",
+  "turretGlowSprite": "graphics/jg/weapons/diable_lowStateBeamGlow.png",
+  "hardpointSprite": "graphics/jg/weapons/diable_lowStateBeamBase.png",
+  "hardpointGlowSprite": "graphics/jg/weapons/diable_lowStateBeamGlow.png",
+  "glowColor": [
+    232,
+    128,
+    35,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    42.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    68,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    41,
+    15,
+    155,
+    255
+  ],
+  "coreColor": [
+    238,
+    255,
+    239,
+    255
+  ],
+  "width": 10,
+  "textureType": WEAVE,
+  "textureScrollSpeed": 16,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "diableavionics_state_firing",
+  "fireSoundTwo": "diableavionics_state_loop"
+}

@@ -3,7 +3,7 @@
     "startingFaction": true,
     "corvusCompatible": true,
     "freeStart": true,
-    "spawnAsFactionId": "player",
+    "spawnAsFactionId":"player",
 	"rebelFleetSuffix":"Fugitives",
 	
 	"directoryUseShortName":true,
@@ -17,7 +17,7 @@
     "invasionSupportFleetName":"Support Fleet",
     "defenceFleetName":"Defense Fleet",
 	"noSyncRelations":false,
-	"noStartingContact":false,
+	"noStartingContact":true,
 	
 	"specialForcesPointMult":1.75,
 	"specialForcesSizeMult":1.75,
@@ -58,7 +58,7 @@
 	
 	"isPirateNeutral":false,
 	
-	"vengeanceFleetSizeMult":3.55,
+	"vengeanceFleetSizeMult":5.55,
 	
 	"vengeanceLevelNames":["Retaliation", "Purge", "Obliteration"],
     "vengeanceFleetNames":["Retaliation", "Purge", "Obliteration"],

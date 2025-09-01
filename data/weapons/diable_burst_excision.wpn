@@ -3,12 +3,12 @@
   "specClass": "projectile",
   "projectileSpecId": "diableavionics_virtuousSniper_shot",
   "type": "BALLISTIC",
-  "size": "MEDIUM",
-  "displayArcRadius": 500,
-  "turretSprite": "graphics/jg/weapons/diable_Excision_base.png",
+  "size": "LARGE",
+  "displayArcRadius": 1000,
+  "turretSprite": "graphics/jg/weapons/diableavionics_dazenew_EX_Eruption.png",
   "hardpointSprite": "",
   "turretOffsets": [
-    14.5,
+    48.5,
     0
   ],
   "turretAngleOffsets": [

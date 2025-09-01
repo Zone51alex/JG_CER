@@ -20,6 +20,7 @@ CPW_versant_j_Standard_harvestC_LEFT,diable,diableavionics_versant_j_harvestC_LE
 CPW_versant_j_Standard_harvestC_RIGHT,diable,diableavionics_versant_j_harvestC_RIGHT,graphics/jg/ships/versant/diableavionics_versant_gunRight.png -> graphics/da/ships/versant/diableavionics_versant_gunRight.png
 CPW_versant_j_Standard_harvest_LEFT,diable,diableavionics_versant_j_harvest_LEFT,graphics/jg/ships/versant/diableavionics_versant_gunLeft.png -> graphics/da/ships/versant/diableavionics_versant_gunLeft.png
 CPW_versant_j_Standard_harvest_RIGHT,diable,diableavionics_versant_j_harvest_RIGHT,graphics/jg/ships/versant/diableavionics_versant_gunRight.png -> graphics/da/ships/versant/diableavionics_versant_gunRight.png
+CPW_LowState_cer,diable,diable_LowState,graphics/jg/weapons/diable_lowStateBeamBase.png -> graphics/da/weapons/diable_lowPowerStateBaseDA.png
 ,,,
 #Expanded Paintjobs,,,
 ,,,

@@ -13,6 +13,7 @@
             "diable_vapor_cer":0.50,
             "diable_rime_m_cer":0.12,
 			"diable_fractus_cer":0.50,
+			"diable_daze_cer":1,
 			"diable_fractalus":0.25,
 			"diable_chieftain":0.10,
 			
@@ -28,6 +29,7 @@
 			"diable_vapor_cer",
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
+			"diable_daze_cer",
 			"diable_fractalus",
 			"diable_chieftain",
         ],
@@ -42,6 +44,7 @@
 			"diable_vapor_cer",
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
+			"diable_daze_cer",
 			"diable_fractalus",
 			"diable_chieftain_EX",
         ],
@@ -53,6 +56,7 @@
         "hulls":[
             "diable_miniGust_cer",
             "diable_gust_cer",
+			"diable_daze_cer",
 			
 			"diable_vapor_cer",
 			"diable_rime_m_cer",

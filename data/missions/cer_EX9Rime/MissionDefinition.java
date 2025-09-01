@@ -45,11 +45,11 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 				api.addToFleet(FleetSide.PLAYER, "diableavionics_miniGust_Close_S.(CER)", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_Brawler(CER)", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_Attack(CER)", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_Attack(CER)", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_Escort(CER)", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_Escort(CER)", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_BrawlerB", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_AttackB", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_AttackB", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_SupportB", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_SupportB", FleetMemberType.SHIP, false);
 				
 				
 		// Mark both ships as essential - losing either one results

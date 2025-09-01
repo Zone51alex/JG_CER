@@ -1,5 +1,41 @@
 id,trigger,conditions,script,text,options,notes
-"#RULESET_NAME Corvid",,,,,,
+#RULESET_NAME Corvid,,,,,,
+,,,,,,
+# Corvid Dialogue,,,,,,
+,,,,,,
+# Command Options,,,,,,
+,,,,,,
+# Default Corvid Commision Lines,,,,,,
+CMSNTextRejectHostile_da_cer,CMSNTextRejectHostile,"$faction.id == da_cer
+$id == cer_assist",,"""Is this some kind of joke? If you are who you say you are, you're on several $faction wanted lists.""",,
+CMSNTextHasOther_da_cer,CMSNTextHasOther,"$faction.id == da_cer
+$id == cer_assist",,"""You're already commissioned by $theOtherCommissionFaction. You'll have to resign that commission before you can be commissioned by $theFaction.""",,
+CMSNTextUnsuited_da_cer,CMSNTextUnsuited,"$faction.id == da_cer
+$id == cer_assist",,"""I'm sorry, but you don't meet our criteria for receiving a commission.""",,
+CMSNTextSuitedPart1_da_cer,CMSNTextSuitedPart1,"$faction.id == da_cer
+$id == cer_assist",,"""Hmm, yes, you're a suitable candidate.
+
+Accepting a commission is a serious matter. You will be required to fight enemies of $theFaction, wherever they may be found.
+
+You'll be able to resign your commission at any time, though I don't imagine doing so would win you any friends.""",,
+CMSNTextSuitedPart2_da_cer,CMSNTextSuitedPart2,"$faction.id == da_cer
+$id == cer_assist",,"""So, how about it? Still want to sign on?""",,
+CMSNTextWelcomePart1_da_cer,CMSNTextWelcomePart1,"$faction.id == da_cer
+$id == cer_assist",,"""Excellent! Welcome to the service.""",,
+CMSNTextWelcomePart2_da_cer,CMSNTextWelcomePart2,"$faction.id == da_cer
+$id == cer_assist",,"""Anything else I can do for you?""",,
+CMSNTextChangeMind_da_cer,CMSNTextChangeMind,"$faction.id == da_cer
+$id == cer_assist",,"""Yes, not everyone has it in them to uphold the values of $theFaction to such a high standard. No shame in it.
+
+Anything else I can do for you?""",,
+CMSNResignAskToConfirm_da_cer,CMSNResignAskToConfirm,"$faction.id == da_cer
+$id == cer_assist",,"""Are you sure? $TheFaction needs people it can rely on, and turning your back like this won't be easily forgotten.""",,
+CMSNResignConfirmed_da_cer,CMSNResignConfirmed,"$faction.id == da_cer
+$id == cer_assist",,"""I can see there's no changing your mind. Well, at least you had the courtesy to tender your resignation in person.""",,
+CMSNResignCancelled_da_cer,CMSNResignCancelled,"$faction.id == da_cer
+$id == cer_assist",,"""A good decision. We can use people like you.""",,
+#END Default Corvid Commision Lines,,,,,,
+#END Command Options,,,,,,
 ,,,,,,
 # Corvid Fleets,,,,,,
 greetingCorvidEngineeringFriendly,OpenCommLink,"$faction.id == da_cer
@@ -7,112 +43,149 @@ $faction.friendlyToPlayer","$menuState = fleetConvMain 0
 FireAll PopulateOptions","""Acknowledging receipt of AIS code. Good to see you, $playerName.""",,
 greetingCorvidEngineeringHostileWeaker,OpenCommLink,"$faction.id == da_cer
 $entity.isHostile
-$entity.relativeStrength < 0","$entity.ignorePlayerCommRequests = true 1","""Hostile $shipOrFleet, be advised: we've already dispatched a distress call to a nearby patrol, and it should arrive shortly.""","cutCommLink:Cut the comm link",
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""Hostile $shipOrFleet, be advised: we've already dispatched a distress call to a nearby patrol, and it should arrive shortly.""",cutCommLink:Cut the comm link,
 greetingCorvidEngineeringHostileWeakerDefiant,OpenCommLink,"$faction.id == da_cer
 $entity.isHostile
 $entity.relativeStrength < 0
-$entity.weakerThanPlayerButHolding","$entity.ignorePlayerCommRequests = true 1","The enemy $personRank looks grim but defiant. ""We will fight you to the last,"" $heOrShe says.
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"The enemy $personRank looks grim but defiant. ""We will fight you to the last,"" $heOrShe says.
 OR
-""Damn, we're in a tight spot."" $PersonRank $personName suddenly notices the line is open and shuts it off.","cutCommLink:Cut the comm link",
+""Damn, we're in a tight spot."" $PersonRank $personName suddenly notices the line is open and shuts it off.",cutCommLink:Cut the comm link,
 greetingCorvidEngineeringHostileStronger,OpenCommLink,"$faction.id == da_cer
 $entity.isHostile
-$entity.relativeStrength >= 0","$entity.ignorePlayerCommRequests = true 1","It appears the enemy $personRank doesn't seem to feel the need to talk to you, as your comm requests go unanswered.","cutCommLink:Cut the comm link",
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"It appears the enemy $personRank doesn't seem to feel the need to talk to you, as your comm requests go unanswered.",cutCommLink:Cut the comm link,
 greetingCorvidEngineeringNeutral,OpenCommLink,"$faction.id == da_cer
 $faction.neutralToPlayer","$menuState = fleetConvMain 0
 FireAll PopulateOptions","""You have been scanned and identified. It's probably best for both our peace of mind if you keep your distance.""",,
-"#END Corvid Fleets",,,,,,
-,,,,,,
-# Default Commision Lines,,,,,,
-CMSNTextRejectHostile_cer,CMSNTextRejectHostile,"$faction.id == da_cer",,"""Is this some kind of joke? If you are who you say you are, you're on several $faction wanted lists.""",,
-CMSNTextHasOther_cer,CMSNTextHasOther,"$faction.id == da_cer",,"""You're already commissioned by $theOtherCommissionFaction. You'll have to resign that commission before you can be commissioned by $theFaction.""",,
-CMSNTextUnsuited_cer,CMSNTextUnsuited,"$faction.id == da_cer",,"""I'm sorry, but you don't meet our criteria for receiving a commission.""",,
-CMSNTextSuitedPart1_cer,CMSNTextSuitedPart1,"$faction.id == da_cer",,"""Hmm, yes, you're a suitable candidate.
-
-Accepting a commission is a serious matter. You will be required to fight enemies of $theFaction, wherever they may be found.
-
-You'll be able to resign your commission at any time, though I don't imagine doing so would win you any friends.""",,
-CMSNTextSuitedPart2_cer,CMSNTextSuitedPart2,"$faction.id == da_cer",,"""So, how about it? Still want to sign on?""",,
-CMSNTextWelcomePart1_cer,CMSNTextWelcomePart1,"$faction.id == da_cer",,"""Excellent! Welcome to the service.""",,
-CMSNTextWelcomePart2_cer,CMSNTextWelcomePart2,"$faction.id == da_cer",,"""Anything else I can do for you?""",,
-CMSNTextChangeMind_cer,CMSNTextChangeMind,"$faction.id == da_cer",,"""Yes, not everyone has it in them to uphold the values of $theFaction to such a high standard. No shame in it.
-
-Anything else I can do for you?""",,
-CMSNResignAskToConfirm_cer,CMSNResignAskToConfirm,"$faction.id == da_cer",,"""Are you sure? $TheFaction needs people it can rely on, and turning your back like this won't be easily forgotten.""",,
-CMSNResignConfirmed_cer,CMSNResignConfirmed,"$faction.id == da_cer",,"""I can see there's no changing your mind. Well, at least you had the courtesy to tender your resignation in person.""",,
-CMSNResignCancelled_cer,CMSNResignCancelled,"$faction.id == da_cer",,"""A good decision. We can use people like you.""",,
-"#END Default Commision Lines",,,,,,
+#END Corvid Fleets,,,,,,
 ,,,,,,
 # Onuo Contacts,,,,,,
 ,,,,,,
 # Onuo Market Dialogue,,,,,,
 flavorTextMarketOnuo,TradePanelFlavorText,"$global.tradePanelMode == MARKET
-$id == OT_a score:1000","AddText""  ""textGrayColor",,,
-"#END Onuo Market Dialogue",,,,,,
+$id == OT_a score:1000","AddText""The Planet is Dotted in so many Drydocks and Hangar organized in rows of rows churning out Ships left and right, your flagship is being escorted to a Hangar with Obsolete Systems and Pristine Equipement..""textGrayColor",,,
+#END Onuo Market Dialogue,,,,,,
 ,,,,,,
 # Grand Admiral - Mordrigg Dragonstein V,,,,,,
-cer_defaultGreetingMord,PickGreeting,"$id == cer_lead score: 0","ShowPersonVisual
+cer_defaultGreetingMord,PickGreeting,"$id == cer_lead score:100
+!$player.RecommendMord",,"After a short wait, your connection request is denied.",0:cutCommLink:Cut the comm link,
+cer_startGreetingMord,PickGreeting,"$id == cer_lead score:100
+$player.RecommendMord","ShowPersonVisual
 FireAll PopulateOptions
-SetShortcut cutCommLinkPolite ""ESCAPE""","""Why Hello There, what do you need ? ""","0:cutCommLink:Cut the comm link",
-"#END Grand Admiral - Mordrigg Dragonstein V",,,,,,
+SetShortcut cutCommLinkPolite ""ESCAPE""","""Why Hello There, what do you need ?""",0:cutCommLinkPolite:Cut the comm link,
+cer_receiveContactMord,PopulateOptions,"$id == cer_lead
+!$cer_MordContact",,,"1:cer_MordContactOption:""I was told your department offers work.""",
+cer_addMordasContact,DialogOptionSelected,"$option == cer_MordContactOption
+RepGTE da_cer FRIENDLY","FireAll PopulateOptions
+AddPotentialContact
+$cer_MordContact = true
+","""Add Potential Contact""",,
+cer_denyMordContact,DialogOptionSelected,"$option == cer_MordContactOption
+RepLTE da_cer FRIENDLY",FireAll PopulateOptions,"""deny Potential Contact""",,
+#END Grand Admiral - Mordrigg Dragonstein V,,,,,,
 ,,,,,,
 # Grand Engineer - Taio Lunaria,,,,,,
-cer_defaultGreetingTaio,PickGreeting,"$id == cer_engie","ShowPersonVisual
+cer_defaultGreetingTaio,PickGreeting,"$id == cer_engie score:100
+!$player.RecommendTaio",,"After a short wait, your connection request is denied.",0:cutCommLink:Cut the comm link,
+cer_startGreetingTaio,PickGreeting,"$id == cer_engie score:100
+$player.RecommendTaio","ShowPersonVisual
 FireAll PopulateOptions
-SetShortcut cutCommLinkPolite ""ESCAPE""","""Oi, What do you need ? ""","0:cutCommLink:Cut the comm link",
-"#END Grand Engineer - Taio Lunaria",,,,,,
+SetShortcut cutCommLinkPolite ""ESCAPE""","""Oi, What do you need ? """,0:cutCommLink:Cut the comm link,
+#END Grand Engineer - Taio Lunaria,,,,,,
 ,,,,,,
 # Lead Secretary - Suru Solaris,,,,,,
-cer_defaultGreetingSuru,PickGreeting,"$id == cer_assist","ShowPersonVisual
+cer_defaultGreetingSuru,PickGreeting,"$id == cer_assist score:100
+$player.metSolarisSuru","ShowPersonVisual
 FireAll PopulateOptions
-SetShortcut cutCommLinkPolite ""ESCAPE""","""Hello There, Do you have a Reason to talk to me ?""","0:cutCommLink:Cut the comm link",
-"#END Lead Secretary - Suru Solaris",,,,,,
-"#END Onuo Contacts",,,,,,
-,,,,,,
-# Sivie Contacts,,,,,,
-,,,,,,
-# Lead Owner - Ake Solaris,,,,,,
-"#END Lead Owner - Ake Solaris",,,,,,
-"#END Sivie Contacts",,,,,,
+SetShortcut cutCommLinkPolite ""ESCAPE""","""Hello There, Do you have a Reason to talk to me ?""",0:cutCommLink:Cut the comm link,
+cer_FirstMeetingSuru,PickGreeting,"$id == cer_assist score:100
+!$player.metSolarisSuru","ShowPersonVisual
+FireAll PopulateOptions
+$player.metSolarisSuru = true
+AddText ""After a short wait, your connection request is Accepted.""
+AddTextSmall ""Suru Solaris ,One of the 2 Sisters of Diable, Handles All of Corvid's Bureaucracy in order for the others to do their work, tends to treat Taio like a Pampered Child"" highlight
+AddText ""\""Welcome, i was waiting for you to Come and Introduce yourself.\""""
+SetShortcut cutCommLinkPolite ""ESCAPE""",,0:cutCommLinkPolite:Cut the comm link,
+cer_receiveContactSuru,PopulateOptions,"$id == cer_assist
+!$cer_SuruContact",,,"10:cer_SuruContactOption:""I was told you gave work.""",
+cer_addcontactSuru,DialogOptionSelected,$option == cer_SuruContactOption,"AddPotentialContact
+$cer_SuruContact = true
+FireAll PopulateOptions","""Add Potential Contact""",,
+cer_denycontactSuru,DialogOptionSelected,$option == cer_SuruContactOption,FireAll PopulateOptions,"""deny Potential Contact""",,
+cer_AskRecommendTaio,PopulateOptions,"$id == cer_assist
+!$player.RecommendTaio
+RepGTE da_cer FRIENDLY",,,"0:cer_askforTaio:""can i talk to Taio ?""",
+cer_recommendTaio,DialogOptionSelected,$option == cer_askforTaio,"FireAll PopulateOptions
+$player.RecommendTaio = true
+AddTextSmall ""You received recommendation from $PersonRank $personLastName for Taio.""
+ShowPersonVisual","""OK Here you go.""","0:cer_askforTaioDone:""Thank You!""",
+cer_askRecommendMord,PopulateOptions,"$id == cer_assist
+!$player.RecommendMord
+RepGTE da_cer FRIENDLY",,,"0:cer_askforMord:""can i talk to Mord ?""",
+cer_recommendMord,DialogOptionSelected,$option == cer_askforMord,"FireAll PopulateOptions
+$player.RecommendMord  = true
+AddTextSmall ""You received recommendation from $PersonRank $personLastName for Mord.""
+ShowPersonVisual","""OK Here you go.""","0:cer_askforMordDone:""Thank You!""",
+#END Lead Secretary - Suru Solaris,,,,,,
+#END Onuo Contacts,,,,,,
 ,,,,,,
 # Fleets Contacts,,,,,,
 ,,,,,,
 # 1st Grand Defense Fleet - Pina Colada Fleet,,,,,,
 ,,,,,,
 # Fleet Admiral - Leiph,,,,,,
-"#END Fleet Admiral - Leiph",,,,,,
-"#END 1st Grand Defense Fleet - Pina Colada Fleet",,,,,,
+#END Fleet Admiral - Leiph,,,,,,
+#END 1st Grand Defense Fleet - Pina Colada Fleet,,,,,,
 ,,,,,,
 # 2nd Counter Fleet - Admiral Y-11's Fleet,,,,,,
 ,,,,,,
 # Fleet Admiral - Admiral Y11,,,,,,
-"#END Fleet Admiral - Admiral Y11",,,,,,
-"#END 2nd Counter Fleet - Admiral Y-11's Fleet",,,,,,
+#END Fleet Admiral - Admiral Y11,,,,,,
+#END 2nd Counter Fleet - Admiral Y-11's Fleet,,,,,,
 ,,,,,,
 # 3nd Fast Attack Fleet - Starlight Fleet,,,,,,
 ,,,,,,
 # Defense Captain - Captain Claymore,,,,,,
-"#END Defense Captain - Captain Claymore",,,,,,
+,,,,,,
+# Fleet DareDevil - Daredevil Pilot David,,,,,,
+#END Fleet DareDevil - Daredevil Pilot David,,,,,,
 ,,,,,,
 # Fleet Ace - Fleet Ace Reed Kusa,,,,,,
-"#END Fleet Ace - Fleet Ace Reed Kusa",,,,,,
-,,,,,,
-# Fleet DareDevil - Daredevil Pilot Noss,,,,,,
-"#END Fleet DareDevil - Daredevil Pilot Noss",,,,,,
-"#END 3nd Fast Attack Fleet - Starlight Fleet",,,,,,
+#END Fleet Ace - Fleet Ace Reed Kusa,,,,,,
+#END Defense Captain - Captain Claymore,,,,,,
+#END 3nd Fast Attack Fleet - Starlight Fleet,,,,,,
 ,,,,,,
 # 4th Fast Attack Fleet - Josh's Fleet,,,,,,
 ,,,,,,
 # Fleet Admiral - Josh,,,,,,
-"#END Fleet Admiral - Josh",,,,,,
+#END Fleet Admiral - Josh,,,,,,
 ,,,,,,
 # Fleet Ace - Sideways,,,,,,
-"#END Fleet Ace - Sideways",,,,,,
-"#END 4th Fast Attack Fleet - Josh's Fleet",,,,,,
+#END Fleet Ace - Sideways,,,,,,
+#END 4th Fast Attack Fleet - Josh's Fleet,,,,,,
 ,,,,,,
-# 5th Spec Ops Fleet - Handled by a custom AI Core,,,,,,
+# 5th Spec Ops Fleet - Handled by an AI Core,,,,,,
 ,,,,,,
 # Fleet Admiral - Cyan Core,,,,,,
-"#END Fleet Admiral - Cyan Core",,,,,,
-"#END 5th Spec Ops Fleet - Handled by a custom AI Core",,,,,,
-"#END Fleets Contacts",,,,,,
-
+#END Fleet Admiral - Cyan Core,,,,,,
+#END 5th Spec Ops Fleet - Handled by an AI Core,,,,,,
+#END Fleets Contacts,,,,,,
+#END Corvid Dialogue,,,,,,
+,,,,,,
+# Diable Dialogue,,,,,,
+,,,,,,
+# Sivie Contacts,,,,,,
+,,,,,,
+# Lead Owner - Ake Solaris,,,,,,
+cer_defaultGreetingAke,PickGreeting,$id == dalead score:100,"ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","""What do you want ?""",0:cutCommLink:Cut the comm link,
+#END Lead Owner - Ake Solaris,,,,,,
+#END Sivie Contacts,,,,,,
+,,,,,,
+# Diable Command Options,,,,,,
+,,,,,,
+# Default Diable Commision Lines,,,,,,
+#END Default Diable Commision Lines,,,,,,
+#END Diable Command Options,,,,,,
+#END Diable Dialogue,,,,,,
+,,,,,,

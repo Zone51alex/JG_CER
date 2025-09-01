@@ -94,6 +94,11 @@ The Small Variant of this Weapon is used to shore up Options for Hit-and-run Shi
 diable_urn2,WEAPON,"A powerful heavy weapon formerly used to soften up offending stations. Improvements in targeting systems and refinements of the muzzle geometry improved the accuracy enough to make a serviceable anti-ship weapon: Difficult to install and unreliable, but quite devastating when it connects. 
 
 This Medium Variant of the Fearsome Weapon is used for long Rang support Ships.",,,
+diable_LowState,WEAPON,"A Spinal Version of the Diurne State Beam array being a cheaper Version of the State Support Beam with Longer Range thanks to the Bigger Structure of the Weapon.
+
+The ""State"" positron emitter system is a specialized particle beam connected to the host vessel's reactors to power the relatively inefficient matter/antimatter creation process. The choice of positrons limit range due to self repulsion, but that same property makes them much easier to manipulate into a weaponized beam.
+
+A segment of the Diable Avionics military particularly proud of the technological achievements of their weapon division has for a long time criticized the State for being ""too mundane"". They would deliberately eschew what is in essence a bland but effective device in favor of something unusual but less potent, claiming that esoteric weapons have the added benefit of a deep psychological impact upon the enemy crews. While studies did acknowledge some veracity to these claims, it is unclear if the trade-off is strategically favorable.",Pressure,,
 ,,,,,
 #EX SHIPS,,,,,
 ,,,,,

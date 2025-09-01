@@ -39,8 +39,8 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 				api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Attack", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Attack", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_Escort(CER)", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_Escort(CER)", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_SupportB", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_SupportB", FleetMemberType.SHIP, false);
   
 		// Mark both ships as essential - losing either one results
 		// in mission failure. Could also be set on an enemy ship,

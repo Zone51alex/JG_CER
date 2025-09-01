@@ -1,14 +1,16 @@
 {
     "displayName": "Energy",
     "fluxCapacitors": 10,
-    "fluxVents": 7,
+    "fluxVents": 6,
     "goalVariant": true,
     "hullId": "diable_brisk",
     "hullMods": [
-        "fluxbreakers",
+        "auxiliarythrusters",
         "magazines",
     ],
-    "permaMods": [],
+    "permaMods": [
+        "sc_skill_controller",
+    ],
     "sMods": [],
     "suppressedMods": [],
     "variantId": "diable_brisk_Energy",

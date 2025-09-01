@@ -31,8 +31,9 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		// files in data/variants and data/variants/fighters
 				//EX Ships
                 api.addToFleet(FleetSide.PLAYER, "diable_gust_EX_Flagship", FleetMemberType.SHIP,"CESN Marauder", true);
-                api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX_Flagship", FleetMemberType.SHIP,"CESN Black Pearl", false);	
-                api.addToFleet(FleetSide.PLAYER, "diable_chieftain_EX_Flagship", FleetMemberType.SHIP,"CESN Starbound", false);		   
+                api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX_Flagship", FleetMemberType.SHIP,"CESN Black Pearl", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX_Flagship2", FleetMemberType.SHIP,"IDSS Starbound", false);
+                api.addToFleet(FleetSide.PLAYER, "diable_chieftain_EX_Flagship", FleetMemberType.SHIP, false);		   
                 api.addToFleet(FleetSide.PLAYER, "diable_storm_EX_Flagship", FleetMemberType.SHIP,"CESN Gold Ship", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_daze_EX_Flagship", FleetMemberType.SHIP,"CESN Merkava", false);				
                 api.addToFleet(FleetSide.PLAYER, "diable_gust_EX2_Flagship", FleetMemberType.SHIP,"CESN Khrizantema", false);	
@@ -50,6 +51,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
                 api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_fractalus_Assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_daze_cer_Standard", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_burst_Standard", FleetMemberType.SHIP,"CESN Burst", false);
                 api.addToFleet(FleetSide.PLAYER, "diable_miniGust_cer_Support", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_fractus_cer_Bomber", FleetMemberType.SHIP, false);
