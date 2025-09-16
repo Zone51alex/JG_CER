@@ -10,7 +10,7 @@ Extended Credits
 ,Damexius - mod maker Partner
 ,Yukisuna - Writer and lore maker
 ,Rico - Artist
-Lynn - Balance Tester
+,Lynn - Balance Tester
 
 ,FlashFrozen - original maker of Diable avionics
 ,Tartiflette - Legendary Mod maker
