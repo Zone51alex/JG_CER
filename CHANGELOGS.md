@@ -1,6 +1,7 @@
 0.0.10-InDev :
 Alot got Revamped From Ships, Thrusters to variants, and added new Ships along with the option to test out the new Market Code in lunaSettings.
 
+the Old variants from the transition kit got moved back to Corvid Engineering Mod.
 Also not Compatible with Older saves.
 
 0.0.8-InDev :
