@@ -1,0 +1,57 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 20,
+    "fluxVents": 11,
+    "goalVariant": true,
+    "hullId": "diable_rime_m_cer",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_rime_m_cer_Support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0012": "diableavionics_banish",
+                "WS0013": "diableavionics_banish",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0011": "diableavionics_microbuiltin",
+                "WS0002": "diableavionics_microbuiltin",
+                "WS0010": "diableavionics_microbuiltin",
+                "WS0009": "diableavionics_microbuiltin",
+                "WS0008": "diableavionics_microbuiltin",
+                "WS0007": "diableavionics_microbuiltin",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diable_urn2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_ibis",
+                "WS0005": "diableavionics_ibis",
+                "WS0004": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_frost_wing",
+        "diableavionics_frost_wing",
+    ],
+    "modules": [],
+}

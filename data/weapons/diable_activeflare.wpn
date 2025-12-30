@@ -1,0 +1,47 @@
+{
+  "id": "diable_activeflare",
+  "specClass": "projectile",
+  "projectileSpecId": "flare_seeker",
+  "type": "SYSTEM",
+  "size": "SMALL",
+  "turretSprite": "graphics/jg/weapons/diableavionics_plow_turret.png",
+  "hardpointSprite": "graphics/jg/weapons/diableavionics_plow_hardpoint.png",
+  "renderHints": [
+  ],
+  "turretOffsets": [
+    8,
+    2.5,
+    8,
+    -2.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    12,
+    2.5,
+    12,
+    -2.5
+  ],
+  "hardpointAngleOffsets": [
+    -0.75,
+    -0.25
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "interruptibleBurst":false,
+  "smokeSpec":{"particleSizeMin":10.0,
+				 "particleSizeRange":10.0,
+				 "cloudParticleCount":3,
+				 "cloudDuration":1.0,
+				 "cloudRadius":10.0,
+				 "blowbackParticleCount":0,
+				 "blowbackDuration":2.0,
+				 "blowbackLength":30.0,
+				 "blowbackSpread":10.0,
+				 "particleColor":[100,100,100,150]},
+  "fireSoundTwo": "launch_flare_1",
+  #"everyFrameEffect":"data.scripts.weapons.diable_stratusEffect",
+  
+}

@@ -1,31 +1,52 @@
 {
-	"specClass":"projectile",
-	"id":"diableavionics_ravenleft2",
-	"type":"BALLISTIC",
-	"size":"MEDIUM",
-	"displayArcRadius":450,
-	"turretSprite":"graphics/da/ships/raven/diableavionics_ravenleftarm.png",
-	"turretGunSprite":"graphics/da/ships/raven/diableavionics_ravenleftbarrel.png",	
-	"hardpointSprite":"",
-	"hardpointGunSprite":"",	
-	"visualRecoil":2.0,  # the gun sprites are only used if this is non-0
-	"renderHints":[RENDER_BARREL_BELOW],	
-	"turretOffsets":[20, 3.5],
-	"turretAngleOffsets":[0],
-	"hardpointOffsets":[20, 3.5],
-	"hardpointAngleOffsets":[0],
-	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
-	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
-	"muzzleFlashSpec":{"length":34.0,   # only used if animationType = MUZZLE_FLASH
-					   "spread":10.0,
-					   "particleSizeMin":18.0,
-					   "particleSizeRange":24.0,
-					   "particleDuration":0.02,
-					   "particleCount":12,
-					   "particleColor":[199,93,76,215]},
-	"projectileSpecId":"diableavionics_grave_shot",
-	"fireSoundTwo":"diableavionics_grave_firing",
-
-        "specialWeaponGlowWidth":15,
-        "specialWeaponGlowHeight":20,
+  "id": "diableavionics_ravenleft2",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_strifegun_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "everyFrameEffect": "data.scripts.weapons.Diableavionics_virtuous_minigunEffect",
+  "displayArcRadius": 450,
+  "turretSprite": "graphics/jg/ships/raven/diableavionics_ravenleftarm2Gun_00.png",
+  "turretGunSprite": "graphics/jg/ships/raven/diableavionics_ravenleftarm2.png",
+  "hardpointSprite": "graphics/jg/ships/raven/diableavionics_ravenleftarm2Gun_00.png",
+  "hardpointGunSprite": "graphics/jg/ships/raven/diableavionics_ravenleftarm2.png",
+  "specialWeaponGlowHeight": 20,
+  "specialWeaponGlowWidth": 10,
+  "visualRecoil": 2,
+  "renderHints": [
+    "SUSPEND_RECOIL"
+  ],
+  "turretOffsets": [
+    31.5,
+    3.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    47.5,
+    3.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "numFrames": 4,
+  "frameRate": 1,
+  "muzzleFlashSpec": {
+    "length": 34,
+    "spread": 10,
+    "particleSizeMin": 18,
+    "particleSizeRange": 24,
+    "particleDuration": 0.02,
+    "particleCount": 12,
+    "particleColor": [
+      199,
+      93,
+      76,
+      215
+    ]
+  },
+  "fireSoundTwo": "diableavionics_strifegun_firing"
 }

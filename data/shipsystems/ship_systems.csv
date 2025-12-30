@@ -6,14 +6,16 @@ Micro Grazer Core,diableavionics_driftcompact,,,,,,,,,1,3,0,0,1,,,,TRUE,TRUE,,,,
 Plasma Capacitor Shunt,diableavionics_supercapacitors,,,,0,0,0.05,,,1,0.1,4,0.1,1,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,graphics/icons/hullsys/damper_field.png
 Micro Grazer Core,diableavionics_driftfighter,,,,,,,,3,0.05,3,0,0,0.5,,,,TRUE,TRUE,,,,,TRUE,,,graphics/icons/hullsys/displacer.png
 Burst Burn,diableavionics_burstburn,1,,,,,,,3,0.1,0.5,0.5,0.5,0.5,,,,,,,,TRUE,,,,,graphics/icons/hullsys/burn_drive.png
-High Speed Mode Custom,diableavionics_transit3,,,,,,,,,,0.5,,0.5,1,TRUE,,,,FALSE,,,,TRUE,,,,graphics/icons/hullsys/displacer.png
+High Speed Mode Custom,diableavionics_transitEX,,,,,,,,,,0.5,,0.5,1,TRUE,,,,FALSE,,,,TRUE,,,,graphics/icons/hullsys/displacer.png
+High Speed Mode Custom,diableavionics_transitEX2,,,,,,,,,,0.5,,0.5,1,TRUE,,,,FALSE,,,,TRUE,,,,graphics/icons/hullsys/displacer.png
+High Speed Mode,diableavionics_transitCER,,,,,,,,,,0.5,,0.5,1,TRUE,,,,FALSE,,,,TRUE,,,,graphics/icons/hullsys/displacer.png
 Kaiju Drive,diableavionics_kaijudrive,,,,,,,,,1,1,5,1,1,TRUE,,,,,,,FALSE,,,,,graphics/icons/hullsys/burn_drive.png
 Vortex Drones,diableavionics_vortexmini,,,,,,,,1,10,0,,0.5,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_sensor.png
-Damper Field(Diable),diableavionics_damperfield,1,,,,,,,2,0.05,0.25,3,0.25,0,,,,,TRUE,,,,TRUE,TRUE,,"uses_damper_ai, defensive",graphics/icons/hullsys/damper_field.png
+Damper Field(Diable),diableavionics_damperfield,1,,,,,,,3,0.05,0.25,3,0.25,0,,,,,,,,,TRUE,TRUE,,"uses_damper_ai, defensive",graphics/icons/hullsys/damper_field.png
 Super Phase Grazer Core,diableavionics_driftflagship,,,,,,,,,1,3,0,0,2,,,,TRUE,,,,,,TRUE,,,graphics/icons/hullsys/displacer.png
 Super Flux Grid Tuning,diableavionics_vortexsuper,,,,,,,,8,0.075,0,,0.5,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_sensor.png
 Super Damping Wave,diable_damperwavecapital,,,,,,0.075,,3,0.05,.3,3,1,1,,,,TRUE,TRUE,,,,TRUE,TRUE,,,graphics/icons/hullsys/displacer.png
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-#Better DA ShipSystems,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Damping Wave,diableavionics_damperwave2,,,,,,0.075,,3,0.05,.3,.2,1,1,,,,TRUE,TRUE,,,,TRUE,TRUE,,,graphics/icons/hullsys/displacer.png
+Damping Wave (C Type),diable_dampwaveCType,,,,,,0.075,,3,0.05,.3,.2,1,1,,,,TRUE,TRUE,,,,TRUE,TRUE,,,graphics/icons/hullsys/displacer.png
+Eagle's Warth,diableavionics_fluxburst,,,,0,0,0.1,,,,1,8,1,8,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,graphics/icons/hullsys/ammo_feeder.png
+Kaiju Drive,diableavionics_kaijudrive2,,,,0,0,0.1,,,1,1,8,1,4,FALSE,,,,,,,FALSE,,,,,graphics/icons/hullsys/burn_drive.png
+Stinger Drive,diable_SuperBurnDrive,1,,,,,,,,1,1,8,1,4,TRUE,,,FALSE,,,TRUE,TRUE,TRUE,,,movement,graphics/icons/hullsys/combat_burn.png

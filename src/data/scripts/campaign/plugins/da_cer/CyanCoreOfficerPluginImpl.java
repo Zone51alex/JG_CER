@@ -11,8 +11,8 @@ import com.fs.starfarer.api.impl.campaign.ids.Skills;
 import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-import data.campaign.CyanCoreOfficerGen;
 import data.campaign.ids.cer_ids;
+import data.scripts.plugins.CERPerson;
 
 import java.awt.*;
 import java.text.DecimalFormat;
@@ -20,16 +20,17 @@ import java.util.Random;
 
 public class CyanCoreOfficerPluginImpl extends BaseAICoreOfficerPluginImpl implements AICoreOfficerPlugin {
 
-    public PersonAPI createPerson(String aiCoreId, String factionId, Random random) {
-        //ugly mofo
-        PersonAPI person = CyanCoreOfficerGen.getPerson(cer_ids.cercyancore);
-        //
+    public PersonAPI createPerson(String aiCoreid, String factionId, Random random) {
+        PersonAPI person = null;
+
+        if (aiCoreid.equals(cer_ids.CYANCORE_CHIP)) {
+            person = CERPerson.getPerson(cer_ids.cercyancore);
+        }
         for (MutableCharacterStatsAPI.SkillLevelAPI skillLevel : person.getStats().getSkillsCopy()) {
             if (skillLevel.getSkill().isAdmiralSkill()) {
                 person.getStats().setSkillLevel(skillLevel.getSkill().getId(), 0);
             }
         }
-        //undo +1
         if (Misc.isUnremovable(person)) {
             Misc.setUnremovable(person, false);
             person.getStats().setLevel(person.getStats().getLevel() - 1);

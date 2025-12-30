@@ -1,6 +1,4 @@
 {
-
-
   "hullName": "Calm EX",
   "hullId": "diable_calm_EX",
   "hullSize": "DESTROYER",
@@ -10,15 +8,19 @@
   "width": 82,
   "center": [41, 82],
   "collisionRadius": 135,
-  "shieldCenter": [20, -0],
+  "shieldCenter": [20, 0],
   "shieldRadius": 114.5,
   "viewOffset": 0,
   "builtInMods": [
     "EX_streamcaps",
-	"automated"
+    "automated"
+  ],
+  "builtInWings": [
+    "diable_warlust_wing",
+    "diable_warlust_wing"
   ],
   "builtInWeapons": {
-    "SYSTEM": "diableavionics_calmSystem",
+    "SYSTEM": "diableavionics_calmSystem3",
     "WS0007": "diableavionics_microbuiltin",
     "WS0008": "diableavionics_microbuiltin",
     "WS0009": "diableavionics_microbuiltin",
@@ -26,10 +28,6 @@
     "WS0011": "diable_heemeyer",
     "WS0012": "diable_raycast2"
   },
-  "builtInWings": [
-		"diable_warlust_wing",
-		"diable_warlust_wing"
-    ],
   "weaponSlots": [
     {
       "id": "SYSTEM",
@@ -47,7 +45,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
-      "locations": [44, -0]
+      "locations": [44, 0]
     },
     {
       "id": "WS0012",
@@ -56,7 +54,7 @@
       "mount": "TURRET",
       "arc": 180,
       "angle": 0,
-      "locations": [22, -0]
+      "locations": [22, 0]
     },
     {
       "id": "WS0001",
@@ -174,56 +172,51 @@
       "arc": 360,
       "angle": 0,
       "locations": [
-        -39, -0,
-        -47, -0
+        -39, 0,
+        -47, 0
       ]
     }
   ],
   "engineSlots": [
     {
       "location": [-61, 21.5],
-      "length": 5,
-      "width": 10,
+      "length": 20,
+      "width": 9,
       "angle": 180,
-      "contrailSize": 10,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "contrailSize": 9,
+      "style": "OMEGA"
     },
     {
       "location": [-61, -21.5],
-      "length": 5,
-      "width": 10,
+      "length": 20,
+      "width": 9,
       "angle": -180,
-      "contrailSize": 10,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "contrailSize": 9,
+      "style": "OMEGA"
     },
     {
       "location": [-64, 8.5],
-      "length": 7.5,
-      "width": 10,
+      "length": 20,
+      "width": 7,
       "angle": 180,
-      "contrailSize": 10,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "contrailSize": 7,
+      "style": "OMEGA"
     },
     {
       "location": [-64, -8.5],
-      "length": 7.5,
-      "width": 10,
+      "length": 20,
+      "width": 7,
       "angle": -180,
-      "contrailSize": 10,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "contrailSize": 7,
+      "style": "OMEGA"
     },
     {
-      "location": [-65, -0],
-      "length": 7.5,
+      "location": [-66, -0],
+      "length": 20,
       "width": 10,
       "angle": 180,
       "contrailSize": 10,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "style": "OMEGA"
     }
   ],
   "bounds": [
@@ -253,6 +246,6 @@
     117.5, 21.5,
     113.5, 16.5,
     44.5, 14.5,
-    51.5, -0
+    51.5, 0
   ]
 }

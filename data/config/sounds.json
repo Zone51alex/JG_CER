@@ -13,13 +13,21 @@
 		"music":{
 				
                 "cer_market_interaction_neutral":[
-                        {"file":"DA_neutral_interaction.ogg","source":"sounds/diablemusic/","volume":0.35,"randomStart":true},
+                        {"file":"cer_neutral_interaction2.ogg","source":"sounds/music/","volume":0.5,"randomStart":true},
                 ],
                 "cer_market_interaction_hostile":[
-                        {"file":"DA_hostile_interaction.ogg","source":"sounds/diablemusic/","volume":0.35,"randomStart":true},
+                        {"file":"cer_hostile_interaction.ogg","source":"sounds/music/","volume":0.5,"randomStart":true},
                 ],
                 "cer_market_interaction_friendly":[
-                        {"file":"DA_friendly_interaction.ogg","source":"sounds/diablemusic/","volume":0.35,"randomStart":true},
+                        {"file":"cer_neutral_interaction2.ogg","source":"sounds/music/","volume":0.5,"randomStart":true},
                 ],
-        }
+		#Music Switcher Combat music
+		#"Custom_music_cer_combat":[
+			#{"file":"cer_combat.ogg","source":"sounds/music/","volume":0.50}
+		#],
+		#Vanilla Combat music
+		#"music_combat":[
+            #{"file":"cer_combat.ogg","source":"sounds/music/","volume":0.50}
+		#],
+	}
 }

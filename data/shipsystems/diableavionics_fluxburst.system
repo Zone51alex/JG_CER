@@ -1,0 +1,33 @@
+{
+	"id":"diableavionics_fluxburst",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.scripts.shipsystems.Diableavionics_fluxburst",
+	
+	"weaponGlowColor":[255,50,0,155],
+	"weaponTypes":[BALLISTIC,ENERGY],
+	
+	"engineGlowColor":[136,8,8,200],
+	"engineGlowContrailColor":[255, 49, 49,25],
+	"engineGlowLengthMult":10,
+	"engineGlowWidthMult":2,
+	"engineGlowGlowMult":2,
+	
+	"jitterColor":[136,8,8,200],
+	"jitterCopies":0,
+	"jitterMinRange":0,
+	"jitterRange":0,
+	"jitterRangeRadiusFraction":0,
+	
+	"flameoutOnImpactChance":0.0,
+	
+	"useSound":"diableavionics_berserk_in",
+	"deactivateSound":"diableavionics_berserk_out",
+	"outOfUsesSound":"gun_out_of_ammo",
+	"aiHints":{
+			"activeSpeedIncrease":100,
+		"burstMovementPotential":100,
+		"averageSpeedIncrease":100,
+	},
+}

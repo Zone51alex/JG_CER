@@ -120,7 +120,7 @@ public class DATuningEX2 extends BaseHullMod {
         //blocked hullmods
         for (String tmp : BLOCKED_HULLMODS) {
             if (ship.getVariant().getHullMods().contains(tmp)) {
-                MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(), tmp, "diableavionics_tuning");
+                MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(), tmp, "diableavionics_tuning_EX2");
             }
         }
 

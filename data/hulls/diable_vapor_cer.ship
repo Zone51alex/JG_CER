@@ -1,163 +1,132 @@
 {
-    "hullName": "Vapor",
-    "hullId": "diable_vapor_cer",
-    "hullSize": "FRIGATE",
-    "style": "HIGH_TECH",
-    "spriteName": "graphics/jg/ships/diableavionics_vapor2.png",
-    "height": 115,
-    "width": 76,
-    "center": [
-        38, 41
-    ],
-    "collisionRadius": 83.5,
-    "coversColor": "",
-    "shieldCenter": [
-        18.5, 0
-    ],
-    "shieldRadius": 65,
-    "viewOffset": 0,
-    "builtInMods": [
-        "diableavionics_cramped",
-		"insulatedengine"
-    ],
-    "builtInWeapons": {
-        "WS0005  000": "diableavionics_ibis"
+  "hullName": "Vapor",
+  "hullId": "diable_vapor_cer",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/jg/ships/diableavionics_vapor2.png",
+  "style": "HIGH_TECH",
+  "height": 115,
+  "width": 76,
+  "center": [38, 41],
+  "collisionRadius": 83.5,
+  "shieldCenter": [18.5, 0],
+  "shieldRadius": 65,
+  "viewOffset": 0,
+  "builtInMods": [
+    "diableavionics_cramped",
+    "insulatedengine"
+  ],
+  "builtInWeapons": {
+    "WS0005  000": "diableavionics_ibis"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9, 13]
     },
-    "builtInWings": [],
-    "builtInModules": null,
-    "weaponSlots": [
-        {
-            "id": "WS0001",
-            "size": "MEDIUM",
-            "type": "HYBRID",
-            "mount": "HARDPOINT",
-            "arc": 5,
-            "angle": 0,
-            "locations": [
-                       9,       13
-            ]
-        },
-        {
-            "id": "WS0002",
-            "size": "MEDIUM",
-            "type": "HYBRID",
-            "mount": "HARDPOINT",
-            "arc": 5.01,
-            "angle": 0,
-            "locations": [
-                       9,      -13
-            ]
-        },
-        {
-            "id": "WS0003",
-            "size": "SMALL",
-            "type": "UNIVERSAL",
-            "mount": "TURRET",
-            "arc": 35,
-            "angle": -10,
-            "locations": [
-                    18.5,     25.5
-            ]
-        },
-        {
-            "id": "WS0004",
-            "size": "SMALL",
-            "type": "UNIVERSAL",
-            "mount": "TURRET",
-            "arc": 35,
-            "angle": 10,
-            "locations": [
-                    18.5,    -25.5
-            ]
-        },
-        {
-            "id": "WS0005  000",
-            "size": "SMALL",
-            "type": "BUILT_IN",
-            "mount": "TURRET",
-            "arc": 162,
-            "angle": 180,
-            "locations": [
-                     -17,        0
-            ]
-        }
-    ],
-    "engineSlots": [
-        {
-            "location": [
-                -19, 20.5
-            ],
-            "length": 6,
-            "width": 6,
-            "angle": 180,
-            "contrailSize": 6,
-            "style": "DiableAvionicsTrail"
-        },
-        {
-            "location": [
-                -19, -20.5
-            ],
-            "length": 6,
-            "width": 6,
-            "angle": -180,
-            "contrailSize": 6,
-            "style": "DiableAvionicsTrail"
-        },
-        {
-            "location": [
-                -23, 10.5
-            ],
-            "length": 6,
-            "width": 6,
-            "angle": 180,
-            "contrailSize": 6,
-            "style": "DiableAvionicsTrail"
-        },
-        {
-            "location": [
-                -23, -10.5
-            ],
-            "length": 6,
-            "width": 6,
-            "angle": -180,
-            "contrailSize": 6,
-            "style": "DiableAvionicsTrail"
-        },
-        {
-            "location": [
-                -29, 0
-            ],
-            "length": 7.5,
-            "width": 10,
-            "angle": -180,
-            "contrailSize": 10,
-            "style": "DiableAvionicsTrail"
-        }
-    ],
-    "bounds": [
-            70.5,     -1.5,
-            23.5,     -4.5,
-            12.5,     -7.5,
-             9.5,    -18.5,
-            23.5,    -33.5,
-        
-            -2.5,    -34.5,
-           -10.5,    -23.5,
-           -17.5,    -22.5,
-           -23.5,     -6.5,
-           -28.5,     -6.5,
-        
-           -28.5,      6.5,
-           -23.5,      6.5,
-           -17.5,     22.5,
-           -10.5,     23.5,
-            -2.5,     34.5,
-        
-            23.5,     33.5,
-             9.5,     18.5,
-            12.5,      7.5,
-            23.5,      4.5,
-            70.5,      1.5
-    # 20 points total.
-    ]
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5.01,
+      "angle": 0,
+      "locations": [9, -13]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 35,
+      "angle": -10,
+      "locations": [18.5, 25.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 35,
+      "angle": 10,
+      "locations": [18.5, -25.5]
+    },
+    {
+      "id": "WS0005  000",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 162,
+      "angle": 180,
+      "locations": [-17, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-19, 20.5],
+      "length": 30,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-19, -20.5],
+      "length": 30,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-23, 10.5],
+      "length": 30,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-23, -10.5],
+      "length": 30,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-29, 0],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "DiableAvionicsTrail"
+    }
+  ],
+  "bounds": [
+    70.5, -1.5,
+    23.5, -4.5,
+    12.5, -7.5,
+    9.5, -18.5,
+    23.5, -33.5,
+    -2.5, -34.5,
+    -10.5, -23.5,
+    -17.5, -22.5,
+    -23.5, -6.5,
+    -28.5, -6.5,
+    -28.5, 6.5,
+    -23.5, 6.5,
+    -17.5, 22.5,
+    -10.5, 23.5,
+    -2.5, 34.5,
+    23.5, 33.5,
+    9.5, 18.5,
+    12.5, 7.5,
+    23.5, 4.5,
+    70.5, 1.5
+  ]
 }

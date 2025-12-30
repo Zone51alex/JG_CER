@@ -62,7 +62,7 @@ FireAll PopulateOptions","""You have been scanned and identified. It's probably 
 ,,,,,,
 # Onuo Market Dialogue,,,,,,
 flavorTextMarketOnuo,TradePanelFlavorText,"$global.tradePanelMode == MARKET
-$id == OT_a score:1000","AddText""The Planet is Dotted in so many Drydocks and Hangar organized in rows of rows churning out Ships left and right, your flagship is being escorted to a Hangar with Obsolete Systems and Pristine Equipement..""textGrayColor",,,
+$id == OT_a score:1000","AddText""The Planet is Dotted in so many Drydocks and Hangars, organized in rows of rows churning out Ships left and right, your flagship is being escorted to a Hangar with Obsolete Systems and Pristine Equipement.""textGrayColor",,,
 #END Onuo Market Dialogue,,,,,,
 ,,,,,,
 # Grand Admiral - Mordrigg Dragonstein V,,,,,,
@@ -90,6 +90,22 @@ cer_startGreetingTaio,PickGreeting,"$id == cer_engie score:100
 $player.RecommendTaio","ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","""Oi, What do you need ? """,0:cutCommLink:Cut the comm link,
+cer_ShipBlurb,cer_Ship_blurb,$id == cer_engie,,"""I have a surplus $cer_Ship_hullSize available. Military-grade hull, good quality. Interested?""",,
+cer_ShipOfferOption,cer_Ship_option,$id == cer_engie,,,cer_Ship_start:Ask about the $cer_Ship_hullSize,
+cer_ShipOfferTextContact,DialogOptionSelected,"$id == cer_engie
+$option == cer_Ship_start","$missionId = cer_Ship
+SetTextHighlights $cer_Ship_price","""It's a $cer_Ship_hullClass $cer_Ship_hullSize in good condition. I could find another buyer, but I wanted to make the offer to you first- $sShip_price credits for the ship.""","cer_Ship_look:Ask for detailed info on the ship
+contact_decline:Decline",
+cer_ShipLookAtFreighter,DialogOptionSelected,"$id == cer_engie
+$option == cer_Ship_look","Call $sShip_ref showShip
+DoCanAffordCheck $sShip_price contact_accept false",$personName taps a few keys to summon the ship specifications for your examination.,"contact_accept:Buy the $cer_Ship_hullSize for $cer_Ship_price credits
+contact_decline:Decline",
+cer_ShipPostAccept,ContactPostAccept,"$id == cer_engie
+$missionId == cer_Ship","ShowPersonVisual
+RemoveCommodity credits $cer_Ship_price
+AddShip $cer_Ship_member
+Call $cer_Ship_ref2 repSuccess
+Call $cer_Ship_ref2 addContacts",,,
 #END Grand Engineer - Taio Lunaria,,,,,,
 ,,,,,,
 # Lead Secretary - Suru Solaris,,,,,,

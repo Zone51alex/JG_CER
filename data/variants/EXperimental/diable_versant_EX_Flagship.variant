@@ -1,0 +1,54 @@
+{
+    "displayName": "Flagship",
+    "fluxCapacitors": 10,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "diable_versant_EX",
+    "hullMods": [
+        "diableavionics_selector_burst_EX",
+        "fluxcoil",
+        "fluxdistributor",
+        "hardenedshieldemitter",
+        "turretgyros",
+        "unstable_injector",
+    ],
+    "permaMods": [
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_versant_EX_Flagship",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN_LEFT": "diableavionics_versant_EX_harvestB_LEFT",
+                "GUN_RIGHT": "diableavionics_versant_EX_harvestB_RIGHT",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0000": "diable_starlight",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_magicbox",
+                "WS0002": "diableavionics_magicbox",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_itanolauncher_EX",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

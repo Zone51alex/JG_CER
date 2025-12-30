@@ -2,11 +2,12 @@ package data.scripts.plugins;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.FactionAPI;
+import com.fs.starfarer.api.campaign.PersonImportance;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
-import com.fs.starfarer.api.impl.campaign.ids.Ranks;
+import com.fs.starfarer.api.impl.campaign.ids.*;
 
 import com.fs.starfarer.api.characters.FullName.Gender;
 import data.campaign.ids.cer_ids;
@@ -25,7 +26,27 @@ public class CERPerson {
     }
 
     public static PersonAPI createCERCharacters() {
+
         ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
+        /**Cyan Core*/
+        if (getPerson(cer_ids.cercyancore) == null) {
+            PersonAPI person = Global.getSector().getFaction("da_cer").createRandomPerson();
+            person.setId(cer_ids.cercyancore);
+            person.setGender(Gender.MALE);
+            person.setRankId(Ranks.SPACE_COMMANDER); // Operation Manager
+            person.setPostId(Ranks.POST_GUARD_LEADER); // Scientist
+            //person.setVoice(Voices.OFFICIAL);
+            person.setPersonality(Personalities.STEADY);
+            person.getStats().setLevel(5);
+            person.getStats().setSkillLevel(Skills.HELMSMANSHIP, 2);
+            person.getStats().setSkillLevel(Skills.FIELD_MODULATION, 2);
+            person.getStats().setSkillLevel(Skills.COMBAT_ENDURANCE, 2);
+            person.getStats().setSkillLevel(Skills.ENERGY_WEAPON_MASTERY, 2);
+            person.getStats().setSkillLevel(Skills.ORDNANCE_EXPERTISE, 2);
+            person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "cyancore"));
+            person.getMemoryWithoutUpdate().set("$chatterChar", "robotic");
+            ip.addPerson(person);
+        }
         /**Ouno Capital*/
         MarketAPI market1 = Global.getSector().getEconomy().getMarket("OT_a");
         if (market1 != null) {
@@ -37,6 +58,7 @@ public class CERPerson {
                 dankshirePerson.getName().setFirst("Mordrigg");
                 dankshirePerson.getName().setLast("Dankshire V");
                 dankshirePerson.setGender(Gender.MALE);
+                dankshirePerson.setImportance(PersonImportance.VERY_HIGH);
                 dankshirePerson.setRankId("cer_grandadmiral");
                 dankshirePerson.setPostId(Ranks.POST_FACTION_LEADER);
                 dankshirePerson.addTag("military");
@@ -62,8 +84,10 @@ public class CERPerson {
                 daxterPerson.getName().setFirst("Taio");
                 daxterPerson.getName().setLast("Lunaria");
                 daxterPerson.setGender(Gender.MALE);
+                daxterPerson.setImportance(PersonImportance.VERY_HIGH);
                 daxterPerson.setRankId("cer_chiefengineering");
                 daxterPerson.setPostId("cer_chiefengineering");
+                daxterPerson.addTag("trade");
                 daxterPerson.setPortraitSprite(Global.getSettings().getSpriteName("characters", "cer_daxter"));
                 daxterPerson.addTag("coff_nocapture");
                 market1.addPerson(daxterPerson);
@@ -79,8 +103,10 @@ public class CERPerson {
                     faunPerson.getName().setFirst("Suru");
                     faunPerson.getName().setLast("Solaris");
                     faunPerson.setGender(Gender.FEMALE);
+                    faunPerson.setImportance(PersonImportance.VERY_HIGH);
                     faunPerson.setRankId("cer_assistengineering");
                     faunPerson.setPostId("cer_assistengineering");
+                    faunPerson.addTag("military");
                     faunPerson.setPortraitSprite(Global.getSettings().getSpriteName("characters", "cer_faun"));
                     faunPerson.addTag("coff_nocapture");
                     market1.addPerson(faunPerson);
@@ -106,6 +132,7 @@ public class CERPerson {
             Person.setGender(Gender.FEMALE);
             Person.setRankId(Ranks.POST_ADMINISTRATOR);
             Person.setPostId(Ranks.POST_FACTION_LEADER);
+            Person.setImportance(PersonImportance.VERY_HIGH);
             Person.addTag("military");
             Person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "cer_Ake"));
             if (Global.getSettings().getModManager().isModEnabled("IndEvo")) {

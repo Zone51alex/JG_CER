@@ -4,3 +4,5 @@ diableavionics_raycast_shot,diableavionics_Raycast_shot,base_trail_smooth,20,0.0
 diableavionics_urn_shot,diableavionics_urn_shot,base_trail_smooth,10,0.1,0.25,1,9,16,"[255,225,100]","[255,24,24]",0.75,-512,0,15,0,1,FALSE,FALSE,TRUE,15,5,0,180,15,5,TRUE,TRUE
 diableavionics_urn2_shot,diableavionics_urn2_shot,base_trail_smooth,10,0.1,0.25,1,9,16,"[255,225,100]","[255,24,24]",0.75,-512,0,15,0,1,FALSE,FALSE,TRUE,15,5,0,180,15,5,TRUE,TRUE
 diableavionics_roaring_shot,diableavionics_roaring_shot,base_trail_smooth,20,0.05,0.05,0.5,6,12,"[155,155,100]","[75,75,50]",0.15,128,0,10,0,1,TRUE,FALSE,TRUE,100,50,0.2,0,30,0,TRUE,TRUE
+diableavionics_starlight_shot,diableavionics_starlight_shot,base_trail_aura,20,0.05,0.1,0.4,16,16,"[50,150,225]","[50,75,100]",0.5,128,0,15,0,0.2,FALSE,FALSE,TRUE,25,0,0.2,0,0,180,TRUE,FALSE
+diableavionics_heatblast_shot,diableavionics_heatblast_shot,base_trail_smooth,10,0.05,0.05,1.5,6,18,"[255,155,125]","[75,50,50]",0.5,128,0,10,0,1,TRUE,FALSE,TRUE,100,0,0.2,0,0,60,TRUE,TRUE

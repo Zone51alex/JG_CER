@@ -1,0 +1,41 @@
+{
+    "displayName": "Frigate Leader",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "diableavionics_coldfront",
+    "hullMods": [
+        "fluxdistributor",
+        "hardenedshieldemitter",
+        "unstable_injector",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_coldfront_Frigate_Leader",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_gravemg",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_magicboxPodbuiltin",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_artassault",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

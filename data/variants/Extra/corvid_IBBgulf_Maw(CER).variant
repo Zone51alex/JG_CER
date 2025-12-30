@@ -1,0 +1,76 @@
+{
+    "displayName": "Maw(CER)",
+    "fluxCapacitors": 21,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "diableavionics_IBBgulf",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [
+        "ML_skinSwap",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diableavionics_IBBgulf_Maw(CER)",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diable_recson3",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "diableavionics_micromissile",
+                "WS0011": "diableavionics_micromissile",
+                "WS0012": "diableavionics_micromissile",
+                "WS0013": "diableavionics_micromissile",
+                "WS0014": "diableavionics_micromissile",
+                "WS0015": "diableavionics_micromissile",
+                "WS0016": "diableavionics_micromissile",
+                "WS0017": "diableavionics_micromissile",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_mostro",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_gravemg",
+                "WS0004": "diableavionics_gravemg",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_lazyhorn",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "diableavionics_ibis",
+                "WS0008": "diableavionics_ibis",
+                "WS0007": "diableavionics_ibis",
+                "WS0006": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_hoar_wing",
+        "diableavionics_hoar_wing",
+    ],
+    "modules": [],
+}

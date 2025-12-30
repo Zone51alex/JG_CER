@@ -2,30 +2,24 @@ package data.scripts;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.PluginPick;
-import com.fs.starfarer.api.campaign.CampaignPlugin;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.SpecialItemData;
 import com.fs.starfarer.api.campaign.econ.Industry;
 import com.fs.starfarer.api.campaign.econ.InstallableIndustryItemPlugin.InstallableItemDescriptionMode;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
-import com.fs.starfarer.api.combat.ShipAIConfig;
-import com.fs.starfarer.api.combat.ShipAIPlugin;
-import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.econ.impl.BaseInstallableItemEffect;
 import com.fs.starfarer.api.impl.campaign.econ.impl.ItemEffectsRepo;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.launcher.ModManager;
-import data.campaign.CyanCoreOfficerGen;
 import data.campaign.ids.cer_ids;
 import data.scripts.campaign.plugins.CerCampaignPluginImpl;
 import data.scripts.plugins.CERPerson;
-import data.scripts.world.MarketHelpers;
+import data.scripts.world.systems.cer_OnuoMarketScript;
 import data.scripts.world.cerGen;
 import exerelin.campaign.SectorManager;
+import lunalib.lunaSettings.LunaSettings;
 
 public class da_cerModPlugin extends BaseModPlugin {
     //variables
@@ -54,7 +48,6 @@ public class da_cerModPlugin extends BaseModPlugin {
         //Load Characters
         MarketAPI market1 = Global.getSector().getEconomy().getMarket("OT_a");
         if (market1 != null) CERPerson.create();
-        //CyanCoreOfficerGen.create();
         //if (!MagicVariables.getIBB()) cerGen.spawngrandfleet();
         syncCERScripts();
         //addNPCs
@@ -104,15 +97,20 @@ public class da_cerModPlugin extends BaseModPlugin {
                         Math.round(CER_NANOFORGE_ITEM_QUALITY_BONUS * 100f) + "%");
             }
         });
-       if (CyanCoreOfficerGen.getPerson(cer_ids.cercyancore) != null) {
-            CyanCoreOfficerGen.setInstanceChipDescription(cer_ids.CYANCORE_CHIP, CyanCoreOfficerGen.getPerson(cer_ids.cercyancore));
-        }
+
     }
 
     public void onNewGame() {
         boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
+                boolean ExfeatureEnabled;
+                if (Global.getSettings().getModManager().isModEnabled("lunalib"))
+                {
+                            ExfeatureEnabled = LunaSettings.getBoolean("da_cer", "cer_newcapitalspawn");
+                        if (ExfeatureEnabled) {
+                            Global.getSector().addTransientScript(new cer_OnuoMarketScript());
+                        }
+                }
 
-        //Global.getSector().addTransientScript(new OnuoMarketScript());
         if (!haveNexerelin || SectorManager.getManager().isCorvusMode()) {
             new cerGen().generate(Global.getSector());
         }

@@ -1,6 +1,6 @@
 1  - CESN Marauder - Uses a Super Version of the Maelstorm Ship System.
 2  - CESN Starlight - *Old*Black Hole as a Gyro Core, Can't be Recovered it would implode upon destruction. - currently uses a Medium hardpoint single barrel Heemeyer Cannon.
-3  - CESN Arise - Each time its using its Shipsystem Lose %1 of Armor.
+3  - CESN Arise - Each time its using its Shipsystem Lose %0.1 of Armor.
 4  - CESN Merkava - *Old* Shields would easily Bleed hard flux into soft flux
 5  - CESN Railjack - Automated Ship with controlable Snap Drones.
 6  - CESN Haven's Drill, CESN Devil's Spear - Both has Super version of their normal Ship Systems

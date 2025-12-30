@@ -1,0 +1,63 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 15,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "diable_rime_m_cer",
+    "hullMods": [
+        "jg_salvagewingcon",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_rime_m_cer_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0012": "diableavionics_plover",
+                "WS0013": "diableavionics_plover",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0011": "diableavionics_microbuiltin",
+                "WS0002": "diableavionics_microbuiltin",
+                "WS0010": "diableavionics_microbuiltin",
+                "WS0009": "diableavionics_microbuiltin",
+                "WS0008": "diableavionics_microbuiltin",
+                "WS0007": "diableavionics_microbuiltin",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_gravemg",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_artassault",
+                "WS0004": "diableavionics_artassault",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_hoar_wing",
+        "diableavionics_hoar_wing",
+    ],
+    "modules": [],
+}

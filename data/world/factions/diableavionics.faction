@@ -1,96 +1,69 @@
 {
     id:"diableavionics",
 
-# multiplier for how often hulls show up in the faction's fleets
-	"hullFrequency":{
-		"tags":{"diable_ship_bp":1,"diable_cer_bp":1
-		},
-		"hulls":{
-			
-            "diable_miniGust_cer":0.25,
-            "diable_gust_cer":0.25,
-			
-            "diable_vapor_cer":0.50,
-            "diable_rime_m_cer":0.12,
-			"diable_fractus_cer":0.50,
-			"diable_daze_cer":1,
-			"diable_fractalus":0.25,
-			"diable_chieftain":0.10,
-			
-		},
-	},
+# variantOverrides restricts hulls to listed variants and adjusts their probability
+    #"variantOverrides":{
+        #"diableavionics_versant_assault":30,
+    #},
+
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "tags":{"diable_ship_bp":1,
+        },
+        "hulls":{
+         "diable_raven_C":1,
+		 "diable_valiant_C":1,
+		 "diable_zephyr_C":1,
+        },
+    },
+
 
 "shipsWhenImporting":{
-        "tags":["base_bp","diable_ship_bp","diable_cer_bp"],
+        "tags":["base_bp","diable_ship_bp"],
         "hulls":[
-            "diable_miniGust_cer",
-            "diable_gust_cer",
-			
-			"diable_vapor_cer",
-			"diable_rime_m_cer",
-			"diable_fractus_cer",
-			"diable_daze_cer",
-			"diable_fractalus",
-			"diable_chieftain",
+		"diable_raven_C",
+		"diable_valiant_C",
+		"diable_zephyr_C",
         ],
     },
 
     "knownShips":{
-        "tags":["diable_ship_bp","diable_cer_bp"],
+        "tags":["diable_ship_bp"],
         "hulls":[
-            "diable_miniGust_cer",
-            "diable_gust_cer",
-			
-			"diable_vapor_cer",
-			"diable_rime_m_cer",
-			"diable_fractus_cer",
-			"diable_daze_cer",
-			"diable_fractalus",
-			"diable_chieftain",
+		"diable_raven_C",
+		"diable_valiant_C",
+		"diable_zephyr_C",
         ],
     },
 
     # listing ships here will make the faction mostly use them even if other hulls become available
     "priorityShips":{
-        "tags":["diable_ship_bp","diable_cer_bp"],
+        "tags":["diable_ship_bp"],
         "hulls":[
-            "diable_miniGust_cer",
-            "diable_gust_cer",
-			"diable_daze_cer",
-			
-			"diable_vapor_cer",
-			"diable_rime_m_cer",
-			"diable_fractus_cer",
-			"diable_fractalus",
-			"diable_chieftain",
+		"diable_raven_C",
+		"diable_valiant_C",
+		"diable_zephyr_C",
         ],
     },
 
     "knownFighters":{
         "tags":[
             
-			"diable_jg_bp","diable_cer_bp"
+			"diable_jg_bp"
             ],
         "fighters":[
-            "diable_knight_wing",
             
         ],
     },
 
     "knownWeapons":{
         "tags":[
-			"diable_jg_bp","diable_cer_bp"
+			"diable_cer_bp"
             ],
         "weapons":[
-			"diable_mostro2",
-			"diable_buckshot",
-			"diable_glownail",
 			"diable_diurne",
-			"diable_plow",
-			"diable_gravemac",
 			"diable_urn2",
 			"diable_urn",
-			"diable_reioibox"
         ],
     },
 	

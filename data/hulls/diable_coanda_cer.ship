@@ -2,7 +2,7 @@
   "hullName": "Coanda(JG)",
   "hullId": "diable_coanda_cer",
   "hullSize": "DESTROYER",
-  "spriteName": "graphics/jg/ships/diableavionics_coanda.png",
+  "spriteName": "graphics/da/ships/diableavionics_coanda.png",
   "style": "HIGH_TECH",
   "height": 220,
   "width": 102,
@@ -12,12 +12,10 @@
   "shieldRadius": 114.5,
   "viewOffset": 0,
   "builtInMods": [
-    #"diableavionics_avionics",\n
     "diableavionics_mountBI",
-	"jg_brownnote",
-	"jg_overloadedsubsystems",
-    "missleracks",
-	
+    "jg_brownnote",
+    "jg_overloadedsubsystems",
+    "missleracks"
   ],
   "weaponSlots": [
     {
@@ -36,7 +34,7 @@
       "mount": "HARDPOINT",
       "arc": 10,
       "angle": 0,
-      "locations": [26, -19]
+      "locations": [27, -19]
     },
     {
       "id": "WS0010",
@@ -125,47 +123,47 @@
   ],
   "engineSlots": [
     {
-      "location": [-58, 31.5],
-      "length": 7.5,
-      "width": 10,
+      "location": [-59, 31.5],
+      "length": 30,
+      "width": 7,
       "angle": 180,
-      "contrailSize": 10,
+      "contrailSize": 7,
       "style": "CUSTOM",
       "styleId": "DiableAvionicsTrail"
     },
     {
-      "location": [-59, 23.5],
-      "length": 7.5,
-      "width": 10,
+      "location": [-60, 23.5],
+      "length": 30,
+      "width": 7,
       "angle": 180,
-      "contrailSize": 10,
+      "contrailSize": 7,
       "style": "CUSTOM",
       "styleId": "DiableAvionicsTrail"
     },
     {
-      "location": [-59, -23.5],
-      "length": 7.5,
-      "width": 10,
+      "location": [-60, -23.5],
+      "length": 30,
+      "width": 7,
       "angle": -180,
-      "contrailSize": 10,
+      "contrailSize": 7,
       "style": "CUSTOM",
       "styleId": "DiableAvionicsTrail"
     },
     {
-      "location": [-68, 14.5],
-      "length": 7.5,
-      "width": 10,
+      "location": [-69, 14.5],
+      "length": 30,
+      "width": 7,
       "angle": 180,
-      "contrailSize": 10,
+      "contrailSize": 7,
       "style": "CUSTOM",
       "styleId": "DiableAvionicsTrail"
     },
     {
-      "location": [-68, -14.5],
-      "length": 7.5,
-      "width": 10,
+      "location": [-69, -14.5],
+      "length": 30,
+      "width": 7,
       "angle": -180,
-      "contrailSize": 10,
+      "contrailSize": 7,
       "style": "CUSTOM",
       "styleId": "DiableAvionicsTrail"
     }

@@ -30,28 +30,24 @@ public class DATuningEX extends BaseHullMod {
         // This prevents unexplained hullmod blocking
         BLOCKED_HULLMODS.add("safetyoverrides");
     }
-
     private final Map<Integer,String> LEFT_SELECTOR = new HashMap<>();
     {
         LEFT_SELECTOR.put(0, "diableavionics_versant_EX_harvest_LEFT");
         LEFT_SELECTOR.put(1, "diableavionics_versant_EX_harvestB_LEFT");
         LEFT_SELECTOR.put(2, "diableavionics_versant_EX_harvestC_LEFT");
     }
-
     private final Map<Integer,String> RIGHT_SELECTOR = new HashMap<>();
     {
         RIGHT_SELECTOR.put(0, "diableavionics_versant_EX_harvest_RIGHT");
         RIGHT_SELECTOR.put(1, "diableavionics_versant_EX_harvestB_RIGHT");
         RIGHT_SELECTOR.put(2, "diableavionics_versant_EX_harvestC_RIGHT");
     }
-
     private final Map<String, Integer> SWITCH_TO = new HashMap<>();
     {
         SWITCH_TO.put("diableavionics_versant_EX_harvest_LEFT",1);
         SWITCH_TO.put("diableavionics_versant_EX_harvestB_LEFT",2);
         SWITCH_TO.put("diableavionics_versant_EX_harvestC_LEFT",0);
     }
-
     private final Map<Integer,String> SWITCH = new HashMap<>();
     {
         SWITCH.put(0,"diableavionics_selector_auto_EX");
@@ -118,7 +114,7 @@ public class DATuningEX extends BaseHullMod {
         //blocked hullmods
         for (String tmp : BLOCKED_HULLMODS) {
             if (ship.getVariant().getHullMods().contains(tmp)) {
-                MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(), tmp, "diableavionics_tuning");
+                MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(), tmp, "diableavionics_tuning_EX");
             }
         }
 
@@ -173,7 +169,7 @@ public class DATuningEX extends BaseHullMod {
 
     private String rightslotID = "GUN_RIGHT";
 
-    public DATuningEX() {
+    public DAStratusCore() {
         this.BLOCKED_HULLMODS = new HashSet<>();
         this.BLOCKED_HULLMODS.add("safetyoverrides");
         this.LEFT_SELECTOR = new HashMap<>();

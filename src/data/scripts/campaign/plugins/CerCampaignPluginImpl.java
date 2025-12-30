@@ -16,7 +16,7 @@ public class CerCampaignPluginImpl extends BaseCampaignPlugin {
 
     @Override
     public PluginPick<AICoreOfficerPlugin> pickAICoreOfficerPlugin(String commodityId) {
-        if (commodityId.equals(cer_ids.cercyancore)) return new PluginPick<>(new CyanCoreOfficerPluginImpl(), PickPriority.MOD_SET);
+        if (cer_ids.cercyancore.equals(commodityId)) return new PluginPick<AICoreOfficerPlugin>(new CyanCoreOfficerPluginImpl(), PickPriority.MOD_SET);
         return null;
     }
 }

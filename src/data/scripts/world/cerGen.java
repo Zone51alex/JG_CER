@@ -128,7 +128,7 @@ public class cerGen implements SectorGeneratorPlugin {
     public static void spawn1stfleet() {
         //settle for the largest military market
         SectorEntityToken target = null;
-
+//Spawn Location
         for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
             if (m.getFaction().getId().equals("da_cer")) {
                 if (target == null
@@ -138,7 +138,16 @@ public class cerGen implements SectorGeneratorPlugin {
                 }
             }
         }
-
+//Defense Location
+        for (MarketAPI m2 : Global.getSector().getEconomy().getMarketsCopy()) {
+            if (m2.getFaction().getId().equals("da_cer")) {
+                if (target == null
+                        || (m2.hasSubmarket(Submarkets.GENERIC_MILITARY) && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY)
+                        || m2.getSize() > target.getMarket().getSize()))) {
+                    target = m2.getPrimaryEntity();
+                }
+            }
+        }
         if (target != null) {
             //magiccaptain
 
@@ -219,10 +228,10 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setFleetType(FleetTypes.TASK_FORCE)
                     .setFlagshipName(txt("2ndFlagship"))
                     .setFlagshipAlwaysRecoverable(false)
-                    .setFlagshipVariant("diable_pandemonium_EX_Flagship2")
+                    .setFlagshipVariant("diable_chieftain_cer_Flagship")
                     .setFlagshipAutofit(false)
                     .setCaptain(FleetCaptain)
-                    .setMinFP(300)
+                    .setMinFP(400)
                     .setReinforcementFaction("da_cer")
                     .setQualityOverride(2f)
                     .setAssignment(FleetAssignment.PATROL_SYSTEM)
@@ -276,7 +285,7 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setFleetType(FleetTypes.PATROL_MEDIUM)
                     .setFlagshipName(txt("3rdFlagship"))
                     .setFlagshipAlwaysRecoverable(false)
-                    .setFlagshipVariant("diableavionics_gust_Frontline")
+                    .setFlagshipVariant("diable_chieftain_cer_Standard")
                     .setFlagshipAutofit(false)
                     .setCaptain(FleetCaptain)
                     .setMinFP(150)
@@ -333,10 +342,10 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setFleetType(FleetTypes.PATROL_SMALL)
                     .setFlagshipName(txt("4thFlagship"))
                     .setFlagshipAlwaysRecoverable(false)
-                    .setFlagshipVariant("diableavionics_calm_Mixed_cer")
+                    .setFlagshipVariant("diable_chieftain_cer_Standard")
                     .setFlagshipAutofit(false)
                     .setCaptain(FleetCaptain)
-                    .setMinFP(100)
+                    .setMinFP(200)
                     .setReinforcementFaction("da_cer")
                     .setQualityOverride(2f)
                     .setAssignment(FleetAssignment.PATROL_SYSTEM)

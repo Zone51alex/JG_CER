@@ -16,8 +16,7 @@
     4.5
   ],
   "turretAngleOffsets": [
-    1,
-
+    1
   ],
   "hardpointOffsets": [
     29,
@@ -25,21 +24,20 @@
   ],
   "hardpointAngleOffsets": [
     1
-
   ],
 	"barrelMode": "ALTERNATING",
   "animationType": "MUZZLE_FLASH",
   "interruptibleBurst": true,
   "muzzleFlashSpec": {
-    "length": 90.0,
-    "spread": 12.0,
+    "length": 60.0,
+    "spread": 10.0,
     "particleSizeMin": 15.0,
     "particleSizeRange": 40.0,
-    "particleDuration": 0.12,
-    "particleCount": 20,
-    "particleColor": [ 195,150,255,255 ] },
+    "particleDuration": 0.1,
+    "particleCount": 15,
+    "particleColor": [ 199,93,76,215 ] },
   "autocharge": true,
-	"projectileSpecId":"diableavionics_virtuousShotgun_shot",  # projectile that will be fired
-	"fireSoundTwo":"diableavionics_virtuousShotgun_fire",
-        "everyFrameEffect":"data.scripts.weapons.diableavionics_heatblastFire",
+	"projectileSpecId":"diableavionics_heatblast_shot",  # projectile that will be fired
+	"fireSoundTwo":"mjolnir_fire",
+        #"everyFrameEffect":"data.scripts.weapons.diableavionics_heatblastFire",
 }

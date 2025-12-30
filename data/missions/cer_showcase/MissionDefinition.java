@@ -30,36 +30,43 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		// Set up the player's fleet.  Variant names come from the
 		// files in data/variants and data/variants/fighters
 				//EX Ships
-                api.addToFleet(FleetSide.PLAYER, "diable_gust_EX_Flagship", FleetMemberType.SHIP,"CESN Marauder", true);
-                api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX_Flagship", FleetMemberType.SHIP,"CESN Black Pearl", false);
-				api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX_Flagship2", FleetMemberType.SHIP,"IDSS Starbound", false);
-                api.addToFleet(FleetSide.PLAYER, "diable_chieftain_EX_Flagship", FleetMemberType.SHIP, false);		   
+				if(Global.getSettings().isDevMode()){
+                api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX_Flagship", FleetMemberType.SHIP,"CESN Flying Dutchman", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX2_Flagship", FleetMemberType.SHIP,"IDSS Starbound", false);
+                api.addToFleet(FleetSide.PLAYER, "diable_chieftain_EX_Flagship", FleetMemberType.SHIP,"CESN Black Pearl", false);
                 api.addToFleet(FleetSide.PLAYER, "diable_storm_EX_Flagship", FleetMemberType.SHIP,"CESN Gold Ship", false);
-				api.addToFleet(FleetSide.PLAYER, "diable_daze_EX_Flagship", FleetMemberType.SHIP,"CESN Merkava", false);				
-                api.addToFleet(FleetSide.PLAYER, "diable_gust_EX2_Flagship", FleetMemberType.SHIP,"CESN Khrizantema", false);	
-                api.addToFleet(FleetSide.PLAYER, "diable_superrime_EX_Flagship", FleetMemberType.SHIP,"CESN Heaven's Drill", false);	            
+				api.addToFleet(FleetSide.PLAYER, "diable_daze_EX_Flagship", FleetMemberType.SHIP,"CESN Merkava", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_gust_EX_Flagship", FleetMemberType.SHIP,"CESN Marauder", true);				
+                api.addToFleet(FleetSide.PLAYER, "diable_gust_EX2_Flagship", FleetMemberType.SHIP,"CESN Khrizantema", false);	            
                 api.addToFleet(FleetSide.PLAYER, "diable_riptide_EX_Flagship", FleetMemberType.SHIP,"DSF Star Platinum", false);	           
                 api.addToFleet(FleetSide.PLAYER, "diable_calm_EX_Flagship", FleetMemberType.SHIP,"CESN Railjack", false);				
 				api.addToFleet(FleetSide.PLAYER, "diable_vapor_EX_Flagship", FleetMemberType.SHIP,"CESN Arise", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_versant_EX_Flagship", FleetMemberType.SHIP,"CESN Starlight", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_goblin_EX_Flagship", FleetMemberType.SHIP,"CESN Goblin", false);
-				//Upcoming Ships
+				}
+				//Standard Ships
+				api.addToFleet(FleetSide.PLAYER, "diable_chieftain_cer_Standard", FleetMemberType.SHIP,"CESN Valkyrie", true);
+				api.addToFleet(FleetSide.PLAYER, "diable_chieftain_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_gust_cer_Assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_daze_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_haze_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_storm_cer_Standard", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.PLAYER, "diable_fractalus_Assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_rime_m_cer_Advanced", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_miniGust_cer_Support", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.PLAYER, "diable_fractus_cer_Bomber", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.PLAYER, "diable_burst_Standard", FleetMemberType.SHIP,"CESN Burst", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_stratus_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_calm_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_versant_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_eagle_C_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_raven_C_Standard", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.PLAYER, "diable_valiant_C_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_zephyr_C_Standard", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_brisk_cer_Energy", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_coanda_cer_Energy", FleetMemberType.SHIP, false);
-				//Standard Ships
-				api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diable_fractalus_Assault", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diable_daze_cer_Standard", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diable_burst_Standard", FleetMemberType.SHIP,"CESN Burst", false);
-                api.addToFleet(FleetSide.PLAYER, "diable_miniGust_cer_Support", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diable_fractus_cer_Bomber", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diable_rime_m_cer_Advanced", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diable_gust_cer_Assault", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diable_storm_cer_Standard", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diable_chieftain_Standard", FleetMemberType.SHIP, false);
-  
+				
 		// Mark both ships as essential - losing either one results
 		// in mission failure. Could also be set on an enemy ship,
 		// in which case destroying it would result in a win.
@@ -70,23 +77,53 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		//api.addToFleet(FleetSide.ENEMY, "onslaught_Outdated", FleetMemberType.SHIP, false);	
 				
 				api.addToFleet(FleetSide.ENEMY, "diableavionics_versant_standard", FleetMemberType.SHIP, true);
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_pandemonium_willBreaker", FleetMemberType.SHIP, false);	
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_maelstrom_standard", FleetMemberType.SHIP, false);		   
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_storm_standard", FleetMemberType.SHIP, false);	               
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_gust_standard", FleetMemberType.SHIP, false);	
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_haze_standard", FleetMemberType.SHIP, false);	            
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_daze_combat", FleetMemberType.SHIP, false);	           
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_pandemonium_willBreaker", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_pandemonium_willBreaker", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_maelstrom_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_maelstrom_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_maelstrom_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_maelstrom_standard", FleetMemberType.SHIP, false);				
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_storm_standard", FleetMemberType.SHIP, false);	   
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_storm_standard", FleetMemberType.SHIP, false);				
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_gust_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_gust_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_gust_standard", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_haze_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_haze_standard", FleetMemberType.SHIP, false);				
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_daze_combat", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_daze_combat", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_rime_m_standard", FleetMemberType.SHIP, false); 
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_rime_m_standard", FleetMemberType.SHIP, false); 
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_rime_m_standard", FleetMemberType.SHIP, false); 
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_rime_m_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.ENEMY, "diableavionics_miniGust_assault", FleetMemberType.SHIP, false);	             
                 api.addToFleet(FleetSide.ENEMY, "diableavionics_calm_standard", FleetMemberType.SHIP, false);                     
                 api.addToFleet(FleetSide.ENEMY, "diableavionics_coanda_standard", FleetMemberType.SHIP, false);              
                 api.addToFleet(FleetSide.ENEMY, "diableavionics_derecho_standard", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_hayle_standard", FleetMemberType.SHIP, false);	                  
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);	                
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_standard", FleetMemberType.SHIP, false);	                
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_sleet_standard", FleetMemberType.SHIP, false);	    	                 	              
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_rime_m_standard", FleetMemberType.SHIP, false);                      
-                api.addToFleet(FleetSide.ENEMY, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
-            
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_hayle_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_hayle_standard", FleetMemberType.SHIP, false);				
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_standard", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_standard", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_sleet_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_sleet_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_sleet_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_sleet_standard", FleetMemberType.SHIP, false);
+				
 			if(Global.getSettings().isDevMode()){    
                     api.addToFleet(FleetSide.ENEMY, "diableavionics_IBBgulf_boss", FleetMemberType.SHIP, false);               
                     api.addToFleet(FleetSide.ENEMY, "diableavionics_virtuous_grenadier", FleetMemberType.SHIP, false);       
@@ -136,7 +173,5 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		// Add some planets.  These are defined in data/config/planets.json.
 		api.addPlanet(0, 0, 200f, "barren", 350f, true);
 		
-		
 	}
-
 }

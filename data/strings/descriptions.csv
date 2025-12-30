@@ -1,10 +1,10 @@
 id,type,text1,text2,text3,notes
 ,,,,,
-#SHIP,,,,,
+#SHIPS,,,,,
 ,,,,,
 diable_miniGust_cer,SHIP,"While ostensibly related to the regular Gust-class hull design, it is unclear whether this model was a small scale prototype that turned out too performant to be put aside or rather was a successful miniaturization attempt. In any case the Pocket-Gust translates what made its bigger brother good as a light cruiser into an even nimbler Destroyer frame. 
 
-This ship has been Restored from a Destroyed Ship to Near Standard Spec but was unable to restore the Remote control due to the lack of Specialized Parts, so instead they added a Reserve Wing system to it.",,,
+This ship has been Restored from a Destroyed Ship to Near Standard Spec but was unable to restore the Remote control due to the lack of Specialized Parts, so instead they added a Plasma Jets system to it.",,,
 diable_gust_cer,SHIP,"A mainstay of Diable Avionics, these light cruisers are fast and excel in providing field support to the Wanzer element they carry. Their primary battery consists of a front-facing heavy weapon emplacement which gives them an unexpected punch but the relative lack of secondary weapons limits their effectiveness against multiple threats.
 
 The Gust cruiser design dates back almost 150 years before the collapse, during the peak of Diable Avionics's growth when their military contracts abounded and they could afford the R&D cost for less conventional designs. Historical notes and logs from the oldest ships of this class occasionally describe the difficulty of incorporating the proprietary ""Overlord"" system, and all the interferences to the local electromagnetic environment it causes, in a relatively small hull with its sensitive comm/data sphere. 
@@ -13,13 +13,13 @@ This device allows elite pilots well protected within the confine of the cruiser
 
 Nonetheless, that system provides a potent tool that can be used in a pinch to deliver a decisive blow. While initially welcomed by regular pilots that saw their odds of surviving increase as well as being able to learn directly from the bests, these systems have since taken a grim reputation as they can also be used to ensure a mission get carried out at any cost.
 
-This ship has been Restored from a Destroyed Ship to Near Standard Spec but was unable to restore the Remote control due to the lack of Specialized Parts, so instead they added Reserve Wing system to it.",,,
+This ship has been Restored from a Destroyed Ship to Near Standard Spec but was unable to restore the Remote control due to the lack of Specialized Parts, so instead they added Plasma Burn system to it.",,,
 diable_versant_cer,SHIP,"One of the very last pre-Collapse designs the local branch of the Diable Avionics Corporation got its hands on before being abruptly cut-off. It features a mobile frame that can manipulate its shape to increase raw speed, or maneuverability. Advanced integrated weaponry and the latest version of the Diable Avionics's Quantum Targeting Prediction software(TM) come pre-installed.
 
 This Mass Production version has a Phase Core Stable Enough for Minor Stats Boost.",,,
 diable_vapor_cer,SHIP,"A nimble ultralight frigate chassis with a heavy frontal armament. Capable of disrupting fleet operations easily despite its sub-par point defense weapon mounts. 
 
-Junker’s Guild Restored those ships and changed their system to Flux Redirection, thanks to the Abundance of Daze Class Salvage being recovered, tho the old system made the ship a complete utter nightmare to remove but restoring it instead made the Change way easier, it also made the Maintenace Cost Lower than needed since the frame is less Stressed out.",,,
+Junker’s Guild Restored those ships and Improved them with Insulated Engine assembly and an IBIS Pointed Backwards to give them more survivability on the field.",,,
 diable_fractus_cer,SHIP,"Taking after the ubiquitous Condor, this ship is a conversion of the Chinook tanker hull, modified to house a double flight deck. The central fuel tank has been traded for a medium-sized hard-point, useful for supporting the ship's strike-craft complement with stand-off artillery fire.
 
 This Carrier now has Specialized Gantries for The Arbitrator series thanks to Corvid Engineering & Recovery Subsidary.",,,
@@ -27,7 +27,13 @@ diable_rime_m_cer,SHIP,"A light cruiser getting progressively phased out due to 
 
 Junker's Guild Restored those Ships and Modified them with their Favorite System, Plasma Jets.",,,
 diable_chieftain,SHIP,The Junk Cruiser Built during The Hegemony Counter-invasion and is immortolized as Corvid Engineering's Main Flagship to field for Fleet commanders who wants to go on the fringes of Space.,,,
-diable_fractalus,SHIP,,,,
+diable_fractalus,SHIP,"After Discovering The Pirate Chinook among the Destroyed Pirate Raiding Fleets, Corvid confronted Diable with the findings clearly Angry at the continutus support for the Pirates, Corvid Instead Created their own Version of the Porject Named the Fractalus, as Spite to Diable Acionics's Support of the Pirates.
+
+Instead of Having a Hangar Bay, Corvid instead Added Plasma Burn, to make it a Frontline Destroyer Capable of Quickly engaging Targets.",,,
+diable_stratus_cer,SHIP,"A sturdy military freighter with just enough weapon mounts to deter small time opportunistic pirates. Somewhat limited in cargo capacity, but fast and discreet.
+
+Modified as an escort destroyer to help fill out Corvid's Lack of Dedicated ship role, added built-in escort package 
+and being able to switch from micromissiles to Magicboxes in case of heavy Missile ordenance.",,,
 ,,,,,
 # VERSANT,,,,,
 ,,,,,
@@ -53,9 +59,32 @@ diableavionics_versant_EX_harvestC_RIGHT,WEAPON,An energized projectile accelera
 ,,,,,
 #Wanzers/Fighters/Drones,,,,,
 ,,,,,
-diable_crow,SHIP,Junkers Guild Mcgyver-esque Skill Made this Odd Raven Wanzer into an Energy Monster However Diable Could'nt Mass-Produce it due to the Exotic Materials used in the Design.,,,
-diable_knight,SHIP,"A Heavly Modified Warlust Wanzer Used in Jousting Duels, Junkers Guild used them in Combat instead.",,,
+diable_crow,SHIP,Corvid's Mcgyver-esque Skill Made this Odd Raven Wanzer into an Energy Monster However Diable Could'nt Mass-Produce it due to the Exotic Materials used in the Design.,,,
+diable_knight,SHIP,"A Heavly Modified Warlust Wanzer Used in Jousting Duels, Corvid used them in Combat instead.",,,
 diable_mite_drone,SHIP,"A Modified Warlust Drone with a Multi-tool Laser used for Salvage,Repairs and in emegencies, Combat.",,,
+,,,,,
+#Corvid C types,,,,,
+diable_eagle_C,SHIP,"The Type-11 Raven is the heaviest 9th generation strike-craft Wanzers in the Diable Avionics catalog, thus the heaviest currently produced period. Being a good 50% larger than 7th gen frames, it can accommodate nearly full-size ship weaponry: a Grave HMG and a compact Glowtusk make those assault Wanzers quite effective against anything but the thickest defense. A compact Grazer Core and huge plates of ablative nano-armor complete the deadly package. 
+
+While designed as a triple-seater craft to help spread the workload, the Raven can still be maned single-handedly by a 9th gen Wanzer pilot thanks to the S-type neural interface. Even with the extra volume and mass of this design, engineers were unable to incorporate both a TX-5 class shield emitter alongside a displacement system, the latter being ultimately kept to prevent outmaneuvering by enemy fighter forces. Mass production of such an advanced craft is not practical and thus comes with an eyebrow-raising price tag.",,,
+#diable_seven_C,SHIP,,,,
+#diable_arms_C,SHIP,,,,
+,,,,,
+#Diable C Types,,,,,
+diable_raven_C,SHIP,"The Type-11 Raven is the heaviest 9th generation strike-craft Wanzers in the Diable Avionics catalog, thus the heaviest currently produced period. Being a good 50% larger than 7th gen frames, it can accommodate nearly full-size ship weaponry: a Grave HMG and a compact Glowtusk make those assault Wanzers quite effective against anything but the thickest defense. A compact Grazer Core and huge plates of ablative nano-armor complete the deadly package. 
+
+While designed as a triple-seater craft to help spread the workload, the Raven can still be maned single-handedly by a 9th gen Wanzer pilot thanks to the S-type neural interface. Even with the extra volume and mass of this design, engineers were unable to incorporate both a TX-5 class shield emitter alongside a displacement system, the latter being ultimately kept to prevent outmaneuvering by enemy fighter forces. Mass production of such an advanced craft is not practical and thus comes with an eyebrow-raising price tag.",,,
+diable_valiant_C,SHIP,"The (current) pinnacle of strike-craft Wanzer technology, the Valiant received its ""Versatile"" designation from the ability to reconfigure its thruster profile for maximum velocity or maneuverability. This makes them the fastest Wanzers on the battlefield, alleviating the key weakness of the other models. In addition to speed, Valiant Wanzers are also equipped with a shield, a pair of Micro-Missile launchers, a PD turret and a pair of deadly miniaturized electromagnetic rifles. This well-rounded load-out allows them to effectively engage any target. Unsurprisingly, they come with a price tag matching their impressive performance.
+
+Although the use of transforming Wanzers remains unreliable, their performance is not to be understated. The Valiant is a 9th+ generation Wanzer, incorporating expensive miniaturized TX-5 omni-shield technology and advanced energy weapons. Additionally, this Wanzer was designed to be able to reconfigure its hull components and internal machinery to maximize energy flow to its engines when required.
+
+Due to the multiple control modes needed to operate the Valiant, most pilots get a surgically implanted neural-link interface called the S-Type device, which maps out neuron activity patterns for control inputs. Out of ten trained pilots fitted with the S-Type device, seven will show no side effects, two will have moderate to severe memory loss when disconnected from their Wanzer, and the remainder are afflicted with multiple personality disorders, psychosis or in rare instances, brain death. Those who do not survive the procedure are posthumously awarded two ranks.
+
+While far from being the most powerful Wanzer individually, they certainly are such when measured by weight.",,,
+diable_zephyr_C,SHIP,"An early 9th gen model of Wanzer that later lead to both the Valiant-class and the Raven-class Wanzers. For the former, it demonstrated the validity of the concept of multiple energy configurations via physical component reconfiguration, aka Versatile Frame Design. For the latter, it proved that larger models of Wanzers were able to stand toe to toe with frigates and survive such encounter while still being serviceable by a modified Wanzer gantry (those now being the standard on all Diable Avionics ship models with Wanzer carrying capacity). 
+
+Despite having been designed to use traditional controls, this Wanzer also served as a test-bed for the vastly more efficient S-Type Neural Interface. Today's modernized retrofits are now using those by default and will only accept manual inputs after some minor cockpit modifications. Given the constant shortage of well trained S-type pilots, about 67% of the Zephyrs undergo the procedure immediately after exiting the production line, a fact often pointed out as a waste of resources by the administration.",,,
+,,,,,
 ,,,,,
 #BUILTIN,,,,,
 ,,,,,
@@ -63,6 +92,42 @@ diable_heemeyer,WEAPON,"Created from Leftovers of a Versant Havest Guns into the
 However Diable Halted its production after the first prototype on a Flagship due to Material issues. ",Assault,,
 diable_raycast,WEAPON,"Created from Leftovers of a Versant Havest Guns into the State Support Beam Chasis to create a new weapon.
  However Diable Halted its production after the first prototype on a Flagship due to Material issues. ",Assault,,
+diable_raycast2,WEAPON,"Created from Leftovers of a Versant Havest Guns into the State Support Beam Chasis to create a new weapon.
+ However Diable Halted its production after the first prototype on a Flagship due to Material issues. ",,,
+diable_reioiboxEX,WEAPON,"The FV-04 Huntsmen an Ancient Missile used in Early surface-to-air Takedowns, the design was eventually restored and retrofitted into a MagicBox chassis since the previous chassis was too Obsolete for the current warfrare.
+
+Built-in Version with Auto Production Added in to Help the Longevity of its effectiveness.",,,
+diable_srabbuiltin,WEAPON,"The SRAB guided charge is a re-engineering of a mining device. While its civilian version was ill-suited to combat use, the massive amount of xenon tetroxide contained in the militarized homing impactor nows lends a credible threat to any target. 
+
+Directly shaped in its low-temperature crystalline form, the projectile is uncommon in that the detonating compound itself is used as the structural body, without any outer skin of any kind. All electronic components are fixed on top of the explosive. Steering is achieved by local ablation of the outer layer of xenon tetroxide using a low power laser, and the detonation is initiated by a simple contact fuse. The explosion from such a device liberates large quantities of pure oxygen, usually triggering many electronic safeties in the target to prevent secondary fire. 
+ 
+However the lack of protective skin on the projectile means that a few well-placed shots have the potential of causing an early detonation.
+
+Affixed into a Modified Pocket Gust Hull, Longer Range thanks to the Modifications of Corvid Engineering.",,,
+diable_microreioi,WEAPON,"Built into the flank of the Pocket-Gust-class, this six tubes wide Micro-Missile Array supplements its main armaments with a flurry of Diable Avionic's signature ordinance, bringing havoc and confusion in the enemy's point-defense grid and chipping away armor at a steady rate.
+
+These simple missiles rely on randomized target interception algorithms to confuse enemy point defenses: they assist the fleet's Wanzer wings in accomplishing their mission while being exposed to minimal return fire and they cover the approach of more dangerous ordnances. Furthermore they subtly enhance the fleet in every aspect, forcing the enemy to constantly keep their shield up at all times, limiting their maneuverability. While using a few of them might be considered a waste of resources, their strength rises sharply with numbers, and their virtually unlimited stock means they are a constant drain on the enemy for the whole battle duration.
+
+Modified to Produce and Launches Reioi Missiles.",,,
+diable_LowState,WEAPON,"A Spinal Version of the Diurne State Beam array being a cheaper Version of the State Support Beam with Longer Range thanks to the Bigger Structure of the Weapon.
+
+The ""State"" positron emitter system is a specialized particle beam connected to the host vessel's reactors to power the relatively inefficient matter/antimatter creation process. The choice of positrons limit range due to self repulsion, but that same property makes them much easier to manipulate into a weaponized beam.
+
+A segment of the Diable Avionics military particularly proud of the technological achievements of their weapon division has for a long time criticized the State for being ""too mundane"". They would deliberately eschew what is in essence a bland but effective device in favor of something unusual but less potent, claiming that esoteric weapons have the added benefit of a deep psychological impact upon the enemy crews. While studies did acknowledge some veracity to these claims, it is unclear if the trade-off is strategically favorable.",Pressure,,
+diable_burst_excision,WEAPON,"A long range precision gun directly affixed to the hull rather than mounted in a gimballed weapon emplacement. Sports a ridiculous range and projectile speed, but the recoil is so massive, its accuracy drops significantly after every shot.
+
+Modified with a Completly Different Ammo Type Designed to Render Armor when shields go down.",,,
+diable_starlight,WEAPON,"The SRAB guided charge is a re-engineering of a mining device. While its civilian version was ill-suited to combat use, the massive amount of xenon tetroxide contained in the militarized homing impactor nows lends a credible threat to any target. 
+
+Directly shaped in its low-temperature crystalline form, the projectile is uncommon in that the detonating compound itself is used as the structural body, without any outer skin of any kind. All electronic components are fixed on top of the explosive. Steering is achieved by local ablation of the outer layer of xenon tetroxide using a low power laser, and the detonation is initiated by a simple contact fuse. The explosion from such a device liberates large quantities of pure oxygen, usually triggering many electronic safeties in the target to prevent secondary fire. 
+ 
+However the lack of protective skin on the projectile means that a few well-placed shots have the potential of causing an early detonation.
+
+Modified To Fit The Specifics of the Ace Pilot, Now Housing 3 of those at Half the Potential Damage due to the changes.",,,
+diable_activeflare,WEAPON,"A Modified Active Flare Launcher, However it now can be Shoot Down by PD's if they're too close to an enemy ship.",,,
+diableavionics_itanolauncher_EX,WEAPON,"Frequently used on most Diable Avionic's products, these swarming missiles are designed as much to disrupt the defenses of the enemy as they are to deal some minor damage.
+
+These simple missiles rely on randomized target interception algorithms to confuse enemy point defenses: they assist the fleet's Wanzer wings in accomplishing their mission while being exposed to minimal return fire and they cover the approach of more dangerous ordnances. Furthermore they subtly enhance the fleet in every aspect, forcing the enemy to constantly keep their shield up at all times, limiting their maneuverability. While using a few of them might be considered a waste of resources, their strength rises sharply with numbers, and their virtually unlimited stock means they are a constant drain on the enemy for the whole battle duration.",,,
 ,,,,,
 #WEAPONS,,,,,
 ,,,,,
@@ -85,7 +150,6 @@ diable_plow,WEAPON,"Predecessors of the FV-24 ""Thunderbolt"" missiles, these hi
 The FV-16X ""Plow"" is a Rocket Pod with half the effective Salvo of the Plover Rocket Pod,
 this weapon was Discontinued by Diableavionics before entry to the Persean Sector,
 Corvid Engineering Subsidary Dusted off the old Blueprint for Production due to the events in the Persean Sector.",Assault,,
-diable_hexafire_large,WEAPON,"you know you’re not supposed to have this ?, its just a Filler Weapon until I find a way to make a decent weapon for that spot.",Assault,,
 diable_reioibox,WEAPON,"The FV-04 Huntsmen an Ancient Missile used in Early surface-to-air Takedowns, the design was eventually restored and retrofitted into a MagicBox chassis since the previous chassis was too Obsolete for the current warfrare.",,,
 diable_gravemac,WEAPON,a Stripped down Grave LAC to help Low end Carriers and other Ships lacking Proper Anti-shield Weaponry to push off the odd Frigate that attacks them.,,,
 diable_urn,WEAPON,"A powerful heavy weapon formerly used to soften up offending stations. Improvements in targeting systems and refinements of the muzzle geometry improved the accuracy enough to make a serviceable anti-ship weapon: Difficult to install and unreliable, but quite devastating when it connects. 
@@ -93,12 +157,10 @@ diable_urn,WEAPON,"A powerful heavy weapon formerly used to soften up offending 
 The Small Variant of this Weapon is used to shore up Options for Hit-and-run Ships Diable has.",,,
 diable_urn2,WEAPON,"A powerful heavy weapon formerly used to soften up offending stations. Improvements in targeting systems and refinements of the muzzle geometry improved the accuracy enough to make a serviceable anti-ship weapon: Difficult to install and unreliable, but quite devastating when it connects. 
 
-This Medium Variant of the Fearsome Weapon is used for long Rang support Ships.",,,
-diable_LowState,WEAPON,"A Spinal Version of the Diurne State Beam array being a cheaper Version of the State Support Beam with Longer Range thanks to the Bigger Structure of the Weapon.
+This Medium Variant of the Fearsome Weapon is used for long Rang support Ships, Unfortunatly Their Flux Usage is SO HIGH, its only useful as their Only Main Weapon.",,,
+diable_recson3,WEAPON,"One of the most iconic designs of the Diable Avionics Navy, a devastating dual Kinetic gun that rends most shields apart quickly at long range, and can even cleave through lightly armored targets at an alarming pace.
 
-The ""State"" positron emitter system is a specialized particle beam connected to the host vessel's reactors to power the relatively inefficient matter/antimatter creation process. The choice of positrons limit range due to self repulsion, but that same property makes them much easier to manipulate into a weaponized beam.
-
-A segment of the Diable Avionics military particularly proud of the technological achievements of their weapon division has for a long time criticized the State for being ""too mundane"". They would deliberately eschew what is in essence a bland but effective device in favor of something unusual but less potent, claiming that esoteric weapons have the added benefit of a deep psychological impact upon the enemy crews. While studies did acknowledge some veracity to these claims, it is unclear if the trade-off is strategically favorable.",Pressure,,
+Using the Mostro Cannon as a Test Bed, Corvid Engineering manage to Make a Large Version of the Rescon V, into the Recson X, tho instead of 4 Barrels, they Went with 2 barrels in alternate fire, setup to fire as if it was 4 Recson S's Firing in alternate fire.",,,
 ,,,,,
 #EX SHIPS,,,,,
 ,,,,,
@@ -107,8 +169,8 @@ diable_gust_EX,SHIP,"A mainstay of Diable Avionics, these light cruisers are fas
 This Ship has been Fine Turned with Improved Thrusters, and Revamped with an Upgraded Phase Grazer Core. ",,,
 diable_versant_EX,SHIP,"One of the very last pre-Collapse designs the local branch of the Diable Avionics Corporation got its hands on before being abruptly cut-off. It features a mobile frame that can manipulate its shape to increase raw speed, or maneuverability. Advanced integrated weaponry and the latest version of the Diable Avionics's Quantum Targeting Prediction software(TM) come pre-installed.
 
-Some Hotshot Pilot wanted a Restored Versant to use for his bounty work with Junker's Guild, ends up finding a Derelict and Provided the funds to restore it, somehow Not only Restoring it to Original Specs but also Taking care of the of the High Pitched Noise into a Calming Hum.
-Diable took an interest in testing and adding it to the standard Versant features, ship Combat and Basic Flight test Proved Normal, the System test showed Higher than normal Energy Output, upon Checking the Gyroscope Compartment Immediately Stopped Everything and just Restored the Odd Versant to current specs and Told all parties involved to not speak of it, Because Junker's Guild Accidently Created [REDACTED] Tech for Diable Avionics.
+Some Hotshot Pilot wanted a Restored Versant to use for his bounty work with Corvid Engineering, ends up finding a Derelict and Provided the funds to restore it, somehow Not only Restoring it to Original Specs but also Taking care of the of the High Pitched Noise into a Calming Hum.
+Diable took an interest in testing and adding it to the standard Versant features, ship Combat and Basic Flight test Proved Normal, the System test showed Higher than normal Energy Output, upon Checking the Gyroscope Compartment Immediately Stopped Everything and just Restored the Odd Versant to current specs and Told all parties involved to not speak of it, Because Corvid Accidently Created [REDACTED] Tech for Diable Avionics.
 
 Can be upgraded later on to take advantage of [REDACTED] Tech.",,,
 diable_calm_EX,SHIP,"Meant for general support of fleet operations, the Calm-class boasts high-speed Pulse Engines and a front-loaded weapon layout making it suitable for many offensive roles. 
@@ -116,21 +178,48 @@ diable_calm_EX,SHIP,"Meant for general support of fleet operations, the Calm-cla
 diable_vapor_EX,SHIP,"A nimble ultralight frigate chassis with a heavy frontal armament. Capable of disrupting fleet operations easily despite its sub-par point defense weapon mounts. 
 ",,,
 diable_daze_EX,SHIP,"A lumbering cruiser that traded its offensive capabilities for an enhanced dissipation grid and a thicker armor belt. While the amount of weapon emplacements would seem underwhelming, they can be fitted with the best hardware available, and used relentlessly with the help of the Flux Redirection ship system.
-",,,
-diable_storm_EX,SHIP,"Tough and versatile, this carrier gives its justifiably feared Wanzer squadrons the support and mobility they need. While slightly lacking in heavy weaponry, its ability to deploy enlarged squadrons of strike-craft makes it a reliable and versatile force projection platform.
 
-An Old Revision of the Storm was used as Command Falgship during the colonization of Sivie and then Found During the counter-invasion and fielded Back to fight aganist the Hedgemony counter-invasion Armada.
+
 ",,,
+diable_storm_EX,SHIP,"One of the very last pre-Collapse designs the local branch of the Diable Avionics Corporation got its hands on before being abruptly cut-off. It features a mobile frame that can manipulate its shape to increase raw speed, or maneuverability. Advanced integrated weaponry and the latest version of the Diable Avionics's Quantum Targeting Prediction software(TM) come pre-installed.
+
+Some Hotshot Pilot wanted a Restored Versant to use for his bounty work with Corvid, ends up finding a Derelict and Provided the funds to restore it, somehow Not only Restoring it to Original Specs but also Taking care of the of the High Pitched Noise into a Calming Hum.
+Diable took an interest in testing and adding it to the standard Versant features, ship Combat and Basic Flight test Proved Normal, the System test showed Higher than normal Energy Output, upon Checking the Gyroscope Compartment Immediately Stopped Everything and just Restored the Odd Versant to current specs and Told all parties involved to not speak of it, Because Junker's Guild Accidently Created [REDACTED] Tech for Diable Avionics.
+
+Can be upgraded later on to take advantage of [REDACTED] Tech.",,,
 diable_superrime_EX,SHIP,"a Persudo EXperimental Flagship with one Extra Small Mount, with an Upgraded Plasma Hypershunt. ",,,
+diable_chieftain_EX,SHIP,"The Junk Cruiser Built during The Hegemony Counter-invasion and is immortolized as Corvid Engineering's Main Flagship to field for Fleet commanders who wants to go on the fringes of Space.
+
+Its the Upgraded Version of the Chieftain With A Out of this World Power Source Capable of Powering up The Weapons, Shields and Engines, The ShipSystem has a cooldown for Security and Safety reasons,
+Not just the G's induced by the shipsystem's acceleration, it also Affects the crew's Mood making them more agressive during combat.",,,
+diable_pandemonium_EX,SHIP,"A capital-sized hull that has been developed and seen more use as a propaganda tool than a weapon of war. While its sheer bulk gives it respectable firepower, it is comparatively inefficient to the use of multiple Maelstrom battle-cruisers, and has troubles to find a place in the Navy's fast-paced doctrine. However, when used as a demoralization and bombardment platform, nothing else in Diable Avionics' arsenal holds a candle to the results obtained from deploying a Pandemonium-class Dreadnought.
+
+Diplomacy is exclusively conducted with one nearby, often going through constant ""Weapon Tests"" and ""Crew Exercises"" where they fire into the hulks of un-salvageable ships towed along. The glowing unrecognizable masses of twisted metal are to be left behind once talks are over, as a macabre signature.
+
+Thanks to the Revamped Armor Plates and Shields, on TOP of a Damper Wave ShipSystem makes this Ship Surprisihngly Mobile.",,,
+diable_pandemonium_EX2,SHIP,"A capital-sized hull that has been developed and seen more use as a propaganda tool than a weapon of war. While its sheer bulk gives it respectable firepower, it is comparatively inefficient to the use of multiple Maelstrom battle-cruisers, and has troubles to find a place in the Navy's fast-paced doctrine. However, when used as a demoralization and bombardment platform, nothing else in Diable Avionics' arsenal holds a candle to the results obtained from deploying a Pandemonium-class Dreadnought.
+
+Diplomacy is exclusively conducted with one nearby, often going through constant ""Weapon Tests"" and ""Crew Exercises"" where they fire into the hulks of un-salvageable ships towed along. The glowing unrecognizable masses of twisted metal are to be left behind once talks are over, as a macabre signature.
+
+Thanks to the Revamped Armor Plates and Shields, on TOP of a Damper Wave ShipSystem makes this Ship Surprisihngly Mobile.",,,
+diable_goblin_EX,SHIP,"One of the very last pre-Collapse designs the local branch of the Diable Avionics Corporation got its hands on before being abruptly cut-off. It features a mobile frame that can manipulate its shape to increase raw speed, or maneuverability. Advanced integrated weaponry and the latest version of the Diable Avionics's Quantum Targeting Prediction software(TM) come pre-installed.
+
+a Heavily Modified Versant, With a Nano Production system to Produce Ammo for the Built-in Weapons to Function, Also In order to change the Built-in Weapons, the ship needs to be Docked in order to change them to do so. ",,,
 ,,,,,
 #SYSTEM,,,,,
 ,,,,,
 diableavionics_driftcompact,SHIP_SYSTEM,"A failed capital class flicker core that only allows quick re-orient rather than full ship displacement, its been Minaturized and Enhanced and Tinted with Gold, still a Prototype.",Movement,"Rapidly reorients the ship in the desired bearing with a nudge in the velocity direction. Drains a small amount of flux, especially when the shields are down.",
 diableavionics_driftflagship,SHIP_SYSTEM,"A failed capital class flicker core that only allows quick re-orient rather than full ship displacement, its been Minaturized and Enhanced, still a Prototype.",Movement,"Rapidly reorients the ship in the desired bearing with a nudge in the velocity direction. Drains a small amount of flux, especially when the shields are down.",
 diableavionics_kaijudrive,SHIP_SYSTEM,Temporarily engages a primary burn on the system travel drive of the ship. Provides a massive speed boost for a fixed time. The System's Lock for Turning is removed and provides Shields with Invulnerability.,Movement,,The ship's top speed is increased by {{200}}.
+diableavionics_kaijudrive2,SHIP_SYSTEM,"Temporarily engages a primary burn on the system travel drive of the ship. Provides a massive speed boost for a fixed time. The System's Lock for Turning is removed, Boost Weapon Rate of Fire and provides Shields with Invulnerability.
+Thanks to a Unknown Green Energy Source Discorvered after an Incident between Corvid and Diable, this Made this ShipSystem into a Kaiju of a Monster.",Movement,,The ship's top speed is increased by {{200}}.
+diable_damperwavecapital,SHIP_SYSTEM,A modified Damper Field that instead of a static aura protecting the hull generates a wave that pulls the entire ship in its wake allowing for seemingly impossible dodges in addition to its temporary protection. Can be used alot.,Movement,Generates a protective wave reducing incoming damage and propelling the ship in the desired direction.,
+diableavionics_fluxburst,SHIP_SYSTEM,"Briefly allows every systems to operate way beyond their standard limit, dramatically increasing firerate and weapon rotations.
+Thanks to Advencements in the Chieftain EX's Reactor, Corvid Engineering's Expertise Improved this Ship System into giving a small bosst of Speed on top of a longer duration.
+however this gives a deep red tint to the thrusters and slightly overheats the ship's body during use. ",,,
 ,,,,,
 #Items,,,,,
-cer_ichip_cyan,RESOURCE,a Custom AI core Imprinted with a Personality designed for Combat Only.,,,
+cer_ichip_cyan,RESOURCE,"a Custom AI core Imprinted with a Personality designed for Mundane Tasks, Altrough Comparable to a Gamma AI Core, with extra Bells and Whisles.",,,
 ,,,,,
 #FACTION,,,,Provides a massive speed boost Includes invulnerable shields. Collisions won't cause a flameout.,
 ,,,,,

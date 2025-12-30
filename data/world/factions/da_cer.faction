@@ -29,9 +29,7 @@
 	"showInIntelTab":true,
 	
 	"shipNameSources":{
-		"diableavionics":1, 
-		"ROMAN":1,
-		"GREEK":1,
+		"CORVIDAE":1, 
 	},
 	
 	"names":{
@@ -46,57 +44,50 @@
 		"tags":{"diable_ship_bp":1,"diable_cer_bp":1,
 		},
 		"hulls":{
+			
 			"gremlin":0,
             "diableavionics_draft":1,
-            "diableavionics_vapor":1,
-            "diableavionics_sleet":1,
-            "diable_brisk":0.75,
-            "diableavionics_versant":0.5,
-
+            
             "diableavionics_laminar":1,
             "diableavionics_shear":1,
 
-            "diableavionics_calm":1,
             "diableavionics_hayle":1,
-            "diableavionics_coanda":1,
             "diable_polarV":0.75,
             "diableavionics_derecho":0.5,	
-            "diableavionics_miniGust":0.5,
-            "diableavionics_fractus":1,
 
             "diableavionics_chinook":1,
             "diableavionics_stratus":1,
             "diableavionics_cirrus":1,
 
-            "diableavionics_haze":1,
-            "diableavionics_daze":1,
+			"diable_haze_cer":1,
+			
             "diable_ashfall":0.75,
             "diable_riptide":0.75,
-            "diableavionics_gust":0.5,
-            "diableavionics_storm":1,	
-            "diableavionics_rime_m":0.25,
-
+            
             "diableavionics_rime":1,
 
-            "diableavionics_maelstrom":1,
             "diableavionics_pandemonium":0.2,
 			
-            "diable_miniGust_cer":0.5,
+            "diable_miniGust_cer":1,
             "diable_gust_cer":0.5,
 			
+			"diable_versant_cer":0.5,
             "diable_vapor_cer":1,
-            "diable_rime_m_cer":0.25,
-			"diable_fractus_cer":1,
-			"diable_daze_cer":1,
+			
 			"diable_fractalus":0.5,
+			"diable_burst":1,
+			"diable_calm_cer":1,
+			"diable_stratus_cer":1,
+			
+            "diable_rime_m_cer":0.5,
+			"diable_fractus_cer":1,
+			
+			"diable_daze_cer":1,
 			"diable_storm_cer":1,
 			"diable_chieftain":1,
-			"diable_burst":2,
+			"diable_chieftain_cer":1,
 			
-			
-			"diable_raven_C":1,
-            "diable_valiant_C":1,
-            "diable_zephyr_C":1,
+			"diable_eagle_C":1,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -106,7 +97,6 @@
             "diableavionics_draft",
             "diableavionics_sleet",
             "diableavionics_vapor",
-            "diable_brisk",
             "diableavionics_versant",
 
             "diableavionics_laminar",
@@ -116,7 +106,6 @@
             "diableavionics_hayle",
             "diableavionics_coanda",
             "diableavionics_derecho",
-            "diable_polarV",
             "diableavionics_miniGust",
             "diableavionics_fractus",
 
@@ -127,8 +116,6 @@
             "diableavionics_haze",
             "diableavionics_daze",
             "diableavionics_gust",
-            "diable_riptide",
-            "diable_ashfall",
             "diableavionics_storm",
             "diableavionics_rime_m",
 
@@ -146,27 +133,34 @@
             "diable_gust_cer",
 			
 			"diable_vapor_cer",
+			"diable_versant_cer",
+			"diable_stratus_cer",
+			
+			"diable_fractalus",
+			"diable_calm_cer",
+			"diable_burst",
+			"diable_miniGust_cer",
+			
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
+			
+			"diable_gust_cer",
 			"diable_daze_cer",
-			"diable_fractalus",
+			"diable_haze_cer",
 			"diable_storm_cer",
 			"diable_chieftain",
-			"diable_burst",
+			"diable_chieftain_cer",
 			
-			"diable_raven_C",
-            "diable_valiant_C",
-            "diable_zephyr_C",
+			"diable_brisk_cer",
+			"diable_coanda_cer",
+			
+			"diable_eagle_C",
 		],
 	},
 	"knownShips":{
 		"tags":["diable_ship_bp","diable_cer_bp"],
 		"hulls":[
 			"diableavionics_draft",
-            "diableavionics_sleet",
-            "diableavionics_vapor",
-            "diable_brisk",
-            "diableavionics_versant",
 
             "diableavionics_laminar",
             "diableavionics_shear",
@@ -175,25 +169,17 @@
             "diableavionics_hayle",
             "diableavionics_coanda",
             "diableavionics_derecho",
-            "diable_polarV",
-            "diableavionics_miniGust",
-            "diableavionics_fractus",
 
             "diableavionics_chinook",
             "diableavionics_stratus",
             "diableavionics_cirrus",
+			
+			"diableavionics_haze",
 
-            "diableavionics_haze",
-            "diableavionics_daze",
-            "diableavionics_gust",
-            "diable_riptide",
-            "diable_ashfall",
-            "diableavionics_storm",
             "diableavionics_rime_m",
 
             "diableavionics_rime",
 
-            "diableavionics_maelstrom",
             "diableavionics_pandemonium",
 			
 			"diableavionics_stratus_p",
@@ -205,17 +191,28 @@
             "diable_gust_cer",
 			
 			"diable_vapor_cer",
+			"diable_versant_cer",
+			"diable_stratus_cer",
+			
+			"diable_fractalus",
+			"diable_calm_cer",
+			"diable_burst",
+			"diable_miniGust_cer",
+			
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
+			
+			"diable_gust_cer",
 			"diable_daze_cer",
-			"diable_fractalus",
+			"diable_haze_cer",
 			"diable_storm_cer",
 			"diable_chieftain",
-			"diable_burst",
+			"diable_chieftain_cer",
 			
-			"diable_raven_C",
-            "diable_valiant_C",
-            "diable_zephyr_C",
+			"diable_brisk_cer",
+			"diable_coanda_cer",
+			
+			"diable_eagle_C",
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -223,50 +220,47 @@
 		"tags":["diable_ship_bp","diable_cer_bp"],
 		"hulls":[
 			"diableavionics_draft",
-            "diableavionics_sleet",
-            "diableavionics_vapor",
-            "diableavionics_versant",
 
             "diableavionics_laminar",
             "diableavionics_shear",
 
-            "diableavionics_calm",
             "diableavionics_hayle",
             "diableavionics_coanda",
             "diableavionics_derecho",
-            "diableavionics_miniGust",
-            "diableavionics_fractus",
 
             "diableavionics_chinook",
             "diableavionics_stratus",
             "diableavionics_cirrus",
 
-            "diableavionics_haze",
-            "diableavionics_daze",
-            "diableavionics_gust",
-            "diableavionics_storm",
-            "diableavionics_rime_m",
+            "diable_haze_cer",
 
             "diableavionics_rime",
-
-            "diableavionics_maelstrom",
-            "diableavionics_pandemonium",
 			
 			"diable_miniGust_cer",
             "diable_gust_cer",
 			
 			"diable_vapor_cer",
+			"diable_versant_cer",
+			"diable_stratus_cer",
+			
+			"diable_fractalus",
+			"diable_calm_cer",
+			"diable_burst",
+			"diable_miniGust_cer",
+			
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
+			
+			"diable_gust_cer",
 			"diable_daze_cer",
-			"diable_fractalus",
 			"diable_storm_cer",
 			"diable_chieftain",
-			"diable_burst",
+			"diable_chieftain_cer",
 			
-			"diable_raven_C",
-            "diable_valiant_C",
-            "diable_zephyr_C",
+			"diable_brisk_cer",
+			"diable_coanda_cer",
+			
+			"diable_eagle_C",
 		],
 	},
 	"knownFighters":{
@@ -284,10 +278,13 @@
             "diableavionics_strife_wing",
             "diableavionics_warlust_wing",
             "diableavionics_valiant_wing",
-            "diableavionics_raven_wing",
-            "diableavionics_blizzaia_wing",
             "diableavionics_zephyr_wing",
             "diableavionics_avalanche_wing",
+            
+            "diableavionics_zephyr_wing",
+            "diableavionics_avalanche_wing",
+			
+			"diable_arbitratorZ_banish_wing",
 			"diable_knight_wing",
 		],
 	},
@@ -305,9 +302,11 @@
             "diableavionics_warlust_wing",
             "diableavionics_valiant_wing",
             "diableavionics_raven_wing",
-            "diableavionics_blizzaia_wing",
+            
             "diableavionics_zephyr_wing",
             "diableavionics_avalanche_wing",
+			
+			"diable_arbitratorZ_banish_wing",
 			"diable_knight_wing",
 		],
 	},
@@ -332,12 +331,12 @@
             "diableavionics_winee",
             "diableavionics_glowfang",
             "diableavionics_graveac",
+			"diableavionics_nocturneDEM_small",
 
             "diableavionics_raptor",
             "diableavionics_recson2",
             "diableavionics_gravemg",
             "diableavionics_hexafire",
-            "diableavionics_glowtusk",
             "diableavionics_lazyhorn",
             "diableavionics_glaux",
             "diableavionics_state",
@@ -354,6 +353,7 @@
             "diableavionics_uhlan",
             "diableavionics_opfergv",
 			
+			"diable_recson3",
 			"diable_mostro2",
 			"diable_buckshot",
 			"diable_glownail",
@@ -362,8 +362,8 @@
 			"diable_gravemac",
 			"diable_urn2",
 			"diable_urn",
-			"diable_reioibox",
-			"diable_recson3"
+			"diable_Heatblastrifle",
+			"diable_reioibox"
 		],
 	},
 	"priorityWeapons":{
@@ -380,12 +380,13 @@
             "diableavionics_winee",
             "diableavionics_glowfang",
             "diableavionics_graveac",
+			"diableavionics_nocturneDEM_small",
 
             "diableavionics_raptor",
             "diableavionics_recson2",
             "diableavionics_gravemg",
             "diableavionics_hexafire",
-            "diableavionics_glowtusk",
+            
             "diableavionics_lazyhorn",
             "diableavionics_glaux",
             "diableavionics_state",
@@ -395,13 +396,14 @@
             "diableavionics_plover",
             "diableavionics_banish",
             "diableavionics_thrush",
-            "diableavionics_artdeux",
-
+			"diableavionics_magicboxPod",
+            
             "diableavionics_mostro",
             "diableavionics_hexafire2",
             "diableavionics_uhlan",
             "diableavionics_opfergv",
 			
+			"diable_recson3",
 			"diable_mostro2",
 			"diable_buckshot",
 			"diable_glownail",
@@ -410,8 +412,7 @@
 			"diable_gravemac",
 			"diable_urn2",
 			"diable_urn",
-			"diable_reioibox",
-			"diable_recson3"
+			"diable_reioibox"
 		],
 	},
 	"knownHullMods":{
@@ -487,12 +488,14 @@
 	
 	  "music": {
     "theme": "cer_market_interaction_neutral",
+	"Combat": "Custom_music_cer_combat",
     "market_neutral": "cer_market_interaction_neutral",
     "market_hostile": "cer_market_interaction_hostile",
     "market_friendly": "cer_market_interaction_friendly",
     "encounter_neutral": "cer_market_interaction_neutral",
     "encounter_hostile": "cer_market_interaction_hostile",
     "encounter_friendly": "cer_market_interaction_friendly",
+	
   },
   
 	"portraits":{

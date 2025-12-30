@@ -1,0 +1,43 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 5,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "diable_versant_cer",
+    "hullMods": [
+        "advancedoptics",
+        "diableavionics_selector_semi",
+        "fluxbreakers",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_versant_cer_Escort",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0000": "diableavionics_nocturne",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "diable_reioibox",
+                "WS0002": "diable_reioibox",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN_LEFT": "diableavionics_versant_harvestC_LEFT",
+                "GUN_RIGHT": "diableavionics_versant_harvestC_RIGHT",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

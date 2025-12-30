@@ -1,0 +1,53 @@
+{
+    "displayName": "Flagship",
+    "fluxCapacitors": 10,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "diable_goblin_EX",
+    "hullMods": [
+        "diableavionics_selector_artdeux_EX",
+        "fluxbreakers",
+        "fluxcoil",
+        "hardenedshieldemitter",
+        "insulatedengine",
+        "unstable_injector",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_goblin_EX_Flagship",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0000": "diable_gatling_roaring_EX",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_magicbox",
+                "WS0002": "diableavionics_magicbox",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "diableavionics_itanolauncher_EX",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN_LEFT": "diable_roaring_Artassault_EX_LEFT",
+                "GUN_RIGHT": "diable_roaring_Artassault_EX_RIGHT",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

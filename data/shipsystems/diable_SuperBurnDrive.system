@@ -1,0 +1,36 @@
+{
+	"id":"diable_SuperBurnDrive",
+	"type":"ENGINE_MOD",
+	"aiType":"BURN_DRIVE",
+	
+	"statsScript":"data.scripts.shipsystems.diable_SuperBurnDriveStats",
+	
+	"engineGlowColor":[255,175,125,255],
+	"engineGlowContrailColor":[100,165,255,25],
+	"engineGlowLengthMult":15,
+	"engineGlowWidthMult":3,
+	"engineGlowGlowMult":3,
+	
+	"jitterColor":[90,255,165,50],
+	"jitterCopies":2,
+	"jitterMinRange":0,
+	"jitterRange":3,
+	"jitterRangeRadiusFraction":0,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	"useSound":"system_combat_burn_activate",
+	"loopSound":"system_combat_burn_loop",
+	"deactivateSound":"system_combat_burn_deactivate",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":300,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":200,
+	}
+}

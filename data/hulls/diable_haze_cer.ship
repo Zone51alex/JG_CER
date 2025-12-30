@@ -1,0 +1,291 @@
+{
+  "hullName": "Haze",
+  "hullId": "diable_haze_cer",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/jg/ships/diableavionics_haze2.png",
+  "style": "HIGH_TECH",
+  "height": 349,
+  "width": 186,
+  "center": [93, 146],
+  "collisionRadius": 211,
+  "shieldCenter": [26, 0],
+  "shieldRadius": 182.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "diable_stratus_core"
+  ],
+  "builtInWeapons": {
+    "WS0015": "diable_LowState2"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [33, -43]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [33, 43]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [16, -31]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [16, 31]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [59, 69]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [59, -69]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [37, 0]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [71, 12]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [71, -12]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-53, 0]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 125,
+      "locations": [-70, 20]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -125,
+      "locations": [-70, -20]
+    },
+    {
+      "id": "BUILTIN_A",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-54, 40]
+    },
+    {
+      "id": "BUILTIN_B",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-54, -40]
+    },
+    {
+      "id": "BUILTIN_C",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-72, 40]
+    },
+    {
+      "id": "BUILTIN_D",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-72, -40]
+    },
+    {
+      "id": "WS0015",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [122.75, 0]
+    },
+    {
+      "id": "WS0022",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -23, 73,
+        -23, -35
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-119, 7.5],
+      "length": 30,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-119, -7.5],
+      "length": 30,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-112, 14],
+      "length": 30,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-112, -14],
+      "length": 30,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-99, 23],
+      "length": 30,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-99, -23],
+      "length": 30,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "DiableAvionicsTrail"
+    }
+  ],
+  "bounds": [
+    191.5, 3.5,
+    138.5, 4.5,
+    128, 18,
+    120.5, 9.5,
+    79.5, 10.5,
+    71, 19,
+    62.5, 13.5,
+    23.5, 22.5,
+    23.5, 36.5,
+    35.5, 36.5,
+    35.5, 51.5,
+    44.5, 60.5,
+    60.5, 60.5,
+    61.5, 76.5,
+    69.5, 76.5,
+    76.5, 83.5,
+    70.5, 90.5,
+    64.5, 86.5,
+    12, 84,
+    -5.5, 67.5,
+    -25.5, 68.5,
+    -26.5, 41,
+    -92.5, 39.5,
+    -98.5, 19.5,
+    -118.5, 5.5,
+    -138.5, 2.5,
+    -138.5, -2.5,
+    -118.5, -5.5,
+    -98.5, -19.5,
+    -92.5, -39.5,
+    -26.5, -41,
+    -25.5, -68.5,
+    -5.5, -67.5,
+    12, -84,
+    64.5, -86.5,
+    70.5, -90.5,
+    76.5, -83.5,
+    69.5, -76.5,
+    61.5, -76.5,
+    60.5, -60.5,
+    44.5, -60.5,
+    35.5, -51.5,
+    35.5, -36.5,
+    23.5, -36.5,
+    23.5, -22.5,
+    62.5, -13.5,
+    71, -19,
+    79.5, -10.5,
+    120.5, -9.5,
+    128, -18,
+    138.5, -4.5,
+    191.5, -3.5
+  ]
+}

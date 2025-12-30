@@ -1,7 +1,7 @@
 {
 	"id":"diableavionics_kaijudrive",
 	"type":"ENGINE_MOD",
-	"aiType":"BURN_DRIVE_TOGGLE",
+	"aiType":"MANEUVERING_JETS",
 	
 	"statsScript":"data.scripts.shipsystems.diableavionics_KaijuDriveStats",
 	
@@ -26,7 +26,7 @@
 
 	"clampTurnRateAfter":true,
 	"clampMaxSpeedAfter":true,
-	"alwaysAccelerate":true,
+	"alwaysAccelerate":false,
 
 	"useSound":"system_burn_drive_activate",
 	"loopSound":"system_burn_drive_loop",

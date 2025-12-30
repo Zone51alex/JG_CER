@@ -3,6 +3,7 @@ package data.hullmods.versant;
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.ShipAPI;
 import data.scripts.util.Diableavionics_stringsManager;
+
 public class DAVersantAuto extends BaseHullMod{
     public int getDisplaySortOrder() { return 2000; }
 

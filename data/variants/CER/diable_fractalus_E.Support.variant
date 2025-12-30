@@ -1,0 +1,51 @@
+{
+    "displayName": "E.Support",
+    "fluxCapacitors": 3,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "diable_fractalus",
+    "hullMods": [
+        "advancedoptics",
+        "targetingunit",
+    ],
+    "permaMods": [
+        "ML_skinSwap",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_fractalus_E.Support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diableavionics_nocturne",
+                "WS0009": "diableavionics_nocturne",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_plover",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_recson",
+                "WS0004": "diableavionics_recson",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010 000": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

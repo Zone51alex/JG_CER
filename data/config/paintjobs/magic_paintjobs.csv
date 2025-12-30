@@ -9,6 +9,9 @@ CPW_fractalus_Expanded_new,diable_fractalus,Diable,diable,graphics/da/ships/diab
 CPW_versant_cer_standard,diable_versant_cer,Diable,diable,graphics/da/ships/versant/diableavionics_versant_body.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
 CPW_storm_cer_standard,diable_storm_cer,Diable,diable,graphics/da/ships/diableavionics_storm_old.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
 CPW_daze_cer_standard,diable_daze_cer,Diable,diable,graphics/da/ships/diableavionics_dazenewDA.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
+CPW_chieftain_standard,diable_chieftain,Diable,diable,graphics/da/ships/diableavionics_chieftainDA.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
+CPW_calm_cer_standard,diable_calm_cer,Diable,diable,graphics/da/ships/diableavionics_calm_deck.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
+CPW_haze_cer_standard,diable_haze_cer,Diable,diable,graphics/da/ships/diableavionics_haze2DA.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
 ,,,,,,,,
 #Expanded Default,,,,,,,,
 ,,,,,,,,
@@ -22,22 +25,41 @@ CPW_fractalus_Expanded,diable_fractalus,Expanded,snowblast,graphics/jg/ships/dia
 CPW_versant_cer_Expanded,diable_versant_cer,Expanded,snowblast,graphics/jg/ships/versant/diableavionics_versant_body.png,TRUE,,Unlocked by Default.,Use Original Sprite.
 CPW_storm_cer_Expanded,diable_storm_cer,Expanded,snowblast,graphics/jg/ships/diableavionics_storm.png,TRUE,,Unlocked by Default.,Use Original Sprite.
 CPW_daze_cer_Expanded,diable_daze_cer,Expanded,snowblast,graphics/jg/ships/diableavionics_dazenew.png,TRUE,,Unlocked by Default.,Use Original Sprite.
+CPW_calm_cer_Expanded,diable_calm_cer,Expanded,snowblast,graphics/jg/ships/diableavionics_calm_deck.png,TRUE,,Unlocked by Default.,Use Original Sprite.
 ,,,,,,,,
 #EX Magicpaintjob Support,,,,,,,,
 ,,,,,,,,
 CPW_Gust_EX_Expanded,diable_gust_EX,Expanded,snowblast,graphics/jg/ships/diableavionics_gust_EX.png,TRUE,,Unlocked by Default.,Use Original Sprite.
+CPW_Gust_EX2_Expanded,diable_gust_EX2,Expanded,snowblast,graphics/jg/ships/diableavionics_gust_EX.png,TRUE,,Unlocked by Default.,Use Original Sprite.
 CPW_Calm_EX_Expanded,diable_calm_EX,Expanded,snowblast,graphics/jg/ships/diableavionics_calm_EX_deck.png,TRUE,,Unlocked by Default.,Use Original Sprite.
 CPW_Storm_EX_Expanded,diable_storm_EX,Expanded,snowblast,graphics/jg/ships/diableavionics_storm.png,TRUE,,Unlocked by Default.,Use Original Sprite.
-CPW_superrime_EX_Expanded,diable_storm_EX,Expanded,snowblast,graphics/jg/ships/diableavionics_rime_military_EX.png,TRUE,,Unlocked by Default.,Use Original Sprite.
+CPW_superrime_EX_Expanded,diable_superrime_EX,Expanded,snowblast,graphics/jg/ships/diableavionics_rime_military_EX.png,TRUE,,Unlocked by Default.,Use Original Sprite.
+,,,,,,,,
+#EX Magicpaintjob Support Diable,,,,,,,,
+,,,,,,,,
 CPW_superrime_EX_standard_new,diable_superrime_EX,Diable,diable,graphics/da/ships/diableavionics_rime_military_EX_standard.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
+CPW_Storm_EX_Standard,diable_storm_EX,Diable,diable,graphics/da/ships/diableavionics_storm.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
+CPW_Calm_EX_Standard,diable_calm_EX,Diable,diable,graphics/da/ships/diableavionics_calm_deck.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
+CPW_Pandemonium_EX_DA,diable_pandemonium_EX,Diable,diable,graphics/da/ships/diableavionics_pandemonium.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
 ,,,,,,,,
-#0.97 magicpaintjob system,,,,,,,,
+#Royal Blue Paint,,,,,,,,
 ,,,,,,,,
-CPW_vapor_cer_standard,diable_vapor_cer,Diable 0.97,,graphics/da/ships/diableavionics_vapor.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
-CPW_fractus_cer_standard,diable_fractus_cer,Diable 0.97,,graphics/da/ships/diableavionics_fractus.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
-CPW_gust_cer_standard,diable_gust_cer,Diable 0.97,,graphics/da/ships/diableavionics_gust.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
-CPW_minigust_cer_standard,diable_miniGust_cer,Diable 0.97,,graphics/da/ships/diableavionics_minigust.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
-CPW_rime_m_cer_standard,diable_rime_m_cer,Diable 0.97,,graphics/da/ships/diableavionics_rime_military.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
-CPW_superrime_EX_standard,diable_superrime_EX,Diable 0.97,,graphics/da/ships/diableavionics_rime_military_EX_standard.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
-CPW_fractalus_standard,diable_fractalus,Diable 0.97,,graphics/jg/ships/diableavionics_fractalus.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
-CPW_storm_standard,diable_storm_cer,Diable 0.97,,graphics/da/ships/diableavionics_storm_old.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
+CPW_versant_cer_royalblue,diable_versant_cer,Royal Blue,royalblue,graphics/royalblue/ships/versant/diableavionics_versant_body.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_storm_cer_royalblue,diable_storm_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_storm.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_vapor_cer_royalblue,diable_vapor_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_vaporRB.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_fractus_cer_royalblue,diable_fractus_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_fractus.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_gust_cer_royalblue,diable_gust_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_gust.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_minigust_cer_royalblue,diable_miniGust_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_minigust.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_rime_m_cer_royalblue,diable_rime_m_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_rime_military.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_calm_cer_royalblue,diable_calm_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_calm_deck.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_daze_cer_royalblue,diable_daze_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_dazenewRB.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_fractalus_royalblue,diable_fractalus,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_fractalusRB.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_haze_cer_royalblue,diable_haze_cer,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_haze2RB.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+,,,,,,,,
+#Royal Blue Paint for EX Ships,,,,,,,,
+,,,,,,,,
+CPW_Calm_EX_royalblue,diable_calm_EX,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_calm_deck.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_Storm_EX_royalblue,diable_storm_EX,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_storm.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_Pandemonium_EX_royalblue,diable_pandemonium_EX,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_pandemonium.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+CPW_Gust_EX2_royalblue,diable_gust_EX2,Royal Blue,royalblue,graphics/royalblue/ships/diableavionics_gust.png,TRUE,,Unlocked by Default.,Use The Royal Blue Sprite.
+,,,,,,,,

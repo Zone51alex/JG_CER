@@ -1,0 +1,50 @@
+{
+  "id": "diable_reioibuiltin",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_ragemissile",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "turretSprite": "graphics/jg/weapons/diableavionics_reioibox_builtin_turret.png",
+  "hardpointSprite": "graphics/jg/weapons/diableavionics_reioibox_builtin_hardpoint.png",
+  "turretOffsets": [
+    9,
+    3,
+    9,
+    -3
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    9,
+    2,
+    9,
+    -2
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "autocharge": true,
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 14,
+    "cloudParticleCount": 2,
+    "cloudDuration": 1.4,
+    "cloudRadius": 11,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 0.33,
+    "blowbackLength": 33,
+    "blowbackSpread": 33,
+    "particleColor": [
+      190,
+      180,
+      160,
+      95
+    ]
+  },
+  "fireSoundTwo": "diableavionics_magic_firing"
+}

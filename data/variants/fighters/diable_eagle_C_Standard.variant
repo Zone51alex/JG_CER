@@ -1,0 +1,63 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "diable_eagle_C",
+    "hullMods": [
+        "auxiliarythrusters",
+        "fluxbreakers",
+        "heavyarmor",
+        "magazines",
+        "turretgyros",
+    ],
+    "permaMods": [
+        "diable_Wanzercraft",
+        "diable_armareplacer",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_eagle_C_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "diable_crowtorso",
+                "WS0004": "diable_crowtorso",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "diableavionics_itanolauncher",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_ravenright2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_ravenleft2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_ravenhead",
+            }
+        },
+    ],
+    "wings": [
+        "diable_knight_wing",
+    ],
+    "modules": [],
+}

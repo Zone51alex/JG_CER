@@ -8,7 +8,7 @@
   "width": 76,
   "center": [38, 41],
   "collisionRadius": 83.5,
-  "shieldCenter": [18.5, -0],
+  "shieldCenter": [18.5, 0],
   "shieldRadius": 65,
   "viewOffset": 0,
   "builtInMods": [
@@ -16,6 +16,7 @@
     "EX_dummy"
   ],
   "builtInWeapons": {
+    "WS 000": "diableavionics_itanolauncher_EX",
     "WS0001": "diable_raycast",
     "WS0002": "diable_raycast"
   },
@@ -35,7 +36,7 @@
       "type": "BUILT_IN",
       "mount": "HARDPOINT",
       "arc": 5.01,
-      "angle": -0,
+      "angle": 0,
       "locations": [9, -13]
     },
     {
@@ -55,53 +56,57 @@
       "arc": 35,
       "angle": 10,
       "locations": [18.5, -25.5]
+    },
+    {
+      "id": "WS 000",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-8, 0]
     }
   ],
   "engineSlots": [
     {
       "location": [-19, 20.5],
-      "length": 6,
-      "width": 6,
+      "length": 30,
+      "width": 7,
       "angle": 180,
-      "contrailSize": 6,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "contrailSize": 7,
+      "style": "GoldenVaporTrail"
     },
     {
       "location": [-19, -20.5],
-      "length": 6,
-      "width": 6,
+      "length": 30,
+      "width": 7,
       "angle": -180,
-      "contrailSize": 6,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "contrailSize": 7,
+      "style": "GoldenVaporTrail"
     },
     {
       "location": [-23, 10.5],
-      "length": 6,
-      "width": 6,
+      "length": 30,
+      "width": 7,
       "angle": 180,
-      "contrailSize": 6,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "contrailSize": 7,
+      "style": "GoldenVaporTrail"
     },
     {
       "location": [-23, -10.5],
-      "length": 6,
-      "width": 6,
+      "length": 30,
+      "width": 7,
       "angle": -180,
-      "contrailSize": 6,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "contrailSize": 7,
+      "style": "GoldenVaporTrail"
     },
     {
-      "location": [-29, 0],
-      "length": 7.5,
+      "location": [-29, -0],
+      "length": 30,
       "width": 10,
       "angle": -180,
       "contrailSize": 10,
-      "style": "CUSTOM",
-      "styleId": "GetterRayTrail"
+      "style": "GoldenVaporTrail"
     }
   ],
   "bounds": [

@@ -1,0 +1,47 @@
+{
+  "id": "diableavionics_ravenright2",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_mostro_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "displayArcRadius": 40,
+  "turretSprite": "graphics/jg/ships/raven/diableavionics_ravenrightarm2.png",
+  "turretGunSprite": "graphics/jg/ships/raven/diableavionics_ravenrightarm2_barrel.png",
+  "hardpointSprite": "",
+  "visualRecoil": 12,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    27,
+    -4
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    25,
+    -3.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 50,
+    "spread": 10,
+    "particleSizeMin": 20,
+    "particleSizeRange": 40,
+    "particleDuration": 0.05,
+    "particleCount": 10,
+    "particleColor": [
+      199,
+      93,
+      76,
+      200
+    ]
+  },
+  "fireSoundTwo": "diableavionics_mostro_firing"
+}

@@ -25,39 +25,57 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		
 		// These show up as items in the bulleted list under 
 		// "Tactical Objectives" on the mission detail screen
-		api.addBriefingItem("The CESN Starlight Must Survive.");
+		api.addBriefingItem("The CESN Gold Ship Must Survive.");
 		api.addBriefingItem("The CESN Gold Ship is Handling Command of the fleet, just Pilot the Starlight.");
 		
-		// Set up the player's fleet.  Variant names come from the
+		// Set up the player's fleet.
 		// files in data/variants and data/variants/fighters
 		
 				//Standard Ships
-				api.addToFleet(FleetSide.PLAYER, "diable_versant_EX_Flagship", FleetMemberType.SHIP,"CESN Starlight", true);
-				//api.addToFleet(FleetSide.PLAYER, "diable_vapor_EX_Flagship", FleetMemberType.SHIP,"CESN Arise", false);
-				api.addToFleet(FleetSide.PLAYER, "diable_storm_cer_Standard", FleetMemberType.SHIP,"CESN Gold Ship", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_storm_EX_Flagship", FleetMemberType.SHIP,"CESN Gold Ship", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_calm_EX_Flagship", FleetMemberType.SHIP,"CESN Railjack", true);
+				api.addToFleet(FleetSide.PLAYER, "diable_versant_EX_Flagship", FleetMemberType.SHIP,"CESN Starlight", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_goblin_EX_Flagship", FleetMemberType.SHIP,"CESN Goblin", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_vapor_EX_Flagship", FleetMemberType.SHIP,"CESN Arise", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Attack", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Attack", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_SupportB", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_SupportB", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_stratus_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_stratus_cer_Standard", FleetMemberType.SHIP, false);
   
 		// Mark both ships as essential - losing either one results
 		// in mission failure. Could also be set on an enemy ship,
 		// in which case destroying it would result in a win.
-		api.defeatOnShipLoss("CESN Starlight");
+		api.defeatOnShipLoss("CESN Railjack");
 		
 		// Set up the enemy fleet.
 		//api.addToFleet(FleetSide.ENEMY, "eagle_Assault", FleetMemberType.SHIP, false);		
 		//api.addToFleet(FleetSide.ENEMY, "onslaught_Outdated", FleetMemberType.SHIP, false);
 		
-				api.addToFleet(FleetSide.ENEMY, "diableavionics_virtuous_grenadier", FleetMemberType.SHIP,"DSF Coton Candy", false);
-				api.addToFleet(FleetSide.ENEMY, "diableavionics_versant_standard", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.ENEMY, "diableavionics_versant_standard", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.ENEMY, "diableavionics_versant_standard", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.ENEMY, "diableavionics_versant_standard", FleetMemberType.SHIP, false);  
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_virtuous_breacher", FleetMemberType.SHIP,"DSF Cotton", false);
 				api.addToFleet(FleetSide.ENEMY, "diableavionics_storm_support", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_fractus_standard", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_fractus_standard", FleetMemberType.SHIP, false);				
+				
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_fractus_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_fractus_standard", FleetMemberType.SHIP, false);
+				
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_hayle_combat", FleetMemberType.SHIP, false);
+				
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_versant_standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_versant_standard", FleetMemberType.SHIP, false);
+				
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_BrawlerB", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_AttackB", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_AttackB", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_AttackB", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.ENEMY, "diableavionics_vapor_AttackB", FleetMemberType.SHIP, false);
+
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_sleet_assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_sleet_assault", FleetMemberType.SHIP, false);			
+				
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.ENEMY, "diableavionics_draft_assault", FleetMemberType.SHIP, false);				
                 
 
 		// Set up the map.

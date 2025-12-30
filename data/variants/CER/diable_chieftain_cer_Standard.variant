@@ -1,0 +1,66 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 14,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "diable_chieftain_cer",
+    "hullMods": [
+        "magazines",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_chieftain_cer_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "diableavionics_micromissile",
+                "WS0016": "diableavionics_micromissile",
+                "WS0015": "diableavionics_micromissile",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "diableavionics_magicbox",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_opfergv",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_artdeux",
+                "WS0004": "diableavionics_artdeux",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "diableavionics_ibis",
+                "WS0023": "diableavionics_ibis",
+                "WS0022": "diableavionics_ibis",
+                "WS0024": "diableavionics_ibis",
+                "WS0013": "diableavionics_ibis",
+                "WS0010": "diableavionics_ibis",
+                "WS0009": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_avalanche_wing",
+        "diableavionics_avalanche_wing",
+    ],
+    "modules": [],
+}

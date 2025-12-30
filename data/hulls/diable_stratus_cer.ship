@@ -1,0 +1,184 @@
+{
+  "hullName": "Stratus (CER)",
+  "hullId": "diable_stratus_cer",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/jg/ships/diableavionics_stratus_cer.png",
+  "style": "HIGH_TECH",
+  "height": 199,
+  "width": 90,
+  "center": [45, 75],
+  "collisionRadius": 133.5,
+  "shieldCenter": [11, 0],
+  "shieldRadius": 122,
+  "viewOffset": 0,
+  "builtInMods": [
+    "diable_stratus_core",
+    "escort_package"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [105.5, 0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [27, 27]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [27, -27]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": 180,
+      "locations": [-52, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [116, 19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [116, -19]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [56, 23]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [56, -23]
+    },
+    {
+      "id": "BUILTIN_A",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [0.5, 32]
+    },
+    {
+      "id": "BUILTIN_B",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [0.5, -32]
+    },
+    {
+      "id": "BUILTIN_C",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-21.5, 32]
+    },
+    {
+      "id": "BUILTIN_D",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-21.5, -32]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-66, 18.5],
+      "length": 20,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-66, -18.5],
+      "length": 20,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-68, 10.5],
+      "length": 20,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-68, -10.5],
+      "length": 20,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-64, -0],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "DiableAvionicsTrail"
+    }
+  ],
+  "bounds": [
+    113.5, -27.5,
+    62.5, -25,
+    17, -29.5,
+    14, -37.5,
+    -35.5, -37.5,
+    -64.5, -21.5,
+    -64.5, 21.5,
+    -35.5, 37.5,
+    14, 37.5,
+    17, 29.5,
+    62.5, 25,
+    113.5, 27.5
+  ]
+}

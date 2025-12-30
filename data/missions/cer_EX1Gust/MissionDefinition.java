@@ -25,30 +25,30 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		
 		// These show up as items in the bulleted list under 
 		// "Tactical Objectives" on the mission detail screen
-		api.addBriefingItem("The CESN Marauder Must Survive.");
-		api.addBriefingItem("The CESN Callaban Will Command the Fleet For you, Focus on piloting.");
+		api.addBriefingItem("The CESN Merkava Must Survive.");
+		api.addBriefingItem("The CESN Merkava Will Command the Fleet For you, Focus on piloting.");
 		
 		// Set up the player's fleet.  Variant names come from the
 		// files in data/variants and data/variants/fighters
 		
 				api.addToFleet(FleetSide.PLAYER, "diable_gust_EX_Flagship", FleetMemberType.SHIP,"CESN Marauder", true);
 
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_daze_AntiFighter", FleetMemberType.SHIP,"CESN Callaban", false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_rime_m_Standard1b", FleetMemberType.SHIP,"CESN Marco", false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_rime_m_Standard1b", FleetMemberType.SHIP,"CESN Polo", false);
-				//api.addToFleet(FleetSide.PLAYER, "diable_fractalus_Assault", FleetMemberType.SHIP, false);
-				//api.addToFleet(FleetSide.PLAYER, "diable_fractalus_Assault", FleetMemberType.SHIP, false);
-				//api.addToFleet(FleetSide.PLAYER, "diable_burst_Standard", FleetMemberType.SHIP, false);
-				//api.addToFleet(FleetSide.PLAYER, "diable_burst_Standard", FleetMemberType.SHIP, false);
-			    api.addToFleet(FleetSide.PLAYER, "diableavionics_miniGust_Close_S.(CER)", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_miniGust_Close_S.(CER)", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_fractus_support", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_BrawlerB", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_AttackB", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "diableavionics_vapor_AttackB", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_SupportB", FleetMemberType.SHIP, false);
-				api.addToFleet(FleetSide.PLAYER, "diableavionics_sleet_SupportB", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_daze_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_rime_m_cer_Assault", FleetMemberType.SHIP,"CESN Marco", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_rime_m_cer_Assault", FleetMemberType.SHIP,"CESN Polo", false);
+				api.addToFleet(FleetSide.PLAYER, "diable_fractalus_Assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_fractalus_Assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_burst_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_burst_Standard", FleetMemberType.SHIP, false);
+			    api.addToFleet(FleetSide.PLAYER, "diable_miniGust_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_miniGust_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_fractus_cer_Bomber", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_fractus_cer_Bomber", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Attack", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Attack", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_stratus_cer_Standard", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_stratus_cer_Standard", FleetMemberType.SHIP, false);
 				
 				
 		// Mark both ships as essential - losing either one results
@@ -57,7 +57,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.defeatOnShipLoss("CESN Marauder");
 		
 				// Set up the enemy fleet
-		//api.addToFleet(FleetSide.ENEMY, "onslaught_Standard", FleetMemberType.SHIP, "HSS Naga", true);
+		api.addToFleet(FleetSide.ENEMY, "onslaught_Standard", FleetMemberType.SHIP, "HSS Naga", true);
 		//api.addToFleet(FleetSide.ENEMY, "onslaught_Outdated", FleetMemberType.SHIP, false);
 		//api.addToFleet(FleetSide.ENEMY, "onslaught_Outdated", FleetMemberType.SHIP, false);
 		api.addToFleet(FleetSide.ENEMY, "dominator_Assault", FleetMemberType.SHIP, false);
@@ -65,7 +65,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.addToFleet(FleetSide.ENEMY, "mora_Assault", FleetMemberType.SHIP, false);
 		api.addToFleet(FleetSide.ENEMY, "mora_Strike", FleetMemberType.SHIP, false);
 		api.addToFleet(FleetSide.ENEMY, "mora_Strike", FleetMemberType.SHIP, false);
-		api.addToFleet(FleetSide.ENEMY, "mora_Support", FleetMemberType.SHIP, false);
+		//api.addToFleet(FleetSide.ENEMY, "mora_Support", FleetMemberType.SHIP, false);
 		//api.addToFleet(FleetSide.ENEMY, "dominator_Support", FleetMemberType.SHIP, false);
 		//api.addToFleet(FleetSide.ENEMY, "dominator_Support", FleetMemberType.SHIP, false);
 		api.addToFleet(FleetSide.ENEMY, "condor_Support", FleetMemberType.SHIP, false);

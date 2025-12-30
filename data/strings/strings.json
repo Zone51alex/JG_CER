@@ -47,6 +47,11 @@
                 "rm_selector_2":"Anaconda Grenade Launcher",
                 "rm_selector":"Remove this hullmod to switch between Gun Modes.",
 				
+				"sm_selector_0":"MicroMissiles",
+                "sm_selector_1":"MagicBox Missiles",
+				"sm_selector_2":"ReioiBox Missiles",
+				"sm_selector":"Remove this hullmod to switch between Missile Modes.",
+				
 				"grandFN":"Admiral",
 				"grandLN":"Y11",
 				"grandFleet":"Pina Colada Task Force",
@@ -57,8 +62,8 @@
 				"1stFleetFN":"Admiral",
 				"1stFleetLN":"Leiph",
 				
-				"2ndFleet":"Shotgun Warriors Task Force",
-				"2ndFlagship":"CESN Starbound",
+				"2ndFleet":"Task Force Wulfram",
+				"2ndFlagship":"IFDF Starbound",
 				"2ndFleetFN":"Admiral",
 				"2ndFleetLN":"Y11",
 				

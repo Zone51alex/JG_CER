@@ -1,4 +1,15 @@
 {
+	"GoldenVaporTrail":{
+		"engineColor":[255,125,75,255],
+		"contrailParticleSizeMult":10.90,
+		"contrailParticleDuration":0.12,
+		"contrailParticleFinalSizeMult":3.12,		
+		"contrailMaxSpeedMult":0.33,
+		"contrailAngularVelocityMult":0.33,
+		"contrailColor":[55,55,55,100],
+		"engineGlowGlowMult":1.45,
+		"type":"GLOW" # GLOW or SMOKE
+	},
 	"GetterRayTrail":{
 		"engineColor":[107,210,107,120],
 		"contrailParticleSizeMult":10.90,

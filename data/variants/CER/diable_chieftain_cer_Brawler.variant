@@ -1,0 +1,65 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 32,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "diable_chieftain_cer",
+    "hullMods": [
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_chieftain_cer_Brawler",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0014": "diableavionics_banishsmall",
+                "WS0016": "diableavionics_banishsmall",
+                "WS0015": "diableavionics_banishsmall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "diableavionics_magicbox",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_hexafire2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_nocturne",
+                "WS0004": "diableavionics_nocturne",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "diableavionics_ibis",
+                "WS0023": "diableavionics_ibis",
+                "WS0022": "diableavionics_ibis",
+                "WS0024": "diableavionics_ibis",
+                "WS0013": "diableavionics_ibis",
+                "WS0010": "diableavionics_ibis",
+                "WS0009": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_hoar_wing",
+        "diableavionics_hoar_wing",
+    ],
+    "modules": [],
+}

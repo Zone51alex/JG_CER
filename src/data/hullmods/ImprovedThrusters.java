@@ -4,6 +4,7 @@ import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
+import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import data.scripts.util.Diableavionics_stringsManager;
 import org.magiclib.util.MagicIncompatibleHullmods;
 import java.util.HashSet;
@@ -12,6 +13,8 @@ import java.util.Set;
 public class ImprovedThrusters extends BaseHullMod {
     //mod description value
     public static float MANEUVER_BONUS = 50f;
+    public static float SPEED_BONUS = 75f;
+    public static float TURN_MULT = 2f;
     //Blocked Hullmods value
     private final Set<String> BLOCKED_HULLMODS;
     //Stats value setup
@@ -20,6 +23,8 @@ public class ImprovedThrusters extends BaseHullMod {
         stats.getDeceleration().modifyPercent(id, MANEUVER_BONUS);
         stats.getTurnAcceleration().modifyPercent(id, MANEUVER_BONUS * 2f);
         stats.getMaxTurnRate().modifyPercent(id, MANEUVER_BONUS);
+        stats.getDynamic().getStat(Stats.ZERO_FLUX_BOOST_TURN_RATE_BONUS_MULT).modifyMult(id, TURN_MULT);
+        stats.getZeroFluxSpeedBoost().modifyFlat(id, SPEED_BONUS);
     }
     //improvedthrusters variables
     public ImprovedThrusters() {
@@ -36,13 +41,15 @@ public class ImprovedThrusters extends BaseHullMod {
 
     //Hullmod Description.
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
-        if (index == 0) return "" + (int) MANEUVER_BONUS + Diableavionics_stringsManager.txt("%");
+        if (index == 0) return (int) MANEUVER_BONUS + Diableavionics_stringsManager.txt("%");
         if (index == 1) return Diableavionics_stringsManager.txt("EX_impthrusters");
+        if (index == 2) return "" + (int) SPEED_BONUS;
+        if (index == 3) return "doubles";
         return null;
     }
     //
     public boolean isApplicableToShip(ShipAPI ship) {
-        return ship.getHullSpec().getHullId().startsWith("diableavionics_");
+        return ship.getHullSpec().getHullId().startsWith("diable_");
     }
 //End of Code
 }

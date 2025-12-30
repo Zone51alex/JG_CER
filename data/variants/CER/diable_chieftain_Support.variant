@@ -1,0 +1,62 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 40,
+    "goalVariant": true,
+    "hullId": "diable_chieftain",
+    "hullMods": [
+        "eccm",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_chieftain_Support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0014": "diableavionics_banishsmall",
+                "WS0016": "diableavionics_banishsmall",
+                "WS0015": "diableavionics_banishsmall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "diableavionics_magicbox",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_uhlan",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_srab",
+                "WS0004": "diableavionics_srab",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "diableavionics_ibis",
+                "WS0023": "diableavionics_ibis",
+                "WS0022": "diableavionics_ibis",
+                "WS0013": "diableavionics_ibis",
+                "WS0024": "diableavionics_ibis",
+                "WS0010": "diableavionics_ibis",
+                "WS0009": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

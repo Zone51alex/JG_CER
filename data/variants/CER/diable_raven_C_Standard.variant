@@ -1,0 +1,64 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "diable_raven_C",
+    "hullMods": [
+        "armoredweapons",
+        "auxiliarythrusters",
+        "blast_doors",
+        "expanded_deck_crew",
+        "heavyarmor",
+        "magazines",
+        "reinforcedhull",
+        "turretgyros",
+    ],
+    "permaMods": [
+        "diable_Wanzercraft",
+        "diable_armareplacer",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_raven_C_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "diable_crowtorso",
+                "WS0004": "diable_crowtorso",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "diableavionics_itanolauncher",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_ravenright",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_ravenleft",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_ravenhead",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

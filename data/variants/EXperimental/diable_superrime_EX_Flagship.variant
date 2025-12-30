@@ -1,0 +1,67 @@
+{
+    "displayName": "Flagship",
+    "fluxCapacitors": 12,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "diable_superrime_EX",
+    "hullMods": [
+        "diable_selector_Micro",
+        "turretgyros",
+    ],
+    "permaMods": [
+        "ML_skinSwap",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_superrime_EX_Flagship",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "diableavionics_plover",
+                "WS0013": "diableavionics_plover",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "BUILTINF": "diable_microbuiltin",
+                "BUILTINE": "diable_microbuiltin",
+                "BUILTIND": "diable_microbuiltin",
+                "BUILTINC": "diable_microbuiltin",
+                "BUILTINB": "diable_microbuiltin",
+                "BUILTINA": "diable_microbuiltin",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_recson2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "diableavionics_burchel",
+                "WS0005": "diableavionics_burchel",
+                "WS0004": "diableavionics_burchel",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_warlust_wing",
+        "diableavionics_warlust_wing",
+    ],
+    "modules": [],
+}

@@ -1,0 +1,42 @@
+{
+    "displayName": "Bomber",
+    "fluxCapacitors": 7,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "diable_fractus_cer",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_fractus_cer_Bomber",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_thrush",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_micromissile",
+                "WS0006": "diableavionics_micromissile",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_burchel",
+                "WS0004": "diableavionics_burchel",
+            }
+        },
+    ],
+    "wings": [
+        "diable_arbitratorZ_banish_wing",
+        "diable_arbitratorZ_banish_wing",
+    ],
+    "modules": [],
+}
