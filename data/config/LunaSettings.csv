@@ -1,3 +1,3 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
 cer_Experimentalfeaturesheader,experimental Header,Header,Experimental,,,,,Experimental
-cer_newcapitalspawn,Enable New Market Spawn,Boolean,False,,Enable Experimental Market Spawn.,,,Experimental
+newcapitalspawn,Enable New Market Spawn,Boolean,False,,Enable Experimental Market Spawn.,,,Experimental

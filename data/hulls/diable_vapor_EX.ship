@@ -13,7 +13,8 @@
   "viewOffset": 0,
   "builtInMods": [
     "diableavionics_cramped",
-    "EX_dummy"
+    "EX_dummy",
+	"jg_overloadedsubsystems"
   ],
   "builtInWeapons": {
     "WS 000": "diableavionics_itanolauncher_EX",

@@ -17,7 +17,7 @@
     "invasionSupportFleetName":"Support Fleet",
     "defenceFleetName":"Defense Fleet",
 	"noSyncRelations":false,
-	"noStartingContact":true,
+	"noStartingContact":false,
 	
 	"specialForcesPointMult":1.75,
 	"specialForcesSizeMult":1.75,
