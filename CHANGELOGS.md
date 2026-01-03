@@ -1,3 +1,7 @@
+Version 0.0.11
+- Fixing LunaSettings Error.
+- also Fixed missing Descriptions and other stuff.
+
 Version 0.0.10
 - Alot got Revamped From Ships, Thrusters to variants, and added new Ships along with the option to test out the new Market Code in lunaSettings.
 
