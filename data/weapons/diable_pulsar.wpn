@@ -1,0 +1,66 @@
+{
+  "id": "diable_pulsar",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "data.scripts.weapons.Diableavionics_fastBurstsEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/jg/weapons/diable_pulsar_turret_base.png",
+  "turretGlowSprite": "graphics/jg/weapons/diable_pulsar_turret_glow.png",
+  "hardpointSprite": "graphics/jg/weapons/diable_pulsar_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/jg/weapons/diable_pulsar_hardpoint_glow.png",
+  "barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+  "glowColor": [
+    200,
+    100,
+    160,
+    200
+  ],
+  "hitGlowRadius": 75,
+  "turretOffsets": [
+    17,
+    3,
+    17,
+    -3
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    23,
+    3,
+    23,
+    -3
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "fringeColor": [
+    25,
+    55,
+    200,
+    50
+  ],
+  "coreColor": [
+    255,
+    125,
+    225,
+    200
+  ],
+  "width": 16,
+  "textureType":ROUGH,
+  "textureScrollSpeed": 150,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  #"fireSoundOne": "diableavionics_nocturne_fire",
+  "fireSoundTwo": "diableavionics_nocturne_loop"
+}

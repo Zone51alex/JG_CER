@@ -21,8 +21,8 @@
             }
         },
         {
-            "autofire": false,
-            "mode": "ALTERNATING",
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
                 "WS0011": "diableavionics_microbuiltin",
                 "WS0002": "diableavionics_microbuiltin",
@@ -36,7 +36,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_glowtusk",
+                "WS0001": "diable_Heatblastrifle",
             }
         },
         {

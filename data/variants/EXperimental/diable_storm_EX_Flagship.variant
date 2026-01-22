@@ -1,6 +1,6 @@
 {
     "displayName": "Flagship",
-    "fluxCapacitors": 7,
+    "fluxCapacitors": 17,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_storm_EX",
@@ -46,7 +46,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "BUILTINA": "diable_raptorbuiltin",
+                "BUILTINA": "diableavionics_magicboxPodBI",
             }
         },
         {

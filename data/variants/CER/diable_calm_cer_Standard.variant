@@ -1,6 +1,6 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 9,
+    "fluxCapacitors": 10,
     "fluxVents": 20,
     "goalVariant": true,
     "hullId": "diable_calm_cer",
@@ -20,8 +20,8 @@
             }
         },
         {
-            "autofire": false,
-            "mode": "ALTERNATING",
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
                 "WS0003": "diableavionics_micromissile",
                 "WS0010": "diableavionics_microbuiltin",
@@ -37,7 +37,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0012": "diableavionics_artdeux",
+                "WS0012": "diable_Heatblastrifle",
             }
         },
         {

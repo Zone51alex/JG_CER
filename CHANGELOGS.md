@@ -1,3 +1,6 @@
+Version 1.0.0-First
+- Added The Pulsar Twin Lance.
+
 Version 0.0.11
 - Fixing LunaSettings Error.
 - also Fixed missing Descriptions and other stuff.

@@ -363,7 +363,8 @@
 			"diable_urn2",
 			"diable_urn",
 			"diable_Heatblastrifle",
-			"diable_reioibox"
+			"diable_reioibox",
+			"diable_pulsar"
 		],
 	},
 	"priorityWeapons":{
@@ -412,7 +413,8 @@
 			"diable_gravemac",
 			"diable_urn2",
 			"diable_urn",
-			"diable_reioibox"
+			"diable_reioibox",
+			"diable_pulsar"
 		],
 	},
 	"knownHullMods":{

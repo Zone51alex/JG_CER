@@ -1,12 +1,12 @@
 {
     "displayName": "Beamer",
-    "fluxCapacitors": 3,
+    "fluxCapacitors": 17,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_haze_cer",
     "hullMods": [
-        "advancedoptics",
         "diable_selector_Micro",
+        "fluxbreakers",
         "fluxdistributor",
         "targetingunit",
     ],
@@ -24,20 +24,18 @@
         },
         {
             "autofire": false,
-            "mode": "LINKED",
+            "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "diableavionics_thunderboltpod",
-                "WS0006": "diableavionics_thunderboltpod",
+                "WS0005": "diableavionics_banish",
+                "WS0006": "diableavionics_banish",
             }
         },
         {
             "autofire": true,
-            "mode": "ALTERNATING",
+            "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_nocturne",
-                "WS0002": "diableavionics_nocturne",
-                "WS0003": "diableavionics_nocturne",
-                "WS0004": "diableavionics_nocturne",
+                "WS0008": "diableavionics_magicbox",
+                "WS0009": "diableavionics_magicbox",
             }
         },
         {
@@ -54,16 +52,24 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0008": "diableavionics_magicbox",
-                "WS0009": "diableavionics_magicbox",
+                "WS0001": "diableavionics_hexafire",
+                "WS0002": "diableavionics_hexafire",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "diableavionics_burchel",
+                "WS0003": "diableavionics_nocturne",
+                "WS0004": "diableavionics_nocturne",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
                 "WS0014": "diableavionics_burchel",
+                "WS0007": "diableavionics_burchel",
             }
         },
     ],

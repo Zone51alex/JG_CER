@@ -4,9 +4,9 @@
     "author":"Zone51,Damexius,Yukisuna,Rico - FlashFrozen,Tartiflette,caymon joestar",	
     "version":
     {
-        "major":0,
+        "major":1,
         "minor":0,
-        "patch":11-InDev,
+        "patch":0-First,
     },
     "description":"A Subsidary of Diable Avionics that was Absorbed before arrival to the persean Sector, it got Rebuilt after by Disgruntled Engineers Fed up with Diable's Incompetence to restore their might.",
     "gameVersion": "0.98a-RC8",
@@ -24,9 +24,9 @@
 		{
             "id": "diableavionics",
             "name": "Diable Avionics",
-            "version": "2.9.3"
+            "version": "2.9.4"
         },
     ],
 	"modPlugin": "data.scripts.da_cerModPlugin",
-	"jars":["jars/dummy.jar"],
+	"jars":["jars/corvidae.jar"],
 }

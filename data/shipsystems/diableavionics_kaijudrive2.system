@@ -10,9 +10,9 @@
 	
 	"engineGlowColor":[50,175,50,255],
 	"engineGlowContrailColor":[100,255,100,25],
-	"engineGlowLengthMult":45,
-	"engineGlowWidthMult":3,
-	"engineGlowGlowMult":3,
+	"engineGlowLengthMult":5,
+	"engineGlowWidthMult":2,
+	"engineGlowGlowMult":1,
 	
 	"shieldRingColor":[50,155,50,255],
 	"shieldInnerColor":[100,255,100,100],
@@ -32,7 +32,7 @@
 	"loopSound":"system_high_energy_focus_loop",
 	"outOfUsesSound":"gun_out_of_ammo",
 	"aiHints":{
-		"activeSpeedIncrease":125,
+		"activeSpeedIncrease":300,
 		"burstMovementPotential":0,
 		"averageSpeedIncrease":80,
 	}

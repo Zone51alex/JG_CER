@@ -1,6 +1,6 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 13,
+    "fluxCapacitors": 15,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_daze_cer",
@@ -33,7 +33,7 @@
             }
         },
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
             "weapons": {
                 "WS0005": "diableavionics_microcluster2",
@@ -52,8 +52,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0008": "diable_mostro2",
-                "WS0007": "diable_mostro2",
+                "WS0008": "diable_Heatblastrifle",
+                "WS0007": "diable_Heatblastrifle",
             }
         },
         {

@@ -19,3 +19,4 @@ Damping Wave (C Type),diable_dampwaveCType,,,,,,0.075,,3,0.05,.3,.2,1,1,,,,TRUE,
 Eagle's Warth,diableavionics_fluxburst,,,,0,0,0.1,,,,1,8,1,8,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,graphics/icons/hullsys/ammo_feeder.png
 Kaiju Drive,diableavionics_kaijudrive2,,,,0,0,0.1,,,1,1,8,1,4,FALSE,,,,,,,FALSE,,,,,graphics/icons/hullsys/burn_drive.png
 Stinger Drive,diable_SuperBurnDrive,1,,,,,,,,1,1,8,1,4,TRUE,,,FALSE,,,TRUE,TRUE,TRUE,,,movement,graphics/icons/hullsys/combat_burn.png
+Flux Grid Tuning,diable_vortex_cer,,,,,,,,4,0.075,0,,0.5,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_sensor.png

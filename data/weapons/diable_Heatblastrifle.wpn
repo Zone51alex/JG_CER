@@ -1,45 +1,49 @@
 {
   "id": "diable_Heatblastrifle",
   "specClass": "projectile",
+  "projectileSpecId": "diableavionics_heatblast_shot",
   "type": "BALLISTIC",
   "size": "MEDIUM",
-  #"everyFrameEffect": "data.scripts.weapons.Diableavionics_artassaultFire",
   "displayArcRadius": 700,
-	"turretSprite":"graphics/jg/weapons/diable_HeatBlast_Turret_Base.png",
-	"turretGunSprite":"graphics/jg/weapons/diable_HeatBlast_Turret_Barrel.png",	
-	"hardpointSprite":"graphics/jg/weapons/diable_HeatBlast_hardpoint_Base.png",
-	"hardpointGunSprite":"graphics/jg/weapons/diable_HeatBlast_hardpoint_Barrel.png",
-	"visualRecoil":10.0,  # the gun sprites are only used if this is non-0
+  "turretSprite": "graphics/jg/weapons/diable_HeatBlast_Turret_Base.png",
+  "turretGunSprite": "graphics/jg/weapons/diable_HeatBlast_Turret_Barrel.png",
+  "hardpointSprite": "graphics/jg/weapons/diable_HeatBlast_hardpoint_Base.png",
+  "hardpointGunSprite": "graphics/jg/weapons/diable_HeatBlast_hardpoint_Barrel.png",
+  "visualRecoil": 10,
   "renderHints": [
     RENDER_BARREL_BELOW
   ],
   "turretOffsets": [
-    36.5,
-    4.5
+    18,
+    0
   ],
   "turretAngleOffsets": [
     1
   ],
   "hardpointOffsets": [
-    29,
+    27.5,
     0
   ],
   "hardpointAngleOffsets": [
     1
   ],
-	"barrelMode": "ALTERNATING",
+  "barrelMode": "ALTERNATING",
   "animationType": "MUZZLE_FLASH",
   "interruptibleBurst": true,
+  "autocharge": true,
   "muzzleFlashSpec": {
-    "length": 60.0,
-    "spread": 10.0,
-    "particleSizeMin": 15.0,
-    "particleSizeRange": 40.0,
+    "length": 60,
+    "spread": 10,
+    "particleSizeMin": 15,
+    "particleSizeRange": 40,
     "particleDuration": 0.1,
     "particleCount": 15,
-    "particleColor": [ 199,93,76,215 ] },
-  "autocharge": true,
-	"projectileSpecId":"diableavionics_heatblast_shot",  # projectile that will be fired
-	"fireSoundTwo":"mjolnir_fire",
-        #"everyFrameEffect":"data.scripts.weapons.diableavionics_heatblastFire",
+    "particleColor": [
+      199,
+      93,
+      76,
+      215
+    ]
+  },
+  "fireSoundTwo": "mjolnir_fire"
 }
