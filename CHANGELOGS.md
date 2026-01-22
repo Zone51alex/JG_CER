@@ -1,5 +1,5 @@
 Version 1.0.0
-First Candidate.
+- First Candidate.
 - Added The Pulsar Twin Lance.
 
 Version 0.0.11
