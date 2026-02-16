@@ -1,5 +1,7 @@
-Version 1.0.0
-- First Candidate.
+Version 1.0.0-Second
+- Added Cyan Sentinel-Warden.
+
+Version 1.0.0-First
 - Added The Pulsar Twin Lance.
 
 Version 0.0.11
