@@ -3,7 +3,7 @@
   "specClass": "beam",
   "type": "ENERGY",
   "size": "MEDIUM",
-  "beamEffect": "data.scripts.weapons.Diableavionics_fastBurstsEffect",
+  #"beamEffect": "data.scripts.weapons.Diableavionics_fastBurstsEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/jg/weapons/diable_pulsar_turret_base.png",
@@ -57,10 +57,8 @@
   "pierceSet": [
     PROJECTILE_FF,
     PROJECTILE_NO_FF,
-    PROJECTILE_FIGHTER,
-    MISSILE_FF,
-    MISSILE_NO_FF
+    PROJECTILE_FIGHTER
   ],
-  #"fireSoundOne": "diableavionics_nocturne_fire",
-  "fireSoundTwo": "diableavionics_nocturne_loop"
+  #"fireSoundOne": "phase_beam_intro",
+  "fireSoundTwo": "phase_beam_loop"
 }

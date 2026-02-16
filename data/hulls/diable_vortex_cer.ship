@@ -1,0 +1,77 @@
+{
+  "hullName": "Vortex",
+  "hullId": "diable_vortex_cer",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/jg/ships/Minning/diable_hyper_vortex.png",
+  "style": "HIGH_TECH",
+  "height": 14,
+  "width": 38,
+  "center": [19, 8],
+  "collisionRadius": 19.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 19.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "diableavionics_ibis"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 45,
+      "angle": 0,
+      "locations": [3.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-6, -7.5],
+      "length": 4,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-6, 0],
+      "length": 5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-6, 7.5],
+      "length": 4,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-4.5, 10],
+      "length": 4,
+      "width": 3,
+      "angle": 90,
+      "contrailSize": 8,
+      "style": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-4.5, -10],
+      "length": 4,
+      "width": 3,
+      "angle": 270,
+      "contrailSize": 8,
+      "style": "DiableAvionicsTrail"
+    }
+  ],
+  "bounds": [
+    4.5, -14.5,
+    1.5, -17.5,
+    -5.5, 0,
+    1.5, 17.5,
+    4.5, 14.5
+  ]
+}

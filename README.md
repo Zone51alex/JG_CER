@@ -10,6 +10,7 @@ Zone51 - Main Mod maintainer(i usually do a little bit of everything)
 Damexius - mod maker Partner
 Yukisuna - Proofreading
 Rico - Artist
+SIDEWAYS255 - Writer
 
 FlashFrozen - original maker of Diable avionics
 Tartiflette - Legendary Mod maker

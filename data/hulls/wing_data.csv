@@ -13,5 +13,7 @@ diable_knight_wing_independent,diable_knight_Standard,"restricted, independent_o
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Drones,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-diable_mite_drone_wing,diable_mite_drone_standard,"no_drop, no_sell, high",2,,0,1,V,500,500,,3,SUPPORT,Multitool Drone,5,1500,,,,,,,,,,,,,5
-diable_warlust_wing,diableavionics_warlust_drone_variant,"no_drop, no_sell, high",2,,4,0,V,2000,500,300,3,SUPPORT,PD Drone,5,1500,,,,,,,,,,,,,18
+diable_mite_drone_wing,diable_mite_drone_standard,"no_drop, no_sell, high",2,,0,1,V,2000,1500,,3,INTERCEPTOR,Multitool Drone,5,1500,,,,,,,,,,,,,5
+diable_slap_drone_wing,diable_slap_drone_standard,"no_drop, no_sell, high",2,,0,1,V,2000,1000,,3,INTERCEPTOR,Multitool Drone,5,1500,,,,,,,,,,,,,5
+diable_vortex_cer_wing,diable_vortex_cer_PD,"no_drop, no_sell, high",2,,4,0,V,2000,1000,,1,SUPPORT,Drone,10,1500,,,,,,,,,,,,,18
+diable_vortex_EX_wing,diable_vortex_EX_PD,"no_drop, no_sell, high",2,,4,0,V,2000,1000,,1,SUPPORT,Drone,10,1500,,,,,,,,,,,,,18

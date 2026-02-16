@@ -1,14 +1,17 @@
 {
     "displayName": "Standard",
     "fluxCapacitors": 10,
-    "fluxVents": 10,
+    "fluxVents": 9,
     "goalVariant": true,
     "hullId": "diable_raven_C",
     "hullMods": [
+        "armoredweapons",
         "auxiliarythrusters",
-        "fluxbreakers",
+        "blast_doors",
+        "expanded_deck_crew",
         "heavyarmor",
         "magazines",
+        "reinforcedhull",
         "turretgyros",
     ],
     "permaMods": [
@@ -56,8 +59,6 @@
             }
         },
     ],
-    "wings": [
-        "diableavionics_raven_wing",
-    ],
+    "wings": [],
     "modules": [],
 }

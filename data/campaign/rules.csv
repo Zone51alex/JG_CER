@@ -130,17 +130,23 @@ cer_denycontactSuru,DialogOptionSelected,$option == cer_SuruContactOption,FireAl
 cer_AskRecommendTaio,PopulateOptions,"$id == cer_assist
 !$player.RecommendTaio
 RepGTE da_cer FRIENDLY",,,"0:cer_askforTaio:""can i talk to Taio ?""",
-cer_recommendTaio,DialogOptionSelected,$option == cer_askforTaio,"FireAll PopulateOptions
+cer_recommendTaio,DialogOptionSelected,"$option == cer_askforTaio
+RepGTE da_cer FRIENDLY","FireAll PopulateOptions
 $player.RecommendTaio = true
 AddTextSmall ""You received recommendation from $PersonRank $personLastName for Taio.""
 ShowPersonVisual","""OK Here you go.""","0:cer_askforTaioDone:""Thank You!""",
+cer_askforTaioDenied,DialogOptionSelected,"$option == cer_askforTaio
+RepLTE da_cer FRIENDLY",FireAll PopulateOptions,"""""""Sorry, $PersonRank $personLastName doesn't think you're ready to get a recommendation for Taio yet.""""""",,
 cer_askRecommendMord,PopulateOptions,"$id == cer_assist
 !$player.RecommendMord
 RepGTE da_cer FRIENDLY",,,"0:cer_askforMord:""can i talk to Mord ?""",
-cer_recommendMord,DialogOptionSelected,$option == cer_askforMord,"FireAll PopulateOptions
+cer_recommendMord,DialogOptionSelected,"$option == cer_askforMord
+RepGTE da_cer FRIENDLY","FireAll PopulateOptions
 $player.RecommendMord  = true
 AddTextSmall ""You received recommendation from $PersonRank $personLastName for Mord.""
 ShowPersonVisual","""OK Here you go.""","0:cer_askforMordDone:""Thank You!""",
+cer_askforMordDenied,DialogOptionSelected,"$option == cer_askforMord
+RepLTE da_cer FRIENDLY",FireAll PopulateOptions,"""""""Sorry, $PersonRank $personLastName doesn't think you're ready to get a recommendation for Mordrigg yet.""""""",,
 #END Lead Secretary - Suru Solaris,,,,,,
 #END Onuo Contacts,,,,,,
 ,,,,,,

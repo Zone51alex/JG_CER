@@ -6,7 +6,7 @@
 	"aiType":"CUSTOM",
 	"aiScript":"data.scripts.shipsystems.ai.diable_calmsystemAI",
 	
-	"droneVariant":"diableavionics_vortex_PD",
+	"droneVariant":"diable_vortex_EX_PD",
 	
 	"allowFreeRoam":true,
 	

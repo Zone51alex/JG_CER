@@ -1,0 +1,88 @@
+{
+	"name":"Cyan Curt",	#Warden AI turned to a combat AI a Mix of CY and Virgil(Halo)
+	"personalities":["aggressive"], 
+	"gender":["m","f","n"],
+	"chance":0.0,
+	"talkativeness":1.5,	
+	"categoryTags":["da_cer","warden","ai"],	
+	
+	"lines":{
+		"start":[
+			{"text":"Riot incoming. Containment protocols active."}, 
+			{"text":"All units, maintain formation. Prisoners attempting breach."},
+			{"text":"Engaging hostiles. Lockdown and perimeter control ."},
+		],
+		"start_boss":[
+			{"text":"Primary ringleader sighted. Lockdown in effect."},
+			{"text":"High-risk inmate located. unit en route."},
+			{"text":"Critical threat detected. Containment breach imminent if unaddressed."},
+			{"text":"Riot ringleader identified. Immediate neutralization required."},
+			{"text":"High-value threat active. Suppression measures engaged."},
+		],		
+		"retreat":[
+			{"text":"Fallback initiated. Preserve assets and personnel."},
+			{"text":"Tactical fallback. Perimeter partially compromised. do not falter."},
+			{"text":"Containment lines broken. Emergency response needed."},
+			{"text":"Unit withdrawing to regroup. Reinforcements required."},
+			{"text":"Temporary retreat. Do not allow panic to spread."}
+		],
+		"out_of_missiles":[
+			{"text":"Ordnance depleted. Tactics adjusted."},
+			{"text":"Last munition expended. Relying on suppression measures."}
+		],
+		"engaged":[
+			{"text":"Hostiles on-scope. Suppression in progress."},
+			{"text":"Enemy attempting breakout. Focus fire. Suppression priority high."},
+			{"text":"Primary threats identified. Lockdown enforced."},
+			{"text":"Gang leader attempting breakout. Initiating lethal measures."},
+			{"text":"Perimeter integrity holding. Focus fire on high-risk targets."}
+		],
+		"need_help":[
+			{"text":"Incoming fire. Backup required immediately."},
+			{"text":"Overwhelmed. Deploy additional suppression Units."},
+		],
+		"pursuing":[
+			{"text":"Pursuit engaged. Enemy attempting to escape containment."},
+			{"text":"Inmates fleeing. Intercept and suppress."},
+			{"text":"Gang member retreating. Unit in pursuit."},
+			{"text":"Inmates attempting regroup. Maintain containment pressure."},
+		],
+		"running":[
+			{"text":"Pulling back for strategic repositioning."},
+			{"text":"Allied unit attempting regroup. Pursuit paused momentarily."}
+		],
+		"hull_90":[
+			{"text":"Hull taking damage. Reinforce critical points."},
+			{"text":"Taking minor hull damage. Risk of breach increasing."},
+		],
+		"hull_50":[
+			{"text":"Hull ruptures reported. Containment compromised."},
+			{"text":"Critical damage sustained. Deploy repair protocols."},
+			{"text":"Enemy pressure increasing. Maintain order."},
+		],
+		"hull_30":[
+			{"text":"Structural compromise imminent. Containment at risk."},
+			{"text":"System failures ongoing. Unit intervention critical."},
+		],
+		"overload":[
+			{"text":"Weapon systems offline. Prepare for manual intervention."},
+			{"text":"Electrical grid unstable. Power rerouting required."},
+			{"text":"System overload imminent. Manual intervention necessary."},
+		],
+		"death":[
+			{"text":"Containment failure logged. Units lost."},
+			{"text":"Unit lost. Situation irrecoverable."},
+			{"text":"Structural failure critical. Emergency response engaged."},
+		],
+		"victory":[
+			{"text":"Sector secured. Prisoners contained."},
+			{"text":"Hostile forces neutralized. Operation complete."},
+			{"text":"All objectives met. Unit standing down."},
+		],
+		"victory_boss":[
+			{"text":"Gang leadership neutralized. Containment protocols successful."},
+			{"text":"Operation complete. Minimal collateral reported."},
+			{"text":"Primary threat eliminated. High-value targets neutralized."},
+		]
+	}
+}

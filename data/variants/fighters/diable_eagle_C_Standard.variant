@@ -1,19 +1,24 @@
 {
     "displayName": "Standard",
     "fluxCapacitors": 10,
-    "fluxVents": 10,
+    "fluxVents": 9,
     "goalVariant": true,
     "hullId": "diable_eagle_C",
     "hullMods": [
+        "armoredweapons",
         "auxiliarythrusters",
-        "fluxbreakers",
+        "blast_doors",
+        "expanded_deck_crew",
         "heavyarmor",
         "magazines",
+        "reinforcedhull",
         "turretgyros",
     ],
     "permaMods": [
+        
         "diable_Wanzercraft",
         "diable_armareplacer",
+        
     ],
     "sMods": [],
     "suppressedMods": [],
@@ -56,8 +61,6 @@
             }
         },
     ],
-    "wings": [
-        "diable_knight_wing",
-    ],
+    "wings": [],
     "modules": [],
 }

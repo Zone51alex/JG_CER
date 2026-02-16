@@ -1,34 +1,33 @@
 {
-  "hullName": "Mite",
-  "hullId": "diable_mite_drone",
+  "hullName": "Slap Drone",
+  "hullId": "diable_slap_drone",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/jg/ships/Minning/diable_slap_drone.png",
   "style": "DA_WANZER",
   "height": 34,
   "width": 22,
-  "center": [11, 17.5],
-  "collisionRadius": 15,
+  "center": [11, 18.5],
+  "collisionRadius": 16.5,
   "shieldCenter": [0, -0],
-  "shieldRadius": 16.5,
+  "shieldRadius": 17.5,
   "viewOffset": 0,
   "builtInWeapons": {
-    "WS0000": "diable_mitelaser"
+    "WS0001": "diableavionics_warlusthead"
   },
   "weaponSlots": [
     {
-      "id": "WS0000",
+      "id": "WS0001",
       "size": "SMALL",
       "type": "BUILT_IN",
       "mount": "TURRET",
       "arc": 90,
       "angle": 0,
-      "locations": [9.5, 0],
-      "renderOrderMod": 1000
+      "locations": [8.5, 0]
     }
   ],
   "engineSlots": [
     {
-      "location": [-14.5, 0],
+      "location": [-15.5, 0],
       "length": 10,
       "width": 6,
       "angle": 180,
@@ -37,7 +36,7 @@
       "styleId": "DiableAvionicsMissileNoTrail"
     },
     {
-      "location": [-8.5, 7.5],
+      "location": [-9.5, 7.5],
       "length": 10,
       "width": 3,
       "angle": 160,
@@ -46,7 +45,7 @@
       "styleId": "DiableAvionicsMissileNoTrail"
     },
     {
-      "location": [-8.5, -7.5],
+      "location": [-9.5, -7.5],
       "length": 10,
       "width": 3,
       "angle": -160,
@@ -56,10 +55,10 @@
     }
   ],
   "bounds": [
-    10.5, 3,
+    9.5, 3,
     -6.5, 10,
-    -16.5, 2,
-    -6.5, -6,
-    10.5, 1
+    -15.5, 0,
+    -6.5, -10,
+    9.5, -3
   ]
 }

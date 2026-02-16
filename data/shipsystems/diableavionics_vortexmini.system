@@ -3,7 +3,7 @@
 	"type":"DRONE_LAUNCHER",
 	"aiType":"DRONE_LAUNCHER_PD",
 	
-	"droneVariant":"diableavionics_vortex_PD",
+	"droneVariant":"diable_vortex_cer_PD",
 	
 	"allowFreeRoam":true,
 	

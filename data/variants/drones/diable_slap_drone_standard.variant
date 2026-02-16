@@ -1,0 +1,22 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "diable_slap_drone",
+  "hullMods": [],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "diable_slap_drone_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "diableavionics_warlust_drone"
+      }
+    }
+  ],
+  "wings": []
+}

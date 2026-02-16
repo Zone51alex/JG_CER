@@ -7,11 +7,16 @@
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "displayArcRadius": 500,
-  "turretSprite": "graphics/jg/ships/Minning/diableavionics_mitelaser_base.png",
-  "turretGlowSprite": "graphics/jg/ships/Minning/diableavionics_mitelaser_glow.png",
-  "hardpointSprite": "graphics/jg/ships/Minning/diableavionics_mitelaser_base.png",
-  "hardpointGlowSprite": "graphics/jg/ships/Minning/diableavionics_mitelaser_glow.png",
-  "glowColor": [200,100,160,200],
+  "turretSprite": "graphics/jg/ships/Minning/diable_Mite_laser_new.png",
+  "turretGlowSprite": "graphics/jg/ships/Minning/diable_Mite_laser_new_glow.png",
+  "hardpointSprite": "graphics/jg/ships/Minning/diable_Mite_laser_new.png",
+  "hardpointGlowSprite": "graphics/jg/ships/Minning/diable_Mite_laser_new_glow.png",
+  "glowColor": [
+    200,
+    100,
+    160,
+    200
+  ],
   "hitGlowRadius": 0,
   "turretOffsets": [
     4,
@@ -21,14 +26,24 @@
     0
   ],
   "hardpointOffsets": [
-    7.5,
+    7,
     0
   ],
   "hardpointAngleOffsets": [
     0
   ],
-  "fringeColor": [25,55,200,50],
-  "coreColor": [255,125,225,200],
+  "fringeColor": [
+    25,
+    55,
+    200,
+    50
+  ],
+  "coreColor": [
+    255,
+    125,
+    225,
+    200
+  ],
   "width": 8,
   "textureType": WEAVE,
   "textureScrollSpeed": 16,
@@ -38,6 +53,6 @@
     PROJECTILE_NO_FF,
     PROJECTILE_FIGHTER
   ],
-  "fireSoundOne":"laser_intro",
-  "fireSoundTwo":"laser_loop",
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "laser_loop"
 }
