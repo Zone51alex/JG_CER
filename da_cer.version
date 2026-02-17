@@ -45,7 +45,7 @@
   # OPTIONAL
   # A download link directly to the latest version of your mod.
   # This is used by mod managers/version checkers (eg SMOL, MOSS, LunaLib) to let users quickly update/download without visiting your mod page.
-  "directDownloadURL": "https://github.com/Zone51alex/JG_CER/releases/download/1.0.0-Second/Corvid.Engineering.Recovery-1.0.0-Second.zip",
+  "directDownloadURL": "https://github.com/Zone51alex/JG_CER/releases/download/1.0.0-First/Corvid.Engineering.Recovery-1.0.0-First.zip",
 
   # OPTIONAL
   # A link to your changelog.
