@@ -24,7 +24,7 @@
 
 ## Overview
 
-**Corvid Engineering & Recovery (CER)** is an Engineering & Recovery Subsidiary of **Diable Avionics**, rebuilt to help restore their battered forces and develop new technology from the ashes.
+**Corvid Engineering & Recovery (CER)** is an Engineering & Recovery Subsidiary of **Diable Avionics**, rebuilt to help restore their battered forces and develop new technology from their ashes.
 
 This mod acts as a **Faction Extension** of Diable Avionics, focused on:
 
@@ -60,7 +60,7 @@ The following library mods are required:
 - [LazyLib](https://github.com/LazyWizard/lazylib)
 - *(Optional)* [LunaLib](https://github.com/Lukas22041/LunaLib)
 
-Make sure these are installed and enabled before running CER.
+Make sure these are installed and enabled before running The Mod.
 
 ---
 
