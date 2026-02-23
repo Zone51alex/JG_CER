@@ -9,7 +9,7 @@
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Compatibility](#compatibility)
@@ -44,15 +44,15 @@ This mod acts as a **Faction Extension** of Diable Avionics, focused on:
 
 ---
 
-## 📥 Download
+## Download
 
 Download the latest stable version here:
 
-👉 **[Releases](https://github.com/Zone51alex/JG_CER/releases)**
+**[Releases](https://github.com/Zone51alex/JG_CER/releases)**
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 The following library mods are required:
 
@@ -64,7 +64,7 @@ Make sure these are installed and enabled before running CER.
 
 ---
 
-## 👥 Credits
+## Credits
 
 - **Zone51** – Main mod maintainer (design, implementation, general development)  
 - **SIDEWAYS255** – Mod maker partner  
@@ -74,7 +74,7 @@ Make sure these are installed and enabled before running CER.
 
 ---
 
-## 🪩 Original Mod Credits
+## Original Mod Credits
 
 - **Caymon Joestar** – Current maintainer of Diable Avionics  
 - **FlashFrozen** – Original creator of Diable Avionics  
@@ -82,18 +82,17 @@ Make sure these are installed and enabled before running CER.
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the terms listed in:
 
-👉 **[license.txt](https://github.com/Zone51alex/JG_CER/blob/main/license.txt)**
+**[license.txt](https://github.com/Zone51alex/JG_CER/blob/main/license.txt)**
 
 ---
 
-## 💬 Discord Server
+## Discord Server
 
 Join the community here:
 
-👉 **[Space Lounge](https://discord.gg/QFYrZwg2Qf)**
-[Space Lounge]: https://discord.gg/QFYrZwg2Qf
+**[Space Lounge](https://discord.gg/QFYrZwg2Qf)**
 =======
