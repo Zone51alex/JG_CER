@@ -5,7 +5,7 @@
 # Corvid Engineering & Recovery Subsidiary (CER)
 
 [![License](https://img.shields.io/badge/license-Community%20Open%20Source-blue.svg)](https://github.com/Zone51alex/JG_CER/blob/main/license.txt)
-[![Releases](https://img.shields.io/github/v/release/Zone51alex/JG_CER?color=blue)](https://github.com/Zone51alex/JG_CER/releases)
+[![Releases](https://img.shields.io/github/v/release/Zone51alex/JG_CER?color=red)](https://github.com/Zone51alex/JG_CER/releases)
 
 ---
 
