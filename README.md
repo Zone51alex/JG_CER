@@ -1,18 +1,13 @@
-<<<<<<< HEAD
 <p align="center">
   <img src="https://raw.githubusercontent.com/Zone51alex/JG_CER/main/graphics/jg/factions/corvid_flag.png" width="300" alt="Corvid Flag">
 </p>
 # Corvid Engineering & Recovery Subsidiary (CER)
 =======
-This is Now a Mini-Faction made for helping Diable support their war efforts.
->>>>>>> 4239a2e59a2f5a28085388ee4e9bb3434b230283
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Zone51alex/JG_CER/blob/main/license.txt)
 [![Releases](https://img.shields.io/github/v/release/Zone51alex/JG_CER?color=blue)](https://github.com/Zone51alex/JG_CER/releases)
 
 ---
-
-<<<<<<< HEAD
 ##  Table of Contents
 
 - [Overview](#overview)
@@ -75,6 +70,3 @@ This mod is a Faction Extension of DIable avionics focused on:
 
 [Space Lounge]: https://discord.gg/QFYrZwg2Qf
 =======
-FlashFrozen - original maker of Diable avionics
-Tartiflette - Legendary Mod maker
->>>>>>> 4239a2e59a2f5a28085388ee4e9bb3434b230283
