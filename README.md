@@ -76,7 +76,8 @@ Make sure these are installed and enabled before running The Mod.
 
 ## Original Mod Credits
 
-- **Caymon Joestar** – Current maintainer of Diable Avionics  
+- **Caymon Joestar** – Current maintainer of Diable Avionics
+- **[REDACTED]** - Disgraced Maintainer of Diable Avionics
 - **FlashFrozen** – Original creator of Diable Avionics  
 - **Tartiflette** – Legendary mod maker  
 
