@@ -2,7 +2,6 @@
   <img src="https://raw.githubusercontent.com/Zone51alex/JG_CER/main/graphics/jg/factions/corvid_flag.png" width="300" alt="Corvid Flag">
 </p>
 # Corvid Engineering & Recovery Subsidiary (CER)
-=======
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Zone51alex/JG_CER/blob/main/license.txt)
 [![Releases](https://img.shields.io/github/v/release/Zone51alex/JG_CER?color=blue)](https://github.com/Zone51alex/JG_CER/releases)
