@@ -26,7 +26,7 @@
 
 **Corvid Engineering & Recovery (CER)** is an Engineering & Recovery Subsidiary of **Diable Avionics**, rebuilt to help restore their battered forces and develop new technology from their ashes.
 
-This mod acts as a **Faction Extension** of Diable Avionics, focused on:
+This mod acts as a **Faction Extension and Sub-faction** of Diable Avionics, focused on:
 
 - Corvid variant ships with enhanced features  
 - Experimental ships available as bounties or research production projects  
