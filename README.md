@@ -92,7 +92,5 @@ This project is licensed under the terms listed in:
 
 ## Discord Server
 
-Join the community here:
-
-**[Space Lounge](https://discord.gg/QFYrZwg2Qf)**
+Join the community here: **[Space Lounge](https://discord.gg/QFYrZwg2Qf)**
 =======
