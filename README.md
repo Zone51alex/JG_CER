@@ -1,13 +1,15 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/Zone51alex/JG_CER/main/graphics/jg/factions/corvid_flag.png" width="300" alt="Corvid Flag">
 </p>
+
 # Corvid Engineering & Recovery Subsidiary (CER)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Zone51alex/JG_CER/blob/main/license.txt)
 [![Releases](https://img.shields.io/github/v/release/Zone51alex/JG_CER?color=blue)](https://github.com/Zone51alex/JG_CER/releases)
 
 ---
-##  Table of Contents
+
+## 📚 Table of Contents
 
 - [Overview](#overview)
 - [Compatibility](#compatibility)
@@ -16,56 +18,82 @@
 - [Credits](#credits)
 - [Original Mod Credits](#original-mod-credits)
 - [License](#license)
-- [Library Mods Needed](#library-mods-needed)
 - [Discord Server](#discord-server)
+
+---
 
 ## Overview
 
-An Engineering & Recovery Subsidary of Diable Avionics Rebuilt to Help Diable Restore their Battered Forces and Produce New Tech from their Ashes.
+**Corvid Engineering & Recovery (CER)** is an Engineering & Recovery Subsidiary of **Diable Avionics**, rebuilt to help restore their battered forces and develop new technology from the ashes.
 
-This mod is a Faction Extension of DIable avionics focused on:
+This mod acts as a **Faction Extension** of Diable Avionics, focused on:
 
-- Corvid Variant Ships with extra features.
-- Experimental Ships as ehiter bounties or research production projects. 
-- Added Story for both Corvid and DIable Avionics.
-- New Ships, Weapons and Fighters.
-- integration with Diable Avionics Core Systems.
+- Corvid variant ships with enhanced features  
+- Experimental ships available as bounties or research production projects  
+- Expanded story elements for both Corvid and Diable Avionics  
+- New ships, weapons, and fighters  
+- Integration with Diable Avionics core systems  
+
+---
 
 ## Compatibility
 
-- Following the Same Starsector Version as caymon Joestar's Diable Avionics.
-- Compatible with Nexerelin same as for Diable Avionics.
-- Safe to add mid-save(future Feature).
+- Follows the same Starsector version as Caymon Joestar's Diable Avionics  
+- Compatible with Nexerelin (same compatibility level as Diable Avionics)  
+- Mid-save compatibility planned (future feature)  
 
-## Download 
+---
 
-- Download from [Releases]: https://github.com/Zone51alex/JG_CER/releases for the Latest Stable version
+## 📥 Download
 
-## Credits
+Download the latest stable version here:
 
-- **Zone51** - Main Mod maintainer(i usually do a little bit of everything)
-- **SIDEWAYS255** - Mod Maker Partner(able to do a little bit of everything)
-- **Damexius** - Modding Friend
-- **Yukisuna** - Proofreading
-- **Rico** - Artist
+👉 **[Releases](https://github.com/Zone51alex/JG_CER/releases)**
 
-## Liscense
+---
 
-**[license.txt](https://github.com/Zone51alex/JG_CER/blob/main/license.txt)**
+## 📦 Dependencies
 
-## Original Mod Credits
+The following library mods are required:
 
-- **Caymon Joestar** - Cuirrent Maintainer of Diable Avionics
-- **FlashFrozen** - original maker of Diable avionics
-- **Tartiflette** - Legendary Mod maker
+- [MagicLib](https://github.com/MagicLibStarsector/MagicLib)
+- [LazyLib](https://github.com/LazyWizard/lazylib)
+- *(Optional)* [LunaLib](https://github.com/Lukas22041/LunaLib)
 
-## Dependencies
+Make sure these are installed and enabled before running CER.
 
-[MagicLib]: https://github.com/MagicLibStarsector/MagicLib/
-[LazyLib]: https://github.com/LazyWizard/lazylib/
-(Optional) [LunaLib]: https://github.com/Lukas22041/LunaLib/
+---
 
-## Discord Server
+## 👥 Credits
 
+- **Zone51** – Main mod maintainer (design, implementation, general development)  
+- **SIDEWAYS255** – Mod maker partner  
+- **Damexius** – Modding support  
+- **Yukisuna** – Proofreading  
+- **Rico** – Artist  
+
+---
+
+## 🪩 Original Mod Credits
+
+- **Caymon Joestar** – Current maintainer of Diable Avionics  
+- **FlashFrozen** – Original creator of Diable Avionics  
+- **Tartiflette** – Legendary mod maker  
+
+---
+
+## 📜 License
+
+This project is licensed under the terms listed in:
+
+👉 **[license.txt](https://github.com/Zone51alex/JG_CER/blob/main/license.txt)**
+
+---
+
+## 💬 Discord Server
+
+Join the community here:
+
+👉 **[Space Lounge](https://discord.gg/QFYrZwg2Qf)**
 [Space Lounge]: https://discord.gg/QFYrZwg2Qf
 =======
