@@ -69,6 +69,7 @@ Make sure these are installed and enabled before running The Mod.
 - **Zone51** – Main mod maintainer (design, implementation, general development)  
 - **SIDEWAYS255** – Mod maker partner  
 - **Damexius** – Modding support  
+- **Lynn** – Tester and Balance
 - **Yukisuna** – Proofreading  
 - **Rico** – Artist  
 
@@ -79,7 +80,7 @@ Make sure these are installed and enabled before running The Mod.
 - **Caymon Joestar** – Current maintainer of Diable Avionics
 - **[REDACTED]** - Old Maintainer of Diable Avionics
 - **FlashFrozen** – Original creator of Diable Avionics  
-- **Tartiflette** – Legendary mod maker  
+- **Tartiflette** – Legendary mod maker and Previous Maintainer of Diable Avionics  
 
 ---
 
