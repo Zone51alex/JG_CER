@@ -12,3 +12,4 @@
  -Add actual Portraits for both Corvid and Diable.
  -Add a Cargo hauling Sub-Faction to Diable Avionics using Modified Diable Cargo Ships Designed around Blockage Running Based on a Asteroid Minning Station.
  -Add an Elite Sub-Faction to Diable Avionics akin to the Lion's Guard Elite as Ace Combat Convict Squadron of Wanzers Based on Sivie the Prison Planet.
+ -Haze EX for Horgno, Unlocked Flicker Core, extra range and no charges just the normal cooldown, extra armor and hull custom beam weapon uses heavy burst laser as the projectile template Paladin PD system for ROF explosion and color.
