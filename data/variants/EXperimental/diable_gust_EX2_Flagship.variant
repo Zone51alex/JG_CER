@@ -1,14 +1,14 @@
 {
     "displayName": "Flagship",
-    "fluxCapacitors": 21,
+    "fluxCapacitors": 14,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_gust_EX2",
     "hullMods": [
         "autorepair",
         "diable_selector_Reioi",
+        "extendedshieldemitter",
         "hardenedshieldemitter",
-        "heavyarmor",
         "targetingunit",
     ],
     "permaMods": [],
@@ -17,15 +17,15 @@
     "variantId": "diable_gust_EX2_Flagship",
     "weaponGroups": [
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_mostro",
+                "WS0001": "diable_recson3",
             }
         },
         {
             "autofire": false,
-            "mode": "LINKED",
+            "mode": "ALTERNATING",
             "weapons": {
                 "BUILTIND": "diable_reioibuiltin",
                 "BUILTINC": "diable_reioibuiltin",
@@ -37,7 +37,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "diableavionics_recson2",
+                "WS0002": "diable_Heatblastrifle",
             }
         },
         {
@@ -46,11 +46,17 @@
             "weapons": {
                 "WS0011": "diableavionics_ibis",
                 "WS0014": "diableavionics_ibis",
-                "WS0010": "diableavionics_ibis",
-                "WS0009": "diableavionics_ibis",
-                "WS0008": "diableavionics_ibis",
                 "WS0015": "diableavionics_ibis",
-                "WS0007": "diableavionics_ibis",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "diableavionics_burchel",
+                "WS0009": "diableavionics_burchel",
+                "WS0008": "diableavionics_burchel",
+                "WS0007": "diableavionics_burchel",
             }
         },
     ],

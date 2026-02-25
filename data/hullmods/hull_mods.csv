@@ -45,21 +45,21 @@ Versant Frame,diableavionics_tuning_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hull
 %s: This ship is a masterfully fine-tuned machine of war that already operates with reduced margins and does not like getting tinkered with.
 
 Therefore it is impossible to install Hull-mods that increase components stress, such as %s.",,,graphics/da/hullmods/diableavionics_tuning.png
-Fire selector: AUTOMATIC,diableavionics_selector_auto_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.versant.DAVersantAuto,"The fire profile of the built-in Harvests guns can be changed to better suit the captain's preferences.
+Weapon select: Harvest burst EX,diableavionics_selector_auto_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.versant.DAVersantAuto,"The fire profile of the built-in Harvests guns can be changed to better suit the captain's preferences.
 
 %s has better sustained firepower, but worse accuracy and range.
 
-%s",,,graphics/da/hullmods/diableavionics_selector_auto.png
-Fire selector: BURST,diableavionics_selector_burst_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.versant.DAVersantBurst,"The fire profile of the built-in Harvests guns can be changed to better suit the captain's preferences.
+%s",,,graphics/da/hullmods/diableavionics_selector_burst.png
+Weapon select: Glaux Mk.II EX,diableavionics_selector_burst_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.versant.DAVersantBurst,"The fire profile of the built-in Harvests guns can be changed to better suit the captain's preferences.
 
 %s has better accuracy and flux efficiency, but worse sustained firepower.
 
-%s",,,graphics/da/hullmods/diableavionics_selector_burst.png
-Fire selector: SEMI-AUTO,diableavionics_selector_semi_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.versant.DAVersantSemi,"The fire profile of the built-in Harvests guns can be changed to better suit the captain's preferences.
+%s",,,graphics/da/hullmods/diableavionics_selector_semi.png
+Weapon select: Scicle Blaster EX,diableavionics_selector_semi_EX,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.versant.DAVersantSemi,"The fire profile of the built-in Harvests guns can be changed to better suit the captain's preferences.
 
 %s has much better damage per shot and range, but worse sustained firepower and flux efficiency.
 
-%s",,,graphics/da/hullmods/diableavionics_selector_semi.png
+%s",,,graphics/da/hullmods/diableavionics_selector_auto.png
 ,,,,,,,,,,,,,,,,,,,
 #Roaring EX Hullmod,,,,,,,,,,,,,,,,,,,
 Roaring Frame,diableavionics_tuning_EX2,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.roaring.DATuningEX2,"The Roaring frame offers limited customization options in the form of Different Guns for its built-in SP66-6 Harvest guns using LPC Nanotech to change guns.

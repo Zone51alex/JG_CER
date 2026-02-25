@@ -1,13 +1,13 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 23,
-    "fluxVents": 30,
+    "fluxCapacitors": 20,
+    "fluxVents": 29,
     "goalVariant": true,
     "hullId": "diable_gust_EX",
     "hullMods": [
         "diable_selector_Magicbox",
-        "fluxbreakers",
         "fluxdistributor",
+        "magazines",
         "targetingunit",
     ],
     "permaMods": [],
@@ -19,24 +19,24 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_mostro",
+                "WS0001": "diableavionics_uhlan",
             }
         },
         {
             "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_thrush",
+            }
+        },
+        {
+            "autofire": true,
             "mode": "ALTERNATING",
             "weapons": {
                 "BUILTIND": "diable_magicboxbuiltin",
                 "BUILTINC": "diable_magicboxbuiltin",
                 "BUILTINB": "diable_magicboxbuiltin",
                 "BUILTINA": "diable_magicboxbuiltin",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0002": "diableavionics_recson2",
             }
         },
         {

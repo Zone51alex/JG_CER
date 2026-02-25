@@ -1,11 +1,12 @@
 {
     "displayName": "DAKKA",
-    "fluxCapacitors": 26,
+    "fluxCapacitors": 19,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_gust_EX",
     "hullMods": [
-        "diable_selector_Micro",
+        "diable_selector_Reioi",
+        "fluxcoil",
         "fluxdistributor",
         "magazines",
         "targetingunit",
@@ -26,10 +27,10 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "BUILTIND": "diable_microbuiltin",
-                "BUILTINC": "diable_microbuiltin",
-                "BUILTINB": "diable_microbuiltin",
-                "BUILTINA": "diable_microbuiltin",
+                "BUILTIND": "diable_reioibuiltin",
+                "BUILTINC": "diable_reioibuiltin",
+                "BUILTINB": "diable_reioibuiltin",
+                "BUILTINA": "diable_reioibuiltin",
             }
         },
         {

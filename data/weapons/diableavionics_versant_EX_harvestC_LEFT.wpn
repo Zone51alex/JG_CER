@@ -1,31 +1,47 @@
 {
-	"specClass":"projectile",
-	"id":"diableavionics_versant_EX_harvestC_LEFT",
-	"type":"ENERGY",
-	"size":"MEDIUM",
-	"displayArcRadius":500,
-	"turretSprite":"graphics/jg/ships/jetlag/diableavionics_versant_gunLeft.png",
-	"hardpointSprite":"",	
-	"turretOffsets":[34, 4],
-	"turretAngleOffsets":[0],
-	"hardpointOffsets":[34, 4],
-	"hardpointAngleOffsets":[0],
-	"fringeColor":[200,25,25,50],
-	"coreColor":[255,125,125,200],
-	"glowColor":[200,100,100,200],
-	"width":18.0,
-	"hitGlowRadius":1,
-	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
-	"animationType":"MUZZLE_FLASH",
-	"interruptibleBurst":true,
-	"muzzleFlashSpec":{"length":33.0,   # only used if animationType = MUZZLE_FLASH
-					   "spread":7.0,
-					   "particleSizeMin":15.0,
-					   "particleSizeRange":25.0,
-					   "particleDuration":0.1,
-					   "particleCount":7,
-					   "particleColor":[109,234,109,220]},
-	"autocharge":true,					   
-	"projectileSpecId":"diableavionics_Raycast_shot",
-	"fireSoundTwo":"diableavionics_harvest_firing",
+  "id": "diableavionics_versant_EX_harvestC_LEFT",
+  "specClass": "projectile",
+  "projectileSpecId": "diableavionics_virtuousCarbine_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/jg/ships/jetlag/diableavionics_versant_gunLeft.png",
+  "hardpointSprite": "graphics/jg/ships/jetlag/diableavionics_versant_gunLeft.png",
+  "visualRecoil": 1.5,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    35.5,
+    4
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    54.5,
+    4
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "interruptibleBurst": true,
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 60,
+    "spread": 10,
+    "particleSizeMin": 15,
+    "particleSizeRange": 40,
+    "particleDuration": 0.1,
+    "particleCount": 15,
+    "particleColor": [
+      195,
+      150,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "diableavionics_virtuousBlaster_fire"
 }

@@ -6,6 +6,7 @@
     "hullId": "diable_gust_cer",
     "hullMods": [
         "fluxdistributor",
+        "jg_salvagewingcon",
         "magazines",
         "targetingunit",
     ],

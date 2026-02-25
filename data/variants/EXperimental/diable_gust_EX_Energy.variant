@@ -1,13 +1,13 @@
 {
     "displayName": "Energy",
-    "fluxCapacitors": 22,
-    "fluxVents": 30,
+    "fluxCapacitors": 30,
+    "fluxVents": 28,
     "goalVariant": true,
     "hullId": "diable_gust_EX",
     "hullMods": [
+        "armoredweapons",
         "diable_selector_Micro",
         "fluxbreakers",
-        "fluxdistributor",
         "hardenedshieldemitter",
     ],
     "permaMods": [],
@@ -36,7 +36,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "diable_diurne",
+                "WS0002": "diable_buckshot",
             }
         },
         {

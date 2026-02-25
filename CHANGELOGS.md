@@ -1,6 +1,5 @@
 Version 1.0.0-Second
 - Added Cyan Sentinel-Warden.
-- do note its not released yet.
 
 Version 1.0.0-First
 - Added The Pulsar Twin Lance.

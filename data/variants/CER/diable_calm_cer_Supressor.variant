@@ -1,7 +1,7 @@
 {
     "displayName": "Supressor",
-    "fluxCapacitors": 6,
-    "fluxVents": 20,
+    "fluxCapacitors": 9,
+    "fluxVents": 19,
     "goalVariant": true,
     "hullId": "diable_calm_cer",
     "hullMods": [
@@ -30,8 +30,8 @@
             }
         },
         {
-            "autofire": true,
-            "mode": "LINKED",
+            "autofire": false,
+            "mode": "ALTERNATING",
             "weapons": {
                 "WS0010": "diableavionics_microbuiltin",
                 "WS0009": "diableavionics_microbuiltin",
@@ -43,7 +43,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0012": "diableavionics_nocturne",
+                "WS0012": "diable_pulsar",
             }
         },
         {

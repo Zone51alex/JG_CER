@@ -32,13 +32,12 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 				//EX Ships
 				if(Global.getSettings().isDevMode()){
                 api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX_Flagship", FleetMemberType.SHIP,"CESN Flying Dutchman", false);
-				api.addToFleet(FleetSide.PLAYER, "diable_pandemonium_EX2_Flagship", FleetMemberType.SHIP,"IDSS Starbound", false);
                 api.addToFleet(FleetSide.PLAYER, "diable_chieftain_EX_Flagship", FleetMemberType.SHIP,"CESN Black Pearl", false);
                 api.addToFleet(FleetSide.PLAYER, "diable_storm_EX_Flagship", FleetMemberType.SHIP,"CESN Gold Ship", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_daze_EX_Flagship", FleetMemberType.SHIP,"CESN Merkava", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_gust_EX_Flagship", FleetMemberType.SHIP,"CESN Marauder", true);				
                 api.addToFleet(FleetSide.PLAYER, "diable_gust_EX2_Flagship", FleetMemberType.SHIP,"CESN Khrizantema", false);	            
-                api.addToFleet(FleetSide.PLAYER, "diable_riptide_EX_Flagship", FleetMemberType.SHIP,"DSF Star Platinum", false);	           
+                api.addToFleet(FleetSide.PLAYER, "diable_riptide_EX_Flagship", FleetMemberType.SHIP,"IDSS Starbound", false);	           
                 api.addToFleet(FleetSide.PLAYER, "diable_calm_EX_Flagship", FleetMemberType.SHIP,"CESN Railjack", false);				
 				api.addToFleet(FleetSide.PLAYER, "diable_vapor_EX_Flagship", FleetMemberType.SHIP,"CESN Arise", false);
 				api.addToFleet(FleetSide.PLAYER, "diable_versant_EX_Flagship", FleetMemberType.SHIP,"CESN Starlight", false);

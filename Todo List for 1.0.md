@@ -1,0 +1,14 @@
+**To do List  for 1.0**
+ -Revamp all the ID's in both mods(last thing to do).
+ -Finishing The Versant EX.
+ -Upgrading the Goblin EX.
+ -Finishing the Internal Logic Migration Save check and add console commands commands for fixing saves.
+ -Making the Pilotable Seven Sword Wanzer Project. 
+ -Making the Pilotable HeavyArms Wanzer Project.
+ -Making a Debug NPC(only avaliable IF the player has DevMode On) that adds all the EX ships,Dev Blueprint and Cyan a.i. in the Onuo(Crow's Nest) Market.
+ -Massive Balance Pass on all weapons and CER Ships.
+ -Add LunaLib Mod Options for the Mod(gonna use it for Fixing Saves in-case something breaks).
+ -Finishing the Riptide EX Paintjob.
+ -Add actual Portraits for both Corvid and Diable.
+ -Add a Cargo hauling Sub-Faction to Diable Avionics using Modified Diable Cargo Ships Designed around Blockage Running Based on a Asteroid Minning Station.
+ -Add an Elite Sub-Faction to Diable Avionics akin to the Lion's Guard Elite as Ace Combat Convict Squadron of Wanzers Based on Sivie the Prison Planet.

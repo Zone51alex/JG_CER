@@ -1,30 +1,54 @@
 {
-	"specClass":"projectile",
-	"id":"diableavionics_versant_EX_harvestB_RIGHT",
-	"type":"ENERGY",
-	"size":"MEDIUM",
-	"displayArcRadius":500,
-	"turretSprite":"graphics/jg/ships/jetlag/diableavionics_versant_gunRight.png",
-	"hardpointSprite":"",
-	"turretOffsets":[34, -4],
-	"turretAngleOffsets":[0],
-	"hardpointOffsets":[34, -4],
-	"hardpointAngleOffsets":[0],
-	"fringeColor":[200,25,25,50],
-	"coreColor":[255,125,125,200],
-	"glowColor":[200,100,100,200],
-	"width":18.0,
-	"hitGlowRadius":1,
-	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
-	"animationType":"MUZZLE_FLASH",
-	"muzzleFlashSpec":{"length":33.0,   # only used if animationType = MUZZLE_FLASH
-					   "spread":7.0,
-					   "particleSizeMin":15.0,
-					   "particleSizeRange":25.0,
-					   "particleDuration":0.1,
-					   "particleCount":7,
-					   "particleColor":[109,234,109,220]},
-	"autocharge":true,					   
-	"projectileSpecId":"diableavionics_Raycast_shot",
-	"fireSoundTwo":"diableavionics_harvest_firing",
+  "id": "diableavionics_versant_EX_harvestB_RIGHT",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "data.scripts.weapons.Diableavionics_virtuous_glauxEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/jg/ships/jetlag/diableavionics_versant_gunRight.png",
+  "hardpointSprite": "graphics/jg/ships/jetlag/diableavionics_versant_gunRight.png",
+  "glowColor": [
+    232,
+    128,
+    35,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    35.5,
+    -4
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    54.5,
+    -4
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "beamFireOnlyOnFullCharge": true,
+  "fringeColor": [
+    250,
+    50,
+    200,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    200,
+    255
+  ],
+  "width": 50,
+  "textureType": WEAVE,
+  "textureScrollSpeed": 428,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ]
 }

@@ -1,0 +1,84 @@
+Vanilla Diable hulls
+  Current Prefix: diableavionics_
+  New Prefix: unchanged
+  Notes: All vanilla Diable ships remain untouched
+
+BetterDA hulls / improvements
+  Current Prefix: corvid_
+  New Prefix: diable_
+  Notes: Improvements to vanilla Diable ships; lineage remains Diable
+
+Corvid Engineering CER hulls
+  Current Prefix: diable_ (CER)
+  New Prefix: corvidae_cer_
+  Notes: Standard Corvid Engineering hulls
+
+Corvid Engineering EX hulls
+  Current Prefix: diable_ (EX)
+  New Prefix: corvidae_ex_
+  Notes: Experimental / special hulls
+
+Corvid Engineering CER weapons
+  Current Prefix: diable_
+  New Prefix: corvidae_cer_
+  Notes: Weapons tied to CER hulls, including built-ins
+
+Corvid Engineering EX weapons
+  Current Prefix: diable_
+  New Prefix: corvidae_ex_
+  Notes: Weapons tied to EX hulls, built-ins
+
+Corvid Engineering CER ship systems
+  Current Prefix: diable_
+  New Prefix: corvidae_cer_
+  Notes: Burn drives, unique CER systems
+
+Corvid Engineering EX ship systems
+  Current Prefix: diable_
+  New Prefix: corvidae_ex_
+  Notes: EX / experimental systems
+
+Corvid Engineering CER hullmods / internal scripts
+  Current Prefix: diable_
+  New Prefix: corvidae_cer_
+  Notes: Hullmods that reference CER hulls or systems
+
+Corvid Engineering EX hullmods / internal scripts
+  Current Prefix: diable_
+  New Prefix: corvidae_ex_
+  Notes: EX-specific hullmods
+
+Variants tied to CER hulls
+  Current Prefix: diable_
+  New Prefix: corvidae_cer_
+  Notes: .variant files, built-in wings, and loadouts
+
+Variants tied to EX hulls
+  Current Prefix: diable_
+  New Prefix: corvidae_ex_
+  Notes: .variant files, built-in wings, and loadouts
+
+Fighter Wings / Strike Craft CER
+  Current Prefix: diable_
+  New Prefix: corvidae_cer_
+  Notes: Wing IDs, loadouts, variant hardpoints
+
+Fighter Wings / Strike Craft EX
+  Current Prefix: diable_
+  New Prefix: corvidae_ex_
+  Notes: EX wing IDs, loadouts, variant hardpoints
+
+Faction JSON references
+  Current Prefix: diable_
+  New Prefix: corvidae_cer_ / corvidae_ex_
+  Notes: Any Corvid Engineering ships in fleets, AI configs
+
+Descriptions / text references
+  Current Prefix: diable_
+  New Prefix: corvidae_cer_ / corvidae_ex_
+  Notes: Mainly flavor text and hullmod descriptions
+
+Scripts inside .jar / internal code
+  Current Prefix: diable_
+  New Prefix: corvidae_cer_ / corvidae_ex_
+  Notes: Any hardcoded IDs in Java or Python scripts inside the mod

@@ -1,34 +1,18 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 2,
-    "fluxVents": 50,
+    "fluxCapacitors": 0,
+    "fluxVents": 47,
     "goalVariant": true,
     "hullId": "diable_chieftain_cer",
     "hullMods": [
         "eccm",
-        "stabilizedshieldemitter",
+        "fluxdistributor",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
     "variantId": "diable_chieftain_cer_Support",
     "weaponGroups": [
-        {
-            "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS0014": "diableavionics_micromissile",
-                "WS0016": "diableavionics_micromissile",
-                "WS0015": "diableavionics_micromissile",
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0008": "diableavionics_magicbox",
-            }
-        },
         {
             "autofire": true,
             "mode": "LINKED",
@@ -37,11 +21,27 @@
             }
         },
         {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "diableavionics_srab",
+                "WS0005": "diableavionics_srab",
+            }
+        },
+        {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "diableavionics_srab",
-                "WS0004": "diableavionics_srab",
+                "WS0014": "diableavionics_micromissile",
+                "WS0015": "diableavionics_micromissile",
+                "WS0016": "diableavionics_micromissile",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "diable_magicboxbuiltin",
             }
         },
         {

@@ -5,7 +5,7 @@
     "goalVariant": true,
     "hullId": "diable_haze_cer",
     "hullMods": [
-        "diable_selector_Magicbox",
+        "diable_selector_Micro",
         "fluxdistributor",
         "heavyarmor",
         "targetingunit",
@@ -15,13 +15,6 @@
     "suppressedMods": [],
     "variantId": "diable_haze_cer_Assault",
     "weaponGroups": [
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0015": "diable_LowState2",
-            }
-        },
         {
             "autofire": false,
             "mode": "ALTERNATING",
@@ -34,16 +27,25 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0009": "diableavionics_nocturneDEM_small",
                 "WS0008": "diableavionics_nocturneDEM_small",
+                "WS0009": "diableavionics_nocturneDEM_small",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "diableavionics_glowtusk",
-                "WS0004": "diableavionics_glowtusk",
+                "BUILTIN_A": "diable_microbuiltin",
+                "BUILTIN_B": "diable_microbuiltin",
+                "BUILTIN_C": "diable_microbuiltin",
+                "BUILTIN_D": "diable_microbuiltin",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "diable_LowState2",
             }
         },
         {
@@ -58,10 +60,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "BUILTIN_A": "diable_magicboxbuiltin",
-                "BUILTIN_C": "diable_magicboxbuiltin",
-                "BUILTIN_B": "diable_magicboxbuiltin",
-                "BUILTIN_D": "diable_magicboxbuiltin",
+                "WS0003": "diable_mostro2",
+                "WS0004": "diable_mostro2",
             }
         },
         {

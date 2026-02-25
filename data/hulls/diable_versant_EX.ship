@@ -17,8 +17,6 @@
     "EX_Humming_core"
   ],
   "builtInWeapons": {
-    "BARREL_LEFT": "diableavionics_versant_EX_barrel_LEFT",
-    "BARREL_RIGHT": "diableavionics_versant_EX_barrel_RIGHT",
     "COVER_LEFT": "diableavionics_versant_EX_bit_LEFT",
     "COVER_RIGHT": "diableavionics_versant_EX_bit_RIGHT",
     "ENGINE_PANEL_LEFT": "diableavionics_versant_EX_shield_LEFT",
@@ -95,39 +93,21 @@
       "id": "GUN_LEFT",
       "size": "MEDIUM",
       "type": "BUILT_IN",
-      "mount": "HARDPOINT",
+      "mount": "TURRET",
       "arc": 45,
       "angle": 15,
-      "locations": [3.5, 19.5]
+      "locations": [3.5, 19.5],
+	  "renderOrderMod": -99
     },
     {
       "id": "GUN_RIGHT",
       "size": "MEDIUM",
       "type": "BUILT_IN",
-      "mount": "HARDPOINT",
-      "arc": 45,
-      "angle": -15,
-      "locations": [3.5, -19.5]
-    },
-    {
-      "id": "BARREL_LEFT",
-      "size": "MEDIUM",
-      "type": "DECORATIVE",
-      "mount": "TURRET",
-      "arc": 45,
-      "angle": 15,
-      "locations": [3.5, 19.5],
-      "renderOrderMod": -50
-    },
-    {
-      "id": "BARREL_RIGHT",
-      "size": "MEDIUM",
-      "type": "DECORATIVE",
       "mount": "TURRET",
       "arc": 45,
       "angle": -15,
       "locations": [3.5, -19.5],
-      "renderOrderMod": -50
+	  "renderOrderMod": -99
     },
     {
       "id": "SHIELD_LEFT",

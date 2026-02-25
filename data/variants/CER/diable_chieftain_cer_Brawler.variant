@@ -1,11 +1,12 @@
 {
     "displayName": "Brawler",
-    "fluxCapacitors": 32,
+    "fluxCapacitors": 11,
     "fluxVents": 50,
     "goalVariant": true,
     "hullId": "diable_chieftain_cer",
     "hullMods": [
-        "stabilizedshieldemitter",
+        "advancedoptics",
+        "armoredweapons",
     ],
     "permaMods": [],
     "sMods": [],
@@ -13,19 +14,12 @@
     "variantId": "diable_chieftain_cer_Brawler",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
                 "WS0014": "diableavionics_banishsmall",
-                "WS0016": "diableavionics_banishsmall",
                 "WS0015": "diableavionics_banishsmall",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0008": "diableavionics_magicbox",
+                "WS0016": "diableavionics_banishsmall",
             }
         },
         {
@@ -39,8 +33,15 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "diableavionics_nocturne",
-                "WS0004": "diableavionics_nocturne",
+                "WS0005": "diable_pulsar",
+                "WS0004": "diable_pulsar",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "diable_magicboxbuiltin",
             }
         },
         {

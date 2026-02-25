@@ -1,12 +1,12 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 19,
+    "fluxCapacitors": 22,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_gust_cer",
     "hullMods": [
-        "auxiliarythrusters",
-        "targetingunit",
+        "armoredweapons",
+        "fluxbreakers",
     ],
     "permaMods": [],
     "sMods": [],
@@ -14,19 +14,12 @@
     "variantId": "diable_gust_cer_Standard",
     "weaponGroups": [
         {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0001": "diableavionics_opfergv",
-            }
-        },
-        {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
                 "WS0003": "diableavionics_banishsmall",
-                "WS0005": "diableavionics_banishsmall",
                 "WS0004": "diableavionics_banishsmall",
+                "WS0005": "diableavionics_banishsmall",
                 "WS0006": "diableavionics_banishsmall",
             }
         },
@@ -34,7 +27,14 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "diableavionics_artdeux",
+                "WS0001": "diableavionics_hexafire2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diable_pulsar",
             }
         },
         {
@@ -58,7 +58,7 @@
         },
     ],
     "wings": [
-        "diableavionics_arbitrator_wing",
+        "diableavionics_frost_wing",
     ],
     "modules": [],
 }

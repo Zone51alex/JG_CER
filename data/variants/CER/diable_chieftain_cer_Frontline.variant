@@ -1,6 +1,6 @@
 {
     "displayName": "Frontline",
-    "fluxCapacitors": 26,
+    "fluxCapacitors": 24,
     "fluxVents": 50,
     "goalVariant": true,
     "hullId": "diable_chieftain_cer",
@@ -14,6 +14,14 @@
     "variantId": "diable_chieftain_cer_Frontline",
     "weaponGroups": [
         {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "diable_Heatblastrifle",
+                "WS0005": "diable_Heatblastrifle",
+            }
+        },
+        {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
@@ -21,27 +29,19 @@
             }
         },
         {
-            "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS0014": "diableavionics_micromissile",
-                "WS0016": "diableavionics_micromissile",
-                "WS0015": "diableavionics_micromissile",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0005": "diable_Heatblastrifle",
-                "WS0004": "diable_Heatblastrifle",
-            }
-        },
-        {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
                 "WS0008": "diable_magicboxbuiltin",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "diableavionics_micromissile",
+                "WS0015": "diableavionics_micromissile",
+                "WS0016": "diableavionics_micromissile",
             }
         },
         {

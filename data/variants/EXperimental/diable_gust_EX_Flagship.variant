@@ -1,14 +1,14 @@
 {
     "displayName": "Flagship",
-    "fluxCapacitors": 11,
+    "fluxCapacitors": 14,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_gust_EX",
     "hullMods": [
+        "autorepair",
         "diable_selector_Reioi",
-        "fluxdistributor",
+        "extendedshieldemitter",
         "hardenedshieldemitter",
-        "magazines",
         "targetingunit",
     ],
     "permaMods": [],
@@ -20,12 +20,12 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diableavionics_opfergv",
+                "WS0001": "diable_recson3",
             }
         },
         {
             "autofire": false,
-            "mode": "ALTERNATING",
+            "mode": "LINKED",
             "weapons": {
                 "BUILTIND": "diable_reioibuiltin",
                 "BUILTINC": "diable_reioibuiltin",
@@ -37,7 +37,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "diableavionics_artdeux",
+                "WS0002": "diable_Heatblastrifle",
             }
         },
         {

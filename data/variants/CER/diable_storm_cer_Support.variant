@@ -1,14 +1,14 @@
 {
     "displayName": "Support",
     "fluxCapacitors": 5,
-    "fluxVents": 8,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [
-        "targetingunit",
+        "eccm",
     ],
     "permaMods": [
-        
+        "ML_skinSwap",
     ],
     "sMods": [],
     "suppressedMods": [],
@@ -17,13 +17,6 @@
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {
-                "WS0010": "diableavionics_microcluster_left",
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "ALTERNATING",
             "weapons": {
                 "WS0005": "diableavionics_thrush",
                 "WS0006": "diableavionics_thrush",
@@ -40,8 +33,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "diableavionics_recson2",
-                "WS0004": "diableavionics_recson2",
+                "WS0003": "diableavionics_srab",
+                "WS0004": "diableavionics_srab",
             }
         },
         {
@@ -55,13 +48,20 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "diableavionics_burchel",
+                "WS0010": "diableavionics_microcluster_left",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "diableavionics_burchel",
             }
         },
     ],
     "wings": [
-        "diable_knight_wing",
-        "diable_knight_wing",
+        "diableavionics_warlust_wing",
+        "diableavionics_warlust_wing",
     ],
     "modules": [],
 }
