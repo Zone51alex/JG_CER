@@ -1,5 +1,5 @@
 {
-	"id":"diableavionics_transitCER",
+	"id":"diableavionics_transitcer",
 	"type":"ENGINE_MOD",
 	"aiType":"CUSTOM",
 	"aiScript":"data.shipsystems.scripts.ai.Diableavionics_transformAI",

@@ -1,0 +1,41 @@
+{
+  "id": "diable_JankBeam",
+	"specClass":"beam",
+	"beamEffect":"com.fs.starfarer.api.impl.combat.PaladinEffect",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"collisionClass":"RAY_FIGHTER",
+	"collisionClassByFighter":"RAY_FIGHTER",
+  "turretSprite": "graphics/jg/weapons/diable_JankBeam.png",
+  "turretGlowSprite": "graphics/jg/weapons/diable_lowStateBeamGlow2.png",
+  "hardpointSprite": "graphics/jg/weapons/diable_JankBeam.png",
+  "hardpointGlowSprite": "graphics/jg/weapons/diable_lowStateBeamGlow2.png",
+  "turretOffsets": [
+    33.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    54.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+"fringeColor":[155,50,50,255],
+	"coreColor":[255,255,255,100],
+	"glowColor":[255,100,100,255],
+	"darkCore":false,
+	"convergeOnPoint":true,
+	"width":8.0,
+	"textureType":SMOOTH,
+	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER],
+	"textureScrollSpeed":292.0,
+	"pixelsPerTexel":5.0,
+	"fireSoundOne":"guardian_pd_fire",
+	#"fireSoundTwo":"guardian_pd_loop",	
+	"everyFrameEffect":"data.scripts.weapons.diable_JankTeleportEffect",
+}

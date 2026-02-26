@@ -59,35 +59,35 @@
             "diableavionics_stratus":1,
             "diableavionics_cirrus":1,
 
-			"diable_haze_cer":1,
+			"diable_haze_cer":2,
 			
             "diable_ashfall":0.75,
             "diable_riptide":0.75,
             
             "diableavionics_rime":1,
 
-            "diableavionics_pandemonium":0.2,
+            "diableavionics_pandemonium":0.5,
 			
-            "diable_miniGust_cer":1,
-            "diable_gust_cer":0.5,
+            "diable_miniGust_cer":2,
+            "diable_gust_cer":2,
 			
-			"diable_versant_cer":0.5,
-            "diable_vapor_cer":1,
+			"diable_versant_cer":2,
+            "diable_vapor_cer":2,
 			
-			"diable_fractalus":0.5,
-			"diable_burst":1,
-			"diable_calm_cer":1,
-			"diable_stratus_cer":1,
+			"diable_fractalus":2,
+			"diable_burst":2,
+			"diable_calm_cer":2,
+			"diable_stratus_cer":2,
 			
-            "diable_rime_m_cer":0.5,
-			"diable_fractus_cer":1,
+            "diable_rime_m_cer":2,
+			"diable_fractus_cer":2,
 			
-			"diable_daze_cer":1,
-			"diable_storm_cer":1,
-			"diable_chieftain":1,
-			"diable_chieftain_cer":1,
+			"diable_daze_cer":2,
+			"diable_storm_cer":2,
+			"diable_chieftain":2,
+			"diable_chieftain_cer":2,
 			
-			"diable_eagle_C":1,
+			"diable_eagle_C":2,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -95,7 +95,6 @@
 		"tags":["base_bp","diable_ship_bp","diable_cer_bp"],
 		"hulls":[
             "diableavionics_draft",
-            "diableavionics_sleet",
             "diableavionics_vapor",
             "diableavionics_versant",
 
@@ -106,7 +105,6 @@
             "diableavionics_hayle",
             "diableavionics_coanda",
             "diableavionics_derecho",
-            "diableavionics_miniGust",
             "diableavionics_fractus",
 
             "diableavionics_chinook",
@@ -115,7 +113,6 @@
 
             "diableavionics_haze",
             "diableavionics_daze",
-            "diableavionics_gust",
             "diableavionics_storm",
             "diableavionics_rime_m",
 
@@ -139,12 +136,10 @@
 			"diable_fractalus",
 			"diable_calm_cer",
 			"diable_burst",
-			"diable_miniGust_cer",
 			
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
 			
-			"diable_gust_cer",
 			"diable_daze_cer",
 			"diable_haze_cer",
 			"diable_storm_cer",
@@ -197,12 +192,10 @@
 			"diable_fractalus",
 			"diable_calm_cer",
 			"diable_burst",
-			"diable_miniGust_cer",
 			
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
 			
-			"diable_gust_cer",
 			"diable_daze_cer",
 			"diable_haze_cer",
 			"diable_storm_cer",
@@ -246,12 +239,10 @@
 			"diable_fractalus",
 			"diable_calm_cer",
 			"diable_burst",
-			"diable_miniGust_cer",
 			
 			"diable_rime_m_cer",
 			"diable_fractus_cer",
 			
-			"diable_gust_cer",
 			"diable_daze_cer",
 			"diable_storm_cer",
 			"diable_chieftain",

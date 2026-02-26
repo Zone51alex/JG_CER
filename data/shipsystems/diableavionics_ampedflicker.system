@@ -1,0 +1,21 @@
+{
+  "id": "diableavionics_ampedflicker",
+  "type": "DISPLACER",
+  "aiType": "PHASE_TELEPORTER",
+  "jitterColor": [100, 165, 255, 100],
+  "jitterCopies": 5,
+  "jitterRange": 0.05,
+  "jitterRangeRadiusFraction": 0.2,
+  "engineGlowColor": [100, 165, 255, 125],
+  "range": 500,
+  "randomRange": 0,
+  "vulnerableChargeup": true,
+  "vulnerableChargedown": false,
+  "renderCopyDuringTeleport": false,
+  "fadeActivationSoundOnChargedown": false,
+  "useSound": "diableavionics_virtuousTeleport",
+  "outOfUsesSound": "gun_out_of_ammo",
+  "aiHints": {
+    "averageSpeedIncrease": 300
+  }
+}

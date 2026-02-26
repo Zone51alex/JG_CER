@@ -109,6 +109,7 @@
         ["diable_gust_EX_Flagship", "diableavionics_rime_standard"],
 		["diable_pandemonium_EX_Flagship", "diableavionics_rime_standard"],
 		["diable_goblin_EX_Flagship", "diable_vapor_cer_Close_Quarter", "diable_vapor_cer_Close_Quarter", "diableavionics_rime_standard"],
+		["diable_haze_EX_Standard"],
 	],
 			
     "startSpecialItems": [
