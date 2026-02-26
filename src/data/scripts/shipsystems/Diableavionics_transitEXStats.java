@@ -11,14 +11,15 @@ import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 
-public class Diableavionics_transit3Stats extends BaseShipSystemScript {
+@SuppressWarnings("unused")  // IntelliJ warning suppression
+public class Diableavionics_transitEXStats extends BaseShipSystemScript {
 
     private final IntervalUtil effectInterval = new IntervalUtil(0.1f, 0.1f);
     private final Integer SPEED_BONUS = Integer.valueOf(140);
     private final Integer ACCEL_BONUS = Integer.valueOf(200);
-    //private final float DECEL_MALUS = 0.8F;
-    //private final float TURN_MALUS = 0.4F;
-    //private final float DAMAGE_REDUCTION = 0.75F;
+    //private final float DECEL_MALUS = 0.9F;
+    //private final float TURN_MALUS = 0.5F;
+    //private final float DAMAGE_REDUCTION = 0.5F;
     private final String TXT1 = Diableavionics_stringsManager.txt("transit2");
     private final String TXT2 = Diableavionics_stringsManager.txt("transit3");
     //private final String TXT3 = Diableavionics_stringsManager.txt("%");
@@ -30,30 +31,36 @@ public class Diableavionics_transit3Stats extends BaseShipSystemScript {
 
             effectInterval.advance(Global.getCombatEngine().getElapsedInLastFrame());
             if (effectInterval.intervalElapsed()) {
-                Vector2f velSnapshot = new Vector2f(ship.getVelocity());
+                // Add field
+                Vector2f fixedVel = null;
+
+// In apply(), inside effectInterval.intervalElapsed():
+                if (fixedVel == null) {
+                    fixedVel = new Vector2f(ship.getVelocity());
+                }
 
                 ship.addAfterimage(
-                        new Color(90,255,165,155),
+                        new Color(100, 255, 100, 80),
                         0f, 0f,
-                        -velSnapshot.x, -velSnapshot.y,
-                        0f, 0f,
-                        0f, 0.5f,
+                        -fixedVel.x, -fixedVel.y,
+                        0f, 0f, 0.5f, 0f,
                         false, false, false
                 );
             }
         }
 
-        if (state == ShipSystemStatsScript.State.OUT) {
+        if (state == State.OUT) {
             stats.getMaxSpeed().unmodify(id);
         } else {
-            stats.getMaxSpeed().modifyFlat(id, this.SPEED_BONUS.intValue() * effectLevel);
-            stats.getAcceleration().modifyPercent(id, this.ACCEL_BONUS.intValue() * effectLevel);
+            stats.getMaxSpeed().modifyFlat(id, (float)this.SPEED_BONUS.intValue() * effectLevel);
+            stats.getAcceleration().modifyPercent(id, (float)this.ACCEL_BONUS.intValue() * effectLevel);
             stats.getDeceleration().modifyMult(id, 1.0F - 0.9F * effectLevel);
             stats.getTurnAcceleration().modifyMult(id, 1.0F - 0.5F * effectLevel);
             stats.getMaxTurnRate().modifyMult(id, 1.0F - 0.5F * effectLevel);
             stats.getArmorDamageTakenMult().modifyMult(id, 1.0F - 0.5F * effectLevel);
             stats.getHullDamageTakenMult().modifyMult(id, 1.0F - 0.5F * effectLevel);
         }
+
     }
 
     public void unapply(MutableShipStatsAPI stats, String id) {
@@ -64,12 +71,7 @@ public class Diableavionics_transit3Stats extends BaseShipSystemScript {
         stats.getMaxTurnRate().unmodify(id);
         stats.getArmorDamageTakenMult().unmodify(id);
         stats.getHullDamageTakenMult().unmodify(id);
-        //
     }
-
-
-
-    /*private final String TXT3 = Diableavionics_stringsManager.txt("%");*/
 
     public ShipSystemStatsScript.StatusData getStatusData(int index, ShipSystemStatsScript.State state, float effectLevel) {
         //int speed = Math.round(this.SPEED_BONUS.intValue() * effectLevel);

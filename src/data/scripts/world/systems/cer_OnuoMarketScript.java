@@ -3,6 +3,7 @@ package data.scripts.world.systems;
 import com.fs.starfarer.api.EveryFrameScript;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.PlanetAPI;
+import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Commodities;
 import com.fs.starfarer.api.impl.campaign.ids.Industries;
@@ -18,7 +19,71 @@ import java.util.Collections;
 
 public class cer_OnuoMarketScript implements EveryFrameScript {
 
-    boolean done = false;
+    private boolean done = false;
+
+    @Override
+    public void advance(float amount) {
+
+        SectorAPI sector = Global.getSector();
+
+        if (sector.getMemoryWithoutUpdate().getBoolean("$cer_onuo_market_done")) {
+            done = true;
+            return;
+        }
+
+        PlanetAPI onuo = (PlanetAPI) sector.getEntityById("OT_a");
+        if (onuo == null) return; // wait until entity exists
+
+        if (sector.getEconomy().getMarket("OT_a") != null) {
+            sector.getMemoryWithoutUpdate().set("$cer_onuo_market_done", true);
+            done = true;
+            return;
+        }
+
+        boolean indevoEnabled = ModManager.getInstance().isModEnabled("IndEvo");
+
+        // Use ArrayList explicitly to avoid incompatible types error
+        ArrayList<String> industries = new ArrayList<>(Arrays.asList(
+                "population", "megaport", "refining", "mining",
+                "orbitalworks", "heavybatteries", "highcommand",
+                "diableavionics_starfortress_lock"
+        ));
+        ArrayList<String> conditions = new ArrayList<>(Arrays.asList(
+                "population_6", "ore_abundant", "rare_ore_abundant",
+                "no_atmosphere", "regional_capital",
+                "hot", "low_gravity", "barren_marginal"
+        ));
+        ArrayList<String> submarkets = new ArrayList<>(Arrays.asList(
+                "open_market", "generic_military", "black_market", "storage"
+        ));
+
+        if (indevoEnabled) industries.add("IndEvo_dryDock");
+
+        MarketAPI market = CER_AddMarketplace.addMarketplace(
+                "da_cer",
+                onuo,
+                null,
+                "Crow's Nest",
+                6,
+                conditions,
+                industries,
+                submarkets,
+                0.3F
+        );
+
+        market.addIndustry(Industries.MINING, Collections.singletonList(Items.MANTLE_BORE));
+        market.addIndustry(Industries.ORBITALWORKS, Collections.singletonList("cer_nanoforge"));
+
+        if (indevoEnabled) {
+            market.getIndustry("IndEvo_dryDock").setAICoreId(Commodities.GAMMA_CORE);
+        }
+
+        market.getMemoryWithoutUpdate().set(DecivTracker.NO_DECIV_KEY, true);
+        market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
+
+        sector.getMemoryWithoutUpdate().set("$cer_onuo_market_done", true);
+        done = true;
+    }
 
     @Override
     public boolean isDone() {
@@ -30,8 +95,12 @@ public class cer_OnuoMarketScript implements EveryFrameScript {
         return false;
     }
 
+    /*
     @Override
     public void advance(float amount) {
+        /*
+        code to comment out here
+        */
         /*
         ModManager manager = ModManager.getInstance();
             //sector gen call goes here
@@ -86,6 +155,7 @@ public class cer_OnuoMarketScript implements EveryFrameScript {
         }
         
          */
+    /*
             ModManager manager = ModManager.getInstance();
             ArrayList secondList = new ArrayList();
             secondList.add("population");
@@ -126,7 +196,5 @@ public class cer_OnuoMarketScript implements EveryFrameScript {
 
             done = true;
         }
+        */
     }
-/*
-
- */

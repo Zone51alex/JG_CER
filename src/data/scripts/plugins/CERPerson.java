@@ -1,10 +1,8 @@
 package data.scripts.plugins;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.FactionAPI;
 import com.fs.starfarer.api.campaign.PersonImportance;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
-import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
@@ -14,8 +12,7 @@ import data.campaign.ids.cer_ids;
 
 public class CERPerson {
 
-
-    public static PersonAPI Y11Person;
+    //public static PersonAPI Y11Person;
 
     public static PersonAPI getPerson(String id) {
         return Global.getSector().getImportantPeople().getPerson(id);
@@ -25,33 +22,14 @@ public class CERPerson {
         createCERCharacters();
     }
 
-    public static PersonAPI createCERCharacters() {
+    public static void createCERCharacters() {
 
         ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
-        /**Cyan Core*/
-        if (getPerson(cer_ids.cercyancore) == null) {
-            PersonAPI person = Global.getSector().getFaction("da_cer").createRandomPerson();
-            person.setId(cer_ids.cercyancore);
-            person.setGender(Gender.MALE);
-            person.setRankId(Ranks.SPACE_COMMANDER); // Operation Manager
-            person.setPostId(Ranks.POST_GUARD_LEADER); // Scientist
-            //person.setVoice(Voices.OFFICIAL);
-            person.setPersonality(Personalities.STEADY);
-            person.getStats().setLevel(5);
-            person.getStats().setSkillLevel(Skills.HELMSMANSHIP, 2);
-            person.getStats().setSkillLevel(Skills.FIELD_MODULATION, 2);
-            person.getStats().setSkillLevel(Skills.COMBAT_ENDURANCE, 2);
-            person.getStats().setSkillLevel(Skills.ENERGY_WEAPON_MASTERY, 2);
-            person.getStats().setSkillLevel(Skills.ORDNANCE_EXPERTISE, 2);
-            person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "cyancore"));
-            person.getMemoryWithoutUpdate().set("$chatterChar", "robotic");
-            ip.addPerson(person);
-        }
         /**Ouno Capital*/
         MarketAPI market1 = Global.getSector().getEconomy().getMarket("OT_a");
         if (market1 != null) {
             /**Faction Leader*/
-            if ((getPerson(cer_ids.cerlead) == null)) {
+            if (getPerson(cer_ids.cerlead) == null) {
                 PersonAPI dankshirePerson = Global.getFactory().createPerson();
                 dankshirePerson.setId(cer_ids.cerlead);
                 dankshirePerson.setFaction("da_cer");
@@ -61,6 +39,10 @@ public class CERPerson {
                 dankshirePerson.setImportance(PersonImportance.VERY_HIGH);
                 dankshirePerson.setRankId("cer_grandadmiral");
                 dankshirePerson.setPostId(Ranks.POST_FACTION_LEADER);
+                dankshirePerson.addTag("admin");
+                dankshirePerson.addTag("commander");
+                dankshirePerson.addTag("core_officer");
+                dankshirePerson.addTag("coff_nocapture");
                 dankshirePerson.addTag("military");
                 dankshirePerson.setPortraitSprite(Global.getSettings().getSpriteName("characters", "cer_grandadmiral"));
                 if (Global.getSettings().getModManager().isModEnabled("IndEvo")) {
@@ -70,14 +52,18 @@ public class CERPerson {
                 } else {
                     dankshirePerson.getStats().setSkillLevel("industrial_planning", 1.0F);
                 }
+                dankshirePerson.addTag(Tags.CONTACT_MILITARY);
+                dankshirePerson.addTag(Tags.CONTACT_UNDERWORLD);
                 dankshirePerson.addTag("coff_nocapture");
                 market1.addPerson(dankshirePerson);
                 market1.getCommDirectory().addPerson(dankshirePerson, 0);
                 market1.setAdmin(dankshirePerson);
                 ip.addPerson(dankshirePerson);
+                ip.getData(dankshirePerson).getLocation().setMarket(market1);
+                ip.checkOutPerson(dankshirePerson, "permanent_staff");
             }
             /**Chief Engineer*/
-            if ((getPerson(cer_ids.cerengie) == null)) {
+            if (getPerson(cer_ids.cerengie) == null) {
                 PersonAPI daxterPerson = Global.getFactory().createPerson();
                 daxterPerson.setId(cer_ids.cerengie);
                 daxterPerson.setFaction("da_cer");
@@ -88,15 +74,19 @@ public class CERPerson {
                 daxterPerson.setRankId("cer_chiefengineering");
                 daxterPerson.setPostId("cer_chiefengineering");
                 daxterPerson.addTag("trade");
+                daxterPerson.addTag("engineer"); // helps with production dialogues
+                daxterPerson.addTag("coff_nocapture");
                 daxterPerson.setPortraitSprite(Global.getSettings().getSpriteName("characters", "cer_daxter"));
                 daxterPerson.addTag("coff_nocapture");
                 market1.addPerson(daxterPerson);
                 market1.getCommDirectory().addPerson(daxterPerson, 1);
                 ip.addPerson(daxterPerson);
+                ip.getData(daxterPerson).getLocation().setMarket(market1);
+                ip.checkOutPerson(daxterPerson, "permanent_staff");
             }
 
             /**Assistant Engineer*/
-                if ((getPerson(cer_ids.cerassist) == null)) {
+                if (getPerson(cer_ids.cerassist) == null) {
                     PersonAPI faunPerson = Global.getFactory().createPerson();
                     faunPerson.setId(cer_ids.cerassist);
                     faunPerson.setFaction("da_cer");
@@ -107,11 +97,17 @@ public class CERPerson {
                     faunPerson.setRankId("cer_assistengineering");
                     faunPerson.setPostId("cer_assistengineering");
                     faunPerson.addTag("military");
+                    faunPerson.addTag("commander");
+                    faunPerson.addTag("special_contact"); // unlocks mission-related dialogues
+                    faunPerson.addTag("coff_nocapture");
                     faunPerson.setPortraitSprite(Global.getSettings().getSpriteName("characters", "cer_faun"));
                     faunPerson.addTag("coff_nocapture");
+                    faunPerson.addTag(Tags.CONTACT_MILITARY);
                     market1.addPerson(faunPerson);
                     market1.getCommDirectory().addPerson(faunPerson, 2);
                     ip.addPerson(faunPerson);
+                    ip.getData(faunPerson).getLocation().setMarket(market1);
+                    ip.checkOutPerson(faunPerson, "permanent_staff");
                 }
         }
 
@@ -130,7 +126,7 @@ public class CERPerson {
             Person.getName().setFirst("Ake");
             Person.getName().setLast("Solaris");
             Person.setGender(Gender.FEMALE);
-            Person.setRankId(Ranks.POST_ADMINISTRATOR);
+            Person.setRankId(Ranks.SPACE_COMMANDER);
             Person.setPostId(Ranks.POST_FACTION_LEADER);
             Person.setImportance(PersonImportance.VERY_HIGH);
             Person.addTag("military");
@@ -144,9 +140,11 @@ public class CERPerson {
             }
             Person.addTag("coff_nocapture");
             market2.addPerson(Person);
-            market2.getCommDirectory().addPerson(Person, 0);
+            market2.getCommDirectory().addPerson(Person,0);
             market2.setAdmin(Person);
             ip.addPerson(Person);
+            ip.getData(Person).getLocation().setMarket(market2);
+            ip.checkOutPerson(Person, "permanent_staff");
         }
 
         }
@@ -199,7 +197,6 @@ public class CERPerson {
             ip.addPerson(Y11Person);
         }
         */
-        return null;
     }
     //Fleet AddPerson
     /*

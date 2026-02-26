@@ -5,7 +5,7 @@ import com.fs.starfarer.api.PluginPick;
 import com.fs.starfarer.api.campaign.AICoreOfficerPlugin;
 import com.fs.starfarer.api.campaign.BaseCampaignPlugin;
 import data.campaign.ids.cer_ids;
-import data.scripts.campaign.plugins.da_cer.CyanCoreOfficerPluginImpl;
+import data.scripts.plugins.CyanCoreOfficerPluginImpl;
 
 public class CerCampaignPluginImpl extends BaseCampaignPlugin {
 
@@ -16,7 +16,9 @@ public class CerCampaignPluginImpl extends BaseCampaignPlugin {
 
     @Override
     public PluginPick<AICoreOfficerPlugin> pickAICoreOfficerPlugin(String commodityId) {
-        if (cer_ids.cercyancore.equals(commodityId)) return new PluginPick<AICoreOfficerPlugin>(new CyanCoreOfficerPluginImpl(), PickPriority.MOD_SET);
+        if (cer_ids.CYANCORE_CHIP.equals(commodityId)) {
+            return new PluginPick<AICoreOfficerPlugin>(new CyanCoreOfficerPluginImpl(), PickPriority.MOD_SET);
+        }
         return null;
     }
 }

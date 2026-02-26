@@ -10,16 +10,13 @@ import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import data.campaign.ids.Diableavionics_ids;
 import data.campaign.ids.cer_ids;
+import data.scripts.campaign.CorvidSubsidiaryScript;
 import exerelin.campaign.AllianceManager;
-import exerelin.campaign.DiplomacyManager;
-import exerelin.campaign.PlayerFactionStore;
 import exerelin.campaign.alliances.Alliance;
-import exerelin.utilities.NexConfig;
-import exerelin.utilities.NexFactionConfig;
 import org.magiclib.util.MagicCampaign;
 import data.scripts.util.Diableavionics_stringsManager;
-import data.scripts.plugins.CERPerson;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import static data.scripts.util.Diableavionics_stringsManager.txt;
@@ -95,62 +92,58 @@ public class cerGen implements SectorGeneratorPlugin {
         da_cer.setRelationship("infected", -0.99F);
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("da_cer");
     }
-       public static void cer_main (SectorAPI sector) {
-           FactionAPI cer_main = sector.getFaction("da_cer");
-           cer_main.setRelationship("diableavionics", 1.0F);
-           if (Global.getSettings().getBoolean("DiableCorp")) {
-               Alliance ceralli = AllianceManager.createAlliance("da_cer", "diableavionics", AllianceManager.getBestAlignment("da_cer", "diableavionics"));
-               ceralli.setName(Global.getSettings().getString("diableavionics", "cer_DiableCorp"));
-               ceralli.addPermaMember("da_cer");
-               ceralli.addPermaMember("diableavionics");
-           }
-           cer_main.setRelationship("player", Global.getSector().getPlayerFaction().getRelationship("diableavionics"));
-           if (Global.getSettings().getModManager().isModEnabled("nexerelin")) {
-               NexFactionConfig factionConfig = NexConfig.getFactionConfig("da_cer");
-               if (!DiplomacyManager.isRandomFactionRelationships()) {
-                   factionConfig.minRelationships.clear();
-                   factionConfig.minRelationships.put("diableavionics", 0.251F);
-               }
-               for (Map.Entry<String, Float> entry : factionConfig.startRelationships.entrySet()) {
-                   if ("da_cer".equals(entry.getKey()))
-                       continue;
-                   cer_main.setRelationship(entry.getKey(), entry.getValue());
-               }
-               if ("da_cer".equals(PlayerFactionStore.getPlayerFactionIdNGC()) || "diableavionics".equals(PlayerFactionStore.getPlayerFactionIdNGC()))
-                   cer_main.setRelationship("diableavionics", 0.75F);
-           }
-       }
-    //cerGen.spawn1stfleet();
-    //cerGen.spawn2ndfleet();
-    //cerGen.spawn3rdfleet();
-    //cerGen.spawn4thfleet();
+
+    public static void cer_main(SectorAPI sector) {
+
+        if (Global.getSettings().getBoolean("DiableCorp")) {
+
+            Alliance alliance = AllianceManager.getFactionAlliance("da_cer");
+
+            if (alliance == null || !alliance.getMembersCopy().contains("diableavionics")) {
+                alliance = AllianceManager.createAlliance(
+                        "da_cer",
+                        "diableavionics",
+                        AllianceManager.getBestAlignment("da_cer", "diableavionics")
+                );
+            }
+
+            // ✅ Only operate if alliance is non-null
+            if (alliance != null) {
+                alliance.setName(Global.getSettings().getString("diableavionics", "cer_DiableCorp"));
+                alliance.addPermaMember("da_cer");
+                alliance.addPermaMember("diableavionics");
+            } else {
+                // Optional: log a warning if creation failed
+                Global.getLogger(CorvidSubsidiaryScript.class).warn(
+                        "Failed to create alliance between da_cer and diableavionics"
+                );
+            }
+
+            // Forced relationship
+            sector.getFaction("da_cer").setRelationship("diableavionics", 1.0f);
+        }
+    }
+
     //1st Grand Defense Fleet - Pina Colada Fleet
     public static void spawn1stfleet() {
-        //settle for the largest military market
+        //Spawn Location
         SectorEntityToken target = null;
-//Spawn Location
-        for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
-            if (m.getFaction().getId().equals("da_cer")) {
-                if (target == null
-                        || (m.hasSubmarket(Submarkets.GENERIC_MILITARY) && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY)
-                        || m.getSize() > target.getMarket().getSize()))) {
-                    target = m.getPrimaryEntity();
-                }
-            }
-        }
-//Defense Location
-        for (MarketAPI m2 : Global.getSector().getEconomy().getMarketsCopy()) {
-            if (m2.getFaction().getId().equals("da_cer")) {
-                if (target == null
-                        || (m2.hasSubmarket(Submarkets.GENERIC_MILITARY) && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY)
-                        || m2.getSize() > target.getMarket().getSize()))) {
-                    target = m2.getPrimaryEntity();
+        if (Global.getSector().getEntityById("OT_a") != null && Global.getSector().getEntityById("OT_a").getFaction() == Global.getSector().getFaction("da_cer")) {
+            target = Global.getSector().getEntityById("OT_a");
+        } else {
+            //settle for the largest military market
+            for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
+                if (m.getFaction().getId().equals("da_cer")) {
+                    if (target == null || (m.hasSubmarket(Submarkets.GENERIC_MILITARY)
+                            && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY) || m.getSize() > target.getMarket().getSize()))) {
+                        target = m.getPrimaryEntity();
+                    }
                 }
             }
         }
         if (target != null) {
             //magiccaptain
-
+            
             PersonAPI FleetCaptain = MagicCampaign.createCaptainBuilder("da_cer")
                     .setFirstName(Diableavionics_stringsManager.txt("1stFleetFN"))
                     .setLastName(Diableavionics_stringsManager.txt("1stFleetLN"))
@@ -158,7 +151,7 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setGender(FullName.Gender.MALE)
                     .setRankId(Ranks.SPACE_ADMIRAL)
                     .setPostId(Ranks.POST_FLEET_COMMANDER)
-                    .setPersonality(Personalities.STEADY)
+                    .setPersonality(Personalities.AGGRESSIVE)
                     .setLevel(8)
                     .setEliteSkillsOverride(3)
                     .setSkillPreference(OfficerManagerEvent.SkillPickPreference.NO_ENERGY_YES_BALLISTIC_YES_MISSILE_YES_DEFENSE)
@@ -177,7 +170,7 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setMinFP(400)
                     .setReinforcementFaction("da_cer")
                     .setQualityOverride(2f)
-                    .setAssignment(FleetAssignment.DEFEND_LOCATION)
+                    .setAssignment(FleetAssignment.ORBIT_AGGRESSIVE)
                     .setAssignmentTarget(target)
                     .setSpawnLocation(target)
                     .setIsImportant(false)
@@ -186,21 +179,25 @@ public class cerGen implements SectorGeneratorPlugin {
 
             dacer1stfleet.setDiscoverable(false);
             dacer1stfleet.addTag(Tags.NEUTRINO);
-            //gulf.getFlagship().getStats().getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyFlat(Diableavionics_ids.UNIQUE, -2000f);
+            dacer1stfleet.getFlagship().getStats().getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyFlat(Diableavionics_ids.UNIQUE, -2000f);
             dacer1stfleet.getMemoryWithoutUpdate().set("$dacer_1stfleet", true);
+            Global.getSector().getMemoryWithoutUpdate().set("$dacer_1stfleet", dacer1stfleet);
         }
     }
     //2nd Counter Attack Fleet -
     public static void spawn2ndfleet() {
-        //settle for the largest military market
+        //Spawn Location
         SectorEntityToken target = null;
-
-        for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
-            if (m.getFaction().getId().equals("da_cer")) {
-                if (target == null
-                        || (m.hasSubmarket(Submarkets.GENERIC_MILITARY) && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY)
-                        || m.getSize() > target.getMarket().getSize()))) {
-                    target = m.getPrimaryEntity();
+        if (Global.getSector().getEntityById("OT_a") != null && Global.getSector().getEntityById("OT_a").getFaction() == Global.getSector().getFaction("da_cer")) {
+            target = Global.getSector().getEntityById("OT_a");
+        } else {
+            //settle for the largest military market
+            for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
+                if (m.getFaction().getId().equals("da_cer")) {
+                    if (target == null || (m.hasSubmarket(Submarkets.GENERIC_MILITARY)
+                            && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY) || m.getSize() > target.getMarket().getSize()))) {
+                        target = m.getPrimaryEntity();
+                    }
                 }
             }
         }
@@ -215,7 +212,7 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setGender(FullName.Gender.MALE)
                     .setRankId(Ranks.SPACE_ADMIRAL)
                     .setPostId(Ranks.POST_FLEET_COMMANDER)
-                    .setPersonality(Personalities.STEADY)
+                    .setPersonality(Personalities.AGGRESSIVE)
                     .setLevel(8)
                     .setEliteSkillsOverride(0)
                     .setSkillPreference(OfficerManagerEvent.SkillPickPreference.NO_ENERGY_YES_BALLISTIC_YES_MISSILE_YES_DEFENSE)
@@ -228,13 +225,13 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setFleetType(FleetTypes.TASK_FORCE)
                     .setFlagshipName(txt("2ndFlagship"))
                     .setFlagshipAlwaysRecoverable(false)
-                    .setFlagshipVariant("diable_chieftain_cer_Flagship")
+                    .setFlagshipVariant("diable_riptide_EX_Standard")
                     .setFlagshipAutofit(false)
                     .setCaptain(FleetCaptain)
                     .setMinFP(400)
                     .setReinforcementFaction("da_cer")
                     .setQualityOverride(2f)
-                    .setAssignment(FleetAssignment.PATROL_SYSTEM)
+                    .setAssignment(FleetAssignment.DEFEND_LOCATION)
                     .setAssignmentTarget(target)
                     .setSpawnLocation(target)
                     .setIsImportant(false)
@@ -243,21 +240,25 @@ public class cerGen implements SectorGeneratorPlugin {
 
             dacer2ndfleet.setDiscoverable(false);
             dacer2ndfleet.addTag(Tags.NEUTRINO);
-            //gulf.getFlagship().getStats().getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyFlat(Diableavionics_ids.UNIQUE, -2000f);
+            dacer2ndfleet.getFlagship().getStats().getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyFlat(Diableavionics_ids.UNIQUE, -2000f);
             dacer2ndfleet.getMemoryWithoutUpdate().set("$dacer_2ndfleet", true);
+            Global.getSector().getMemoryWithoutUpdate().set("$dacer_2ndfleet", dacer2ndfleet);
         }
     }
     //3rd Fast Attack Fleet -
     public static void spawn3rdfleet() {
-        //settle for the largest military market
+        //Spawn Location
         SectorEntityToken target = null;
-
-        for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
-            if (m.getFaction().getId().equals("da_cer")) {
-                if (target == null
-                        || (m.hasSubmarket(Submarkets.GENERIC_MILITARY) && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY)
-                        || m.getSize() > target.getMarket().getSize()))) {
-                    target = m.getPrimaryEntity();
+        if (Global.getSector().getEntityById("OT_a") != null && Global.getSector().getEntityById("OT_a").getFaction() == Global.getSector().getFaction("da_cer")) {
+            target = Global.getSector().getEntityById("OT_a");
+        } else {
+            //settle for the largest military market
+            for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
+                if (m.getFaction().getId().equals("da_cer")) {
+                    if (target == null || (m.hasSubmarket(Submarkets.GENERIC_MILITARY)
+                            && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY) || m.getSize() > target.getMarket().getSize()))) {
+                        target = m.getPrimaryEntity();
+                    }
                 }
             }
         }
@@ -272,7 +273,7 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setGender(FullName.Gender.MALE)
                     .setRankId(Ranks.SPACE_ADMIRAL)
                     .setPostId(Ranks.POST_FLEET_COMMANDER)
-                    .setPersonality(Personalities.STEADY)
+                    .setPersonality(Personalities.AGGRESSIVE)
                     .setLevel(8)
                     .setEliteSkillsOverride(3)
                     .setSkillPreference(OfficerManagerEvent.SkillPickPreference.NO_ENERGY_YES_BALLISTIC_YES_MISSILE_YES_DEFENSE)
@@ -285,64 +286,7 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setFleetType(FleetTypes.PATROL_MEDIUM)
                     .setFlagshipName(txt("3rdFlagship"))
                     .setFlagshipAlwaysRecoverable(false)
-                    .setFlagshipVariant("diable_chieftain_cer_Standard")
-                    .setFlagshipAutofit(false)
-                    .setCaptain(FleetCaptain)
-                    .setMinFP(150)
-                    .setReinforcementFaction("da_cer")
-                    .setQualityOverride(2f)
-                    .setAssignment(FleetAssignment.PATROL_SYSTEM)
-                    .setAssignmentTarget(target)
-                    .setSpawnLocation(target)
-                    .setIsImportant(false)
-                    .setTransponderOn(true)
-                    .create();
-
-            dacer3rdfleet.setDiscoverable(false);
-            dacer3rdfleet.addTag(Tags.NEUTRINO);
-            //gulf.getFlagship().getStats().getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyFlat(Diableavionics_ids.UNIQUE, -2000f);
-            dacer3rdfleet.getMemoryWithoutUpdate().set("$dacer_3rdfleet", true);
-        }
-    }
-    //4th Spec Ops Fleet -
-    public static void spawn4thfleet() {
-        //settle for the largest military market
-        SectorEntityToken target = null;
-
-        for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
-            if (m.getFaction().getId().equals("da_cer")) {
-                if (target == null
-                        || (m.hasSubmarket(Submarkets.GENERIC_MILITARY) && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY)
-                        || m.getSize() > target.getMarket().getSize()))) {
-                    target = m.getPrimaryEntity();
-                }
-            }
-        }
-
-        if (target != null) {
-            //magiccaptain
-
-            PersonAPI FleetCaptain = MagicCampaign.createCaptainBuilder("da_cer")
-                    .setFirstName(Diableavionics_stringsManager.txt("4thFleetFN"))
-                    .setLastName(Diableavionics_stringsManager.txt("4thFleetLN"))
-                    .setPortraitId("cer_4thFleetCaptain")
-                    .setGender(FullName.Gender.MALE)
-                    .setRankId(Ranks.SPACE_ADMIRAL)
-                    .setPostId(Ranks.POST_FLEET_COMMANDER)
-                    .setPersonality(Personalities.STEADY)
-                    .setLevel(8)
-                    .setEliteSkillsOverride(3)
-                    .setSkillPreference(OfficerManagerEvent.SkillPickPreference.NO_ENERGY_YES_BALLISTIC_YES_MISSILE_YES_DEFENSE)
-                    .create();
-
-            //Fleet creation code
-            CampaignFleetAPI dacer4thfleet = MagicCampaign.createFleetBuilder()
-                    .setFleetFaction("da_cer")
-                    .setFleetName(txt("4thFleet"))
-                    .setFleetType(FleetTypes.PATROL_SMALL)
-                    .setFlagshipName(txt("4thFlagship"))
-                    .setFlagshipAlwaysRecoverable(false)
-                    .setFlagshipVariant("diable_chieftain_cer_Standard")
+                    .setFlagshipVariant("diable_haze_cer_Standard")
                     .setFlagshipAutofit(false)
                     .setCaptain(FleetCaptain)
                     .setMinFP(200)
@@ -355,11 +299,81 @@ public class cerGen implements SectorGeneratorPlugin {
                     .setTransponderOn(true)
                     .create();
 
-            dacer4thfleet.setDiscoverable(false);
-            dacer4thfleet.addTag(Tags.NEUTRINO);
-            //gulf.getFlagship().getStats().getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyFlat(Diableavionics_ids.UNIQUE, -2000f);
-            dacer4thfleet.getMemoryWithoutUpdate().set("$dacer_4thfleet", true);
+            dacer3rdfleet.setDiscoverable(false);
+            dacer3rdfleet.addTag(Tags.NEUTRINO);
+            dacer3rdfleet.getFlagship().getStats().getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyFlat(Diableavionics_ids.UNIQUE, -2000f);
+            dacer3rdfleet.getMemoryWithoutUpdate().set("$dacer_3rdfleet", true);
+            Global.getSector().getMemoryWithoutUpdate().set("$dacer_3rdfleet", dacer3rdfleet);
         }
     }
+    //4th Spec Ops Fleet -
+    public static void spawn4thfleet() {
+        //Spawn Location
+        SectorEntityToken target = null;
+        if (Global.getSector().getEntityById("OT_a") != null && Global.getSector().getEntityById("OT_a").getFaction() == Global.getSector().getFaction("da_cer")) {
+            target = Global.getSector().getEntityById("OT_a");
+        } else {
+            //settle for the largest military market
+            for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
+                if (m.getFaction().getId().equals("da_cer")) {
+                    if (target == null || (m.hasSubmarket(Submarkets.GENERIC_MILITARY)
+                            && (!target.getMarket().hasSubmarket(Submarkets.GENERIC_MILITARY) || m.getSize() > target.getMarket().getSize()))) {
+                        target = m.getPrimaryEntity();
+                    }
+                }
+            }
+        }
 
+        if (target != null) {
+            //magiccaptain
+            Map<String, Integer> skills = new HashMap<>();
+            skills.put(Skills.HELMSMANSHIP, 2);
+            skills.put(Skills.FIELD_MODULATION, 2);
+            skills.put(Skills.COMBAT_ENDURANCE, 2);
+            skills.put(Skills.ENERGY_WEAPON_MASTERY, 2);
+            skills.put(Skills.TARGET_ANALYSIS, 2);
+
+            PersonAPI FleetCaptain = MagicCampaign.createCaptainBuilder("da_cer")
+                    .setIsAI(true)
+                    .setAICoreType(cer_ids.CYANCORE_CHIP) // was setAICoreId
+                    .setFirstName("Cyan")
+                    .setLastName("Sentinel-Warden")
+                    .setPortraitId("cyancore")
+                    .setGender(FullName.Gender.MALE)
+                    .setFactionId("da_cer")
+                    .setRankId(Ranks.SPACE_ADMIRAL)
+                    .setPostId(Ranks.POST_GUARD_LEADER)
+                    .setPersonality(Personalities.AGGRESSIVE)
+                    .setLevel(5)
+                    .setSkillLevels(skills)
+                    .create();
+
+            //Fleet creation code
+            org.magiclib.campaign.MagicFleetBuilder fleetBuilder = MagicCampaign.createFleetBuilder();
+            fleetBuilder.setFleetFaction("da_cer");
+            fleetBuilder.setFleetName(txt("4thFleet"));
+            fleetBuilder.setFleetType(FleetTypes.PATROL_SMALL);
+            fleetBuilder.setFlagshipName(txt("4thFlagship"));
+            fleetBuilder.setFlagshipAlwaysRecoverable(false);
+            fleetBuilder.setFlagshipVariant("diable_calm_EX_Flagship");
+            fleetBuilder.setFlagshipAutofit(false);
+            fleetBuilder.setCaptain(FleetCaptain);
+            fleetBuilder.setMinFP(150);
+            fleetBuilder.setReinforcementFaction("da_cer");
+            fleetBuilder.setQualityOverride(2f);
+            fleetBuilder.setAssignment(FleetAssignment.PATROL_SYSTEM);
+            fleetBuilder.setAssignmentTarget(target);
+            fleetBuilder.setSpawnLocation(target);
+            fleetBuilder.setIsImportant(false);
+            fleetBuilder.setTransponderOn(false);
+            CampaignFleetAPI dacer4thfleet = fleetBuilder
+                    .create();
+
+            dacer4thfleet.setDiscoverable(false);
+            dacer4thfleet.addTag(Tags.NEUTRINO);
+            dacer4thfleet.getFlagship().getStats().getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyFlat(Diableavionics_ids.UNIQUE, -2000f);
+            dacer4thfleet.getMemoryWithoutUpdate().set("$dacer_4thfleet", true);
+            Global.getSector().getMemoryWithoutUpdate().set("$dacer_4thfleet", dacer4thfleet);
+        }
+    }
 }

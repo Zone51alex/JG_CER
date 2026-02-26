@@ -7,6 +7,7 @@ import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.util.IntervalUtil;
 import data.scripts.util.Diableavionics_stringsManager;
 import data.scripts.util.MagicAnim;
+import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 
@@ -21,7 +22,8 @@ public class diableavionics_KaijuDriveStats2 extends BaseShipSystemScript {
     public static float SHIELD_BONUS_TURN = 2.0f;
     public static float MAX_AMMO = 2.0f;
     public static float MAX_AMMO_REGEN = 8.0f;
-    private static float ROF_BONUS_PERCENT = 100, BEAM_BONUS_PERCENT = 100, FLUX_REDUCTION = 0.8f;
+    private static float ROF_BONUS_PERCENT = 100;
+    private static float FLUX_REDUCTION = 0.8f;
 
     private final IntervalUtil effectInterval = new IntervalUtil(0.1f, 0.1f);
 
@@ -38,10 +40,12 @@ public class diableavionics_KaijuDriveStats2 extends BaseShipSystemScript {
 
             effectInterval.advance(Global.getCombatEngine().getElapsedInLastFrame());
             if (effectInterval.intervalElapsed()) {
-                ship.addAfterimage(new Color(100, 255, 100, 80), 0.0F, 0.0F, -(ship.getVelocity()).x, -(ship.getVelocity()).y, 0.0F, 0.0F, 0.5F, 0.0F, false, false, false);
+                Vector2f vel = new Vector2f(ship.getVelocity());
+                ship.addAfterimage(new Color(100, 255, 100, 80), 0.0F, 0.0F, -vel.x, -vel.y, 0.0F, 0.0F, 0.5F, 0.0F, false, false, false);
             }
         }
 
+        float BEAM_BONUS_PERCENT = 100;
         float beamPercent = BEAM_BONUS_PERCENT * effectLevel;
         stats.getBeamWeaponDamageMult().modifyPercent(id, beamPercent);
 
