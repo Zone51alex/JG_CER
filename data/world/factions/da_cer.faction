@@ -481,14 +481,13 @@
 	
 	  "music": {
     "theme": "cer_market_interaction_neutral",
-	"Combat": "Custom_music_cer_combat",
+	#"Combat": "Custom_music_cer_combat",
     "market_neutral": "cer_market_interaction_neutral",
     "market_hostile": "cer_market_interaction_hostile",
     "market_friendly": "cer_market_interaction_friendly",
     "encounter_neutral": "cer_market_interaction_neutral",
     "encounter_hostile": "cer_market_interaction_hostile",
     "encounter_friendly": "cer_market_interaction_friendly",
-	
   },
   
 	"portraits":{

@@ -54,7 +54,7 @@
             "ideological":-1
     },
 	
-	"colonyExpeditionChance":0.00,	# we can't colonize anything Diable avionics Forbids it.
+	"colonyExpeditionChance":0.00,	
 	
 	"isPirateNeutral":false,
 	
@@ -109,23 +109,22 @@
         ["diable_gust_EX_Flagship", "diableavionics_rime_standard"],
 		["diable_pandemonium_EX_Flagship", "diableavionics_rime_standard"],
 		["diable_goblin_EX_Flagship", "diable_vapor_cer_Close_Quarter", "diable_vapor_cer_Close_Quarter", "diableavionics_rime_standard"],
-		["diable_haze_EX_Standard"],
+		["diable_haze_EX_Standard"]
 	],
 			
     "startSpecialItems": [
         [["diableavionics_ship_package", ""]],
         [["diableavionics_weapon_package", ""]],
         [["diableavionics_wanzer_package", ""]],
-		[["diable_cer_package", ""]],
+		[["diable_cer_package", ""]]
     ],
 	
 	"defenceStations":[
         {"ids":["diableavionics_orbitalstation", "diableavionics_battlestation", "diableavionics_starfortress"]},
     ],
-	
 	    "industrySeeds":[
         {"id":"orbitalworks", "mult":0.1},
         {"id":"militarybase", "mult":0.2},
-        {"id":"fuelprod", "mult":0.05},
+        {"id":"fuelprod", "mult":0.05}
     ],
 }

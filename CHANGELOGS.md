@@ -3,6 +3,8 @@
 Version 0.1.0
 - Added Cyan Sentinel-Warden.
 - Added The Pulsar Twin Lance.
+- Fixed Combat music Missing Crash with unhelpful error.
+- refractored alot of the code in Corvid.
 
 Version 0.0.11
 - Fixing LunaSettings Error.

@@ -55,9 +55,7 @@
 			"diable_burst_Assault":1,
             "diable_burst_Energy":1,
             "diable_burst_Standard":1,
-			"diable_burst_Support":1,
-			
-			
+			"diable_burst_Support":1,	
 	},
 	"combatLarge":{
 
