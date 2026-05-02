@@ -1,6 +1,9 @@
 {
 	"DiableCorp": true, #im not Really a good Java Coder at all, i need Guidence first.
 	
+	"ruleCommandPackages":[
+        "data.campaign.rulecmd",
+	],
 	"graphics": {
 		
 	"characters":{

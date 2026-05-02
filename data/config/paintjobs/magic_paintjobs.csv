@@ -38,7 +38,7 @@ CPW_superrime_EX_Expanded,diable_superrime_EX,Expanded,snowblast,graphics/jg/shi
 #EX Magicpaintjob Support Diable,,,,,,,,
 ,,,,,,,,
 CPW_superrime_EX_standard_new,diable_superrime_EX,Diable,diable,graphics/da/ships/diableavionics_rime_military_EX_standard.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
-CPW_Storm_EX_Standard,diable_storm_EX,Diable,diable,graphics/da/ships/diableavionics_storm.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
+CPW_Storm_EX_Standard,diable_storm_EX,Diable,diable,graphics/da/ships/diableavionics_storm_old.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
 CPW_Calm_EX_Standard,diable_calm_EX,Diable,diable,graphics/da/ships/diableavionics_calm_deck.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
 CPW_Pandemonium_EX_DA,diable_pandemonium_EX,Diable,diable,graphics/da/ships/diableavionics_pandemonium.png,TRUE,,Unlocked by Default.,Use Diable Standard Sprite.
 ,,,,,,,,

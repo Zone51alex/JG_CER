@@ -64,6 +64,34 @@ FireAll PopulateOptions","""You have been scanned and identified. It's probably 
 flavorTextMarketOnuo,TradePanelFlavorText,"$global.tradePanelMode == MARKET
 $id == OT_a score:1000","AddText""The Planet is Dotted in so many Drydocks and Hangars, organized in rows of rows churning out Ships left and right, your flagship is being escorted to a Hangar with Obsolete Systems and Pristine Equipement.""textGrayColor",,,
 #END Onuo Market Dialogue,,,,,,
+#Cyan AI Add to fleet,,,,,,
+cer_cyanMarketComms,PlayerInitiatesComm,"$id == cer_cyanai
+!$globa.cer_ship_used","cer_IchipShipCommand
+FireAll PopulateOptions","""A cyan-hulled vessel is attempting to contact you.""","0:cer_CyanjoinIntro:""Hello""",
+,,,,,,
+,,,,,,
+cer_startGreetingCyan,PickGreeting,"$id == cer_cyanai score:100
+$player.metSolarisSuru",ShowPersonVisual,"""Directive received. Establishing link.""","0:cer_CyanjoinIntro:""Continue""
+1:cutCommLink:""Leave""",
+cer_CyanjoinIntro,DialogOptionSelected,"$option == cer_CyanjoinIntro
+$market.cer_cyan_available == true
+!$global.cer_ship_used","ShowPersonVisual
+cer_IchipShipCommand","""Directive acknowledged. Presenting assigned vessel configuration.""","0:cer_HullCyanjoinPreview:""show the ship""
+",
+cer_HullCyanjoinPreview,DialogOptionSelected,$option == cer_HullCyanjoinPreview,"ShowPersonVisual
+cer_shipShow $cer_ship_ref","""Acknowledged. Awaiting integration authorization.""","0:cer_CyanjoinAccept:""Yes""
+1:cer_CyanjoinReject:""No""",
+cer_CyanjoinAccept,DialogOptionSelected,$option == cer_CyanjoinAccept ,"ShowPersonVisual
+cer_IchipAddToFleet
+$cer_cyan_available
+$cer_ship_used
+FireAll PopulateOptions","""Acknowledged. Initializing integration sequence.""",0:cutCommLink:Cut the comm link,
+cer_CyanjoinReject,DialogOptionSelected,$option == cer_CyanjoinReject,"ShowPersonVisual
+FireAll PopulateOptions",Understood. Maintaining current position.,,
+cer_CyanjoinExit ,DialogOptionSelected,$option == cer_CyanjoinExit,"ShowPersonVisual
+FireAll PopulateOptions","""Very well. Standing by.""",,
+,,,,,,
+#END Cyan AI Add to fleet,,,,,,
 ,,,,,,
 # Grand Admiral - Mordrigg Dragonstein V,,,,,,
 cer_defaultGreetingMord,PickGreeting,"$id == cer_lead score:100
@@ -72,40 +100,129 @@ cer_startGreetingMord,PickGreeting,"$id == cer_lead score:100
 $player.RecommendMord","ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","""Why Hello There, what do you need ?""",0:cutCommLinkPolite:Cut the comm link,
-cer_receiveContactMord,PopulateOptions,"$id == cer_lead
-!$cer_MordContact",,,"1:cer_MordContactOption:""I was told your department offers work.""",
-cer_addMordasContact,DialogOptionSelected,"$option == cer_MordContactOption
-RepGTE da_cer FRIENDLY","FireAll PopulateOptions
-AddPotentialContact
-$cer_MordContact = true
-","""Add Potential Contact""",,
-cer_denyMordContact,DialogOptionSelected,"$option == cer_MordContactOption
-RepLTE da_cer FRIENDLY",FireAll PopulateOptions,"""deny Potential Contact""",,
 #END Grand Admiral - Mordrigg Dragonstein V,,,,,,
 ,,,,,,
 # Grand Engineer - Taio Lunaria,,,,,,
+,,,,,,
+# DevMode Vars Clears,,,,,,
+cer_DevClearVars1,PopulateOptions,"$id == cer_engie
+$player.RecommendTaio
+$cerProd_active == true
+$global.isDevMode",,,"0:cer_DevClearVars2:""Something Broke Clear the Variables !""",
+cer_DevClearVars2,DialogOptionSelected,$option == cer_DevClearVars2,"ShowPersonVisual
+$cer_Ship_variant = null
+$cer_Ship_price = 0
+$cer_Ship_prodDays = 0
+
+$cerProd_shipVariant = null
+$cerProd_prodDays = 0
+$cerProd_market = null
+$cerProd_cost = 0
+$cerProd_cargo = null
+$cerProd_active = false
+
+$cerConv_sourceHull = null
+$cerConv_targetHull = null
+
+$cer_ship_ref = null
+$cer_ship_source = null
+$cerProd_input_hull = null
+FireAll PopulateOptions","""All production/conversion variables have been cleared.""",,
+#END DevMode Vars Clears,,,,,,
+,,,,,,
+# Custom Production Contract,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+#END Custom Production Contract,,,,,,
+,,,,,,
 cer_defaultGreetingTaio,PickGreeting,"$id == cer_engie score:100
 !$player.RecommendTaio",,"After a short wait, your connection request is denied.",0:cutCommLink:Cut the comm link,
 cer_startGreetingTaio,PickGreeting,"$id == cer_engie score:100
+$cerProd_prodDays < 0
 $player.RecommendTaio","ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","""Oi, What do you need ? """,0:cutCommLink:Cut the comm link,
-cer_ShipBlurb,cer_Ship_blurb,$id == cer_engie,,"""I have a surplus $cer_Ship_hullSize available. Military-grade hull, good quality. Interested?""",,
-cer_ShipOfferOption,cer_Ship_option,$id == cer_engie,,,cer_Ship_start:Ask about the $cer_Ship_hullSize,
-cer_ShipOfferTextContact,DialogOptionSelected,"$id == cer_engie
-$option == cer_Ship_start","$missionId = cer_Ship
-SetTextHighlights $cer_Ship_price","""It's a $cer_Ship_hullClass $cer_Ship_hullSize in good condition. I could find another buyer, but I wanted to make the offer to you first- $sShip_price credits for the ship.""","cer_Ship_look:Ask for detailed info on the ship
-contact_decline:Decline",
-cer_ShipLookAtFreighter,DialogOptionSelected,"$id == cer_engie
-$option == cer_Ship_look","Call $sShip_ref showShip
-DoCanAffordCheck $sShip_price contact_accept false",$personName taps a few keys to summon the ship specifications for your examination.,"contact_accept:Buy the $cer_Ship_hullSize for $cer_Ship_price credits
-contact_decline:Decline",
-cer_ShipPostAccept,ContactPostAccept,"$id == cer_engie
-$missionId == cer_Ship","ShowPersonVisual
-RemoveCommodity credits $cer_Ship_price
-AddShip $cer_Ship_member
-Call $cer_Ship_ref2 repSuccess
-Call $cer_Ship_ref2 addContacts",,,
+cer_busyGreetingTaio,PickGreeting,"$id == cer_engie
+$player.RecommendTaio
+$cerProd_active == true","FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","""Oi, I'm a bit busy with one of your Jobs now. Come back later.""",0:cutCommLink:Cut the comm link,
+,,,,,,
+# Recommend Cyan,,,,,,
+cer_AskRecommendCyan,PopulateOptions,"$id == cer_engie
+!$player.RecommendCyan
+RepGTE da_cer FRIENDLY
+!$cer_ship_used",,,"0:cer_askforCyan:""Ask for the Weird AI on your Desk""",
+cer_unlockCyan,DialogOptionSelected,"$option == cer_askforCyan
+RepGTE da_cer FRIENDLY
+","$player.RecommendCyan  = true
+AddTextSmall ""A new signal is now available in the local comm network.""
+cer_SpawnCyanMarket
+ShowPersonVisual
+FireAll PopulateOptions","""Access granted $PersonRank $personLastName.""","0:cutCommLink:""Understood""",
+cer_askforCyanDenied,DialogOptionSelected,$option == cer_askforCyan,FireAll PopulateOptions,"""""""Nah, $PersonRank $personLastName, you don't have enough Cred for Acess to Cyan.""""""",,
+#END Recommend Cyan,,,,,,
+,,,,,,
+# Hull Conversion Dialogue,,,,,,
+cer_HullConversionOffers,PopulateOptions,"$id == cer_engie
+$player.RecommendTaio
+$IsDevMode",,,"0:cer_HullConversionIntro:""Ask for the Hull Conversion Services""",
+,,,,,,
+,,,,,,
+cer_HullConversionIntro,DialogOptionSelected,$option == cer_HullConversionIntro,,"""Ah, I can convert certain hulls into specialized variants. Show me what you want to convert.""","0:cer_HullConversionSelect:""Select a hull from your fleet""
+1:cer_HullConversionExit:""Nevermind""",
+cer_HullConversionSelect,DialogOptionSelected,$option == cer_HullConversionSelect,cer_EXShipService showPickerConvert,"""Select one of your ships that can be converted.""","0:cer_HullConversionPreview:""Preview the conversion""
+1:cer_HullConversionExit:""Cancel""",
+cer_HullConversionPreview,DialogOptionSelected,$option == cer_HullConversionPreview,cer_HullConversion previewConversion,"""Here is how your ship would look after conversion. Do you wish to proceed?""","0:cer_HullConversionAccept:""Yes, convert it""
+1:cer_HullConversionReject:""No, cancel""",
+cer_HullConversionAccept,DialogOptionSelected,$option == cer_HullConversionAccept,"ShowPersonVisual
+cer_StartProduction
+FireAll PopulateOptions","""Conversion started. The ship will appear in storage once complete.""",0:cutCommLink:Cut the comm link,
+cer_HullConversionReject,DialogOptionSelected,$option == cer_HullConversionReject,"ShowPersonVisual
+FireAll PopulateOptions","""Very well. Maybe another time.""",,
+cer_HullConversionExit ,DialogOptionSelected,$option == cer_HullConversionExit,"ShowPersonVisual
+FireAll PopulateOptions","""Very well.""",,
+,,,,,,
+#END Hull Conversion Dialogue,,,,,,
+,,,,,,
+# EX Ship Offers,,,,,,
+cer_TaioShipOffers,PopulateOptions,"$id == cer_engie
+$player.RecommendTaio
+$IsDevMode",,,"0:cer_EXShipService:""Ask about The EXperimental Ship Service""",
+,,,,,,
+# Goblin EX,,,,,,
+cer_EXShipService,DialogOptionSelected,$option == cer_EXShipService,"
+","""Here's the Goblin EX frigate. I can have one built for $cer_Ship_price credits.""","0:cer_EXShipServiceLook:View specs
+1:cer_EXShipServiceAccept:Yes, build it
+2:cer_ExitEXShipServiceOffer:No thanks",
+cer_EXShipServiceLook,DialogOptionSelected,$option == cer_EXShipServiceLook,"cer_shipShow $cer_Ship_variant 
+DoCanAffordCheck $cer_Ship_price cer_EXShipGoblinAccept false",$personName taps a few keys to summon the ship specifications for your examination.,"0:cer_EXShipGoblinAccept:Yes, build it
+1:cer_ExitGoblinOffer:No thanks",
+cer_EXShipServiceAccept,DialogOptionSelected,$option == cer_EXShipServiceAccept,"ShowPersonVisual
+$cer_Ship_price
+$cerProd_shipVariant = $cer_Ship_variant
+$cerProd_prodDays = $cer_Ship_prodDays
+$cerProd_market = $entity
+cer_StartProduction
+
+$cer_Ship_variant = null
+$cer_Ship_price = null
+$cer_Ship_prodDays = null
+FireAll PopulateOptions","""Production has begun. The ship will be delivered to storage when completed.""",0:cutCommLink:Cut the comm link,
+cer_EXShipServiceOffer,DialogOptionSelected,$option == cer_ExitEXShipServiceOffer,"ShowPersonVisual
+
+$cer_Ship_variant = null
+$cer_Ship_price = 0
+$cer_Ship_prodDays = 0
+$cerProd_shipVariant = null
+$cerProd_prodDays = 0
+$cerProd_market = null
+FireAll PopulateOptions","""Very well.""",,
+#END Goblin EX,,,,,,
+,,,,,,
+#END Ship Offers,,,,,,
+,,,,,,
 #END Grand Engineer - Taio Lunaria,,,,,,
 ,,,,,,
 # Lead Secretary - Suru Solaris,,,,,,
@@ -123,30 +240,32 @@ AddText ""\""Welcome, i was waiting for you to Come and Introduce yourself.\""""
 SetShortcut cutCommLinkPolite ""ESCAPE""",,0:cutCommLinkPolite:Cut the comm link,
 cer_receiveContactSuru,PopulateOptions,"$id == cer_assist
 !$cer_SuruContact",,,"10:cer_SuruContactOption:""I was told you gave work.""",
-cer_addcontactSuru,DialogOptionSelected,$option == cer_SuruContactOption,"AddPotentialContact
+cer_addcontactSuru,DialogOptionSelected,"$option == cer_SuruContactOption
+RepGTE da_cer FRIENDLY","AddPotentialContact
 $cer_SuruContact = true
 FireAll PopulateOptions","""Add Potential Contact""",,
-cer_denycontactSuru,DialogOptionSelected,$option == cer_SuruContactOption,FireAll PopulateOptions,"""deny Potential Contact""",,
+cer_denycontactSuru,DialogOptionSelected,"$option == cer_SuruContactOption
+RepLTE da_cer FRIENDLY",FireAll PopulateOptions,"""deny Potential Contact""",,
 cer_AskRecommendTaio,PopulateOptions,"$id == cer_assist
+$cer_SuruContact
 !$player.RecommendTaio
 RepGTE da_cer FRIENDLY",,,"0:cer_askforTaio:""can i talk to Taio ?""",
 cer_recommendTaio,DialogOptionSelected,"$option == cer_askforTaio
-RepGTE da_cer FRIENDLY","FireAll PopulateOptions
-$player.RecommendTaio = true
+RepGTE da_cer FRIENDLY","$player.RecommendTaio = true
 AddTextSmall ""You received recommendation from $PersonRank $personLastName for Taio.""
-ShowPersonVisual","""OK Here you go.""","0:cer_askforTaioDone:""Thank You!""",
-cer_askforTaioDenied,DialogOptionSelected,"$option == cer_askforTaio
-RepLTE da_cer FRIENDLY",FireAll PopulateOptions,"""""""Sorry, $PersonRank $personLastName doesn't think you're ready to get a recommendation for Taio yet.""""""",,
+ShowPersonVisual
+FireAll PopulateOptions
+","""OK Here you go.""","0:cer_askforTaioDone:""Thank You!""",
+cer_askforTaioDenied,DialogOptionSelected,$option == cer_askforTaio,FireAll PopulateOptions,"""""""Sorry, $PersonRank $personLastName doesn't think you're ready to get a recommendation for Taio yet.""""""",,
 cer_askRecommendMord,PopulateOptions,"$id == cer_assist
 !$player.RecommendMord
 RepGTE da_cer FRIENDLY",,,"0:cer_askforMord:""can i talk to Mord ?""",
 cer_recommendMord,DialogOptionSelected,"$option == cer_askforMord
-RepGTE da_cer FRIENDLY","FireAll PopulateOptions
-$player.RecommendMord  = true
+RepGTE da_cer FRIENDLY","$player.RecommendMord  = true
 AddTextSmall ""You received recommendation from $PersonRank $personLastName for Mord.""
-ShowPersonVisual","""OK Here you go.""","0:cer_askforMordDone:""Thank You!""",
-cer_askforMordDenied,DialogOptionSelected,"$option == cer_askforMord
-RepLTE da_cer FRIENDLY",FireAll PopulateOptions,"""""""Sorry, $PersonRank $personLastName doesn't think you're ready to get a recommendation for Mordrigg yet.""""""",,
+ShowPersonVisual
+FireAll PopulateOptions","""OK Here you go.""","0:cer_askforMordDone:""Thank You!""",
+cer_askforMordDenied,DialogOptionSelected,$option == cer_askforMord,FireAll PopulateOptions,"""""""Sorry, $PersonRank $personLastName doesn't think you're ready to get a recommendation for Mordrigg yet.""""""",,
 #END Lead Secretary - Suru Solaris,,,,,,
 #END Onuo Contacts,,,,,,
 ,,,,,,

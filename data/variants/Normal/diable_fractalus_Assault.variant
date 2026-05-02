@@ -1,0 +1,52 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 11,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "diable_fractalus",
+    "hullMods": [
+        "fluxdistributor",
+        "hardenedshieldemitter",
+    ],
+    "permaMods": [
+        
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_fractalus_Assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_plover",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_gravemg",
+                "WS0009": "diableavionics_gravemg",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_micromissile",
+                "WS0006": "diableavionics_micromissile",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_ibis",
+                "WS0004": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

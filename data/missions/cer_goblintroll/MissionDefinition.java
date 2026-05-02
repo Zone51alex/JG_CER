@@ -86,10 +86,10 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		// Reinforcements only matter for large fleets - in this
 		// case, assuming a 100 command point battle size,
 		// both fleets will be able to deploy fully right away.
-		api.addObjective(minX + width * 0.25f + 3000, minY + height * 0.5f, 
-						 "nav_buoy");
-		api.addObjective(minX + width * 0.75f - 3000, minY + height * 0.5f, 
-						 "sensor_array");
+		//api.addObjective(minX + width * 0.25f + 3000, minY + height * 0.5f, 
+		//				 "nav_buoy");
+		//api.addObjective(minX + width * 0.75f - 3000, minY + height * 0.5f, 
+		//				 "sensor_array");
 	}
 
 }

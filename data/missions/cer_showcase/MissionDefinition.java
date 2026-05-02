@@ -62,13 +62,14 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 				api.addToFleet(FleetSide.PLAYER, "diable_calm_cer_Standard", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_versant_cer_Standard", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_vapor_cer_Close_Quarter", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "diable_dagger_Standard", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_eagle_C_Standard", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_raven_C_Standard", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "diable_valiant_C_Standard", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_zephyr_C_Standard", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_brisk_cer_Energy", FleetMemberType.SHIP, false);
 				api.addToFleet(FleetSide.PLAYER, "diable_coanda_cer_Energy", FleetMemberType.SHIP, false);
-				
+							
 		// Mark both ships as essential - losing either one results
 		// in mission failure. Could also be set on an enemy ship,
 		// in which case destroying it would result in a win.

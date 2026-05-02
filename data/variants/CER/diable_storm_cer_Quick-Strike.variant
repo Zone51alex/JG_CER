@@ -1,47 +1,45 @@
 {
     "displayName": "Quick-Strike",
-    "fluxCapacitors": 0,
-    "fluxVents": 11,
+    "fluxCapacitors": 5,
+    "fluxVents": 26,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [
-        "targetingunit",
+        "diableavionics_sniperkit",
     ],
-    "permaMods": [
-        
-    ],
+    "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
     "variantId": "diable_storm_cer_Quick-Strike",
     "weaponGroups": [
         {
             "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "diableavionics_banish",
+                "WS0006": "diableavionics_banish",
+            }
+        },
+        {
+            "autofire": true,
             "mode": "LINKED",
             "weapons": {
                 "WS0010": "diableavionics_microcluster_left",
             }
         },
         {
-            "autofire": false,
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_gravemg",
+            }
+        },
+        {
+            "autofire": true,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "diableavionics_thunderboltpod",
-                "WS0006": "diableavionics_thunderboltpod",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0001": "diable_urn2",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0003": "diableavionics_glaux",
-                "WS0004": "diableavionics_glaux",
+                "WS0003": "diable_mostro2",
+                "WS0004": "diable_mostro2",
             }
         },
         {
@@ -60,8 +58,8 @@
         },
     ],
     "wings": [
-        "diableavionics_avalanche_wing",
-        "diableavionics_avalanche_wing",
+        "diableavionics_warlust_wing",
+        "diableavionics_warlust_wing",
     ],
     "modules": [],
 }

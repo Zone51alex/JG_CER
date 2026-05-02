@@ -1,6 +1,6 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 15,
+    "fluxCapacitors": 13,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_daze_cer",

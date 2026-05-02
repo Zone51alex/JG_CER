@@ -1,0 +1,51 @@
+{
+    "displayName": "Energy",
+    "fluxCapacitors": 20,
+    "fluxVents": 12,
+    "goalVariant": true,
+    "hullId": "diable_fractalus",
+    "hullMods": [
+        "fluxbreakers",
+        "hardenedshieldemitter",
+    ],
+    "permaMods": [
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_fractalus_Energy",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "diableavionics_banishsmall",
+                "WS0006": "diableavionics_banishsmall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "diableavionics_nocturne",
+                "WS0009": "diableavionics_nocturne",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "diableavionics_hexafire",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diableavionics_ibis",
+                "WS0004": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

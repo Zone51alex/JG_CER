@@ -1,0 +1,121 @@
+{
+  "hullName": "Dagger",
+  "hullId": "diable_dagger",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/jg/ships/diableavionics_dagger.png",
+  "style": "HIGH_TECH",
+  "height": 67,
+  "width": 90,
+  "center": [45, 32],
+  "collisionRadius": 51.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 51.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "diable_crampedmissile",
+    "missleracks",
+    "eccm"
+  ],
+  "builtInWeapons": {
+    "WS0004": "diable_microbuiltin",
+    "WS0005": "diable_microbuiltin"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 290,
+      "angle": 0,
+      "locations": [0, -15]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [24, 11]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [24, -11]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 155,
+      "locations": [-12.5, 27]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": -155,
+      "locations": [-12.5, -27]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-29, -0],
+      "length": 40,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-17, 16.5],
+      "length": 25,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "CUSTOM",
+      "styleId": "DiableAvionicsTrail"
+    },
+    {
+      "location": [-17, -16.5],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "CUSTOM",
+      "styleId": "DiableAvionicsTrail"
+    }
+  ],
+  "bounds": [
+    19, -25,
+    26, -26.5,
+    20, -35.5,
+    3, -35.5,
+    -27.5, -44,
+    -24.5, -34,
+    -15, -31,
+    -30.5, -9.5,
+    -30.5, 9.5,
+    -15, 31,
+    -23.5, 34,
+    -27, 44,
+    3, 35.5,
+    20, 35.5,
+    26, 26.5,
+    19, 25,
+    19, 3,
+    34, 1,
+    34, -1,
+    19, -3
+  ]
+}

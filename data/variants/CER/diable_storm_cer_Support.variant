@@ -1,22 +1,20 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 5,
-    "fluxVents": 10,
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [
         "eccm",
     ],
-    "permaMods": [
-        "ML_skinSwap",
-    ],
+    "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
     "variantId": "diable_storm_cer_Support",
     "weaponGroups": [
         {
             "autofire": false,
-            "mode": "LINKED",
+            "mode": "ALTERNATING",
             "weapons": {
                 "WS0005": "diableavionics_thrush",
                 "WS0006": "diableavionics_thrush",
@@ -26,7 +24,14 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "diable_diurne",
+                "WS0010": "diableavionics_microcluster_left",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diable_urn2",
             }
         },
         {
@@ -48,14 +53,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0010": "diableavionics_microcluster_left",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 000": "diableavionics_burchel",
+                "WS0007": "diableavionics_burchel",
             }
         },
     ],

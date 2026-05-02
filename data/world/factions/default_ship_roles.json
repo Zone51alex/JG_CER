@@ -7,6 +7,11 @@
             "diable_valiant_C_Standard":1,
             "diable_zephyr_C_Standard":1,
 			
+			"diable_dagger_Standard":4,
+            "diable_dagger_Support":3,
+            "diable_dagger_Assault":3,
+			"diable_dagger_Energy":3,
+			
 			"diable_vapor_cer_Attack":1,
             "diable_vapor_cer_Standard":1,
             "diable_vapor_cer_Close_Quarter":1,
@@ -21,6 +26,11 @@
 			"diable_raven_C_Standard":1,
             "diable_valiant_C_Standard":1,
             "diable_zephyr_C_Standard":1,
+			
+			"diable_dagger_Standard":4,
+            "diable_dagger_Support":3,
+            "diable_dagger_Assault":3,
+			"diable_dagger_Energy":3,
 			
             "diable_vapor_cer_Attack":1,
             "diable_vapor_cer_Standard":1,

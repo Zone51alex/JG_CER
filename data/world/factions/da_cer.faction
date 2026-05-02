@@ -46,7 +46,7 @@
 		"hulls":{
 			
 			"gremlin":0,
-            "diableavionics_draft":1,
+            "diable_dagger":1,
             
             "diableavionics_laminar":1,
             "diableavionics_shear":1,
@@ -126,6 +126,7 @@
             "diable_tidalp",
             "diableavionics_chinookp",
 			
+			"diable_dagger",
 			"diable_miniGust_cer",
             "diable_gust_cer",
 			
@@ -182,6 +183,7 @@
             "diable_tidalp",
             "diableavionics_chinookp",
 			
+			"diable_dagger",
 			"diable_miniGust_cer",
             "diable_gust_cer",
 			
@@ -229,6 +231,7 @@
 
             "diableavionics_rime",
 			
+			"diable_dagger",
 			"diable_miniGust_cer",
             "diable_gust_cer",
 			

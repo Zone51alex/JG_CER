@@ -12,8 +12,7 @@
   "shieldRadius": 122,
   "viewOffset": 0,
   "builtInMods": [
-    "diable_stratus_core",
-    "escort_package"
+    "diable_stratus_core"
   ],
   "weaponSlots": [
     {

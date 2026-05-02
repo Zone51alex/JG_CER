@@ -1,7 +1,7 @@
 {
     "displayName": "Flagship",
-    "fluxCapacitors": 17,
-    "fluxVents": 30,
+    "fluxCapacitors": 15,
+    "fluxVents": 22,
     "goalVariant": true,
     "hullId": "diable_storm_EX",
     "hullMods": [

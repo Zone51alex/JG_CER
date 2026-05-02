@@ -1,0 +1,56 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 20,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "diable_burst",
+    "hullMods": [
+        "hardenedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "diable_burst_Assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "diable_srabbuiltin",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "diable_microreioi",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "diableavionics_thunderboltpod",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_burchel",
+                "WS0002": "diableavionics_burchel",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "diableavionics_ibis",
+            }
+        },
+    ],
+    "wings": [
+        "diableavionics_frost_wing",
+    ],
+    "modules": [],
+}

@@ -1,6 +1,6 @@
 {
     "displayName": "Missile",
-    "fluxCapacitors": 28,
+    "fluxCapacitors": 24,
     "fluxVents": 25,
     "goalVariant": true,
     "hullId": "diable_gust_cer",

@@ -1,3 +1,4 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
 cer_Experimentalfeaturesheader,experimental Header,Header,Experimental,,,,,Experimental
-newcapitalspawn,Enable New Market Spawn,Boolean,False,,Enable Experimental Market Spawn.,,,Experimental
+cer_Experimentalfeatures,Enable Experimental Features,Boolean,False,,"Enable Experimental Features.
+includes Taio Services Made by ChatGPT and Checked up for Errors, i still hate Gen AI and this is why its in the Experimental Features until i can not only Replicate but also making sure its not doing some FUnky stuff.",,,Experimental

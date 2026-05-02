@@ -1,13 +1,11 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 8,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "diable_storm_cer",
     "hullMods": [],
-    "permaMods": [
-        
-    ],
+    "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
     "variantId": "diable_storm_cer_Standard",

@@ -1,11 +1,11 @@
 {
     "displayName": "Flagship",
     "fluxCapacitors": 10,
-    "fluxVents": 6,
+    "fluxVents": 8,
     "goalVariant": true,
     "hullId": "diable_goblin_EX",
     "hullMods": [
-        "diableavionics_selector_artdeux_EX",
+        "diableavionics_selector_snowball_EX",
         "fluxbreakers",
         "fluxcoil",
         "hardenedshieldemitter",
@@ -43,8 +43,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "GUN_LEFT": "diable_roaring_Artassault_EX_LEFT",
-                "GUN_RIGHT": "diable_roaring_Artassault_EX_RIGHT",
+                "GUN_LEFT": "diable_roaring_snowball_EX_LEFT",
+                "GUN_RIGHT": "diable_roaring_snowball_EX_RIGHT",
             }
         },
     ],

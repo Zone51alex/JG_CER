@@ -1,3 +1,10 @@
+Version 0.1.1
+- Added the Dagger Class.
+- Modified the Storm Cer and Storm EX
+- to make this mid-save compatible delete the CER mission saves in "saves\missions\*cer_*" 
+- and Delete all Storms in your fleet and Storage before Updating.
+- Calm EX is now avaliable to get from Crow's Nest.
+
 Version 0.1.0
 - Added Cyan Sentinel-Warden.
 - Added The Pulsar Twin Lance.

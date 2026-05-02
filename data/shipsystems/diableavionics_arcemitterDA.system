@@ -1,0 +1,37 @@
+{
+	"id":"diableavionics_arcemitterDA",
+	"type":"EMP",
+	"aiType":"EMP",
+	
+	"range":900,
+	
+	"empDamage":380,
+	"damage":150,
+	"damageType":ENERGY,
+	
+	#"effectColor1":[150,150,255,200],
+	#"effectColor2":[175,175,255,255],
+	"effectColor1":[255,0,0,160],
+	"effectColor2":[255,255,255,255],
+
+
+	"useSound":"system_emp_emitter_activate",
+	"loopSound":"system_emp_emitter_loop",
+	"impactSound":"system_emp_emitter_impact",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	# see: EmpArcParams.loadFromSystemJson() for complete list of supported values
+	#"emp_segmentLengthMult":1.9f, # makes it a line
+	"emp_arcWidth":3.2,
+	"emp_segmentLengthMult":1.9f,
+	"emp_zigZagReductionFactor":0.12f,
+	"emp_brightSpot":true,
+	"emp_fadedOutAtStart":true,
+	
+	"aiHints":{
+		"threatRange":900,
+		"threatAmount":4,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}

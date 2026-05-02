@@ -1,6 +1,6 @@
 {
     "displayName": "Assault",
-    "fluxCapacitors": 20,
+    "fluxCapacitors": 19,
     "fluxVents": 2,
     "goalVariant": true,
     "hullId": "diable_rime_m_cer",
@@ -21,8 +21,8 @@
             }
         },
         {
-            "autofire": true,
-            "mode": "LINKED",
+            "autofire": false,
+            "mode": "ALTERNATING",
             "weapons": {
                 "WS0011": "diableavionics_microbuiltin",
                 "WS0002": "diableavionics_microbuiltin",
