@@ -93,7 +93,7 @@ FireAll PopulateOptions","""Very well. Standing by.""",,
 ,,,,,,
 #END Cyan AI Add to fleet,,,,,,
 ,,,,,,
-# Grand Admiral - Mordrigg Dragonstein V,,,,,,
+# Grand Admiral - Mordecai Ashforde IV,,,,,,
 cer_defaultGreetingMord,PickGreeting,"$id == cer_lead score:100
 !$player.RecommendMord",,"After a short wait, your connection request is denied.",0:cutCommLink:Cut the comm link,
 cer_startGreetingMord,PickGreeting,"$id == cer_lead score:100
