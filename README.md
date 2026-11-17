@@ -41,7 +41,7 @@ This mod acts as a **Faction Extension and Sub-faction** of Diable Avionics, foc
 - Follows the same Starsector version as Caymon Joestar's Diable Avionics  
 - Compatible with Nexerelin (same compatibility level as Diable Avionics)  
 - Mid-save compatibility planned (future feature)  
-- 0.1.2 and 0.9.3E must be used for Diable avionics Original FLavour Edition Only, using 0.1.1 and or 0.9.2 will crash your game.
+- 0.1.2 and 0.9.3E must be used for Diable avionics Original Flavour Edition Only, using 0.1.1 and or 0.9.2 will crash your game.
 
 ---
 
